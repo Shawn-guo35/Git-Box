@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ObjectOrientedModel_1", "ObjectOrientedModel_1.vbproj", "{A8FEA1F6-C389-4FBF-B5CB-313CB05A1E23}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{A8FEA1F6-C389-4FBF-B5CB-313CB05A1E23}.Debug.ActiveCfg = Debug|.NET
+		{A8FEA1F6-C389-4FBF-B5CB-313CB05A1E23}.Debug.Build.0 = Debug|.NET
+		{A8FEA1F6-C389-4FBF-B5CB-313CB05A1E23}.Release.ActiveCfg = Release|.NET
+		{A8FEA1F6-C389-4FBF-B5CB-313CB05A1E23}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
