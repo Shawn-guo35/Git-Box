@@ -72,7 +72,7 @@ Public Class orderBasketball
         Dim fee As Double '租借费用
         Dim uname As String '用户姓名
         Dim userId As String
-        userId = 登录界面.TextBox1.Text
+        userId = 登录界面.txtID.Text
         '获取用户姓名和租金
         odadSelBaseket = New OleDb.OleDbDataAdapter("select Uname,Uidentity,INrental,OUTrental from Users,Vtype where ID='" + userId + "' and Vname='篮球场'", OleDbConnection1)
         odadSelBaseket.Fill(dstBasketLease, "ff")
@@ -84,7 +84,7 @@ Public Class orderBasketball
         uname = dstBasketLease.Tables("ff").Rows(0).Item(0)
 
         '判断租借场地是否达到上限
-        sql3 = "select * from Orders where ID='" & 登录界面.TextBox1.Text & "' and Stime between '" & Now.Date & "' and '" & Now.Date.AddDays(6) & "'"
+        sql3 = "select * from Orders where ID='" & 登录界面.txtID.Text & "' and Stime between '" & Now.Date & "' and '" & Now.Date.AddDays(6) & "'"
         odadSelOrder = New OleDb.OleDbDataAdapter(sql3, OleDbConnection1)
         odadSelOrder.Fill(dstSelOrder, "order")
         If (dstSelOrder.Tables("order").Rows.Count >= 5) Then
@@ -99,7 +99,7 @@ Public Class orderBasketball
                 If (MsgBox(str, vbOKCancel) = 1) Then
                     If (MsgBox("本次预订租金为" & fee & "元", vbOKCancel) = 1) Then
                         sql1 = "insert into Lease values('篮球场','" & Vno & "','" & Stime & "','" & Etime & "','" & "已借出')"
-                        sql2 = "insert into Orders values('" & 登录界面.TextBox1.Text & "','篮球场','" & Vno & "','" & Stime & "','" & Etime & "',1," & fee &
+                        sql2 = "insert into Orders values('" & 登录界面.txtID.Text & "','篮球场','" & Vno & "','" & Stime & "','" & Etime & "',1," & fee &
                          ",'" & Now.ToString("yyyyMMddhhmm") & "b" & Vno & "','" & uname & "','')"
                         odcmdInsLease = New OleDb.OleDbCommand(sql1, OleDbConnection1)
                         odcmdInsOrder = New OleDb.OleDbCommand(sql2, OleDbConnection1)
@@ -120,19 +120,19 @@ Public Class orderBasketball
                     If (MsgBox("本次预订租金为" & fee & "元", vbOKCancel) = 1) Then
                         If (e.RowIndex = 0) Then
                             sql1 = "insert into Lease values('篮球场','" & Vno & "','" & dgvOrder.Columns(e.ColumnIndex).Name & " 12:00:00','" & dgvOrder.Columns(e.ColumnIndex).Name & " 13:00:00','" & "已借出')"
-                            sql2 = "insert into Orders values('" & 登录界面.TextBox1.Text & "','篮球场','" & Vno & "','" & dgvOrder.Columns(e.ColumnIndex).Name & " 12:00:00','" & dgvOrder.Columns(e.ColumnIndex).Name & " 13:00:00',1," & fee &
+                            sql2 = "insert into Orders values('" & 登录界面.txtID.Text & "','篮球场','" & Vno & "','" & dgvOrder.Columns(e.ColumnIndex).Name & " 12:00:00','" & dgvOrder.Columns(e.ColumnIndex).Name & " 13:00:00',1," & fee &
                             ",'" & Now.ToString("yyyyMMddhhmm") & "b" & Vno & "','" & uname & "','')"
                         ElseIf (e.RowIndex = 1) Then
                             sql1 = "insert into Lease values('篮球场','" & Vno & "','" & dgvOrder.Columns(e.ColumnIndex).Name & " 13:00:00','" & dgvOrder.Columns(e.ColumnIndex).Name & " 14:00:00','" & "已借出')"
-                            sql2 = "insert into Orders values('" & 登录界面.TextBox1.Text & "','篮球场','" & Vno & "','" & dgvOrder.Columns(e.ColumnIndex).Name & " 13:00:00','" & dgvOrder.Columns(e.ColumnIndex).Name & " 14:00:00',1," & fee &
+                            sql2 = "insert into Orders values('" & 登录界面.txtID.Text & "','篮球场','" & Vno & "','" & dgvOrder.Columns(e.ColumnIndex).Name & " 13:00:00','" & dgvOrder.Columns(e.ColumnIndex).Name & " 14:00:00',1," & fee &
                             ",'" & Now.ToString("yyyyMMddhhmm") & "b" & Vno & "','" & uname & "','')"
                         ElseIf (e.RowIndex = 2) Then
                             sql1 = "insert into Lease values('篮球场','" & Vno & "','" & dgvOrder.Columns(e.ColumnIndex).Name & " 18:00:00','" & dgvOrder.Columns(e.ColumnIndex).Name & " 19:00:00','" & "已借出')"
-                            sql2 = "insert into Orders values('" & 登录界面.TextBox1.Text & "','篮球场','" & Vno & "','" & dgvOrder.Columns(e.ColumnIndex).Name & " 18:00:00','" & dgvOrder.Columns(e.ColumnIndex).Name & " 19:00:00',1," & fee &
+                            sql2 = "insert into Orders values('" & 登录界面.txtID.Text & "','篮球场','" & Vno & "','" & dgvOrder.Columns(e.ColumnIndex).Name & " 18:00:00','" & dgvOrder.Columns(e.ColumnIndex).Name & " 19:00:00',1," & fee &
                             ",'" & Now.ToString("yyyyMMddhhmm") & "b" & Vno & "','" & uname & "','')"
                         ElseIf (e.RowIndex = 3) Then
                             sql1 = "insert into Lease values('篮球场','" & Vno & "','" & dgvOrder.Columns(e.ColumnIndex).Name & " 19:00:00','" & dgvOrder.Columns(e.ColumnIndex).Name & " 20:00:00','" & "已借出')"
-                            sql2 = "insert into Orders values('" & 登录界面.TextBox1.Text & "','篮球场','" & Vno & "','" & dgvOrder.Columns(e.ColumnIndex).Name & " 19:00:00','" & dgvOrder.Columns(e.ColumnIndex).Name & " 20:00:00',1," & fee &
+                            sql2 = "insert into Orders values('" & 登录界面.txtID.Text & "','篮球场','" & Vno & "','" & dgvOrder.Columns(e.ColumnIndex).Name & " 19:00:00','" & dgvOrder.Columns(e.ColumnIndex).Name & " 20:00:00',1," & fee &
                             ",'" & Now.ToString("yyyyMMddhhmm") & "b" & Vno & "','" & uname & "','')"
                         End If
                         odcmdInsLease = New OleDb.OleDbCommand(sql1, OleDbConnection1)

@@ -9,8 +9,8 @@ Public Class 收入统计
     Dim dataset6 As New DataSet
     Dim constr$, sqlstr$
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        sqlstr = "select fee from orders where stime='" & ComboBox3.Text & "/" & ComboBox2.Text & "/" & ComboBox1.Text & "'"
+    Private Sub btnSelIncome_Click(sender As Object, e As EventArgs) Handles btnSelIncome.Click
+        sqlstr = "select fee from orders where stime='" & cmbYear.Text & "/" & cmbMon.Text & "/" & cmbDay.Text & "'"
         OleDbDataAdapter1 = New OleDbDataAdapter(sqlstr, OleDbConnection1)
         dataset4.Reset()
         OleDbDataAdapter1.Fill(dataset4, "dfee")
@@ -18,9 +18,9 @@ Public Class 收入统计
         For i = 0 To dataset4.Tables("dfee").Rows.Count - 1
             dsum = dsum + dataset4.Tables("dfee").Rows(i).Item(0)
         Next
-        TextBox1.Text = dsum
+        txtDaySum.Text = dsum
 
-        sqlstr = "select fee from orders where stime>='" & ComboBox3.Text & "/01/01' And stime<='" & ComboBox3.Text & "/12/30'"
+        sqlstr = "select fee from orders where stime>='" & cmbYear.Text & "/01/01' And stime<='" & cmbYear.Text & "/12/30'"
         OleDbDataAdapter1 = New OleDbDataAdapter(sqlstr, OleDbConnection1)
         dataset5.Reset()
         OleDbDataAdapter1.Fill(dataset5, "mfee")
@@ -28,10 +28,10 @@ Public Class 收入统计
         For i = 0 To dataset5.Tables("mfee").Rows.Count - 1
             ysum = ysum + dataset5.Tables("mfee").Rows(i).Item(0)
         Next
-        TextBox3.Text = ysum
+        txtYearSum.Text = ysum
 
 
-        sqlstr = "select fee from orders where stime>='" & ComboBox3.Text & "/" & ComboBox2.Text & "/01' And stime<='" & ComboBox3.Text & "/" & ComboBox2.Text & "/30'"
+        sqlstr = "select fee from orders where stime>='" & cmbYear.Text & "/" & cmbMon.Text & "/01' And stime<='" & cmbYear.Text & "/" & cmbMon.Text & "/30'"
         OleDbDataAdapter1 = New OleDbDataAdapter(sqlstr, OleDbConnection1)
         dataset6.Reset()
         OleDbDataAdapter1.Fill(dataset6, "mfee")
@@ -39,9 +39,13 @@ Public Class 收入统计
         For i = 0 To dataset6.Tables("mfee").Rows.Count - 1
             msum = msum + dataset6.Tables("mfee").Rows(i).Item(0)
         Next
-        TextBox2.Text = msum
+        txtMonSum.Text = msum
 
 
+    End Sub
+
+    Private Sub btnReturn_Click(sender As Object, e As EventArgs) Handles btnReturn.Click
+        Me.Close()
     End Sub
 
     '窗体加载
@@ -57,29 +61,29 @@ Public Class 收入统计
         dataset2.Reset()
         OleDbDataAdapter1 = New OleDb.OleDbDataAdapter(sql, OleDbConnection1)
         OleDbDataAdapter1.Fill(dataset2, "y")
-        ComboBox3.DataSource = dataset2.Tables("y")
+        cmbYear.DataSource = dataset2.Tables("y")
         For i = 0 To dataset2.Tables("y").Rows.Count - 1
-            ComboBox3.ValueMember = dataset2.Tables("y").Columns(0).ToString
+            cmbYear.ValueMember = dataset2.Tables("y").Columns(0).ToString
         Next
-        ComboBox3.Text = ""
+        cmbYear.Text = ""
         sql = "select distinct datename(dd,stime) as year from orders "
         dataset3.Reset()
         OleDbDataAdapter1 = New OleDb.OleDbDataAdapter(sql, OleDbConnection1)
         OleDbDataAdapter1.Fill(dataset3, "d")
-        ComboBox1.DataSource = dataset3.Tables("d")
+        cmbDay.DataSource = dataset3.Tables("d")
         For i = 0 To dataset3.Tables("d").Rows.Count - 1
-            ComboBox1.ValueMember = dataset3.Tables("d").Columns(0).ToString
+            cmbDay.ValueMember = dataset3.Tables("d").Columns(0).ToString
         Next
-        ComboBox1.Text = ""
+        cmbDay.Text = ""
         sql = "select distinct datename(mm,stime) as year from orders "
         dataset1.Reset()
         OleDbDataAdapter1 = New OleDb.OleDbDataAdapter(sql, OleDbConnection1)
         OleDbDataAdapter1.Fill(dataset1, "m")
-        ComboBox2.DataSource = dataset1.Tables("m")
+        cmbMon.DataSource = dataset1.Tables("m")
         For i = 0 To dataset1.Tables("m").Rows.Count - 1
-            ComboBox2.ValueMember = dataset1.Tables("m").Columns(0).ToString
+            cmbMon.ValueMember = dataset1.Tables("m").Columns(0).ToString
         Next
-        ComboBox2.Text = ""
+        cmbMon.Text = ""
     End Sub
 
 

@@ -26,15 +26,15 @@ Partial Class 注册界面
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtID = New System.Windows.Forms.TextBox()
+        Me.txtPwd = New System.Windows.Forms.TextBox()
+        Me.txtCpwd = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.txtName = New System.Windows.Forms.TextBox()
+        Me.btnRegister = New System.Windows.Forms.Button()
+        Me.btnReturn = New System.Windows.Forms.Button()
+        Me.radInside = New System.Windows.Forms.RadioButton()
+        Me.radOutside = New System.Windows.Forms.RadioButton()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
@@ -42,9 +42,10 @@ Partial Class 注册界面
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label1.Location = New System.Drawing.Point(147, 185)
+        Me.Label1.Location = New System.Drawing.Point(110, 148)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(129, 20)
+        Me.Label1.Size = New System.Drawing.Size(104, 16)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "请输入账号："
         '
@@ -52,9 +53,10 @@ Partial Class 注册界面
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label2.Location = New System.Drawing.Point(147, 257)
+        Me.Label2.Location = New System.Drawing.Point(110, 206)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(129, 20)
+        Me.Label2.Size = New System.Drawing.Size(104, 16)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "请输入密码："
         '
@@ -62,9 +64,10 @@ Partial Class 注册界面
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label3.Location = New System.Drawing.Point(107, 327)
+        Me.Label3.Location = New System.Drawing.Point(80, 262)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(169, 20)
+        Me.Label3.Size = New System.Drawing.Size(136, 16)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "请再次输入密码："
         '
@@ -73,124 +76,136 @@ Partial Class 注册界面
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("宋体", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.Highlight
-        Me.Label4.Location = New System.Drawing.Point(211, 25)
+        Me.Label4.Location = New System.Drawing.Point(158, 20)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(177, 40)
+        Me.Label4.Size = New System.Drawing.Size(143, 33)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "用户注册"
         '
-        'TextBox1
+        'txtID
         '
-        Me.TextBox1.Location = New System.Drawing.Point(300, 180)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(141, 25)
-        Me.TextBox1.TabIndex = 4
+        Me.txtID.Location = New System.Drawing.Point(225, 144)
+        Me.txtID.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtID.Name = "txtID"
+        Me.txtID.Size = New System.Drawing.Size(107, 21)
+        Me.txtID.TabIndex = 4
         '
-        'TextBox2
+        'txtPwd
         '
-        Me.TextBox2.Location = New System.Drawing.Point(300, 252)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(141, 25)
-        Me.TextBox2.TabIndex = 5
+        Me.txtPwd.Location = New System.Drawing.Point(225, 202)
+        Me.txtPwd.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtPwd.Name = "txtPwd"
+        Me.txtPwd.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPwd.Size = New System.Drawing.Size(107, 21)
+        Me.txtPwd.TabIndex = 5
         '
-        'TextBox3
+        'txtCpwd
         '
-        Me.TextBox3.Location = New System.Drawing.Point(300, 322)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox3.Size = New System.Drawing.Size(141, 25)
-        Me.TextBox3.TabIndex = 6
+        Me.txtCpwd.Location = New System.Drawing.Point(225, 258)
+        Me.txtCpwd.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtCpwd.Name = "txtCpwd"
+        Me.txtCpwd.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtCpwd.Size = New System.Drawing.Size(107, 21)
+        Me.txtCpwd.TabIndex = 6
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label5.Location = New System.Drawing.Point(107, 393)
+        Me.Label5.Location = New System.Drawing.Point(80, 314)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(169, 20)
+        Me.Label5.Size = New System.Drawing.Size(136, 16)
         Me.Label5.TabIndex = 7
         Me.Label5.Text = "请输入您的姓名："
         '
-        'TextBox4
+        'txtName
         '
-        Me.TextBox4.Location = New System.Drawing.Point(300, 388)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(141, 25)
-        Me.TextBox4.TabIndex = 8
+        Me.txtName.Location = New System.Drawing.Point(225, 310)
+        Me.txtName.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(107, 21)
+        Me.txtName.TabIndex = 8
         '
-        'Button1
+        'btnRegister
         '
-        Me.Button1.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Button1.Location = New System.Drawing.Point(111, 467)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(93, 36)
-        Me.Button1.TabIndex = 9
-        Me.Button1.Text = "注册"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnRegister.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.btnRegister.Location = New System.Drawing.Point(83, 374)
+        Me.btnRegister.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnRegister.Name = "btnRegister"
+        Me.btnRegister.Size = New System.Drawing.Size(70, 29)
+        Me.btnRegister.TabIndex = 9
+        Me.btnRegister.Text = "注册"
+        Me.btnRegister.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnReturn
         '
-        Me.Button2.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Button2.Location = New System.Drawing.Point(377, 467)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(97, 36)
-        Me.Button2.TabIndex = 10
-        Me.Button2.Text = "返回"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnReturn.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.btnReturn.Location = New System.Drawing.Point(283, 374)
+        Me.btnReturn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnReturn.Name = "btnReturn"
+        Me.btnReturn.Size = New System.Drawing.Size(73, 29)
+        Me.btnReturn.TabIndex = 10
+        Me.btnReturn.Text = "返回"
+        Me.btnReturn.UseVisualStyleBackColor = True
         '
-        'RadioButton1
+        'radInside
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Font = New System.Drawing.Font("宋体", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.RadioButton1.Location = New System.Drawing.Point(138, 115)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(106, 23)
-        Me.RadioButton1.TabIndex = 14
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "校内人员"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.radInside.AutoSize = True
+        Me.radInside.Font = New System.Drawing.Font("宋体", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.radInside.Location = New System.Drawing.Point(104, 92)
+        Me.radInside.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.radInside.Name = "radInside"
+        Me.radInside.Size = New System.Drawing.Size(85, 19)
+        Me.radInside.TabIndex = 14
+        Me.radInside.TabStop = True
+        Me.radInside.Text = "校内人员"
+        Me.radInside.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'radOutside
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Font = New System.Drawing.Font("宋体", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.RadioButton2.Location = New System.Drawing.Point(345, 115)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(106, 23)
-        Me.RadioButton2.TabIndex = 15
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "校外人员"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.radOutside.AutoSize = True
+        Me.radOutside.Font = New System.Drawing.Font("宋体", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.radOutside.Location = New System.Drawing.Point(259, 92)
+        Me.radOutside.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.radOutside.Name = "radOutside"
+        Me.radOutside.Size = New System.Drawing.Size(85, 19)
+        Me.radOutside.TabIndex = 15
+        Me.radOutside.TabStop = True
+        Me.radOutside.Text = "校外人员"
+        Me.radOutside.UseVisualStyleBackColor = True
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(475, 190)
+        Me.Label6.Location = New System.Drawing.Point(356, 152)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(0, 15)
+        Me.Label6.Size = New System.Drawing.Size(0, 12)
         Me.Label6.TabIndex = 16
         '
         '注册界面
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(621, 547)
+        Me.ClientSize = New System.Drawing.Size(466, 438)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.RadioButton2)
-        Me.Controls.Add(Me.RadioButton1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.radOutside)
+        Me.Controls.Add(Me.radInside)
+        Me.Controls.Add(Me.btnReturn)
+        Me.Controls.Add(Me.btnRegister)
+        Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtCpwd)
+        Me.Controls.Add(Me.txtPwd)
+        Me.Controls.Add(Me.txtID)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "注册界面"
         Me.Text = "用户注册"
         Me.ResumeLayout(False)
@@ -202,14 +217,14 @@ Partial Class 注册界面
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txtID As TextBox
+    Friend WithEvents txtPwd As TextBox
+    Friend WithEvents txtCpwd As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents txtName As TextBox
+    Friend WithEvents btnRegister As Button
+    Friend WithEvents btnReturn As Button
+    Friend WithEvents radInside As RadioButton
+    Friend WithEvents radOutside As RadioButton
     Friend WithEvents Label6 As Label
 End Class

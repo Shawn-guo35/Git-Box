@@ -19,7 +19,7 @@ Public Class 修改密码
             Exit Sub
         End If
         Dim com As New OleDbCommand
-        com.CommandText = "select Upassword from Users where ID='" & 登录界面.TextBox1.Text & "'"
+        com.CommandText = "select Upassword from Users where ID='" & 登录界面.txtID.Text & "'"
         com.Connection = con
         ads.SelectCommand = com
         ads.Fill(ds, "Stable")
@@ -27,7 +27,7 @@ Public Class 修改密码
             MsgBox("密码不正确", , "系统提示")
             Exit Sub
         End If
-        com.CommandText = "update Users set Upassword= '" & TextBox2.Text & "' where ID='" & 登录界面.TextBox1.Text & "'"
+        com.CommandText = "update Users set Upassword= '" & TextBox2.Text & "' where ID='" & 登录界面.txtID.Text & "'"
         con.Open()
         com.ExecuteNonQuery()
         con.Close()

@@ -5,7 +5,7 @@ Public Class 用户订单查询
     Dim ads As New OleDbDataAdapter
     Dim ds As New DataSet
     Dim com As New OleDbCommand
-    Public ID As String = 登录界面.TextBox1.Text
+    Public ID As String = 登录界面.txtID.Text
     Public data As DateTime
     Public data2 As DateTime
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load

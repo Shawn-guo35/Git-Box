@@ -22,25 +22,25 @@ Public Class 登录界面
         Timer2.Enabled = False
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
         Me.Hide()
         注册界面.Show()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        If TextBox1.Text = "" Then
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
+        If txtID.Text = "" Then
             MsgBox("请输入账号！")
 
         End If
-        If TextBox2.Text = "" Then
+        If txtPwd.Text = "" Then
             MsgBox("请输入密码！")
         End If
         Dim cnStr As String = "Data Source=DESKTOP-DSP6URK\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=changguan;"
         cn = New SqlConnection(cnStr)
         cn.Open()
 
-        If RadioButton1.Checked Then
-            cm = New SqlCommand("select count(*) from Users where ID='" + TextBox1.Text + "'and Upassword='" + TextBox2.Text + "'", cn)
+        If radUser.Checked Then
+            cm = New SqlCommand("select count(*) from Users where ID='" + txtID.Text + "'and Upassword='" + txtPwd.Text + "'", cn)
             Dim num1 = Convert.ToInt32(cm.ExecuteScalar())
             If (num1 > 0) Then
                 cn.Close()
@@ -50,8 +50,8 @@ Public Class 登录界面
             Else
                 MessageBox.Show("用户名或密码错误", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information)
             End If
-        ElseIf RadioButton2.Checked Then
-            cm = New SqlCommand("select count(*) from Users where ID='" + TextBox1.Text + "'and Upassword='" + TextBox2.Text + "'", cn)
+        ElseIf radAdmin.Checked Then
+            cm = New SqlCommand("select count(*) from Users where ID='" + txtID.Text + "'and Upassword='" + txtPwd.Text + "'", cn)
             Dim num2 = Convert.ToInt32(cm.ExecuteScalar())
             If (num2 > 0) Then
                 cn.Close()

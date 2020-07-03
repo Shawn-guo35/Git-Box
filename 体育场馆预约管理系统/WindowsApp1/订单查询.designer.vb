@@ -23,15 +23,15 @@ Partial Class 订单查询
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.txtOrderNo = New System.Windows.Forms.TextBox()
+        Me.btnSelect = New System.Windows.Forms.Button()
+        Me.btnReturn = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtID = New System.Windows.Forms.TextBox()
+        Me.txtStime = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.OleDbConnection1 = New System.Data.OleDb.OleDbConnection()
         Me.OleDbSelectCommand1 = New System.Data.OleDb.OleDbCommand()
@@ -40,62 +40,66 @@ Partial Class 订单查询
         Me.OleDbDeleteCommand1 = New System.Data.OleDb.OleDbCommand()
         Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter()
         Me.OleDbCommand1 = New System.Data.OleDb.OleDbCommand()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.cmbPlaceName = New System.Windows.Forms.ComboBox()
+        Me.cmbPlaceNo = New System.Windows.Forms.ComboBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnSelOrder = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(16, 52)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 42)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 27
-        Me.DataGridView1.Size = New System.Drawing.Size(799, 182)
+        Me.DataGridView1.Size = New System.Drawing.Size(599, 146)
         Me.DataGridView1.TabIndex = 0
         '
-        'TextBox1
+        'txtOrderNo
         '
-        Me.TextBox1.Location = New System.Drawing.Point(347, 254)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 25)
-        Me.TextBox1.TabIndex = 1
+        Me.txtOrderNo.Location = New System.Drawing.Point(260, 203)
+        Me.txtOrderNo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtOrderNo.Name = "txtOrderNo"
+        Me.txtOrderNo.Size = New System.Drawing.Size(76, 21)
+        Me.txtOrderNo.TabIndex = 1
         '
-        'Button1
+        'btnSelect
         '
-        Me.Button1.Font = New System.Drawing.Font("宋体", 12.0!)
-        Me.Button1.Location = New System.Drawing.Point(237, 380)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 32)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "查询"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnSelect.Font = New System.Drawing.Font("宋体", 12.0!)
+        Me.btnSelect.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.btnSelect.Location = New System.Drawing.Point(178, 304)
+        Me.btnSelect.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnSelect.Name = "btnSelect"
+        Me.btnSelect.Size = New System.Drawing.Size(56, 26)
+        Me.btnSelect.TabIndex = 2
+        Me.btnSelect.Text = "查询"
+        Me.btnSelect.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnReturn
         '
-        Me.Button2.AutoSize = True
-        Me.Button2.Font = New System.Drawing.Font("宋体", 12.0!)
-        Me.Button2.Location = New System.Drawing.Point(419, 380)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 32)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "返回"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnReturn.AutoSize = True
+        Me.btnReturn.Font = New System.Drawing.Font("宋体", 12.0!)
+        Me.btnReturn.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.btnReturn.Location = New System.Drawing.Point(314, 304)
+        Me.btnReturn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnReturn.Name = "btnReturn"
+        Me.btnReturn.Size = New System.Drawing.Size(56, 26)
+        Me.btnReturn.TabIndex = 3
+        Me.btnReturn.Text = "返回"
+        Me.btnReturn.UseVisualStyleBackColor = True
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("宋体", 12.0!)
-        Me.Label1.Location = New System.Drawing.Point(252, 259)
+        Me.Label1.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Label1.Location = New System.Drawing.Point(189, 207)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(89, 20)
+        Me.Label1.Size = New System.Drawing.Size(72, 16)
         Me.Label1.TabIndex = 4
         Me.Label1.Text = "订单号："
         '
@@ -103,9 +107,11 @@ Partial Class 订单查询
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("宋体", 12.0!)
-        Me.Label2.Location = New System.Drawing.Point(217, 331)
+        Me.Label2.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Label2.Location = New System.Drawing.Point(163, 265)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(109, 20)
+        Me.Label2.Size = New System.Drawing.Size(88, 16)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "开始时间："
         '
@@ -113,9 +119,11 @@ Partial Class 订单查询
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("宋体", 12.0!)
-        Me.Label3.Location = New System.Drawing.Point(617, 330)
+        Me.Label3.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Label3.Location = New System.Drawing.Point(463, 264)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(109, 20)
+        Me.Label3.Size = New System.Drawing.Size(88, 16)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "场地编号："
         '
@@ -123,35 +131,39 @@ Partial Class 订单查询
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("宋体", 12.0!)
-        Me.Label4.Location = New System.Drawing.Point(27, 330)
+        Me.Label4.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Label4.Location = New System.Drawing.Point(20, 264)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(109, 20)
+        Me.Label4.Size = New System.Drawing.Size(88, 16)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "用户编号："
         '
-        'TextBox2
+        'txtID
         '
-        Me.TextBox2.Location = New System.Drawing.Point(132, 326)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(80, 25)
-        Me.TextBox2.TabIndex = 8
+        Me.txtID.Location = New System.Drawing.Point(99, 261)
+        Me.txtID.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtID.Name = "txtID"
+        Me.txtID.Size = New System.Drawing.Size(61, 21)
+        Me.txtID.TabIndex = 8
         '
-        'TextBox3
+        'txtStime
         '
-        Me.TextBox3.Location = New System.Drawing.Point(324, 326)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(80, 25)
-        Me.TextBox3.TabIndex = 9
+        Me.txtStime.Location = New System.Drawing.Point(243, 261)
+        Me.txtStime.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtStime.Name = "txtStime"
+        Me.txtStime.Size = New System.Drawing.Size(61, 21)
+        Me.txtStime.TabIndex = 9
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("宋体", 24.0!)
-        Me.Label5.Location = New System.Drawing.Point(304, 9)
+        Me.Label5.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Label5.Location = New System.Drawing.Point(228, 7)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(177, 40)
+        Me.Label5.Size = New System.Drawing.Size(143, 33)
         Me.Label5.TabIndex = 11
         Me.Label5.Text = "订单查询"
         '
@@ -160,37 +172,39 @@ Partial Class 订单查询
         Me.OleDbConnection1.ConnectionString = "Provider=SQLNCLI11;Data Source=DESKTOP-DSP6URK\SQLEXPRESS;Integrated Security=SSP" &
     "I;Initial Catalog=changguan"
         '
-        'odadSelBaseket
+        'OleDbDataAdapter1
         '
         Me.OleDbDataAdapter1.DeleteCommand = Me.OleDbDeleteCommand1
         Me.OleDbDataAdapter1.InsertCommand = Me.OleDbInsertCommand1
         Me.OleDbDataAdapter1.SelectCommand = Me.OleDbSelectCommand1
         Me.OleDbDataAdapter1.UpdateCommand = Me.OleDbUpdateCommand1
         '
-        'ComboBox1
+        'cmbPlaceName
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(523, 328)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(80, 23)
-        Me.ComboBox1.TabIndex = 13
+        Me.cmbPlaceName.FormattingEnabled = True
+        Me.cmbPlaceName.Location = New System.Drawing.Point(392, 262)
+        Me.cmbPlaceName.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbPlaceName.Name = "cmbPlaceName"
+        Me.cmbPlaceName.Size = New System.Drawing.Size(61, 20)
+        Me.cmbPlaceName.TabIndex = 13
         '
-        'ComboBox2
+        'cmbPlaceNo
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(724, 328)
-        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(80, 23)
-        Me.ComboBox2.TabIndex = 14
+        Me.cmbPlaceNo.FormattingEnabled = True
+        Me.cmbPlaceNo.Location = New System.Drawing.Point(543, 262)
+        Me.cmbPlaceNo.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbPlaceNo.Name = "cmbPlaceNo"
+        Me.cmbPlaceNo.Size = New System.Drawing.Size(61, 20)
+        Me.cmbPlaceNo.TabIndex = 14
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(281, 426)
+        Me.Label7.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Label7.Location = New System.Drawing.Point(211, 341)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(187, 15)
+        Me.Label7.Size = New System.Drawing.Size(149, 12)
         Me.Label7.TabIndex = 16
         Me.Label7.Text = "（输入任意一项即可查询）"
         '
@@ -198,46 +212,50 @@ Partial Class 订单查询
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("宋体", 12.0!)
-        Me.Label6.Location = New System.Drawing.Point(411, 331)
+        Me.Label6.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Label6.Location = New System.Drawing.Point(308, 265)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(109, 20)
+        Me.Label6.Size = New System.Drawing.Size(88, 16)
         Me.Label6.TabIndex = 17
         Me.Label6.Text = "场地名称："
         '
-        'Button3
+        'btnSelOrder
         '
-        Me.Button3.Font = New System.Drawing.Font("宋体", 12.0!)
-        Me.Button3.Location = New System.Drawing.Point(496, 252)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 32)
-        Me.Button3.TabIndex = 18
-        Me.Button3.Text = "搜索"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnSelOrder.Font = New System.Drawing.Font("宋体", 12.0!)
+        Me.btnSelOrder.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.btnSelOrder.Location = New System.Drawing.Point(372, 202)
+        Me.btnSelOrder.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnSelOrder.Name = "btnSelOrder"
+        Me.btnSelOrder.Size = New System.Drawing.Size(56, 26)
+        Me.btnSelOrder.TabIndex = 18
+        Me.btnSelOrder.Text = "搜索"
+        Me.btnSelOrder.UseVisualStyleBackColor = True
         '
         '订单查询
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(829, 451)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.ClientSize = New System.Drawing.Size(622, 361)
+        Me.Controls.Add(Me.btnSelOrder)
+        Me.Controls.Add(Me.txtStime)
+        Me.Controls.Add(Me.txtOrderNo)
+        Me.Controls.Add(Me.cmbPlaceName)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.cmbPlaceNo)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txtID)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnReturn)
+        Me.Controls.Add(Me.btnSelect)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "订单查询"
         Me.Text = "订单查询"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -247,15 +265,15 @@ Partial Class 订单查询
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents txtOrderNo As TextBox
+    Friend WithEvents btnSelect As Button
+    Friend WithEvents btnReturn As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txtID As TextBox
+    Friend WithEvents txtStime As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents OleDbConnection1 As OleDb.OleDbConnection
     Friend WithEvents OleDbSelectCommand1 As OleDb.OleDbCommand
@@ -264,9 +282,9 @@ Partial Class 订单查询
     Friend WithEvents OleDbDeleteCommand1 As OleDb.OleDbCommand
     Friend WithEvents OleDbDataAdapter1 As OleDb.OleDbDataAdapter
     Friend WithEvents OleDbCommand1 As OleDb.OleDbCommand
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents cmbPlaceName As ComboBox
+    Friend WithEvents cmbPlaceNo As ComboBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btnSelOrder As Button
 End Class

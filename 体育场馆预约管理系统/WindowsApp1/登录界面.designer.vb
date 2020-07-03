@@ -24,14 +24,14 @@ Partial Class 登录界面
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnRegister = New System.Windows.Forms.Button()
+        Me.btnLogin = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.txtID = New System.Windows.Forms.TextBox()
+        Me.txtPwd = New System.Windows.Forms.TextBox()
+        Me.radUser = New System.Windows.Forms.RadioButton()
+        Me.radAdmin = New System.Windows.Forms.RadioButton()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
@@ -41,42 +41,46 @@ Partial Class 登录界面
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("宋体", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label1.Location = New System.Drawing.Point(200, 65)
+        Me.Label1.Location = New System.Drawing.Point(150, 52)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(321, 38)
+        Me.Label1.Size = New System.Drawing.Size(253, 30)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "体育场馆预约系统"
         '
-        'Button1
+        'btnRegister
         '
-        Me.Button1.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Button1.Location = New System.Drawing.Point(413, 358)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(95, 35)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "注册"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnRegister.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.btnRegister.Location = New System.Drawing.Point(310, 286)
+        Me.btnRegister.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnRegister.Name = "btnRegister"
+        Me.btnRegister.Size = New System.Drawing.Size(71, 28)
+        Me.btnRegister.TabIndex = 1
+        Me.btnRegister.Text = "注册"
+        Me.btnRegister.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnLogin
         '
-        Me.Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button2.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Button2.Location = New System.Drawing.Point(207, 358)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(95, 35)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "登录"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnLogin.BackColor = System.Drawing.Color.Transparent
+        Me.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnLogin.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.btnLogin.Location = New System.Drawing.Point(155, 286)
+        Me.btnLogin.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnLogin.Name = "btnLogin"
+        Me.btnLogin.Size = New System.Drawing.Size(71, 28)
+        Me.btnLogin.TabIndex = 2
+        Me.btnLogin.Text = "登录"
+        Me.btnLogin.UseVisualStyleBackColor = False
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.SystemColors.Control
         Me.Label2.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label2.Location = New System.Drawing.Point(223, 157)
+        Me.Label2.Location = New System.Drawing.Point(167, 126)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(69, 20)
+        Me.Label2.Size = New System.Drawing.Size(56, 16)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "账号："
         '
@@ -84,48 +88,53 @@ Partial Class 登录界面
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label3.Location = New System.Drawing.Point(223, 224)
+        Me.Label3.Location = New System.Drawing.Point(167, 179)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(69, 20)
+        Me.Label3.Size = New System.Drawing.Size(56, 16)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "密码："
         '
-        'TextBox1
+        'txtID
         '
-        Me.TextBox1.Location = New System.Drawing.Point(343, 152)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(178, 25)
-        Me.TextBox1.TabIndex = 5
+        Me.txtID.Location = New System.Drawing.Point(257, 122)
+        Me.txtID.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtID.Name = "txtID"
+        Me.txtID.Size = New System.Drawing.Size(134, 21)
+        Me.txtID.TabIndex = 5
         '
-        'TextBox2
+        'txtPwd
         '
-        Me.TextBox2.Location = New System.Drawing.Point(343, 219)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(178, 25)
-        Me.TextBox2.TabIndex = 6
+        Me.txtPwd.Location = New System.Drawing.Point(257, 175)
+        Me.txtPwd.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtPwd.Name = "txtPwd"
+        Me.txtPwd.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPwd.Size = New System.Drawing.Size(134, 21)
+        Me.txtPwd.TabIndex = 6
         '
-        'RadioButton1
+        'radUser
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(244, 292)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(58, 19)
-        Me.RadioButton1.TabIndex = 7
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "用户"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.radUser.AutoSize = True
+        Me.radUser.Location = New System.Drawing.Point(183, 234)
+        Me.radUser.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.radUser.Name = "radUser"
+        Me.radUser.Size = New System.Drawing.Size(47, 16)
+        Me.radUser.TabIndex = 7
+        Me.radUser.TabStop = True
+        Me.radUser.Text = "用户"
+        Me.radUser.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'radAdmin
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(413, 292)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(73, 19)
-        Me.RadioButton2.TabIndex = 8
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "管理员"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.radAdmin.AutoSize = True
+        Me.radAdmin.Location = New System.Drawing.Point(310, 234)
+        Me.radAdmin.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.radAdmin.Name = "radAdmin"
+        Me.radAdmin.Size = New System.Drawing.Size(59, 16)
+        Me.radAdmin.TabIndex = 8
+        Me.radAdmin.TabStop = True
+        Me.radAdmin.Text = "管理员"
+        Me.radAdmin.UseVisualStyleBackColor = True
         '
         'Timer1
         '
@@ -135,22 +144,23 @@ Partial Class 登录界面
         '
         '登录界面
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(720, 451)
-        Me.Controls.Add(Me.RadioButton2)
-        Me.Controls.Add(Me.RadioButton1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.ClientSize = New System.Drawing.Size(540, 361)
+        Me.Controls.Add(Me.radAdmin)
+        Me.Controls.Add(Me.radUser)
+        Me.Controls.Add(Me.txtPwd)
+        Me.Controls.Add(Me.txtID)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnLogin)
+        Me.Controls.Add(Me.btnRegister)
         Me.Controls.Add(Me.Label1)
         Me.DoubleBuffered = True
         Me.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "登录界面"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "登录"
@@ -160,14 +170,14 @@ Partial Class 登录界面
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnRegister As Button
+    Friend WithEvents btnLogin As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents txtID As TextBox
+    Friend WithEvents txtPwd As TextBox
+    Friend WithEvents radUser As RadioButton
+    Friend WithEvents radAdmin As RadioButton
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Timer2 As Timer
 End Class
