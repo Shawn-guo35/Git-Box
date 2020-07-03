@@ -1,0 +1,320 @@
+// VBConversions Note: VB project level imports
+using System.Collections.Generic;
+using System;
+using System.Linq;
+using System.Drawing;
+using System.Diagnostics;
+using System.Threading.Tasks;
+using System.Data;
+using System.Xml.Linq;
+using Microsoft.VisualBasic;
+using System.Collections;
+using System.Windows.Forms;
+// End of VB project level imports
+
+using WindowsApp1;
+
+namespace WindowsApp1
+{
+	[global::Microsoft.VisualBasic.CompilerServices.DesignerGenerated()]
+		public partial class orderBasketball : System.Windows.Forms.Form
+		{
+		
+		//Form 重写 Dispose，以清理组件列表。
+		[System.Diagnostics.DebuggerNonUserCode()]
+			protected override void Dispose(bool disposing)
+			{
+			try
+			{
+				if (disposing && components != null)
+				{
+					components.Dispose();
+				}
+			}
+			finally
+			{
+				base.Dispose(disposing);
+			}
+		}
+		
+		//Windows 窗体设计器所必需的
+		private System.ComponentModel.Container components = null;
+		
+		//注意: 以下过程是 Windows 窗体设计器所必需的
+		//可以使用 Windows 窗体设计器修改它。
+		//不要使用代码编辑器修改它。
+		[System.Diagnostics.DebuggerStepThrough()]
+			private void InitializeComponent()
+			{
+			this.btnGymorder = new System.Windows.Forms.Button();
+			base.Load += new System.EventHandler(orderBasketball_Load);
+			this.btnGymorder.Click += new System.EventHandler(this.btnGymorder_Click);
+			this.btnTimeorder = new System.Windows.Forms.Button();
+			this.btnTimeorder.Click += new System.EventHandler(this.btnTimeorder_Click);
+			this.btnGymview = new System.Windows.Forms.Button();
+			this.btnGymview.Click += new System.EventHandler(this.btnGymview_Click);
+			this.Label4 = new System.Windows.Forms.Label();
+			this.dgvOrder = new System.Windows.Forms.DataGridView();
+			this.dgvOrder.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvOrder_CellContentDoubleClick);
+			this.Label1 = new System.Windows.Forms.Label();
+			this.btnSubmit1 = new System.Windows.Forms.Button();
+			this.btnSubmit1.Click += new System.EventHandler(this.btnSubmit1_Click);
+			this.btnSubmit2 = new System.Windows.Forms.Button();
+			this.btnSubmit2.Click += new System.EventHandler(this.btnSubmit2_Click);
+			this.Label2 = new System.Windows.Forms.Label();
+			this.OleDbConnection1 = new System.Data.OleDb.OleDbConnection();
+			this.OleDbSelectCommand1 = new System.Data.OleDb.OleDbCommand();
+			this.OleDbInsertCommand1 = new System.Data.OleDb.OleDbCommand();
+			this.OleDbUpdateCommand1 = new System.Data.OleDb.OleDbCommand();
+			this.OleDbDeleteCommand1 = new System.Data.OleDb.OleDbCommand();
+			this.odadSelBaseket = new System.Data.OleDb.OleDbDataAdapter();
+			this.dstBasketLease = new System.Data.DataSet();
+			this.odcmdInsLease = new System.Data.OleDb.OleDbCommand();
+			this.cmbBegintime = new System.Windows.Forms.ComboBox();
+			this.cmbBegintime.SelectedIndexChanged += new System.EventHandler(this.cmbBegintime_SelectedIndexChanged_1);
+			this.dtpTime = new System.Windows.Forms.DateTimePicker();
+			this.dstSelOrder = new System.Data.DataSet();
+			this.txtEndtime = new System.Windows.Forms.TextBox();
+			this.cbmGymnum = new System.Windows.Forms.ComboBox();
+			this.odcmdInsOrder = new System.Data.OleDb.OleDbCommand();
+			this.Label3 = new System.Windows.Forms.Label();
+			this.OleDbSelectCommand2 = new System.Data.OleDb.OleDbCommand();
+			this.OleDbInsertCommand2 = new System.Data.OleDb.OleDbCommand();
+			this.OleDbUpdateCommand2 = new System.Data.OleDb.OleDbCommand();
+			this.OleDbDeleteCommand2 = new System.Data.OleDb.OleDbCommand();
+			this.odadSelOrder = new System.Data.OleDb.OleDbDataAdapter();
+			((System.ComponentModel.ISupportInitialize) this.dgvOrder).BeginInit();
+			((System.ComponentModel.ISupportInitialize) this.dstBasketLease).BeginInit();
+			((System.ComponentModel.ISupportInitialize) this.dstSelOrder).BeginInit();
+			this.SuspendLayout();
+			//
+			//btnGymorder
+			//
+			this.btnGymorder.Font = new System.Drawing.Font("宋体", (float) (9.0F), System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, System.Convert.ToByte(134));
+			this.btnGymorder.Location = new System.Drawing.Point(743, 183);
+			this.btnGymorder.Name = "btnGymorder";
+			this.btnGymorder.Size = new System.Drawing.Size(179, 38);
+			this.btnGymorder.TabIndex = 3;
+			this.btnGymorder.Text = "选择场地进行预约";
+			this.btnGymorder.UseVisualStyleBackColor = true;
+			//
+			//btnTimeorder
+			//
+			this.btnTimeorder.Font = new System.Drawing.Font("宋体", (float) (9.0F), System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, System.Convert.ToByte(134));
+			this.btnTimeorder.Location = new System.Drawing.Point(743, 245);
+			this.btnTimeorder.Name = "btnTimeorder";
+			this.btnTimeorder.Size = new System.Drawing.Size(179, 38);
+			this.btnTimeorder.TabIndex = 4;
+			this.btnTimeorder.Text = "选择时间进行预约";
+			this.btnTimeorder.UseVisualStyleBackColor = true;
+			//
+			//btnGymview
+			//
+			this.btnGymview.Font = new System.Drawing.Font("宋体", (float) (9.0F), System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, System.Convert.ToByte(134));
+			this.btnGymview.Location = new System.Drawing.Point(743, 76);
+			this.btnGymview.Name = "btnGymview";
+			this.btnGymview.Size = new System.Drawing.Size(179, 38);
+			this.btnGymview.TabIndex = 5;
+			this.btnGymview.Text = "查看场地平面图";
+			this.btnGymview.UseVisualStyleBackColor = true;
+			//
+			//Label4
+			//
+			this.Label4.AutoSize = true;
+			this.Label4.Font = new System.Drawing.Font("微软雅黑", (float) (10.8F), System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, System.Convert.ToByte(134));
+			this.Label4.Location = new System.Drawing.Point(145, 360);
+			this.Label4.Name = "Label4";
+			this.Label4.Size = new System.Drawing.Size(69, 25);
+			this.Label4.TabIndex = 10;
+			this.Label4.Text = "场地号";
+			//
+			//dgvOrder
+			//
+			this.dgvOrder.AllowUserToAddRows = false;
+			this.dgvOrder.AllowUserToDeleteRows = false;
+			this.dgvOrder.ColumnHeadersHeight = 40;
+			this.dgvOrder.Location = new System.Drawing.Point(32, 57);
+			this.dgvOrder.MultiSelect = false;
+			this.dgvOrder.Name = "dgvOrder";
+			this.dgvOrder.ReadOnly = true;
+			this.dgvOrder.RowTemplate.Height = 27;
+			this.dgvOrder.Size = new System.Drawing.Size(678, 281);
+			this.dgvOrder.TabIndex = 12;
+			//
+			//Label1
+			//
+			this.Label1.AutoSize = true;
+			this.Label1.Font = new System.Drawing.Font("微软雅黑", (float) (10.8F), System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, System.Convert.ToByte(134));
+			this.Label1.Location = new System.Drawing.Point(375, 410);
+			this.Label1.Name = "Label1";
+			this.Label1.Size = new System.Drawing.Size(126, 25);
+			this.Label1.TabIndex = 13;
+			this.Label1.Text = "租借开始时间";
+			//
+			//btnSubmit1
+			//
+			this.btnSubmit1.Cursor = System.Windows.Forms.Cursors.AppStarting;
+			this.btnSubmit1.Font = new System.Drawing.Font("宋体", (float) (9.0F), System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, System.Convert.ToByte(134));
+			this.btnSubmit1.Location = new System.Drawing.Point(508, 361);
+			this.btnSubmit1.Name = "btnSubmit1";
+			this.btnSubmit1.Size = new System.Drawing.Size(75, 28);
+			this.btnSubmit1.TabIndex = 15;
+			this.btnSubmit1.Text = "确定";
+			this.btnSubmit1.UseVisualStyleBackColor = true;
+			//
+			//btnSubmit2
+			//
+			this.btnSubmit2.Font = new System.Drawing.Font("宋体", (float) (9.0F), System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, System.Convert.ToByte(134));
+			this.btnSubmit2.Location = new System.Drawing.Point(755, 432);
+			this.btnSubmit2.Name = "btnSubmit2";
+			this.btnSubmit2.Size = new System.Drawing.Size(75, 28);
+			this.btnSubmit2.TabIndex = 16;
+			this.btnSubmit2.Text = "确定";
+			this.btnSubmit2.UseVisualStyleBackColor = true;
+			//
+			//Label2
+			//
+			this.Label2.AutoSize = true;
+			this.Label2.Font = new System.Drawing.Font("微软雅黑", (float) (10.8F), System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, System.Convert.ToByte(134));
+			this.Label2.Location = new System.Drawing.Point(375, 452);
+			this.Label2.Name = "Label2";
+			this.Label2.Size = new System.Drawing.Size(126, 25);
+			this.Label2.TabIndex = 17;
+			this.Label2.Text = "租借结束时间";
+			//
+			//OleDbConnection1
+			//
+			this.OleDbConnection1.ConnectionString = "Provider=SQLNCLI11;Data Source=DESKTOP-DSP6URK\\SQLEXPRESS;Integrated Security=SSP" +
+				"I;Initial Catalog=changguan";
+			//
+			//odadSelBaseket
+			//
+			this.odadSelBaseket.DeleteCommand = this.OleDbDeleteCommand1;
+			this.odadSelBaseket.InsertCommand = this.OleDbInsertCommand1;
+			this.odadSelBaseket.SelectCommand = this.OleDbSelectCommand1;
+			this.odadSelBaseket.UpdateCommand = this.OleDbUpdateCommand1;
+			//
+			//dstBasketLease
+			//
+			this.dstBasketLease.DataSetName = "NewDataSet";
+			//
+			//cmbBegintime
+			//
+			this.cmbBegintime.Font = new System.Drawing.Font("宋体", (float) (10.8F), System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, System.Convert.ToByte(134));
+			this.cmbBegintime.FormattingEnabled = true;
+			this.cmbBegintime.Items.AddRange(new object[] {"12:00", "13:00", "18:00", "19:00"});
+			this.cmbBegintime.Location = new System.Drawing.Point(550, 413);
+			this.cmbBegintime.Name = "cmbBegintime";
+			this.cmbBegintime.Size = new System.Drawing.Size(121, 26);
+			this.cmbBegintime.TabIndex = 20;
+			this.cmbBegintime.Text = "12:00";
+			//
+			//dtpTime
+			//
+			this.dtpTime.Font = new System.Drawing.Font("宋体", (float) (10.8F), System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, System.Convert.ToByte(134));
+			this.dtpTime.Location = new System.Drawing.Point(72, 413);
+			this.dtpTime.MinDate = new DateTime(2019, 7, 2, 0, 0, 0, 0);
+			this.dtpTime.Name = "dtpTime";
+			this.dtpTime.Size = new System.Drawing.Size(200, 28);
+			this.dtpTime.TabIndex = 22;
+			//
+			//dstSelOrder
+			//
+			this.dstSelOrder.DataSetName = "NewDataSet";
+			//
+			//txtEndtime
+			//
+			this.txtEndtime.Font = new System.Drawing.Font("宋体", (float) (10.8F), System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, System.Convert.ToByte(134));
+			this.txtEndtime.Location = new System.Drawing.Point(550, 452);
+			this.txtEndtime.Name = "txtEndtime";
+			this.txtEndtime.Size = new System.Drawing.Size(121, 28);
+			this.txtEndtime.TabIndex = 23;
+			//
+			//cbmGymnum
+			//
+			this.cbmGymnum.Font = new System.Drawing.Font("宋体", (float) (10.8F), System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, System.Convert.ToByte(134));
+			this.cbmGymnum.FormattingEnabled = true;
+			this.cbmGymnum.Location = new System.Drawing.Point(305, 363);
+			this.cbmGymnum.Name = "cbmGymnum";
+			this.cbmGymnum.Size = new System.Drawing.Size(84, 26);
+			this.cbmGymnum.TabIndex = 24;
+			//
+			//Label3
+			//
+			this.Label3.AutoSize = true;
+			this.Label3.Font = new System.Drawing.Font("微软雅黑", (float) (10.8F), System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, System.Convert.ToByte(134));
+			this.Label3.Location = new System.Drawing.Point(83, 20);
+			this.Label3.Name = "Label3";
+			this.Label3.Size = new System.Drawing.Size(240, 25);
+			this.Label3.TabIndex = 25;
+			this.Label3.Text = "双击表中的场地号即可预订";
+			this.Label3.Visible = false;
+			//
+			//odadSelOrder
+			//
+			this.odadSelOrder.DeleteCommand = this.OleDbDeleteCommand2;
+			this.odadSelOrder.InsertCommand = this.OleDbInsertCommand2;
+			this.odadSelOrder.SelectCommand = this.OleDbSelectCommand2;
+			this.odadSelOrder.UpdateCommand = this.OleDbUpdateCommand2;
+			//
+			//orderBasketball
+			//
+			this.AutoScaleDimensions = new System.Drawing.SizeF((float) (8.0F), (float) (15.0F));
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.ClientSize = new System.Drawing.Size(989, 540);
+			this.Controls.Add(this.Label3);
+			this.Controls.Add(this.cbmGymnum);
+			this.Controls.Add(this.txtEndtime);
+			this.Controls.Add(this.dtpTime);
+			this.Controls.Add(this.cmbBegintime);
+			this.Controls.Add(this.Label2);
+			this.Controls.Add(this.btnSubmit2);
+			this.Controls.Add(this.btnSubmit1);
+			this.Controls.Add(this.Label1);
+			this.Controls.Add(this.dgvOrder);
+			this.Controls.Add(this.Label4);
+			this.Controls.Add(this.btnGymview);
+			this.Controls.Add(this.btnTimeorder);
+			this.Controls.Add(this.btnGymorder);
+			this.Font = new System.Drawing.Font("宋体", (float) (9.0F), System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, System.Convert.ToByte(134));
+			this.Name = "orderBasketball";
+			this.Text = "篮球场预约";
+			((System.ComponentModel.ISupportInitialize) this.dgvOrder).EndInit();
+			((System.ComponentModel.ISupportInitialize) this.dstBasketLease).EndInit();
+			((System.ComponentModel.ISupportInitialize) this.dstSelOrder).EndInit();
+			this.ResumeLayout(false);
+			this.PerformLayout();
+			
+		}
+		internal Button btnGymorder;
+		internal Button btnTimeorder;
+		internal Button btnGymview;
+		internal Label Label4;
+		internal DataGridView dgvOrder;
+		internal Label Label1;
+		internal Button btnSubmit1;
+		internal Button btnSubmit2;
+		internal Label Label2;
+		internal System.Data.OleDb.OleDbConnection OleDbConnection1;
+		internal System.Data.OleDb.OleDbCommand OleDbSelectCommand1;
+		internal System.Data.OleDb.OleDbCommand OleDbInsertCommand1;
+		internal System.Data.OleDb.OleDbCommand OleDbUpdateCommand1;
+		internal System.Data.OleDb.OleDbCommand OleDbDeleteCommand1;
+		internal System.Data.OleDb.OleDbDataAdapter odadSelBaseket;
+		internal DataSet dstBasketLease;
+		internal System.Data.OleDb.OleDbCommand odcmdInsLease;
+		internal ComboBox cmbBegintime;
+		internal DateTimePicker dtpTime;
+		internal DataSet dstSelOrder;
+		internal TextBox txtEndtime;
+		internal ComboBox cbmGymnum;
+		internal System.Data.OleDb.OleDbCommand odcmdInsOrder;
+		internal Label Label3;
+		internal System.Data.OleDb.OleDbCommand OleDbSelectCommand2;
+		internal System.Data.OleDb.OleDbCommand OleDbInsertCommand2;
+		internal System.Data.OleDb.OleDbCommand OleDbUpdateCommand2;
+		internal System.Data.OleDb.OleDbCommand OleDbDeleteCommand2;
+		internal System.Data.OleDb.OleDbDataAdapter odadSelOrder;
+	}
+	
+}
