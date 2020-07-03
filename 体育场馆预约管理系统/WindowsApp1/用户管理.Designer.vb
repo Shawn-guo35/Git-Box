@@ -26,14 +26,14 @@ Partial Class 用户管理
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(用户管理))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.btnSubmit5 = New System.Windows.Forms.Button()
-        Me.btnSubmit4 = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
+        Me.btnInsertUsers = New System.Windows.Forms.Button()
         Me.txtCondition = New System.Windows.Forms.TextBox()
         Me.cbmGym = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnSubmit3 = New System.Windows.Forms.Button()
-        Me.btnSubmit2 = New System.Windows.Forms.Button()
+        Me.btnDeleteUsers = New System.Windows.Forms.Button()
+        Me.btnUpdateUsers = New System.Windows.Forms.Button()
         Me.gvwUsers = New System.Windows.Forms.DataGridView()
         Me.IDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.UnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -58,14 +58,14 @@ Partial Class 用户管理
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.DataGridView2)
-        Me.GroupBox1.Controls.Add(Me.btnSubmit5)
-        Me.GroupBox1.Controls.Add(Me.btnSubmit4)
+        Me.GroupBox1.Controls.Add(Me.btnClose)
+        Me.GroupBox1.Controls.Add(Me.btnInsertUsers)
         Me.GroupBox1.Controls.Add(Me.txtCondition)
         Me.GroupBox1.Controls.Add(Me.cbmGym)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.btnSubmit3)
-        Me.GroupBox1.Controls.Add(Me.btnSubmit2)
+        Me.GroupBox1.Controls.Add(Me.btnDeleteUsers)
+        Me.GroupBox1.Controls.Add(Me.btnUpdateUsers)
         Me.GroupBox1.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(1, 12)
         Me.GroupBox1.Name = "GroupBox1"
@@ -83,23 +83,23 @@ Partial Class 用户管理
         Me.DataGridView2.Size = New System.Drawing.Size(10, 10)
         Me.DataGridView2.TabIndex = 2
         '
-        'btnSubmit5
+        'btnClose
         '
-        Me.btnSubmit5.Location = New System.Drawing.Point(666, 107)
-        Me.btnSubmit5.Name = "btnSubmit5"
-        Me.btnSubmit5.Size = New System.Drawing.Size(107, 51)
-        Me.btnSubmit5.TabIndex = 8
-        Me.btnSubmit5.Text = "退出"
-        Me.btnSubmit5.UseVisualStyleBackColor = True
+        Me.btnClose.Location = New System.Drawing.Point(666, 107)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(107, 51)
+        Me.btnClose.TabIndex = 8
+        Me.btnClose.Text = "退出"
+        Me.btnClose.UseVisualStyleBackColor = True
         '
-        'btnSubmit4
+        'btnInsertUsers
         '
-        Me.btnSubmit4.Location = New System.Drawing.Point(518, 107)
-        Me.btnSubmit4.Name = "btnSubmit4"
-        Me.btnSubmit4.Size = New System.Drawing.Size(107, 51)
-        Me.btnSubmit4.TabIndex = 7
-        Me.btnSubmit4.Text = "查询"
-        Me.btnSubmit4.UseVisualStyleBackColor = True
+        Me.btnInsertUsers.Location = New System.Drawing.Point(518, 107)
+        Me.btnInsertUsers.Name = "btnInsertUsers"
+        Me.btnInsertUsers.Size = New System.Drawing.Size(107, 51)
+        Me.btnInsertUsers.TabIndex = 7
+        Me.btnInsertUsers.Text = "查询"
+        Me.btnInsertUsers.UseVisualStyleBackColor = True
         '
         'txtCondition
         '
@@ -136,23 +136,23 @@ Partial Class 用户管理
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "查询方式"
         '
-        'btnSubmit3
+        'btnDeleteUsers
         '
-        Me.btnSubmit3.Location = New System.Drawing.Point(142, 36)
-        Me.btnSubmit3.Name = "btnSubmit3"
-        Me.btnSubmit3.Size = New System.Drawing.Size(68, 41)
-        Me.btnSubmit3.TabIndex = 2
-        Me.btnSubmit3.Text = "删除"
-        Me.btnSubmit3.UseVisualStyleBackColor = True
+        Me.btnDeleteUsers.Location = New System.Drawing.Point(142, 36)
+        Me.btnDeleteUsers.Name = "btnDeleteUsers"
+        Me.btnDeleteUsers.Size = New System.Drawing.Size(68, 41)
+        Me.btnDeleteUsers.TabIndex = 2
+        Me.btnDeleteUsers.Text = "删除"
+        Me.btnDeleteUsers.UseVisualStyleBackColor = True
         '
-        'btnSubmit2
+        'btnUpdateUsers
         '
-        Me.btnSubmit2.Location = New System.Drawing.Point(29, 36)
-        Me.btnSubmit2.Name = "btnSubmit2"
-        Me.btnSubmit2.Size = New System.Drawing.Size(65, 41)
-        Me.btnSubmit2.TabIndex = 1
-        Me.btnSubmit2.Text = "修改"
-        Me.btnSubmit2.UseVisualStyleBackColor = True
+        Me.btnUpdateUsers.Location = New System.Drawing.Point(29, 36)
+        Me.btnUpdateUsers.Name = "btnUpdateUsers"
+        Me.btnUpdateUsers.Size = New System.Drawing.Size(65, 41)
+        Me.btnUpdateUsers.TabIndex = 1
+        Me.btnUpdateUsers.Text = "修改"
+        Me.btnUpdateUsers.UseVisualStyleBackColor = True
         '
         'gvwUsers
         '
@@ -256,10 +256,10 @@ Partial Class 用户管理
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents btnSubmit3 As Button
-    Friend WithEvents btnSubmit2 As Button
-    Friend WithEvents btnSubmit5 As Button
-    Friend WithEvents btnSubmit4 As Button
+    Friend WithEvents btnDeleteUsers As Button
+    Friend WithEvents btnUpdateUsers As Button
+    Friend WithEvents btnClose As Button
+    Friend WithEvents btnInsertUsers As Button
     Friend WithEvents txtCondition As TextBox
     Friend WithEvents cbmGym As ComboBox
     Friend WithEvents Label2 As Label

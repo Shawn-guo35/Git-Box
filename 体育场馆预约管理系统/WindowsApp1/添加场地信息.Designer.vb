@@ -26,9 +26,9 @@ Partial Class 添加场地信息
         Me.lblResults2 = New System.Windows.Forms.Label()
         Me.txtGymName = New System.Windows.Forms.TextBox()
         Me.txtGymNum = New System.Windows.Forms.TextBox()
-        Me.btnSubmit3 = New System.Windows.Forms.Button()
-        Me.btnSubmit2 = New System.Windows.Forms.Button()
-        Me.btnSubmit1 = New System.Windows.Forms.Button()
+        Me.btnReturn = New System.Windows.Forms.Button()
+        Me.btnCancel = New System.Windows.Forms.Button()
+        Me.btnInsertVtype = New System.Windows.Forms.Button()
         Me.SqlDataAdapter1 = New System.Data.SqlClient.SqlDataAdapter()
         Me.SqlDeleteCommand1 = New System.Data.SqlClient.SqlCommand()
         Me.SqlConnection1 = New System.Data.SqlClient.SqlConnection()
@@ -73,29 +73,29 @@ Partial Class 添加场地信息
         Me.txtGymNum.Size = New System.Drawing.Size(100, 25)
         Me.txtGymNum.TabIndex = 3
         '
-        'btnSubmit3
+        'btnReturn
         '
-        Me.btnSubmit3.Location = New System.Drawing.Point(322, 278)
-        Me.btnSubmit3.Name = "btnSubmit3"
-        Me.btnSubmit3.Size = New System.Drawing.Size(96, 51)
-        Me.btnSubmit3.TabIndex = 21
-        Me.btnSubmit3.Text = "退出"
+        Me.btnReturn.Location = New System.Drawing.Point(322, 278)
+        Me.btnReturn.Name = "btnReturn"
+        Me.btnReturn.Size = New System.Drawing.Size(96, 51)
+        Me.btnReturn.TabIndex = 21
+        Me.btnReturn.Text = "退出"
         '
-        'btnSubmit2
+        'btnCancel
         '
-        Me.btnSubmit2.Location = New System.Drawing.Point(181, 278)
-        Me.btnSubmit2.Name = "btnSubmit2"
-        Me.btnSubmit2.Size = New System.Drawing.Size(96, 51)
-        Me.btnSubmit2.TabIndex = 20
-        Me.btnSubmit2.Text = "取消添加"
+        Me.btnCancel.Location = New System.Drawing.Point(181, 278)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(96, 51)
+        Me.btnCancel.TabIndex = 20
+        Me.btnCancel.Text = "取消添加"
         '
-        'btnSubmit1
+        'btnInsertVtype
         '
-        Me.btnSubmit1.Location = New System.Drawing.Point(33, 278)
-        Me.btnSubmit1.Name = "btnSubmit1"
-        Me.btnSubmit1.Size = New System.Drawing.Size(96, 51)
-        Me.btnSubmit1.TabIndex = 19
-        Me.btnSubmit1.Text = "确认添加"
+        Me.btnInsertVtype.Location = New System.Drawing.Point(33, 278)
+        Me.btnInsertVtype.Name = "btnInsertVtype"
+        Me.btnInsertVtype.Size = New System.Drawing.Size(96, 51)
+        Me.btnInsertVtype.TabIndex = 19
+        Me.btnInsertVtype.Text = "确认添加"
         '
         'SqlDataAdapter1
         '
@@ -148,9 +148,9 @@ Partial Class 添加场地信息
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(469, 362)
-        Me.Controls.Add(Me.btnSubmit3)
-        Me.Controls.Add(Me.btnSubmit2)
-        Me.Controls.Add(Me.btnSubmit1)
+        Me.Controls.Add(Me.btnReturn)
+        Me.Controls.Add(Me.btnCancel)
+        Me.Controls.Add(Me.btnInsertVtype)
         Me.Controls.Add(Me.txtGymNum)
         Me.Controls.Add(Me.txtGymName)
         Me.Controls.Add(Me.lblResults2)
@@ -167,9 +167,9 @@ Partial Class 添加场地信息
     Friend WithEvents lblResults2 As Label
     Friend WithEvents txtGymName As TextBox
     Friend WithEvents txtGymNum As TextBox
-    Friend WithEvents btnSubmit3 As Button
-    Friend WithEvents btnSubmit2 As Button
-    Friend WithEvents btnSubmit1 As Button
+    Friend WithEvents btnReturn As Button
+    Friend WithEvents btnCancel As Button
+    Friend WithEvents btnInsertVtype As Button
     Friend WithEvents SqlDataAdapter1 As SqlClient.SqlDataAdapter
     Friend WithEvents SqlDeleteCommand1 As SqlClient.SqlCommand
     Friend WithEvents SqlInsertCommand As SqlClient.SqlCommand

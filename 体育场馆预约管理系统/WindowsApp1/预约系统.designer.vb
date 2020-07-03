@@ -22,75 +22,75 @@ Partial Class Yuyue
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btnSubmit5 = New System.Windows.Forms.Button()
-        Me.btnSubmit2 = New System.Windows.Forms.Button()
-        Me.btnSubmit6 = New System.Windows.Forms.Button()
-        Me.btnSubmit3 = New System.Windows.Forms.Button()
-        Me.btnSubmit4 = New System.Windows.Forms.Button()
-        Me.btnSubmit1 = New System.Windows.Forms.Button()
+        Me.btnPingpang = New System.Windows.Forms.Button()
+        Me.btnBadminton = New System.Windows.Forms.Button()
+        Me.btnBasketball1 = New System.Windows.Forms.Button()
+        Me.btnSoccer = New System.Windows.Forms.Button()
+        Me.btnTennis = New System.Windows.Forms.Button()
+        Me.btnBasketball = New System.Windows.Forms.Button()
         Me.lblResults1 = New System.Windows.Forms.Label()
         Me.lblResults2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'btnSubmit5
+        'btnPingpang
         '
-        Me.btnSubmit5.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.btnSubmit5.Location = New System.Drawing.Point(519, 272)
-        Me.btnSubmit5.Name = "btnSubmit5"
-        Me.btnSubmit5.Size = New System.Drawing.Size(180, 80)
-        Me.btnSubmit5.TabIndex = 4
-        Me.btnSubmit5.Text = "乒乓球馆"
-        Me.btnSubmit5.UseVisualStyleBackColor = True
+        Me.btnPingpang.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.btnPingpang.Location = New System.Drawing.Point(519, 272)
+        Me.btnPingpang.Name = "btnPingpang"
+        Me.btnPingpang.Size = New System.Drawing.Size(180, 80)
+        Me.btnPingpang.TabIndex = 4
+        Me.btnPingpang.Text = "乒乓球馆"
+        Me.btnPingpang.UseVisualStyleBackColor = True
         '
-        'btnSubmit2
+        'btnBadminton
         '
-        Me.btnSubmit2.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.btnSubmit2.Location = New System.Drawing.Point(306, 272)
-        Me.btnSubmit2.Name = "btnSubmit2"
-        Me.btnSubmit2.Size = New System.Drawing.Size(180, 80)
-        Me.btnSubmit2.TabIndex = 1
-        Me.btnSubmit2.Text = "羽毛球馆"
-        Me.btnSubmit2.UseVisualStyleBackColor = True
+        Me.btnBadminton.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.btnBadminton.Location = New System.Drawing.Point(306, 272)
+        Me.btnBadminton.Name = "btnBadminton"
+        Me.btnBadminton.Size = New System.Drawing.Size(180, 80)
+        Me.btnBadminton.TabIndex = 1
+        Me.btnBadminton.Text = "羽毛球馆"
+        Me.btnBadminton.UseVisualStyleBackColor = True
         '
-        'btnSubmit6
+        'btnBasketball1
         '
-        Me.btnSubmit6.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.btnSubmit6.Location = New System.Drawing.Point(91, 272)
-        Me.btnSubmit6.Name = "btnSubmit6"
-        Me.btnSubmit6.Size = New System.Drawing.Size(180, 80)
-        Me.btnSubmit6.TabIndex = 5
-        Me.btnSubmit6.Text = "篮球馆"
-        Me.btnSubmit6.UseVisualStyleBackColor = True
+        Me.btnBasketball1.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.btnBasketball1.Location = New System.Drawing.Point(91, 272)
+        Me.btnBasketball1.Name = "btnBasketball1"
+        Me.btnBasketball1.Size = New System.Drawing.Size(180, 80)
+        Me.btnBasketball1.TabIndex = 5
+        Me.btnBasketball1.Text = "篮球馆"
+        Me.btnBasketball1.UseVisualStyleBackColor = True
         '
-        'btnSubmit3
+        'btnSoccer
         '
-        Me.btnSubmit3.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.btnSubmit3.Location = New System.Drawing.Point(519, 166)
-        Me.btnSubmit3.Name = "btnSubmit3"
-        Me.btnSubmit3.Size = New System.Drawing.Size(180, 80)
-        Me.btnSubmit3.TabIndex = 2
-        Me.btnSubmit3.Text = "东足球场"
-        Me.btnSubmit3.UseVisualStyleBackColor = True
+        Me.btnSoccer.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.btnSoccer.Location = New System.Drawing.Point(519, 166)
+        Me.btnSoccer.Name = "btnSoccer"
+        Me.btnSoccer.Size = New System.Drawing.Size(180, 80)
+        Me.btnSoccer.TabIndex = 2
+        Me.btnSoccer.Text = "东足球场"
+        Me.btnSoccer.UseVisualStyleBackColor = True
         '
-        'btnSubmit4
+        'btnTennis
         '
-        Me.btnSubmit4.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.btnSubmit4.Location = New System.Drawing.Point(306, 166)
-        Me.btnSubmit4.Name = "btnSubmit4"
-        Me.btnSubmit4.Size = New System.Drawing.Size(180, 80)
-        Me.btnSubmit4.TabIndex = 3
-        Me.btnSubmit4.Text = "网球场"
-        Me.btnSubmit4.UseVisualStyleBackColor = True
+        Me.btnTennis.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.btnTennis.Location = New System.Drawing.Point(306, 166)
+        Me.btnTennis.Name = "btnTennis"
+        Me.btnTennis.Size = New System.Drawing.Size(180, 80)
+        Me.btnTennis.TabIndex = 3
+        Me.btnTennis.Text = "网球场"
+        Me.btnTennis.UseVisualStyleBackColor = True
         '
-        'btnSubmit1
+        'btnBasketball
         '
-        Me.btnSubmit1.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.btnSubmit1.Location = New System.Drawing.Point(91, 166)
-        Me.btnSubmit1.Name = "btnSubmit1"
-        Me.btnSubmit1.Size = New System.Drawing.Size(180, 80)
-        Me.btnSubmit1.TabIndex = 0
-        Me.btnSubmit1.Text = "篮球场"
-        Me.btnSubmit1.UseVisualStyleBackColor = True
+        Me.btnBasketball.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.btnBasketball.Location = New System.Drawing.Point(91, 166)
+        Me.btnBasketball.Name = "btnBasketball"
+        Me.btnBasketball.Size = New System.Drawing.Size(180, 80)
+        Me.btnBasketball.TabIndex = 0
+        Me.btnBasketball.Text = "篮球场"
+        Me.btnBasketball.UseVisualStyleBackColor = True
         '
         'lblResults1
         '
@@ -119,12 +119,12 @@ Partial Class Yuyue
         Me.ClientSize = New System.Drawing.Size(781, 447)
         Me.Controls.Add(Me.lblResults2)
         Me.Controls.Add(Me.lblResults1)
-        Me.Controls.Add(Me.btnSubmit6)
-        Me.Controls.Add(Me.btnSubmit4)
-        Me.Controls.Add(Me.btnSubmit5)
-        Me.Controls.Add(Me.btnSubmit1)
-        Me.Controls.Add(Me.btnSubmit3)
-        Me.Controls.Add(Me.btnSubmit2)
+        Me.Controls.Add(Me.btnBasketball1)
+        Me.Controls.Add(Me.btnTennis)
+        Me.Controls.Add(Me.btnPingpang)
+        Me.Controls.Add(Me.btnBasketball)
+        Me.Controls.Add(Me.btnSoccer)
+        Me.Controls.Add(Me.btnBadminton)
         Me.Name = "Yuyue"
         Me.Text = "预约主界面"
         Me.ResumeLayout(False)
@@ -132,12 +132,12 @@ Partial Class Yuyue
 
     End Sub
 
-    Friend WithEvents btnSubmit5 As Button
-    Friend WithEvents btnSubmit2 As Button
-    Friend WithEvents btnSubmit6 As Button
-    Friend WithEvents btnSubmit3 As Button
-    Friend WithEvents btnSubmit4 As Button
-    Friend WithEvents btnSubmit1 As Button
+    Friend WithEvents btnPingpang As Button
+    Friend WithEvents btnBadminton As Button
+    Friend WithEvents btnBasketball1 As Button
+    Friend WithEvents btnSoccer As Button
+    Friend WithEvents btnTennis As Button
+    Friend WithEvents btnBasketball As Button
     Friend WithEvents lblResults1 As Label
     Friend WithEvents lblResults2 As Label
 End Class

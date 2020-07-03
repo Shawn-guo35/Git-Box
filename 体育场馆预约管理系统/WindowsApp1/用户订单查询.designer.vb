@@ -27,9 +27,9 @@ Partial Class 用户订单查询
         Me.lblResults5 = New System.Windows.Forms.Label()
         Me.cbmGym = New System.Windows.Forms.ComboBox()
         Me.lblResults6 = New System.Windows.Forms.Label()
-        Me.btnSubmit3 = New System.Windows.Forms.Button()
+        Me.btnSelectOrders = New System.Windows.Forms.Button()
         Me.dtpTime = New System.Windows.Forms.DateTimePicker()
-        Me.btnSubmit1 = New System.Windows.Forms.Button()
+        Me.btnSelectallOrders = New System.Windows.Forms.Button()
         CType(Me.gvwOrders, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -83,16 +83,16 @@ Partial Class 用户订单查询
         Me.lblResults6.TabIndex = 17
         Me.lblResults6.Text = "场地名称："
         '
-        'btnSubmit3
+        'btnSelectOrders
         '
-        Me.btnSubmit3.Font = New System.Drawing.Font("宋体", 12.0!)
-        Me.btnSubmit3.Location = New System.Drawing.Point(576, 258)
-        Me.btnSubmit3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnSubmit3.Name = "btnSubmit3"
-        Me.btnSubmit3.Size = New System.Drawing.Size(75, 32)
-        Me.btnSubmit3.TabIndex = 18
-        Me.btnSubmit3.Text = "搜索"
-        Me.btnSubmit3.UseVisualStyleBackColor = True
+        Me.btnSelectOrders.Font = New System.Drawing.Font("宋体", 12.0!)
+        Me.btnSelectOrders.Location = New System.Drawing.Point(576, 258)
+        Me.btnSelectOrders.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnSelectOrders.Name = "btnSelectOrders"
+        Me.btnSelectOrders.Size = New System.Drawing.Size(75, 32)
+        Me.btnSelectOrders.TabIndex = 18
+        Me.btnSelectOrders.Text = "搜索"
+        Me.btnSelectOrders.UseVisualStyleBackColor = True
         '
         'dtpTime
         '
@@ -101,16 +101,16 @@ Partial Class 用户订单查询
         Me.dtpTime.Size = New System.Drawing.Size(200, 25)
         Me.dtpTime.TabIndex = 19
         '
-        'btnSubmit1
+        'btnSelectallOrders
         '
-        Me.btnSubmit1.Font = New System.Drawing.Font("宋体", 12.0!)
-        Me.btnSubmit1.Location = New System.Drawing.Point(672, 258)
-        Me.btnSubmit1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btnSubmit1.Name = "btnSubmit1"
-        Me.btnSubmit1.Size = New System.Drawing.Size(115, 32)
-        Me.btnSubmit1.TabIndex = 20
-        Me.btnSubmit1.Text = "搜索全部"
-        Me.btnSubmit1.UseVisualStyleBackColor = True
+        Me.btnSelectallOrders.Font = New System.Drawing.Font("宋体", 12.0!)
+        Me.btnSelectallOrders.Location = New System.Drawing.Point(672, 258)
+        Me.btnSelectallOrders.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnSelectallOrders.Name = "btnSelectallOrders"
+        Me.btnSelectallOrders.Size = New System.Drawing.Size(115, 32)
+        Me.btnSelectallOrders.TabIndex = 20
+        Me.btnSelectallOrders.Text = "搜索全部"
+        Me.btnSelectallOrders.UseVisualStyleBackColor = True
         '
         '用户订单查询
         '
@@ -118,9 +118,9 @@ Partial Class 用户订单查询
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(829, 367)
-        Me.Controls.Add(Me.btnSubmit1)
+        Me.Controls.Add(Me.btnSelectallOrders)
         Me.Controls.Add(Me.dtpTime)
-        Me.Controls.Add(Me.btnSubmit3)
+        Me.Controls.Add(Me.btnSelectOrders)
         Me.Controls.Add(Me.cbmGym)
         Me.Controls.Add(Me.lblResults6)
         Me.Controls.Add(Me.lblResults5)
@@ -140,7 +140,7 @@ Partial Class 用户订单查询
     Friend WithEvents lblResults5 As Label
     Friend WithEvents cbmGym As ComboBox
     Friend WithEvents lblResults6 As Label
-    Friend WithEvents btnSubmit3 As Button
+    Friend WithEvents btnSelectOrders As Button
     Friend WithEvents dtpTime As DateTimePicker
-    Friend WithEvents btnSubmit1 As Button
+    Friend WithEvents btnSelectallOrders As Button
 End Class

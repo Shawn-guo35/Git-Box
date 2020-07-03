@@ -1,26 +1,26 @@
 ﻿Public Class Yuyue
-    Private Sub btnSubmit4_Click(sender As Object, e As EventArgs) Handles btnSubmit4.Click
+    Private Sub btnTennis_Click(sender As Object, e As EventArgs) Handles btnTennis.Click
         MsgBox("敬请期待！")
     End Sub
 
-    Private Sub btnSubmit1_Click(sender As Object, e As EventArgs) Handles btnSubmit1.Click
+    Private Sub btnBasketball_Click(sender As Object, e As EventArgs) Handles btnBasketball.Click
         'Me.Hide()
         orderBasketball.Show()
     End Sub
 
-    Private Sub btnSubmit3_Click(sender As Object, e As EventArgs) Handles btnSubmit3.Click
+    Private Sub btnSoccer_Click(sender As Object, e As EventArgs) Handles btnSoccer.Click
         MsgBox("敬请期待！")
     End Sub
 
-    Private Sub btnSubmit6_Click(sender As Object, e As EventArgs) Handles btnSubmit6.Click
+    Private Sub btnBasketball1_Click(sender As Object, e As EventArgs) Handles btnBasketball1.Click
         MsgBox("敬请期待！")
     End Sub
 
-    Private Sub btnSubmit2_Click(sender As Object, e As EventArgs) Handles btnSubmit2.Click
+    Private Sub btnBadminton_Click(sender As Object, e As EventArgs) Handles btnBadminton.Click
         MsgBox("敬请期待！")
     End Sub
 
-    Private Sub btnSubmit5_Click(sender As Object, e As EventArgs) Handles btnSubmit5.Click
+    Private Sub btnPingpang_Click(sender As Object, e As EventArgs) Handles btnPingpang.Click
         MsgBox("敬请期待！")
     End Sub
 

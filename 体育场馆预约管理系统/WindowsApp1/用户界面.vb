@@ -13,11 +13,11 @@ Public Class 用户界面
         Me.WindowState = FormWindowState.Maximized
     End Sub
 
-    Private Sub tsmiUser1_Click(sender As Object, e As EventArgs) Handles tsmiUser1.Click
+    Private Sub tsmiUserPwd_Click(sender As Object, e As EventArgs) Handles tsmiUserPwd.Click
         修改密码.ShowDialog()
     End Sub
 
-    Private Sub tsmiUser2_Click(sender As Object, e As EventArgs) Handles tsmiUser2.Click
+    Private Sub tsmiUserOrders_Click(sender As Object, e As EventArgs) Handles tsmiUserOrders.Click
         用户订单查询.Show()
     End Sub
 
@@ -25,7 +25,5 @@ Public Class 用户界面
         Yuyue.Show()
     End Sub
 
-    Private Sub tsmiClose_Click(sender As Object, e As EventArgs) Handles tsmiClose.Click
 
-    End Sub
 End Class

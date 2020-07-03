@@ -8,7 +8,7 @@
 
 
 
-    Private Sub btnSubmit4_Click(sender As Object, e As EventArgs) Handles btnSubmit4.Click
+    Private Sub btnSelectLease_Click(sender As Object, e As EventArgs) Handles btnSelectLease.Click
         Dim s As String
 
         If txtGymName.Text = "" Then
@@ -33,7 +33,7 @@
         End Select
     End Sub
 
-    Private Sub btnSubmit5_Click(sender As Object, e As EventArgs) Handles btnSubmit5.Click
+    Private Sub btnReturn_Click(sender As Object, e As EventArgs) Handles btnReturn.Click
         Me.Close()
     End Sub
 

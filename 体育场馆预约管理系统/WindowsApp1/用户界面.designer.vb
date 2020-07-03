@@ -25,8 +25,8 @@ Partial Class 用户界面
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(用户界面))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.tsmiUser = New System.Windows.Forms.ToolStripMenuItem()
-        Me.tsmiUser1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.tsmiUser2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiUserPwd = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiUserOrders = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsmiAppointment = New System.Windows.Forms.ToolStripMenuItem()
         Me.帮助tsmiHelp = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsmiClose = New System.Windows.Forms.ToolStripMenuItem()
@@ -45,19 +45,19 @@ Partial Class 用户界面
         '
         'tsmiUser
         '
-        Me.tsmiUser.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiUser1, Me.tsmiUser2})
+        Me.tsmiUser.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiUserPwd, Me.tsmiUserOrders})
         Me.tsmiUser.Name = "tsmiUser"
         resources.ApplyResources(Me.tsmiUser, "tsmiUser")
         '
-        'tsmiUser1
+        'tsmiUserPwd
         '
-        Me.tsmiUser1.Name = "tsmiUser1"
-        resources.ApplyResources(Me.tsmiUser1, "tsmiUser1")
+        Me.tsmiUserPwd.Name = "tsmiUserPwd"
+        resources.ApplyResources(Me.tsmiUserPwd, "tsmiUserPwd")
         '
-        'tsmiUser2
+        'tsmiUserOrders
         '
-        Me.tsmiUser2.Name = "tsmiUser2"
-        resources.ApplyResources(Me.tsmiUser2, "tsmiUser2")
+        Me.tsmiUserOrders.Name = "tsmiUserOrders"
+        resources.ApplyResources(Me.tsmiUserOrders, "tsmiUserOrders")
         '
         'tsmiAppointment
         '
@@ -104,11 +104,11 @@ Partial Class 用户界面
 
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents tsmiUser As ToolStripMenuItem
-    Friend WithEvents tsmiUser1 As ToolStripMenuItem
+    Friend WithEvents tsmiUserPwd As ToolStripMenuItem
     Friend WithEvents tsmiAppointment As ToolStripMenuItem
     Friend WithEvents 帮助tsmiHelp As ToolStripMenuItem
     Friend WithEvents tsmiClose As ToolStripMenuItem
     Friend WithEvents tsmiCancellation As ToolStripMenuItem
     Friend WithEvents tsmiClose1 As ToolStripMenuItem
-    Friend WithEvents tsmiUser2 As ToolStripMenuItem
+    Friend WithEvents tsmiUserOrders As ToolStripMenuItem
 End Class

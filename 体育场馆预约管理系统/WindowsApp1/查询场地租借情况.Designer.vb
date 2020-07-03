@@ -28,8 +28,8 @@ Partial Class 查询场地租借情况
         Me.lblResults14 = New System.Windows.Forms.Label()
         Me.lblResults13 = New System.Windows.Forms.Label()
         Me.txtGymNum = New System.Windows.Forms.TextBox()
-        Me.btnSubmit5 = New System.Windows.Forms.Button()
-        Me.btnSubmit4 = New System.Windows.Forms.Button()
+        Me.btnReturn = New System.Windows.Forms.Button()
+        Me.btnSelectLease = New System.Windows.Forms.Button()
         Me.txtGymName = New System.Windows.Forms.TextBox()
         Me.cbmGym = New System.Windows.Forms.ComboBox()
         Me.lblResults2 = New System.Windows.Forms.Label()
@@ -62,8 +62,8 @@ Partial Class 查询场地租借情况
         Me.GroupBox1.Controls.Add(Me.lblResults14)
         Me.GroupBox1.Controls.Add(Me.lblResults13)
         Me.GroupBox1.Controls.Add(Me.txtGymNum)
-        Me.GroupBox1.Controls.Add(Me.btnSubmit5)
-        Me.GroupBox1.Controls.Add(Me.btnSubmit4)
+        Me.GroupBox1.Controls.Add(Me.btnReturn)
+        Me.GroupBox1.Controls.Add(Me.btnSelectLease)
         Me.GroupBox1.Controls.Add(Me.txtGymName)
         Me.GroupBox1.Controls.Add(Me.cbmGym)
         Me.GroupBox1.Controls.Add(Me.lblResults2)
@@ -102,23 +102,23 @@ Partial Class 查询场地租借情况
         Me.txtGymNum.TabIndex = 29
         Me.txtGymNum.Visible = False
         '
-        'btnSubmit5
+        'btnReturn
         '
-        Me.btnSubmit5.Location = New System.Drawing.Point(637, 66)
-        Me.btnSubmit5.Name = "btnSubmit5"
-        Me.btnSubmit5.Size = New System.Drawing.Size(107, 51)
-        Me.btnSubmit5.TabIndex = 28
-        Me.btnSubmit5.Text = "退出"
-        Me.btnSubmit5.UseVisualStyleBackColor = True
+        Me.btnReturn.Location = New System.Drawing.Point(637, 66)
+        Me.btnReturn.Name = "btnReturn"
+        Me.btnReturn.Size = New System.Drawing.Size(107, 51)
+        Me.btnReturn.TabIndex = 28
+        Me.btnReturn.Text = "退出"
+        Me.btnReturn.UseVisualStyleBackColor = True
         '
-        'btnSubmit4
+        'btnSelectLease
         '
-        Me.btnSubmit4.Location = New System.Drawing.Point(473, 66)
-        Me.btnSubmit4.Name = "btnSubmit4"
-        Me.btnSubmit4.Size = New System.Drawing.Size(107, 51)
-        Me.btnSubmit4.TabIndex = 27
-        Me.btnSubmit4.Text = "查询"
-        Me.btnSubmit4.UseVisualStyleBackColor = True
+        Me.btnSelectLease.Location = New System.Drawing.Point(473, 66)
+        Me.btnSelectLease.Name = "btnSelectLease"
+        Me.btnSelectLease.Size = New System.Drawing.Size(107, 51)
+        Me.btnSelectLease.TabIndex = 27
+        Me.btnSelectLease.Text = "查询"
+        Me.btnSelectLease.UseVisualStyleBackColor = True
         '
         'txtGymName
         '
@@ -283,8 +283,8 @@ Partial Class 查询场地租借情况
     Friend WithEvents lblResults1 As Label
     Friend WithEvents txtGymName As TextBox
     Friend WithEvents cbmGym As ComboBox
-    Friend WithEvents btnSubmit4 As Button
-    Friend WithEvents btnSubmit5 As Button
+    Friend WithEvents btnSelectLease As Button
+    Friend WithEvents btnReturn As Button
     Friend WithEvents txtGymLease As DataGridView
     Friend WithEvents SqlDataAdapter1 As SqlClient.SqlDataAdapter
     Friend WithEvents SqlDeleteCommand1 As SqlClient.SqlCommand

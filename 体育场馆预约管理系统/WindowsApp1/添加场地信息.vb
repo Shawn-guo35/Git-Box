@@ -1,11 +1,11 @@
 ﻿Public Class 添加场地信息
-    Private Sub btnSubmit2_Click(sender As Object, e As EventArgs) Handles btnSubmit2.Click
+    Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
         txtGymName.Text = ""
         txtGymNum.Text = ""
         txtGymName.Focus()
     End Sub
 
-    Private Sub btnSubmit1_Click(sender As Object, e As EventArgs) Handles btnSubmit1.Click
+    Private Sub btnInsertVtype_Click(sender As Object, e As EventArgs) Handles btnInsertVtype.Click
         Dim s, n As String
         Dim r As Integer
         If txtGymName.Text = "" Then
@@ -44,7 +44,7 @@
         End Try
     End Sub
 
-    Private Sub btnSubmit3_Click(sender As Object, e As EventArgs) Handles btnSubmit3.Click
+    Private Sub btnReturn_Click(sender As Object, e As EventArgs) Handles btnReturn.Click
         Me.Close()
     End Sub
 

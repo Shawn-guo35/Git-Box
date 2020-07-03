@@ -13,7 +13,7 @@ Public Class 用户订单查询
         '此处缺少将登录页面所输入的ID传递给此页面的字符串变量ID的语句
     End Sub
 
-    Private Sub btnSubmit3_Click_1(sender As Object, e As EventArgs) Handles btnSubmit3.Click
+    Private Sub btnSelectOrders_Click_1(sender As Object, e As EventArgs) Handles btnSelectOrders.Click
         data = dtpTime.Value.Date.ToShortDateString
         data2 = data.AddDays(1)
         ds.Clear()
@@ -37,7 +37,7 @@ Public Class 用户订单查询
 
     End Sub
 
-    Private Sub btnSubmit1_Click(sender As Object, e As EventArgs) Handles btnSubmit1.Click
+    Private Sub btnSelectallOrders_Click(sender As Object, e As EventArgs) Handles btnSelectallOrders.Click
         ds.Clear()
         com.CommandText = "select Vname,Vno,Stime,Etime,LTime,Fee,Orderno,Remark from Orders where ID='" & ID & "'"
         com.Connection = con
