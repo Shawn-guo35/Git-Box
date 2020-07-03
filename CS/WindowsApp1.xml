@@ -1,0 +1,924 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WindowsApp1</name>
+    </assembly>
+    <members>
+        <member name="T:WindowsApp1.changguanDataSet">
+            <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet.UsersDataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet.Users1DataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet.VtypeDataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet.VenueDataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet.LeaseDataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet.UsersRow">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet.Users1Row">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet.VtypeRow">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet.VenueRow">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet.LeaseRow">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet.UsersRowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet.Users1RowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet.VtypeRowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet.VenueRowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet.LeaseRowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSetTableAdapters.UsersTableAdapter">
+            <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSetTableAdapters.TableAdapterManager">
+            <summary>
+            TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(WindowsApp1.changguanDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Update rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(WindowsApp1.changguanDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Insert rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(WindowsApp1.changguanDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Delete rows in bottom-up order.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSetTableAdapters.TableAdapterManager.UpdateAll(WindowsApp1.changguanDataSet)">
+            <summary>
+            Update all changes to the dataset.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+            <summary>
+            Update Order Option
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+            <summary>
+            Used to sort self-referenced table's rows
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet1">
+            <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet1.UsersDataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet1.UsersRow">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet1.UsersRowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet1TableAdapters.UsersTableAdapter">
+            <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet1TableAdapters.TableAdapterManager">
+            <summary>
+            TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(WindowsApp1.changguanDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Update rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(WindowsApp1.changguanDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Insert rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(WindowsApp1.changguanDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Delete rows in bottom-up order.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet1TableAdapters.TableAdapterManager.UpdateAll(WindowsApp1.changguanDataSet1)">
+            <summary>
+            Update all changes to the dataset.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+            <summary>
+            Update Order Option
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+            <summary>
+            Used to sort self-referenced table's rows
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet2">
+            <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet2.VtypeDataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet2.VtypeRow">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet2.VtypeRowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet2TableAdapters.VtypeTableAdapter">
+            <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet2TableAdapters.TableAdapterManager">
+            <summary>
+            TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet2TableAdapters.TableAdapterManager.UpdateUpdatedRows(WindowsApp1.changguanDataSet2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Update rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet2TableAdapters.TableAdapterManager.UpdateInsertedRows(WindowsApp1.changguanDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Insert rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet2TableAdapters.TableAdapterManager.UpdateDeletedRows(WindowsApp1.changguanDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Delete rows in bottom-up order.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet2TableAdapters.TableAdapterManager.UpdateAll(WindowsApp1.changguanDataSet2)">
+            <summary>
+            Update all changes to the dataset.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption">
+            <summary>
+            Update Order Option
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet2TableAdapters.TableAdapterManager.SelfReferenceComparer">
+            <summary>
+            Used to sort self-referenced table's rows
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet3">
+            <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet3.VtypeDataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet3.VtypeRow">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet3.VtypeRowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet3TableAdapters.VtypeTableAdapter">
+            <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet3TableAdapters.TableAdapterManager">
+            <summary>
+            TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet3TableAdapters.TableAdapterManager.UpdateUpdatedRows(WindowsApp1.changguanDataSet3,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Update rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet3TableAdapters.TableAdapterManager.UpdateInsertedRows(WindowsApp1.changguanDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Insert rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet3TableAdapters.TableAdapterManager.UpdateDeletedRows(WindowsApp1.changguanDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Delete rows in bottom-up order.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet3TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet3TableAdapters.TableAdapterManager.UpdateAll(WindowsApp1.changguanDataSet3)">
+            <summary>
+            Update all changes to the dataset.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet3TableAdapters.TableAdapterManager.UpdateOrderOption">
+            <summary>
+            Update Order Option
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet3TableAdapters.TableAdapterManager.SelfReferenceComparer">
+            <summary>
+            Used to sort self-referenced table's rows
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet4">
+            <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet4.VenueDataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet4.VenueRow">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet4.VenueRowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet4TableAdapters.VenueTableAdapter">
+            <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet4TableAdapters.TableAdapterManager">
+            <summary>
+            TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet4TableAdapters.TableAdapterManager.UpdateUpdatedRows(WindowsApp1.changguanDataSet4,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Update rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet4TableAdapters.TableAdapterManager.UpdateInsertedRows(WindowsApp1.changguanDataSet4,System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Insert rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet4TableAdapters.TableAdapterManager.UpdateDeletedRows(WindowsApp1.changguanDataSet4,System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Delete rows in bottom-up order.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet4TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet4TableAdapters.TableAdapterManager.UpdateAll(WindowsApp1.changguanDataSet4)">
+            <summary>
+            Update all changes to the dataset.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet4TableAdapters.TableAdapterManager.UpdateOrderOption">
+            <summary>
+            Update Order Option
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet4TableAdapters.TableAdapterManager.SelfReferenceComparer">
+            <summary>
+            Used to sort self-referenced table's rows
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet5">
+            <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet5.VenueDataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet5.VenueRow">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet5.VenueRowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet5TableAdapters.VenueTableAdapter">
+            <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet5TableAdapters.TableAdapterManager">
+            <summary>
+            TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet5TableAdapters.TableAdapterManager.UpdateUpdatedRows(WindowsApp1.changguanDataSet5,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Update rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet5TableAdapters.TableAdapterManager.UpdateInsertedRows(WindowsApp1.changguanDataSet5,System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Insert rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet5TableAdapters.TableAdapterManager.UpdateDeletedRows(WindowsApp1.changguanDataSet5,System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Delete rows in bottom-up order.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet5TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet5TableAdapters.TableAdapterManager.UpdateAll(WindowsApp1.changguanDataSet5)">
+            <summary>
+            Update all changes to the dataset.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet5TableAdapters.TableAdapterManager.UpdateOrderOption">
+            <summary>
+            Update Order Option
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet5TableAdapters.TableAdapterManager.SelfReferenceComparer">
+            <summary>
+            Used to sort self-referenced table's rows
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet6">
+            <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet6.LeaseDataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet6.LeaseRow">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet6.LeaseRowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet6TableAdapters.LeaseTableAdapter">
+            <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet6TableAdapters.TableAdapterManager">
+            <summary>
+            TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet6TableAdapters.TableAdapterManager.UpdateUpdatedRows(WindowsApp1.changguanDataSet6,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Update rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet6TableAdapters.TableAdapterManager.UpdateInsertedRows(WindowsApp1.changguanDataSet6,System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Insert rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet6TableAdapters.TableAdapterManager.UpdateDeletedRows(WindowsApp1.changguanDataSet6,System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Delete rows in bottom-up order.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet6TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.changguanDataSet6TableAdapters.TableAdapterManager.UpdateAll(WindowsApp1.changguanDataSet6)">
+            <summary>
+            Update all changes to the dataset.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet6TableAdapters.TableAdapterManager.UpdateOrderOption">
+            <summary>
+            Update Order Option
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.changguanDataSet6TableAdapters.TableAdapterManager.SelfReferenceComparer">
+            <summary>
+            Used to sort self-referenced table's rows
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet">
+            <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.LeaseDataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.OrdersDataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.UsersDataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.VenueDataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.VtypeDataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.Users1DataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.Lease1DataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.Lease2DataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.Vtype1DataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.Venue1DataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.Vtype2DataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.Venue2DataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.Users2DataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.LeaseRow">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.OrdersRow">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.UsersRow">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.VenueRow">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.VtypeRow">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.Users1Row">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.Lease1Row">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.Lease2Row">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.Vtype1Row">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.Venue1Row">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.Vtype2Row">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.Venue2Row">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.Users2Row">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.LeaseRowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.OrdersRowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.UsersRowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.VenueRowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.VtypeRowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.Users1RowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.Lease1RowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.Lease2RowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.Vtype1RowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.Venue1RowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.Vtype2RowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.Venue2RowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSet.Users2RowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSetTableAdapters.LeaseTableAdapter">
+            <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSetTableAdapters.OrdersTableAdapter">
+            <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSetTableAdapters.UsersTableAdapter">
+            <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSetTableAdapters.VenueTableAdapter">
+            <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSetTableAdapters.VtypeTableAdapter">
+            <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSetTableAdapters.TableAdapterManager">
+            <summary>
+            TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.dataDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(WindowsApp1.dataDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Update rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.dataDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(WindowsApp1.dataDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Insert rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.dataDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(WindowsApp1.dataDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Delete rows in bottom-up order.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.dataDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+            <summary>
+            Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.dataDataSetTableAdapters.TableAdapterManager.UpdateAll(WindowsApp1.dataDataSet)">
+            <summary>
+            Update all changes to the dataset.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+            <summary>
+            Update Order Option
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.dataDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+            <summary>
+            Used to sort self-referenced table's rows
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.DataSet1">
+            <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.DataSet1.UsersDataTable">
+            <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.DataSet1.UsersRow">
+            <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:WindowsApp1.DataSet1.UsersRowChangeEvent">
+            <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="P:WindowsApp1.场地管理.Default">
+            <summary>
+            Added by the VB.Net to C# Converter to support default instance behavour in C#
+            </summary>
+        </member>
+        <member name="P:WindowsApp1.收入统计.Default">
+            <summary>
+            Added by the VB.Net to C# Converter to support default instance behavour in C#
+            </summary>
+        </member>
+        <member name="P:WindowsApp1.用户订单查询.Default">
+            <summary>
+            Added by the VB.Net to C# Converter to support default instance behavour in C#
+            </summary>
+        </member>
+        <member name="P:WindowsApp1.订单查询.Default">
+            <summary>
+            Added by the VB.Net to C# Converter to support default instance behavour in C#
+            </summary>
+        </member>
+        <member name="P:WindowsApp1.修改密码.Default">
+            <summary>
+            Added by the VB.Net to C# Converter to support default instance behavour in C#
+            </summary>
+        </member>
+        <member name="P:WindowsApp1.欢迎界面.Default">
+            <summary>
+            Added by the VB.Net to C# Converter to support default instance behavour in C#
+            </summary>
+        </member>
+        <member name="P:WindowsApp1.注册界面.Default">
+            <summary>
+            Added by the VB.Net to C# Converter to support default instance behavour in C#
+            </summary>
+        </member>
+        <member name="P:WindowsApp1.用户界面.Default">
+            <summary>
+            Added by the VB.Net to C# Converter to support default instance behavour in C#
+            </summary>
+        </member>
+        <member name="P:WindowsApp1.用户管理.Default">
+            <summary>
+            Added by the VB.Net to C# Converter to support default instance behavour in C#
+            </summary>
+        </member>
+        <member name="P:WindowsApp1.登录界面.Default">
+            <summary>
+            Added by the VB.Net to C# Converter to support default instance behavour in C#
+            </summary>
+        </member>
+        <member name="P:WindowsApp1.管理员界面.Default">
+            <summary>
+            Added by the VB.Net to C# Converter to support default instance behavour in C#
+            </summary>
+        </member>
+        <member name="P:WindowsApp1.viewBasketball.Default">
+            <summary>
+            Added by the VB.Net to C# Converter to support default instance behavour in C#
+            </summary>
+        </member>
+        <member name="P:WindowsApp1.orderBasketball.Default">
+            <summary>
+            Added by the VB.Net to C# Converter to support default instance behavour in C#
+            </summary>
+        </member>
+        <member name="P:WindowsApp1.Yuyue.Default">
+            <summary>
+            Added by the VB.Net to C# Converter to support default instance behavour in C#
+            </summary>
+        </member>
+        <member name="T:My.Resources.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:My.Resources.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:My.Resources.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+        <member name="P:My.Resources.Resources._0ff610843ca2f431_05d415b9ec93c33a_2ee29b314b579c64fa255b15bdf3643b">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:My.Resources.Resources._5c88f3ea801fe910_34c778c40088a385_78ea606f18fa400acf00e5943be7e248">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:My.Resources.Resources._68cbdd36628d4677_37b8a95512aed950_3ea3d0910f9cd4b4bdcc0a6bd47d9e2f">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:My.Resources.Resources.tu1">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:My.Resources.Resources.捕获">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+        <member name="P:My.Resources.Resources.捕获1">
+            <summary>
+              查找 System.Drawing.Bitmap 类型的本地化资源。
+            </summary>
+        </member>
+    </members>
+</doc>
