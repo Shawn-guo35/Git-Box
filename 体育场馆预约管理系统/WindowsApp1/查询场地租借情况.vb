@@ -40,9 +40,17 @@
 
 
     Private Sub cbmGym_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbmGym.SelectedIndexChanged
-        If cbmGym.SelectedItem = "场地名称&场地编号" Then txtGymNum.Visible = True Else txtGymNum.Visible = False
+        If cbmGym.SelectedItem = "场地名称&场地编号" Then
+            txtGymNum.Visible = True
+        Else
+            txtGymNum.Visible = False
+        End If
 
-        If cbmGym.SelectedItem = "场地名称&场地编号" Then lblResults14.Visible = True Else lblResults14.Visible = False
+        If cbmGym.SelectedItem = "场地名称&场地编号" Then
+            lblResults14.Visible = True
+        Else
+            lblResults14.Visible = False
+        End If
     End Sub
 
 

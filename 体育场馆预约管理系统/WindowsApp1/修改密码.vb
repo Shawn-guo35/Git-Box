@@ -4,7 +4,6 @@ Public Class 修改密码
     Dim con As New OleDbConnection
     Dim ads As New OleDbDataAdapter
     Dim ds As New DataSet
-    Public ID As String = "001"  '此处默认为测试用ID
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
         If txtOldPwd.Text = "" Then
             MsgBox("请输入旧密码",, "系统提示")

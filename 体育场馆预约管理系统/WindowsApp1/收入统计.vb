@@ -7,7 +7,7 @@ Public Class 收入统计
     Dim dataset4 As New DataSet
     Dim dataset5 As New DataSet
     Dim dataset6 As New DataSet
-    Dim constr$, sqlstr$
+    Dim constr, sqlstr As String
 
     Private Sub btnSelIncome_Click(sender As Object, e As EventArgs) Handles btnSelIncome.Click
         sqlstr = "select fee from orders where stime='" & cmbYear.Text & "/" & cmbMon.Text & "/" & cmbDay.Text & "'"

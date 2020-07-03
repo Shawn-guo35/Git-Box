@@ -4,6 +4,7 @@ Public Class 登录界面
     Dim cm As SqlCommand
 
     Private Sub 登陆界面_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        '登录界面为启动页面为了让欢迎界面先出现 设置两个timer来登录界面隐藏
         欢迎界面.Show()
         Timer1.Interval = 1 '1000=1秒
         Timer1.Enabled = True

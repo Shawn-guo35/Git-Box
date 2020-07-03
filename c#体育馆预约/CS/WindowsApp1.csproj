@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A42007C6-24C8-45B0-AFC9-9CE3F0A93777}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApp1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApp1</RootNamespace>
+    <AssemblyName>WindowsApp1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WindowsApp1.xml</DocumentationFile>
+<NOWARN>1591,660,661</NOWARN>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WindowsApp1.xml</DocumentationFile>
+<NOWARN>1591,660,661</NOWARN>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+      <Reference Include="Microsoft.VisualBasic"/>
+      <Reference Include="mscorlib"/>
+      <Reference Include="Microsoft.CSharp"/>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="changguanDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>changguanDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="changguanDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>changguanDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="changguanDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>changguanDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="changguanDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>changguanDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="changguanDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>changguanDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="changguanDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>changguanDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="changguanDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>changguanDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dataDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>场地管理.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="收入统计.Designer.cs">
+      <DependentUpon>收入统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="收入统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户订单查询.designer.cs">
+      <DependentUpon>用户订单查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户订单查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="订单查询.designer.cs">
+      <DependentUpon>订单查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="订单查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.cs" />
+    <Compile Include="修改密码.designer.cs">
+      <DependentUpon>修改密码.cs</DependentUpon>
+    </Compile>
+    <Compile Include="修改密码.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="场地管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="欢迎界面.designer.cs">
+      <DependentUpon>欢迎界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="欢迎界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="注册界面.designer.cs">
+      <DependentUpon>注册界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="注册界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="添加场地信息.Designer.cs">
+      <DependentUpon>添加场地信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="添加场地信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="添加场地类型.Designer.cs">
+      <DependentUpon>添加场地类型.cs</DependentUpon>
+    </Compile>
+    <Compile Include="添加场地类型.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询场地信息.Designer.cs">
+      <DependentUpon>查询场地信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询场地信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询场地租借情况.Designer.cs">
+      <DependentUpon>查询场地租借情况.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询场地租借情况.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询场地类型.Designer.cs">
+      <DependentUpon>查询场地类型.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询场地类型.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户界面.designer.cs">
+      <DependentUpon>用户界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="用户界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="用户管理.Designer.cs">
+      <DependentUpon>用户管理.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Application.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="登录界面.designer.cs">
+      <DependentUpon>登录界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="登录界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理员界面.designer.cs">
+      <DependentUpon>管理员界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="管理员界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="篮球场平面图.designer.cs">
+      <DependentUpon>篮球场平面图.cs</DependentUpon>
+    </Compile>
+    <Compile Include="篮球场平面图.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="篮球场预约.designer.cs">
+      <DependentUpon>篮球场预约.cs</DependentUpon>
+    </Compile>
+    <Compile Include="篮球场预约.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="预约系统.designer.cs">
+      <DependentUpon>预约系统.cs</DependentUpon>
+    </Compile>
+    <Compile Include="预约系统.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="收入统计.resx">
+      <DependentUpon>收入统计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户订单查询.resx">
+      <DependentUpon>用户订单查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="订单查询.resx">
+      <DependentUpon>订单查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="修改密码.resx">
+      <DependentUpon>修改密码.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="场地管理.resx">
+      <DependentUpon>场地管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="欢迎界面.resx">
+      <DependentUpon>欢迎界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="注册界面.resx">
+      <DependentUpon>注册界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="添加场地信息.resx">
+      <DependentUpon>添加场地信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="添加场地类型.resx">
+      <DependentUpon>添加场地类型.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询场地信息.resx">
+      <DependentUpon>查询场地信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询场地租借情况.resx">
+      <DependentUpon>查询场地租借情况.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询场地类型.resx">
+      <DependentUpon>查询场地类型.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户界面.resx">
+      <DependentUpon>用户界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="用户管理.resx">
+      <DependentUpon>用户管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="登录界面.resx">
+      <DependentUpon>登录界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="管理员界面.resx">
+      <DependentUpon>管理员界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="篮球场平面图.resx">
+      <DependentUpon>篮球场平面图.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="篮球场预约.resx">
+      <DependentUpon>篮球场预约.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="预约系统.resx">
+      <DependentUpon>预约系统.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="changguanDataSet.xsc">
+      <DependentUpon>changguanDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="changguanDataSet.xsd">
+<CustomToolNamespace>WindowsApp1</CustomToolNamespace>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>changguanDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="changguanDataSet.xss">
+      <DependentUpon>changguanDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="changguanDataSet1.xsc">
+      <DependentUpon>changguanDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="changguanDataSet1.xsd">
+<CustomToolNamespace>WindowsApp1</CustomToolNamespace>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>changguanDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="changguanDataSet1.xss">
+      <DependentUpon>changguanDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="changguanDataSet2.xsc">
+      <DependentUpon>changguanDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="changguanDataSet2.xsd">
+<CustomToolNamespace>WindowsApp1</CustomToolNamespace>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>changguanDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="changguanDataSet2.xss">
+      <DependentUpon>changguanDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="changguanDataSet3.xsc">
+      <DependentUpon>changguanDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="changguanDataSet3.xsd">
+<CustomToolNamespace>WindowsApp1</CustomToolNamespace>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>changguanDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="changguanDataSet3.xss">
+      <DependentUpon>changguanDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="changguanDataSet4.xsc">
+      <DependentUpon>changguanDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="changguanDataSet4.xsd">
+<CustomToolNamespace>WindowsApp1</CustomToolNamespace>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>changguanDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="changguanDataSet4.xss">
+      <DependentUpon>changguanDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="changguanDataSet5.xsc">
+      <DependentUpon>changguanDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="changguanDataSet5.xsd">
+<CustomToolNamespace>WindowsApp1</CustomToolNamespace>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>changguanDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="changguanDataSet5.xss">
+      <DependentUpon>changguanDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="changguanDataSet6.xsc">
+      <DependentUpon>changguanDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="changguanDataSet6.xsd">
+<CustomToolNamespace>WindowsApp1</CustomToolNamespace>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>changguanDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="changguanDataSet6.xss">
+      <DependentUpon>changguanDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="dataDataSet.xsc">
+      <DependentUpon>dataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dataDataSet.xsd">
+<CustomToolNamespace>WindowsApp1</CustomToolNamespace>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dataDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dataDataSet.xss">
+      <DependentUpon>dataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+<CustomToolNamespace>WindowsApp1</CustomToolNamespace>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tu1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\捕获.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\捕获1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\68cbdd36628d4677-37b8a95512aed950-3ea3d0910f9cd4b4bdcc0a6bd47d9e2f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0ff610843ca2f431-05d415b9ec93c33a-2ee29b314b579c64fa255b15bdf3643b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5c88f3ea801fe910-34c778c40088a385-78ea606f18fa400acf00e5943be7e248.jpg" />
+  </ItemGroup>
+<Import Project="$(MSBuildBinPath)/Microsoft.CSharp.targets" />
+</Project>
