@@ -78,7 +78,7 @@ namespace WindowsApp1
 			var dsum = 0;
 			for (var i = 0; i <= dataset4.Tables["dfee"].Rows.Count - 1; i++)
 			{
-				dsum = dsum + dataset4.Tables["dfee"].Rows[i][0];
+				dsum = dsum + (int)dataset4.Tables["dfee"].Rows[i][0];
 			}
 			txtDaySum.Text = System.Convert.ToString(dsum);
 			
@@ -89,7 +89,7 @@ namespace WindowsApp1
 			var ysum = 0;
 			for (var i = 0; i <= dataset5.Tables["mfee"].Rows.Count - 1; i++)
 			{
-				ysum = ysum + dataset5.Tables["mfee"].Rows[i][0];
+				ysum = ysum + (int)dataset5.Tables["mfee"].Rows[i][0];
 			}
 			txtYearSum.Text = System.Convert.ToString(ysum);
 			
@@ -101,7 +101,7 @@ namespace WindowsApp1
 			var msum = 0;
 			for (var i = 0; i <= dataset6.Tables["mfee"].Rows.Count - 1; i++)
 			{
-				msum = msum + dataset6.Tables["mfee"].Rows[i][0];
+				msum = msum + (int)dataset6.Tables["mfee"].Rows[i][0];
 			}
 			txtMonSum.Text = System.Convert.ToString(msum);
 			

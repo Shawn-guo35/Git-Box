@@ -176,9 +176,9 @@ namespace WindowsApp1
 					Stime = dtpTime.Value.Date.ToString("yyyy-MM-dd") + " " + cmbBegintime.SelectedItem.ToString();
 					Etime = dtpTime.Value.Date.ToString("yyyy-MM-dd") + " " + txtEndtime.Text;
 					str = "确定预订" + Stime + "到" + Etime + "的篮球场" + Vno + "吗？";
-					if (Interaction.MsgBox(str, Constants.vbOKCancel, null) == 1)
+					if ((int)Interaction.MsgBox(str, Constants.vbOKCancel, null) == 1)
 					{
-						if (Interaction.MsgBox("本次预订租金为" + System.Convert.ToString(fee) + "元", Constants.vbOKCancel, null) == 1)
+						if ((int)Interaction.MsgBox("本次预订租金为" + System.Convert.ToString(fee) + "元", Constants.vbOKCancel, null) == 1)
 						{
 							sql1 = "insert into Lease values('篮球场','" + Vno + "','" + Stime + "','" + Etime + "','" + "已借出')";
 							sql2 = "insert into Orders values('" + 登录界面.Default.txtID.Text + "','篮球场','" + Vno + "','" + Stime + "','" + Etime + "',1," + System.Convert.ToString(fee) +
@@ -202,9 +202,9 @@ namespace WindowsApp1
 					{
 						MessageBox.Show("该时间段不可预订！");
 					}
-					else if (Interaction.MsgBox(str, Constants.vbOKCancel, null) == 1)
+					else if ((int)Interaction.MsgBox(str, Constants.vbOKCancel, null) == 1)
 					{
-						if (Interaction.MsgBox("本次预订租金为" + System.Convert.ToString(fee) + "元", Constants.vbOKCancel, null) == 1)
+						if ((int)Interaction.MsgBox("本次预订租金为" + System.Convert.ToString(fee) + "元", Constants.vbOKCancel, null) == 1)
 						{
 							if (e.RowIndex == 0)
 							{

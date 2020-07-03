@@ -101,8 +101,8 @@ namespace WindowsApp1
 				var num1 = Convert.ToInt32(cm.ExecuteScalar());
 				if (num1 == 0)
 				{
-					
-					sqlstr = "insert into  Users values('" + txtID.Text + "','" + txtName.Text + "','" + “校内人员 " + "; //,'" + txtPwd.Text + "')"
+
+                    sqlstr = "insert into  Users values('" + txtID.Text + "','" + txtName.Text + "','" + "校内人员" + "; //,'" + txtPwd.Text + "')";
 					cm = new SqlCommand(sqlstr, cn);
 					cm.ExecuteNonQuery();
 					cn.Close();

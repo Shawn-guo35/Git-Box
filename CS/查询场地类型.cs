@@ -56,7 +56,7 @@ namespace WindowsApp1
 		public void Button3_Click(object sender, EventArgs e)
 		{
 			int x = 0;
-			if (Interaction.MsgBox("您真的删除该条数据吗？", (int) MsgBoxStyle.YesNo + MsgBoxStyle.Question, "删除数据") == DialogResult.Yes)
+			if ((int)Interaction.MsgBox("您真的删除该条数据吗？", (int) MsgBoxStyle.YesNo + MsgBoxStyle.Question, "删除数据") == (int)DialogResult.Yes)
 			{
 				x = DataGridView1.CurrentRow.Index;
 				ChangguanDataSet1.Tables["Vtype"].Rows[x].Delete();
