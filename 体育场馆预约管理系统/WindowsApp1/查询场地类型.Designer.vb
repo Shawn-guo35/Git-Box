@@ -25,14 +25,14 @@ Partial Class 查询场地类型
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(查询场地类型))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.btnSubmit5 = New System.Windows.Forms.Button()
-        Me.btnSubmit4 = New System.Windows.Forms.Button()
+        Me.btnReturn = New System.Windows.Forms.Button()
+        Me.btnSelcetVenue = New System.Windows.Forms.Button()
         Me.txtCondition = New System.Windows.Forms.TextBox()
         Me.lblResults2 = New System.Windows.Forms.Label()
         Me.cbmGym = New System.Windows.Forms.ComboBox()
         Me.lblResults1 = New System.Windows.Forms.Label()
-        Me.btnSubmit3 = New System.Windows.Forms.Button()
-        Me.btnSubmit2 = New System.Windows.Forms.Button()
+        Me.btnDeleteVenue = New System.Windows.Forms.Button()
+        Me.btnUpdteVenue = New System.Windows.Forms.Button()
         Me.gvwVtype = New System.Windows.Forms.DataGridView()
         Me.VnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.INrentalDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -57,14 +57,14 @@ Partial Class 查询场地类型
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.btnSubmit5)
-        Me.GroupBox1.Controls.Add(Me.btnSubmit4)
+        Me.GroupBox1.Controls.Add(Me.btnReturn)
+        Me.GroupBox1.Controls.Add(Me.btnSelcetVenue)
         Me.GroupBox1.Controls.Add(Me.txtCondition)
         Me.GroupBox1.Controls.Add(Me.lblResults2)
         Me.GroupBox1.Controls.Add(Me.cbmGym)
         Me.GroupBox1.Controls.Add(Me.lblResults1)
-        Me.GroupBox1.Controls.Add(Me.btnSubmit3)
-        Me.GroupBox1.Controls.Add(Me.btnSubmit2)
+        Me.GroupBox1.Controls.Add(Me.btnDeleteVenue)
+        Me.GroupBox1.Controls.Add(Me.btnUpdteVenue)
         Me.GroupBox1.Location = New System.Drawing.Point(3, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(798, 177)
@@ -72,23 +72,23 @@ Partial Class 查询场地类型
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "查询场地类型"
         '
-        'btnSubmit5
+        'btnReturn
         '
-        Me.btnSubmit5.Location = New System.Drawing.Point(648, 106)
-        Me.btnSubmit5.Name = "btnSubmit5"
-        Me.btnSubmit5.Size = New System.Drawing.Size(107, 51)
-        Me.btnSubmit5.TabIndex = 10
-        Me.btnSubmit5.Text = "退出"
-        Me.btnSubmit5.UseVisualStyleBackColor = True
+        Me.btnReturn.Location = New System.Drawing.Point(648, 106)
+        Me.btnReturn.Name = "btnReturn"
+        Me.btnReturn.Size = New System.Drawing.Size(107, 51)
+        Me.btnReturn.TabIndex = 10
+        Me.btnReturn.Text = "退出"
+        Me.btnReturn.UseVisualStyleBackColor = True
         '
-        'btnSubmit4
+        'btnSelcetVenue
         '
-        Me.btnSubmit4.Location = New System.Drawing.Point(500, 106)
-        Me.btnSubmit4.Name = "btnSubmit4"
-        Me.btnSubmit4.Size = New System.Drawing.Size(107, 51)
-        Me.btnSubmit4.TabIndex = 9
-        Me.btnSubmit4.Text = "查询"
-        Me.btnSubmit4.UseVisualStyleBackColor = True
+        Me.btnSelcetVenue.Location = New System.Drawing.Point(500, 106)
+        Me.btnSelcetVenue.Name = "btnSelcetVenue"
+        Me.btnSelcetVenue.Size = New System.Drawing.Size(107, 51)
+        Me.btnSelcetVenue.TabIndex = 9
+        Me.btnSelcetVenue.Text = "查询"
+        Me.btnSelcetVenue.UseVisualStyleBackColor = True
         '
         'txtCondition
         '
@@ -126,23 +126,23 @@ Partial Class 查询场地类型
         Me.lblResults1.TabIndex = 5
         Me.lblResults1.Text = "查询方式"
         '
-        'btnSubmit3
+        'btnDeleteVenue
         '
-        Me.btnSubmit3.Location = New System.Drawing.Point(103, 36)
-        Me.btnSubmit3.Name = "btnSubmit3"
-        Me.btnSubmit3.Size = New System.Drawing.Size(55, 52)
-        Me.btnSubmit3.TabIndex = 4
-        Me.btnSubmit3.Text = "删除"
-        Me.btnSubmit3.UseVisualStyleBackColor = True
+        Me.btnDeleteVenue.Location = New System.Drawing.Point(103, 36)
+        Me.btnDeleteVenue.Name = "btnDeleteVenue"
+        Me.btnDeleteVenue.Size = New System.Drawing.Size(55, 52)
+        Me.btnDeleteVenue.TabIndex = 4
+        Me.btnDeleteVenue.Text = "删除"
+        Me.btnDeleteVenue.UseVisualStyleBackColor = True
         '
-        'btnSubmit2
+        'btnUpdteVenue
         '
-        Me.btnSubmit2.Location = New System.Drawing.Point(30, 36)
-        Me.btnSubmit2.Name = "btnSubmit2"
-        Me.btnSubmit2.Size = New System.Drawing.Size(55, 52)
-        Me.btnSubmit2.TabIndex = 3
-        Me.btnSubmit2.Text = "修改"
-        Me.btnSubmit2.UseVisualStyleBackColor = True
+        Me.btnUpdteVenue.Location = New System.Drawing.Point(30, 36)
+        Me.btnUpdteVenue.Name = "btnUpdteVenue"
+        Me.btnUpdteVenue.Size = New System.Drawing.Size(55, 52)
+        Me.btnUpdteVenue.TabIndex = 3
+        Me.btnUpdteVenue.Text = "修改"
+        Me.btnUpdteVenue.UseVisualStyleBackColor = True
         '
         'gvwVtype
         '
@@ -264,14 +264,14 @@ Partial Class 查询场地类型
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents btnSubmit3 As Button
-    Friend WithEvents btnSubmit2 As Button
+    Friend WithEvents btnDeleteVenue As Button
+    Friend WithEvents btnUpdteVenue As Button
     Friend WithEvents lblResults1 As Label
     Friend WithEvents cbmGym As ComboBox
     Friend WithEvents lblResults2 As Label
     Friend WithEvents txtCondition As TextBox
-    Friend WithEvents btnSubmit5 As Button
-    Friend WithEvents btnSubmit4 As Button
+    Friend WithEvents btnReturn As Button
+    Friend WithEvents btnSelcetVenue As Button
     Friend WithEvents gvwVtype As DataGridView
     Friend WithEvents SqlDataAdapter1 As SqlClient.SqlDataAdapter
     Friend WithEvents SqlDeleteCommand1 As SqlClient.SqlCommand

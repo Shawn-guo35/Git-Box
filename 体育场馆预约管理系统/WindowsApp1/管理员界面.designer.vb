@@ -24,10 +24,10 @@ Partial Class 管理员界面
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.tsmiAdmin = New System.Windows.Forms.ToolStripMenuItem()
-        Me.tsmiSelect1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.tsmiSelect2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.tsmiSelect3 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.tsmiSelect4 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiSelectUsers = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiSelectOrders = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiSelectVenue = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiSelectIncome = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsmiHelp = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsmiClose = New System.Windows.Forms.ToolStripMenuItem()
         Me.tsmiCancellation = New System.Windows.Forms.ToolStripMenuItem()
@@ -49,34 +49,34 @@ Partial Class 管理员界面
         '
         'tsmiAdmin
         '
-        Me.tsmiAdmin.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiSelect1, Me.tsmiSelect2, Me.tsmiSelect3, Me.tsmiSelect4})
+        Me.tsmiAdmin.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiSelectUsers, Me.tsmiSelectOrders, Me.tsmiSelectVenue, Me.tsmiSelectIncome})
         Me.tsmiAdmin.Name = "tsmiAdmin"
         Me.tsmiAdmin.Size = New System.Drawing.Size(169, 32)
         Me.tsmiAdmin.Text = "管理员功能"
         '
-        'tsmiSelect1
+        'tsmiSelectUsers
         '
-        Me.tsmiSelect1.Name = "tsmiSelect1"
-        Me.tsmiSelect1.Size = New System.Drawing.Size(264, 32)
-        Me.tsmiSelect1.Text = "查询用户信息"
+        Me.tsmiSelectUsers.Name = "tsmiSelectUsers"
+        Me.tsmiSelectUsers.Size = New System.Drawing.Size(264, 32)
+        Me.tsmiSelectUsers.Text = "查询用户信息"
         '
-        'tsmiSelect2
+        'tsmiSelectOrders
         '
-        Me.tsmiSelect2.Name = "tsmiSelect2"
-        Me.tsmiSelect2.Size = New System.Drawing.Size(264, 32)
-        Me.tsmiSelect2.Text = "查询订单信息"
+        Me.tsmiSelectOrders.Name = "tsmiSelectOrders"
+        Me.tsmiSelectOrders.Size = New System.Drawing.Size(264, 32)
+        Me.tsmiSelectOrders.Text = "查询订单信息"
         '
-        'tsmiSelect3
+        'tsmiSelectVenue
         '
-        Me.tsmiSelect3.Name = "tsmiSelect3"
-        Me.tsmiSelect3.Size = New System.Drawing.Size(264, 32)
-        Me.tsmiSelect3.Text = "查询场地信息"
+        Me.tsmiSelectVenue.Name = "tsmiSelectVenue"
+        Me.tsmiSelectVenue.Size = New System.Drawing.Size(264, 32)
+        Me.tsmiSelectVenue.Text = "查询场地信息"
         '
-        'tsmiSelect4
+        'tsmiSelectIncome
         '
-        Me.tsmiSelect4.Name = "tsmiSelect4"
-        Me.tsmiSelect4.Size = New System.Drawing.Size(264, 32)
-        Me.tsmiSelect4.Text = "统计收入信息"
+        Me.tsmiSelectIncome.Name = "tsmiSelectIncome"
+        Me.tsmiSelectIncome.Size = New System.Drawing.Size(264, 32)
+        Me.tsmiSelectIncome.Text = "统计收入信息"
         '
         'tsmiHelp
         '
@@ -94,13 +94,13 @@ Partial Class 管理员界面
         'tsmiCancellation
         '
         Me.tsmiCancellation.Name = "tsmiCancellation"
-        Me.tsmiCancellation.Size = New System.Drawing.Size(216, 32)
+        Me.tsmiCancellation.Size = New System.Drawing.Size(148, 32)
         Me.tsmiCancellation.Text = "注销"
         '
         'tsmiClose1
         '
         Me.tsmiClose1.Name = "tsmiClose1"
-        Me.tsmiClose1.Size = New System.Drawing.Size(216, 32)
+        Me.tsmiClose1.Size = New System.Drawing.Size(148, 32)
         Me.tsmiClose1.Text = "退出"
         '
         '管理员界面
@@ -125,12 +125,12 @@ Partial Class 管理员界面
 
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents tsmiAdmin As ToolStripMenuItem
-    Friend WithEvents tsmiSelect1 As ToolStripMenuItem
-    Friend WithEvents tsmiSelect2 As ToolStripMenuItem
-    Friend WithEvents tsmiSelect3 As ToolStripMenuItem
+    Friend WithEvents tsmiSelectUsers As ToolStripMenuItem
+    Friend WithEvents tsmiSelectOrders As ToolStripMenuItem
+    Friend WithEvents tsmiSelectVenue As ToolStripMenuItem
     Friend WithEvents tsmiHelp As ToolStripMenuItem
     Friend WithEvents tsmiClose As ToolStripMenuItem
     Friend WithEvents tsmiCancellation As ToolStripMenuItem
     Friend WithEvents tsmiClose1 As ToolStripMenuItem
-    Friend WithEvents tsmiSelect4 As ToolStripMenuItem
+    Friend WithEvents tsmiSelectIncome As ToolStripMenuItem
 End Class

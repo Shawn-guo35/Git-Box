@@ -11,19 +11,23 @@
         Me.WindowState = FormWindowState.Maximized
     End Sub
 
-    Private Sub tsmiSelect3_Click(sender As Object, e As EventArgs) Handles tsmiSelect3.Click
+    Private Sub tsmiSelectVenue_Click(sender As Object, e As EventArgs) Handles tsmiSelectVenue.Click
         场地管理.Show()
     End Sub
 
-    Private Sub tsmiSelect1_Click(sender As Object, e As EventArgs) Handles tsmiSelect1.Click
+    Private Sub tsmiSelectUsers_Click(sender As Object, e As EventArgs) Handles tsmiSelectUsers.Click
         用户管理.Show()
     End Sub
 
-    Private Sub tsmiSelect4_Click(sender As Object, e As EventArgs) Handles tsmiSelect4.Click
+    Private Sub tsmiSelectIncome_Click(sender As Object, e As EventArgs) Handles tsmiSelectIncome.Click
         收入统计.Show()
     End Sub
 
-    Private Sub tsmiSelect2_Click(sender As Object, e As EventArgs) Handles tsmiSelect2.Click
+    Private Sub tsmiSelectOrders_Click(sender As Object, e As EventArgs) Handles tsmiSelectOrders.Click
         订单查询.Show()
+    End Sub
+
+    Private Sub tsmiAdmin_Click(sender As Object, e As EventArgs) Handles tsmiAdmin.Click
+
     End Sub
 End Class

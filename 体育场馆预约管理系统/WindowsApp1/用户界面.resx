@@ -124,16 +124,16 @@
   <data name="MenuStrip1.Font" type="System.Drawing.Font, System.Drawing">
     <value>楷体, 16.2pt, style=Bold</value>
   </data>
-  <data name="tsmiUser1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tsmiUserPwd.Size" type="System.Drawing.Size, System.Drawing">
     <value>264, 32</value>
   </data>
-  <data name="tsmiUser1.Text" xml:space="preserve">
+  <data name="tsmiUserPwd.Text" xml:space="preserve">
     <value>修改账号密码</value>
   </data>
-  <data name="tsmiUser2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tsmiUserOrders.Size" type="System.Drawing.Size, System.Drawing">
     <value>264, 32</value>
   </data>
-  <data name="tsmiUser2.Text" xml:space="preserve">
+  <data name="tsmiUserOrders.Text" xml:space="preserve">
     <value>查询历史订单</value>
   </data>
   <data name="tsmiUser.Size" type="System.Drawing.Size, System.Drawing">
@@ -219,16 +219,16 @@
   <data name="&gt;&gt;tsmiUser.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tsmiUser1.Name" xml:space="preserve">
-    <value>tsmiUser1</value>
+  <data name="&gt;&gt;tsmiUserPwd.Name" xml:space="preserve">
+    <value>tsmiUserPwd</value>
   </data>
-  <data name="&gt;&gt;tsmiUser1.Type" xml:space="preserve">
+  <data name="&gt;&gt;tsmiUserPwd.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tsmiUser2.Name" xml:space="preserve">
-    <value>tsmiUser2</value>
+  <data name="&gt;&gt;tsmiUserOrders.Name" xml:space="preserve">
+    <value>tsmiUserOrders</value>
   </data>
-  <data name="&gt;&gt;tsmiUser2.Type" xml:space="preserve">
+  <data name="&gt;&gt;tsmiUserOrders.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tsmiAppointment.Name" xml:space="preserve">

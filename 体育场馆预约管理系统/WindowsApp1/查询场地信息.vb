@@ -2,7 +2,7 @@
 
 
 
-    Private Sub btnSubmit4_Click(sender As Object, e As EventArgs) Handles btnSubmit4.Click
+    Private Sub btnSelectVtype_Click(sender As Object, e As EventArgs) Handles btnSelectVtype.Click
         Dim s As String
         If txtCondition.Text = "" Then
             MsgBox("请输入查询条件", MsgBoxStyle.Exclamation, "警告")
@@ -25,11 +25,11 @@
         End Select
     End Sub
 
-    Private Sub btnSubmit5_Click(sender As Object, e As EventArgs) Handles btnSubmit5.Click
+    Private Sub btnReturn_Click(sender As Object, e As EventArgs) Handles btnReturn.Click
         Me.Close()
     End Sub
 
-    Private Sub btnSubmit3_Click(sender As Object, e As EventArgs) Handles btnSubmit3.Click
+    Private Sub btnDeleteVtype_Click(sender As Object, e As EventArgs) Handles btnDeleteVtype.Click
         Dim x As Integer
         If MsgBox("您真的删除该条数据吗？", MsgBoxStyle.YesNo + MsgBoxStyle.Question, "删除数据") = DialogResult.Yes Then
             x = gvwVenue.CurrentRow.Index()
