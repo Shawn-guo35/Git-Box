@@ -24,23 +24,23 @@ Partial Class 欢迎界面
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lblResults1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Timer1
         '
         '
-        'Label1
+        'lblResults1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("宋体", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(195, 136)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(345, 40)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "体育场馆预约系统"
+        Me.lblResults1.AutoSize = True
+        Me.lblResults1.BackColor = System.Drawing.Color.Transparent
+        Me.lblResults1.Font = New System.Drawing.Font("宋体", 24.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.lblResults1.ForeColor = System.Drawing.Color.Black
+        Me.lblResults1.Location = New System.Drawing.Point(195, 136)
+        Me.lblResults1.Name = "lblResults1"
+        Me.lblResults1.Size = New System.Drawing.Size(345, 40)
+        Me.lblResults1.TabIndex = 0
+        Me.lblResults1.Text = "体育场馆预约系统"
         '
         '欢迎界面
         '
@@ -49,7 +49,7 @@ Partial Class 欢迎界面
         Me.BackgroundImage = Global.WindowsApp1.My.Resources.Resources._0ff610843ca2f431_05d415b9ec93c33a_2ee29b314b579c64fa255b15bdf3643b
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(730, 451)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblResults1)
         Me.DoubleBuffered = True
         Me.Name = "欢迎界面"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -60,5 +60,5 @@ Partial Class 欢迎界面
     End Sub
 
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblResults1 As Label
 End Class

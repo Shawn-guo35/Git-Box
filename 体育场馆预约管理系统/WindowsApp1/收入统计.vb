@@ -48,14 +48,16 @@ Public Class 收入统计
         Me.Close()
     End Sub
 
+
+
     '窗体加载
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         sqlstr = "select orderno,stime,fee from orders "
         OleDbDataAdapter1 = New OleDbDataAdapter(sqlstr, OleDbConnection1)
         objdataset.Reset()
         OleDbDataAdapter1.Fill(objdataset, "收益")
-        DataGridView1.DataSource = objdataset.Tables("收益")
-        DataGridView1.Columns(0).HeaderText = "订单号"
+        dgwIncome.DataSource = objdataset.Tables("收益")
+        dgwIncome.Columns(0).HeaderText = "订单号"
 
         Dim sql As String = "select distinct datename(yy,stime) as year from orders "
         dataset2.Reset()

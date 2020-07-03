@@ -22,12 +22,12 @@ Public Class 登录界面
         Timer2.Enabled = False
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
+    Private Sub btnRegister_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
         Me.Hide()
         注册界面.Show()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
+    Private Sub btnLogin2_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         If txtID.Text = "" Then
             MsgBox("请输入账号！")
 

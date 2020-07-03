@@ -13,36 +13,36 @@ Public Class 用户订单查询
         '此处缺少将登录页面所输入的ID传递给此页面的字符串变量ID的语句
     End Sub
 
-    Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
-        data = DateTimePicker1.Value.Date.ToShortDateString
+    Private Sub btnSubmit3_Click_1(sender As Object, e As EventArgs) Handles btnSubmit3.Click
+        data = dtpTime.Value.Date.ToShortDateString
         data2 = data.AddDays(1)
         ds.Clear()
 
         '地点空
-        If (ComboBox1.Text = "") Then
+        If (cbmGym.Text = "") Then
             com.CommandText = "select Vname,Vno,Stime,Etime,LTime,Fee,Orderno,Remark from Orders where ID='" & ID & "'and Stime >= '" & data & "'and Stime <= '" & data2 & "'  "
             com.Connection = con
             ads.SelectCommand = com
             ads.Fill(ds, "Stable")
-            Me.DataGridView1.DataSource = ds.Tables(0)
+            Me.gvwOrders.DataSource = ds.Tables(0)
         End If
         '地点不空
-        If (ComboBox1.Text <> "") Then
-            com.CommandText = "select Vname,Vno,Stime,Etime,LTime,Fee,Orderno,Remark from Orders where ID='" & ID & "'and convert(varchar(10),Stime,120) = '" & data & "'and Vname = '" & ComboBox1.Text & "'"
+        If (cbmGym.Text <> "") Then
+            com.CommandText = "select Vname,Vno,Stime,Etime,LTime,Fee,Orderno,Remark from Orders where ID='" & ID & "'and convert(varchar(10),Stime,120) = '" & data & "'and Vname = '" & cbmGym.Text & "'"
             com.Connection = con
             ads.SelectCommand = com
             ads.Fill(ds, "Stable")
-            Me.DataGridView1.DataSource = ds.Tables(0)
+            Me.gvwOrders.DataSource = ds.Tables(0)
         End If
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub btnSubmit1_Click(sender As Object, e As EventArgs) Handles btnSubmit1.Click
         ds.Clear()
         com.CommandText = "select Vname,Vno,Stime,Etime,LTime,Fee,Orderno,Remark from Orders where ID='" & ID & "'"
         com.Connection = con
         ads.SelectCommand = com
         ads.Fill(ds, "Stable")
-        Me.DataGridView1.DataSource = ds.Tables(0)
+        Me.gvwOrders.DataSource = ds.Tables(0)
     End Sub
 End Class

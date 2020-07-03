@@ -1,10 +1,10 @@
 ﻿
 Public Class 用户界面
-    Private Sub 退出ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles 退出ToolStripMenuItem2.Click
+    Private Sub tsmiClose1_Click(sender As Object, e As EventArgs) Handles tsmiClose1.Click
         End
     End Sub
 
-    Private Sub 注销ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles 注销ToolStripMenuItem1.Click
+    Private Sub tsmiCancellation_Click(sender As Object, e As EventArgs) Handles tsmiCancellation.Click
         Me.Close()
         登录界面.Show()
     End Sub
@@ -13,19 +13,19 @@ Public Class 用户界面
         Me.WindowState = FormWindowState.Maximized
     End Sub
 
-    Private Sub 注销ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 注销ToolStripMenuItem.Click
+    Private Sub tsmiUser1_Click(sender As Object, e As EventArgs) Handles tsmiUser1.Click
         修改密码.ShowDialog()
     End Sub
 
-    Private Sub 查询历史订单ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 查询历史订单ToolStripMenuItem.Click
+    Private Sub tsmiUser2_Click(sender As Object, e As EventArgs) Handles tsmiUser2.Click
         用户订单查询.Show()
     End Sub
 
-    Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem2.Click
+    Private Sub tsmiAppointment_Click(sender As Object, e As EventArgs) Handles tsmiAppointment.Click
         Yuyue.Show()
     End Sub
 
-    Private Sub 退出ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles 退出ToolStripMenuItem1.Click
+    Private Sub tsmiClose_Click(sender As Object, e As EventArgs) Handles tsmiClose.Click
 
     End Sub
 End Class

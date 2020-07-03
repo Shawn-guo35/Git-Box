@@ -25,16 +25,23 @@ Partial Class 查询场地租借情况
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(查询场地租借情况))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.lblResults14 = New System.Windows.Forms.Label()
+        Me.lblResults13 = New System.Windows.Forms.Label()
+        Me.txtGymNum = New System.Windows.Forms.TextBox()
+        Me.btnSubmit5 = New System.Windows.Forms.Button()
+        Me.btnSubmit4 = New System.Windows.Forms.Button()
+        Me.txtGymName = New System.Windows.Forms.TextBox()
+        Me.cbmGym = New System.Windows.Forms.ComboBox()
+        Me.lblResults2 = New System.Windows.Forms.Label()
+        Me.lblResults1 = New System.Windows.Forms.Label()
+        Me.txtGymLease = New System.Windows.Forms.DataGridView()
+        Me.VnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.VnoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.StimeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.EtimeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ConditionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.LeaseBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ChangguanDataSet6 = New WindowsApp1.changguanDataSet6()
         Me.SqlDataAdapter1 = New System.Data.SqlClient.SqlDataAdapter()
         Me.SqlDeleteCommand1 = New System.Data.SqlClient.SqlCommand()
         Me.SqlConnection1 = New System.Data.SqlClient.SqlConnection()
@@ -42,32 +49,25 @@ Partial Class 查询场地租借情况
         Me.SqlSelectCommand1 = New System.Data.SqlClient.SqlCommand()
         Me.SqlUpdateCommand1 = New System.Data.SqlClient.SqlCommand()
         Me.ChangguanDataSet1 = New WindowsApp1.changguanDataSet()
-        Me.ChangguanDataSet6 = New WindowsApp1.changguanDataSet6()
-        Me.LeaseBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.LeaseTableAdapter = New WindowsApp1.changguanDataSet6TableAdapters.LeaseTableAdapter()
-        Me.VnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.VnoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.StimeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EtimeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ConditionDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ChangguanDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ChangguanDataSet6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.txtGymLease, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.LeaseBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ChangguanDataSet6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ChangguanDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.Button5)
-        Me.GroupBox1.Controls.Add(Me.Button4)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
-        Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Controls.Add(Me.lblResults14)
+        Me.GroupBox1.Controls.Add(Me.lblResults13)
+        Me.GroupBox1.Controls.Add(Me.txtGymNum)
+        Me.GroupBox1.Controls.Add(Me.btnSubmit5)
+        Me.GroupBox1.Controls.Add(Me.btnSubmit4)
+        Me.GroupBox1.Controls.Add(Me.txtGymName)
+        Me.GroupBox1.Controls.Add(Me.cbmGym)
+        Me.GroupBox1.Controls.Add(Me.lblResults2)
+        Me.GroupBox1.Controls.Add(Me.lblResults1)
         Me.GroupBox1.Location = New System.Drawing.Point(2, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(798, 215)
@@ -75,96 +75,141 @@ Partial Class 查询场地租借情况
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "查询场地租借情况"
         '
-        'Label4
+        'lblResults14
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(133, 140)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(67, 15)
-        Me.Label4.TabIndex = 31
-        Me.Label4.Text = "场地编号"
-        Me.Label4.Visible = False
+        Me.lblResults14.AutoSize = True
+        Me.lblResults14.Location = New System.Drawing.Point(133, 140)
+        Me.lblResults14.Name = "lblResults14"
+        Me.lblResults14.Size = New System.Drawing.Size(67, 15)
+        Me.lblResults14.TabIndex = 31
+        Me.lblResults14.Text = "场地编号"
+        Me.lblResults14.Visible = False
         '
-        'Label3
+        'lblResults13
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(133, 84)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(67, 15)
-        Me.Label3.TabIndex = 30
-        Me.Label3.Text = "场地名称"
+        Me.lblResults13.AutoSize = True
+        Me.lblResults13.Location = New System.Drawing.Point(133, 84)
+        Me.lblResults13.Name = "lblResults13"
+        Me.lblResults13.Size = New System.Drawing.Size(67, 15)
+        Me.lblResults13.TabIndex = 30
+        Me.lblResults13.Text = "场地名称"
         '
-        'TextBox2
+        'txtGymNum
         '
-        Me.TextBox2.Location = New System.Drawing.Point(225, 140)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(139, 25)
-        Me.TextBox2.TabIndex = 29
-        Me.TextBox2.Visible = False
+        Me.txtGymNum.Location = New System.Drawing.Point(225, 140)
+        Me.txtGymNum.Name = "txtGymNum"
+        Me.txtGymNum.Size = New System.Drawing.Size(139, 25)
+        Me.txtGymNum.TabIndex = 29
+        Me.txtGymNum.Visible = False
         '
-        'Button5
+        'btnSubmit5
         '
-        Me.Button5.Location = New System.Drawing.Point(637, 66)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(107, 51)
-        Me.Button5.TabIndex = 28
-        Me.Button5.Text = "退出"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btnSubmit5.Location = New System.Drawing.Point(637, 66)
+        Me.btnSubmit5.Name = "btnSubmit5"
+        Me.btnSubmit5.Size = New System.Drawing.Size(107, 51)
+        Me.btnSubmit5.TabIndex = 28
+        Me.btnSubmit5.Text = "退出"
+        Me.btnSubmit5.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnSubmit4
         '
-        Me.Button4.Location = New System.Drawing.Point(473, 66)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(107, 51)
-        Me.Button4.TabIndex = 27
-        Me.Button4.Text = "查询"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnSubmit4.Location = New System.Drawing.Point(473, 66)
+        Me.btnSubmit4.Name = "btnSubmit4"
+        Me.btnSubmit4.Size = New System.Drawing.Size(107, 51)
+        Me.btnSubmit4.TabIndex = 27
+        Me.btnSubmit4.Text = "查询"
+        Me.btnSubmit4.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'txtGymName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(225, 81)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(139, 25)
-        Me.TextBox1.TabIndex = 26
+        Me.txtGymName.Location = New System.Drawing.Point(225, 81)
+        Me.txtGymName.Name = "txtGymName"
+        Me.txtGymName.Size = New System.Drawing.Size(139, 25)
+        Me.txtGymName.TabIndex = 26
         '
-        'ComboBox1
+        'cbmGym
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"场地名称", "场地名称&场地编号"})
-        Me.ComboBox1.Location = New System.Drawing.Point(225, 38)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(191, 23)
-        Me.ComboBox1.TabIndex = 25
-        Me.ComboBox1.Text = "场地名称"
+        Me.cbmGym.FormattingEnabled = True
+        Me.cbmGym.Items.AddRange(New Object() {"场地名称", "场地名称&场地编号"})
+        Me.cbmGym.Location = New System.Drawing.Point(225, 38)
+        Me.cbmGym.Name = "cbmGym"
+        Me.cbmGym.Size = New System.Drawing.Size(191, 23)
+        Me.cbmGym.TabIndex = 25
+        Me.cbmGym.Text = "场地名称"
         '
-        'Label2
+        'lblResults2
         '
-        Me.Label2.Location = New System.Drawing.Point(31, 81)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(96, 20)
-        Me.Label2.TabIndex = 24
-        Me.Label2.Text = "查询条件："
+        Me.lblResults2.Location = New System.Drawing.Point(31, 81)
+        Me.lblResults2.Name = "lblResults2"
+        Me.lblResults2.Size = New System.Drawing.Size(96, 20)
+        Me.lblResults2.TabIndex = 24
+        Me.lblResults2.Text = "查询条件："
         '
-        'Label1
+        'lblResults1
         '
-        Me.Label1.Location = New System.Drawing.Point(31, 41)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(96, 20)
-        Me.Label1.TabIndex = 23
-        Me.Label1.Text = "查询方式："
+        Me.lblResults1.Location = New System.Drawing.Point(31, 41)
+        Me.lblResults1.Name = "lblResults1"
+        Me.lblResults1.Size = New System.Drawing.Size(96, 20)
+        Me.lblResults1.TabIndex = 23
+        Me.lblResults1.Text = "查询方式："
         '
-        'DataGridView1
+        'txtGymLease
         '
-        Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.VnameDataGridViewTextBoxColumn, Me.VnoDataGridViewTextBoxColumn, Me.StimeDataGridViewTextBoxColumn, Me.EtimeDataGridViewTextBoxColumn, Me.ConditionDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.LeaseBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(2, 207)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.RowTemplate.Height = 27
-        Me.DataGridView1.Size = New System.Drawing.Size(798, 242)
-        Me.DataGridView1.TabIndex = 1
+        Me.txtGymLease.AutoGenerateColumns = False
+        Me.txtGymLease.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.txtGymLease.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.VnameDataGridViewTextBoxColumn, Me.VnoDataGridViewTextBoxColumn, Me.StimeDataGridViewTextBoxColumn, Me.EtimeDataGridViewTextBoxColumn, Me.ConditionDataGridViewTextBoxColumn})
+        Me.txtGymLease.DataSource = Me.LeaseBindingSource
+        Me.txtGymLease.Location = New System.Drawing.Point(2, 207)
+        Me.txtGymLease.Name = "txtGymLease"
+        Me.txtGymLease.ReadOnly = True
+        Me.txtGymLease.RowTemplate.Height = 27
+        Me.txtGymLease.Size = New System.Drawing.Size(798, 242)
+        Me.txtGymLease.TabIndex = 1
+        '
+        'VnameDataGridViewTextBoxColumn
+        '
+        Me.VnameDataGridViewTextBoxColumn.DataPropertyName = "Vname"
+        Me.VnameDataGridViewTextBoxColumn.HeaderText = "场地名称"
+        Me.VnameDataGridViewTextBoxColumn.Name = "VnameDataGridViewTextBoxColumn"
+        Me.VnameDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'VnoDataGridViewTextBoxColumn
+        '
+        Me.VnoDataGridViewTextBoxColumn.DataPropertyName = "Vno"
+        Me.VnoDataGridViewTextBoxColumn.HeaderText = "场地编号"
+        Me.VnoDataGridViewTextBoxColumn.Name = "VnoDataGridViewTextBoxColumn"
+        Me.VnoDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'StimeDataGridViewTextBoxColumn
+        '
+        Me.StimeDataGridViewTextBoxColumn.DataPropertyName = "Stime"
+        Me.StimeDataGridViewTextBoxColumn.HeaderText = "开始时间"
+        Me.StimeDataGridViewTextBoxColumn.Name = "StimeDataGridViewTextBoxColumn"
+        Me.StimeDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'EtimeDataGridViewTextBoxColumn
+        '
+        Me.EtimeDataGridViewTextBoxColumn.DataPropertyName = "Etime"
+        Me.EtimeDataGridViewTextBoxColumn.HeaderText = "结束时间"
+        Me.EtimeDataGridViewTextBoxColumn.Name = "EtimeDataGridViewTextBoxColumn"
+        Me.EtimeDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'ConditionDataGridViewTextBoxColumn
+        '
+        Me.ConditionDataGridViewTextBoxColumn.DataPropertyName = "Condition"
+        Me.ConditionDataGridViewTextBoxColumn.HeaderText = "场地状态"
+        Me.ConditionDataGridViewTextBoxColumn.Name = "ConditionDataGridViewTextBoxColumn"
+        Me.ConditionDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'LeaseBindingSource
+        '
+        Me.LeaseBindingSource.DataMember = "Lease"
+        Me.LeaseBindingSource.DataSource = Me.ChangguanDataSet6
+        '
+        'ChangguanDataSet6
+        '
+        Me.ChangguanDataSet6.DataSetName = "changguanDataSet6"
+        Me.ChangguanDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'SqlDataAdapter1
         '
@@ -210,86 +255,46 @@ Partial Class 查询场地租借情况
         Me.ChangguanDataSet1.DataSetName = "changguanDataSet"
         Me.ChangguanDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'ChangguanDataSet6
-        '
-        Me.ChangguanDataSet6.DataSetName = "changguanDataSet6"
-        Me.ChangguanDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'LeaseBindingSource
-        '
-        Me.LeaseBindingSource.DataMember = "Lease"
-        Me.LeaseBindingSource.DataSource = Me.ChangguanDataSet6
-        '
         'LeaseTableAdapter
         '
         Me.LeaseTableAdapter.ClearBeforeFill = True
-        '
-        'VnameDataGridViewTextBoxColumn
-        '
-        Me.VnameDataGridViewTextBoxColumn.DataPropertyName = "Vname"
-        Me.VnameDataGridViewTextBoxColumn.HeaderText = "场地名称"
-        Me.VnameDataGridViewTextBoxColumn.Name = "VnameDataGridViewTextBoxColumn"
-        '
-        'VnoDataGridViewTextBoxColumn
-        '
-        Me.VnoDataGridViewTextBoxColumn.DataPropertyName = "Vno"
-        Me.VnoDataGridViewTextBoxColumn.HeaderText = "场地编号"
-        Me.VnoDataGridViewTextBoxColumn.Name = "VnoDataGridViewTextBoxColumn"
-        '
-        'StimeDataGridViewTextBoxColumn
-        '
-        Me.StimeDataGridViewTextBoxColumn.DataPropertyName = "Stime"
-        Me.StimeDataGridViewTextBoxColumn.HeaderText = "开始时间"
-        Me.StimeDataGridViewTextBoxColumn.Name = "StimeDataGridViewTextBoxColumn"
-        '
-        'EtimeDataGridViewTextBoxColumn
-        '
-        Me.EtimeDataGridViewTextBoxColumn.DataPropertyName = "Etime"
-        Me.EtimeDataGridViewTextBoxColumn.HeaderText = "结束时间"
-        Me.EtimeDataGridViewTextBoxColumn.Name = "EtimeDataGridViewTextBoxColumn"
-        '
-        'ConditionDataGridViewTextBoxColumn
-        '
-        Me.ConditionDataGridViewTextBoxColumn.DataPropertyName = "Condition"
-        Me.ConditionDataGridViewTextBoxColumn.HeaderText = "场地状态"
-        Me.ConditionDataGridViewTextBoxColumn.Name = "ConditionDataGridViewTextBoxColumn"
         '
         '查询场地租借情况
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.txtGymLease)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "查询场地租借情况"
         Me.Text = "查询场地租借情况"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ChangguanDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ChangguanDataSet6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.txtGymLease, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.LeaseBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ChangguanDataSet6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ChangguanDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents lblResults2 As Label
+    Friend WithEvents lblResults1 As Label
+    Friend WithEvents txtGymName As TextBox
+    Friend WithEvents cbmGym As ComboBox
+    Friend WithEvents btnSubmit4 As Button
+    Friend WithEvents btnSubmit5 As Button
+    Friend WithEvents txtGymLease As DataGridView
     Friend WithEvents SqlDataAdapter1 As SqlClient.SqlDataAdapter
     Friend WithEvents SqlDeleteCommand1 As SqlClient.SqlCommand
     Friend WithEvents SqlConnection1 As SqlClient.SqlConnection
     Friend WithEvents SqlInsertCommand As SqlClient.SqlCommand
     Friend WithEvents SqlSelectCommand1 As SqlClient.SqlCommand
     Friend WithEvents SqlUpdateCommand1 As SqlClient.SqlCommand
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label3 As Label
+    Friend WithEvents txtGymNum As TextBox
+    Friend WithEvents lblResults14 As Label
+    Friend WithEvents lblResults13 As Label
     Friend WithEvents ChangguanDataSet1 As changguanDataSet
     Friend WithEvents ChangguanDataSet6 As changguanDataSet6
     Friend WithEvents LeaseBindingSource As BindingSource

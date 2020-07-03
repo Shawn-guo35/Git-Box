@@ -22,109 +22,109 @@ Partial Class Yuyue
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.btnSubmit5 = New System.Windows.Forms.Button()
+        Me.btnSubmit2 = New System.Windows.Forms.Button()
+        Me.btnSubmit6 = New System.Windows.Forms.Button()
+        Me.btnSubmit3 = New System.Windows.Forms.Button()
+        Me.btnSubmit4 = New System.Windows.Forms.Button()
+        Me.btnSubmit1 = New System.Windows.Forms.Button()
+        Me.lblResults1 = New System.Windows.Forms.Label()
+        Me.lblResults2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'Button5
+        'btnSubmit5
         '
-        Me.Button5.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Button5.Location = New System.Drawing.Point(519, 272)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(180, 80)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "乒乓球馆"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btnSubmit5.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.btnSubmit5.Location = New System.Drawing.Point(519, 272)
+        Me.btnSubmit5.Name = "btnSubmit5"
+        Me.btnSubmit5.Size = New System.Drawing.Size(180, 80)
+        Me.btnSubmit5.TabIndex = 4
+        Me.btnSubmit5.Text = "乒乓球馆"
+        Me.btnSubmit5.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnSubmit2
         '
-        Me.Button2.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Button2.Location = New System.Drawing.Point(306, 272)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(180, 80)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "羽毛球馆"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnSubmit2.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.btnSubmit2.Location = New System.Drawing.Point(306, 272)
+        Me.btnSubmit2.Name = "btnSubmit2"
+        Me.btnSubmit2.Size = New System.Drawing.Size(180, 80)
+        Me.btnSubmit2.TabIndex = 1
+        Me.btnSubmit2.Text = "羽毛球馆"
+        Me.btnSubmit2.UseVisualStyleBackColor = True
         '
-        'Button6
+        'btnSubmit6
         '
-        Me.Button6.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Button6.Location = New System.Drawing.Point(91, 272)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(180, 80)
-        Me.Button6.TabIndex = 5
-        Me.Button6.Text = "篮球馆"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.btnSubmit6.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.btnSubmit6.Location = New System.Drawing.Point(91, 272)
+        Me.btnSubmit6.Name = "btnSubmit6"
+        Me.btnSubmit6.Size = New System.Drawing.Size(180, 80)
+        Me.btnSubmit6.TabIndex = 5
+        Me.btnSubmit6.Text = "篮球馆"
+        Me.btnSubmit6.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnSubmit3
         '
-        Me.Button3.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Button3.Location = New System.Drawing.Point(519, 166)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(180, 80)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "东足球场"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnSubmit3.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.btnSubmit3.Location = New System.Drawing.Point(519, 166)
+        Me.btnSubmit3.Name = "btnSubmit3"
+        Me.btnSubmit3.Size = New System.Drawing.Size(180, 80)
+        Me.btnSubmit3.TabIndex = 2
+        Me.btnSubmit3.Text = "东足球场"
+        Me.btnSubmit3.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnSubmit4
         '
-        Me.Button4.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Button4.Location = New System.Drawing.Point(306, 166)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(180, 80)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "网球场"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnSubmit4.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.btnSubmit4.Location = New System.Drawing.Point(306, 166)
+        Me.btnSubmit4.Name = "btnSubmit4"
+        Me.btnSubmit4.Size = New System.Drawing.Size(180, 80)
+        Me.btnSubmit4.TabIndex = 3
+        Me.btnSubmit4.Text = "网球场"
+        Me.btnSubmit4.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btnSubmit1
         '
-        Me.Button1.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Button1.Location = New System.Drawing.Point(91, 166)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(180, 80)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "篮球场"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnSubmit1.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.btnSubmit1.Location = New System.Drawing.Point(91, 166)
+        Me.btnSubmit1.Name = "btnSubmit1"
+        Me.btnSubmit1.Size = New System.Drawing.Size(180, 80)
+        Me.btnSubmit1.TabIndex = 0
+        Me.btnSubmit1.Text = "篮球场"
+        Me.btnSubmit1.UseVisualStyleBackColor = True
         '
-        'Label1
+        'lblResults1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("黑体", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label1.Location = New System.Drawing.Point(86, 45)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(272, 25)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "欢迎使用场馆预约系统"
+        Me.lblResults1.AutoSize = True
+        Me.lblResults1.Font = New System.Drawing.Font("黑体", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.lblResults1.Location = New System.Drawing.Point(86, 45)
+        Me.lblResults1.Name = "lblResults1"
+        Me.lblResults1.Size = New System.Drawing.Size(272, 25)
+        Me.lblResults1.TabIndex = 6
+        Me.lblResults1.Text = "欢迎使用场馆预约系统"
         '
-        'Label2
+        'lblResults2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label2.Location = New System.Drawing.Point(86, 118)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(272, 27)
-        Me.Label2.TabIndex = 7
-        Me.Label2.Text = "请在下方选择您想预约的场地"
+        Me.lblResults2.AutoSize = True
+        Me.lblResults2.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.lblResults2.Location = New System.Drawing.Point(86, 118)
+        Me.lblResults2.Name = "lblResults2"
+        Me.lblResults2.Size = New System.Drawing.Size(272, 27)
+        Me.lblResults2.TabIndex = 7
+        Me.lblResults2.Text = "请在下方选择您想预约的场地"
         '
         'Yuyue
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(781, 447)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.lblResults2)
+        Me.Controls.Add(Me.lblResults1)
+        Me.Controls.Add(Me.btnSubmit6)
+        Me.Controls.Add(Me.btnSubmit4)
+        Me.Controls.Add(Me.btnSubmit5)
+        Me.Controls.Add(Me.btnSubmit1)
+        Me.Controls.Add(Me.btnSubmit3)
+        Me.Controls.Add(Me.btnSubmit2)
         Me.Name = "Yuyue"
         Me.Text = "预约主界面"
         Me.ResumeLayout(False)
@@ -132,12 +132,12 @@ Partial Class Yuyue
 
     End Sub
 
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents btnSubmit5 As Button
+    Friend WithEvents btnSubmit2 As Button
+    Friend WithEvents btnSubmit6 As Button
+    Friend WithEvents btnSubmit3 As Button
+    Friend WithEvents btnSubmit4 As Button
+    Friend WithEvents btnSubmit1 As Button
+    Friend WithEvents lblResults1 As Label
+    Friend WithEvents lblResults2 As Label
 End Class

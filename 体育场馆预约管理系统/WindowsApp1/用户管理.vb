@@ -8,11 +8,11 @@
     End Sub
 
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
+    Private Sub gvwUsers_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
 
     End Sub
 
-    Private Sub DataGridView1_CellContentClick_1(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+    Private Sub gvwUsers_CellContentClick_1(sender As Object, e As DataGridViewCellEventArgs) Handles gvwUsers.CellContentClick
 
     End Sub
 
@@ -24,50 +24,50 @@
 
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub btnSubmit2_Click(sender As Object, e As EventArgs) Handles btnSubmit2.Click
         SqlDataAdapter1.Update(ChangguanDataSet)
         MsgBox("数据已修改", MsgBoxStyle.Information, "恭喜")
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub btnSubmit3_Click(sender As Object, e As EventArgs) Handles btnSubmit3.Click
         Dim x As Integer
         If MsgBox("您真的删除该条数据吗？", MsgBoxStyle.YesNo + MsgBoxStyle.Question, "删除数据") = DialogResult.Yes Then
-            x = DataGridView1.CurrentRow.Index()
+            x = gvwUsers.CurrentRow.Index()
             ChangguanDataSet.Tables("Users").Rows(x).Delete()
             SqlDataAdapter1.Update(ChangguanDataSet)
             MsgBox("删除成功", MsgBoxStyle.Information, "恭喜")
         End If
     End Sub
 
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+    Private Sub cbmGym_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbmGym.SelectedIndexChanged
 
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub btnSubmit4_Click(sender As Object, e As EventArgs) Handles btnSubmit4.Click
         Dim s As String
-        If TextBox1.Text = "" Then
+        If txtCondition.Text = "" Then
             MsgBox("请输入查询条件", MsgBoxStyle.Exclamation, "警告")
             Exit Sub
         End If
-        Select Case ComboBox1.SelectedItem
+        Select Case cbmGym.SelectedItem
             Case "帐号"
                 ChangguanDataSet.Tables("Users").Clear()
-                s = "select  *  from  Users  where  ID ='" + TextBox1.Text + "'"
+                s = "select  *  from  Users  where  ID ='" + txtCondition.Text + "'"
                 SqlDataAdapter1.SelectCommand.CommandText = s
                 SqlDataAdapter1.Fill(ChangguanDataSet)
-                DataGridView1.DataSource = ChangguanDataSet.Tables("Users")
+                gvwUsers.DataSource = ChangguanDataSet.Tables("Users")
             Case "姓名"
                 ChangguanDataSet.Tables("Users").Clear()
-                s = "select  *  from  Users  where  Uname = '" + TextBox1.Text + "'"
+                s = "select  *  from  Users  where  Uname = '" + txtCondition.Text + "'"
                 SqlDataAdapter1.SelectCommand.CommandText = s
                 SqlDataAdapter1.Fill(ChangguanDataSet)
-                DataGridView1.DataSource = ChangguanDataSet.Tables("Users")
+                gvwUsers.DataSource = ChangguanDataSet.Tables("Users")
             Case "身份"
                 ChangguanDataSet.Tables("Users").Clear()
-                s = "select  *  from  Users  where Uidentity = '" + TextBox1.Text + "'"
+                s = "select  *  from  Users  where Uidentity = '" + txtCondition.Text + "'"
                 SqlDataAdapter1.SelectCommand.CommandText = s
                 SqlDataAdapter1.Fill(ChangguanDataSet)
-                DataGridView1.DataSource = ChangguanDataSet.Tables("Users")
+                gvwUsers.DataSource = ChangguanDataSet.Tables("Users")
         End Select
     End Sub
 
@@ -77,7 +77,7 @@
 
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+    Private Sub btnSubmit5_Click(sender As Object, e As EventArgs) Handles btnSubmit5.Click
         Me.Close()
     End Sub
 

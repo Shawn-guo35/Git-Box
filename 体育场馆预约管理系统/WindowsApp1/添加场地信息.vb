@@ -1,42 +1,42 @@
 ﻿Public Class 添加场地信息
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        TextBox1.Text = ""
-        TextBox2.Text = ""
-        TextBox1.Focus()
+    Private Sub btnSubmit2_Click(sender As Object, e As EventArgs) Handles btnSubmit2.Click
+        txtGymName.Text = ""
+        txtGymNum.Text = ""
+        txtGymName.Focus()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub btnSubmit1_Click(sender As Object, e As EventArgs) Handles btnSubmit1.Click
         Dim s, n As String
         Dim r As Integer
-        If TextBox1.Text = "" Then
+        If txtGymName.Text = "" Then
             MsgBox("场地名称不能为空", MsgBoxStyle.Exclamation, "警告")
-            TextBox1.Focus()
+            txtGymName.Focus()
             Exit Sub
         End If
-        If TextBox2.Text = "" Then
+        If txtGymNum.Text = "" Then
             MsgBox("场地编号不能为空", MsgBoxStyle.Exclamation, "警告")
-            TextBox2.Focus()
+            txtGymNum.Focus()
             Exit Sub
         End If
         Try
             ChangguanDataSet1.Tables("Venue").Clear()
-            n = "select  *  from Venue where  Vno ='" + TextBox2.Text.Trim + "'and Vname ='" + TextBox1.Text.Trim + "'"
+            n = "select  *  from Venue where  Vno ='" + txtGymNum.Text.Trim + "'and Vname ='" + txtGymName.Text.Trim + "'"
             SqlDataAdapter1.SelectCommand.CommandText = n
             SqlDataAdapter1.Fill(ChangguanDataSet1)
             r = ChangguanDataSet1.Venue.Rows.Count
             If r <> 0 Then
                 MsgBox("该场地已存在，请重新输入", MsgBoxStyle.Exclamation, "警告")
-                TextBox1.Text = ""
-                TextBox1.Focus()
-                TextBox2.Text = ""
+                txtGymName.Text = ""
+                txtGymName.Focus()
+                txtGymNum.Text = ""
             Else
-                s = "insert into Venue values('" + TextBox1.Text + "','" + TextBox2.Text + "')"
+                s = "insert into Venue values('" + txtGymName.Text + "','" + txtGymNum.Text + "')"
                 SqlDataAdapter1.SelectCommand.CommandText = s
                 SqlDataAdapter1.Fill(ChangguanDataSet1)
                 MsgBox("添加成功", MsgBoxStyle.Information, "恭喜")
-                TextBox1.Text = ""
-                TextBox1.Focus()
-                TextBox2.Text = ""
+                txtGymName.Text = ""
+                txtGymName.Focus()
+                txtGymNum.Text = ""
 
             End If
         Catch ex As Exception
@@ -44,7 +44,7 @@
         End Try
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub btnSubmit3_Click(sender As Object, e As EventArgs) Handles btnSubmit3.Click
         Me.Close()
     End Sub
 

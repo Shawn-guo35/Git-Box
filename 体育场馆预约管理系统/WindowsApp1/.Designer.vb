@@ -22,69 +22,69 @@ Partial Class 场地管理
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.btnSubmit1 = New System.Windows.Forms.Button()
+        Me.btnSubmit2 = New System.Windows.Forms.Button()
+        Me.btnSubmit3 = New System.Windows.Forms.Button()
+        Me.btnSubmit4 = New System.Windows.Forms.Button()
+        Me.btnSubmit5 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button6 = New System.Windows.Forms.Button()
+        Me.btnSubmit6 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Button1
+        'btnSubmit1
         '
-        Me.Button1.Location = New System.Drawing.Point(63, 60)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(150, 70)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "查询场地类型"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnSubmit1.Location = New System.Drawing.Point(63, 60)
+        Me.btnSubmit1.Name = "btnSubmit1"
+        Me.btnSubmit1.Size = New System.Drawing.Size(150, 70)
+        Me.btnSubmit1.TabIndex = 0
+        Me.btnSubmit1.Text = "查询场地类型"
+        Me.btnSubmit1.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnSubmit2
         '
-        Me.Button2.Location = New System.Drawing.Point(273, 60)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(150, 70)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "查询场地信息"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnSubmit2.Location = New System.Drawing.Point(273, 60)
+        Me.btnSubmit2.Name = "btnSubmit2"
+        Me.btnSubmit2.Size = New System.Drawing.Size(150, 70)
+        Me.btnSubmit2.TabIndex = 1
+        Me.btnSubmit2.Text = "查询场地信息"
+        Me.btnSubmit2.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnSubmit3
         '
-        Me.Button3.Location = New System.Drawing.Point(489, 60)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(150, 70)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "查询场地租借情况"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnSubmit3.Location = New System.Drawing.Point(489, 60)
+        Me.btnSubmit3.Name = "btnSubmit3"
+        Me.btnSubmit3.Size = New System.Drawing.Size(150, 70)
+        Me.btnSubmit3.TabIndex = 2
+        Me.btnSubmit3.Text = "查询场地租借情况"
+        Me.btnSubmit3.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnSubmit4
         '
-        Me.Button4.Location = New System.Drawing.Point(63, 209)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(150, 70)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "添加场地类型"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnSubmit4.Location = New System.Drawing.Point(63, 209)
+        Me.btnSubmit4.Name = "btnSubmit4"
+        Me.btnSubmit4.Size = New System.Drawing.Size(150, 70)
+        Me.btnSubmit4.TabIndex = 3
+        Me.btnSubmit4.Text = "添加场地类型"
+        Me.btnSubmit4.UseVisualStyleBackColor = True
         '
-        'Button5
+        'btnSubmit5
         '
-        Me.Button5.Location = New System.Drawing.Point(273, 209)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(150, 70)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "添加场地信息"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btnSubmit5.Location = New System.Drawing.Point(273, 209)
+        Me.btnSubmit5.Name = "btnSubmit5"
+        Me.btnSubmit5.Size = New System.Drawing.Size(150, 70)
+        Me.btnSubmit5.TabIndex = 4
+        Me.btnSubmit5.Text = "添加场地信息"
+        Me.btnSubmit5.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Button6)
-        Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Controls.Add(Me.Button3)
-        Me.GroupBox1.Controls.Add(Me.Button5)
-        Me.GroupBox1.Controls.Add(Me.Button2)
-        Me.GroupBox1.Controls.Add(Me.Button4)
+        Me.GroupBox1.Controls.Add(Me.btnSubmit6)
+        Me.GroupBox1.Controls.Add(Me.btnSubmit1)
+        Me.GroupBox1.Controls.Add(Me.btnSubmit3)
+        Me.GroupBox1.Controls.Add(Me.btnSubmit5)
+        Me.GroupBox1.Controls.Add(Me.btnSubmit2)
+        Me.GroupBox1.Controls.Add(Me.btnSubmit4)
         Me.GroupBox1.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(-1, 14)
         Me.GroupBox1.Name = "GroupBox1"
@@ -93,14 +93,14 @@ Partial Class 场地管理
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "场地管理系统"
         '
-        'Button6
+        'btnSubmit6
         '
-        Me.Button6.Location = New System.Drawing.Point(489, 209)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(150, 70)
-        Me.Button6.TabIndex = 5
-        Me.Button6.Text = "退出"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.btnSubmit6.Location = New System.Drawing.Point(489, 209)
+        Me.btnSubmit6.Name = "btnSubmit6"
+        Me.btnSubmit6.Size = New System.Drawing.Size(150, 70)
+        Me.btnSubmit6.TabIndex = 5
+        Me.btnSubmit6.Text = "退出"
+        Me.btnSubmit6.UseVisualStyleBackColor = True
         '
         '场地管理
         '
@@ -115,11 +115,11 @@ Partial Class 场地管理
 
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
+    Friend WithEvents btnSubmit1 As Button
+    Friend WithEvents btnSubmit2 As Button
+    Friend WithEvents btnSubmit3 As Button
+    Friend WithEvents btnSubmit4 As Button
+    Friend WithEvents btnSubmit5 As Button
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Button6 As Button
+    Friend WithEvents btnSubmit6 As Button
 End Class

@@ -23,182 +23,182 @@ Partial Class viewBasketball
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(viewBasketball))
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
+        Me.lblResults1 = New System.Windows.Forms.Label()
+        Me.lblResults2 = New System.Windows.Forms.Label()
+        Me.lblResults3 = New System.Windows.Forms.Label()
+        Me.lblResults4 = New System.Windows.Forms.Label()
+        Me.lblResults5 = New System.Windows.Forms.Label()
+        Me.lblResults6 = New System.Windows.Forms.Label()
+        Me.lblResults7 = New System.Windows.Forms.Label()
+        Me.lblResults8 = New System.Windows.Forms.Label()
+        Me.lblResults9 = New System.Windows.Forms.Label()
+        Me.lblResults10 = New System.Windows.Forms.Label()
+        Me.lblResults11 = New System.Windows.Forms.Label()
+        Me.lblResults12 = New System.Windows.Forms.Label()
+        Me.lblResults13 = New System.Windows.Forms.Label()
+        Me.lblResults14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.OleDbConnection1 = New System.Data.OleDb.OleDbConnection()
         Me.OleDbSelectCommand1 = New System.Data.OleDb.OleDbCommand()
         Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter()
         Me.DataSet1 = New System.Data.DataSet()
-        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label16 = New System.Windows.Forms.Label()
+        Me.picBasketball14 = New System.Windows.Forms.PictureBox()
+        Me.picBasketball13 = New System.Windows.Forms.PictureBox()
+        Me.picBasketball12 = New System.Windows.Forms.PictureBox()
+        Me.picBasketball11 = New System.Windows.Forms.PictureBox()
+        Me.picBasketball10 = New System.Windows.Forms.PictureBox()
+        Me.picBasketball9 = New System.Windows.Forms.PictureBox()
+        Me.picBasketball8 = New System.Windows.Forms.PictureBox()
+        Me.picBasketball7 = New System.Windows.Forms.PictureBox()
+        Me.picBasketball6 = New System.Windows.Forms.PictureBox()
+        Me.picBasketball5 = New System.Windows.Forms.PictureBox()
+        Me.picBasketball3 = New System.Windows.Forms.PictureBox()
+        Me.picBasketball2 = New System.Windows.Forms.PictureBox()
+        Me.picBasketball4 = New System.Windows.Forms.PictureBox()
+        Me.picBasketball1 = New System.Windows.Forms.PictureBox()
+        Me.lblResults16 = New System.Windows.Forms.Label()
         CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBasketball14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBasketball13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBasketball12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBasketball11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBasketball10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBasketball9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBasketball8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBasketball7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBasketball6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBasketball5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBasketball3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBasketball2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBasketball4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picBasketball1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Label1
+        'lblResults1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(93, 66)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(23, 15)
-        Me.Label1.TabIndex = 22
-        Me.Label1.Text = "01"
+        Me.lblResults1.AutoSize = True
+        Me.lblResults1.Location = New System.Drawing.Point(93, 66)
+        Me.lblResults1.Name = "lblResults1"
+        Me.lblResults1.Size = New System.Drawing.Size(23, 15)
+        Me.lblResults1.TabIndex = 22
+        Me.lblResults1.Text = "01"
         '
-        'Label2
+        'lblResults2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(250, 66)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(23, 15)
-        Me.Label2.TabIndex = 23
-        Me.Label2.Text = "02"
+        Me.lblResults2.AutoSize = True
+        Me.lblResults2.Location = New System.Drawing.Point(250, 66)
+        Me.lblResults2.Name = "lblResults2"
+        Me.lblResults2.Size = New System.Drawing.Size(23, 15)
+        Me.lblResults2.TabIndex = 23
+        Me.lblResults2.Text = "02"
         '
-        'Label3
+        'lblResults3
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(405, 66)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(23, 15)
-        Me.Label3.TabIndex = 24
-        Me.Label3.Text = "03"
+        Me.lblResults3.AutoSize = True
+        Me.lblResults3.Location = New System.Drawing.Point(405, 66)
+        Me.lblResults3.Name = "lblResults3"
+        Me.lblResults3.Size = New System.Drawing.Size(23, 15)
+        Me.lblResults3.TabIndex = 24
+        Me.lblResults3.Text = "03"
         '
-        'Label4
+        'lblResults4
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(543, 66)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(23, 15)
-        Me.Label4.TabIndex = 25
-        Me.Label4.Text = "04"
+        Me.lblResults4.AutoSize = True
+        Me.lblResults4.Location = New System.Drawing.Point(543, 66)
+        Me.lblResults4.Name = "lblResults4"
+        Me.lblResults4.Size = New System.Drawing.Size(23, 15)
+        Me.lblResults4.TabIndex = 25
+        Me.lblResults4.Text = "04"
         '
-        'Label5
+        'lblResults5
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(641, 66)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(23, 15)
-        Me.Label5.TabIndex = 26
-        Me.Label5.Text = "05"
+        Me.lblResults5.AutoSize = True
+        Me.lblResults5.Location = New System.Drawing.Point(641, 66)
+        Me.lblResults5.Name = "lblResults5"
+        Me.lblResults5.Size = New System.Drawing.Size(23, 15)
+        Me.lblResults5.TabIndex = 26
+        Me.lblResults5.Text = "05"
         '
-        'Label6
+        'lblResults6
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(641, 434)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(23, 15)
-        Me.Label6.TabIndex = 27
-        Me.Label6.Text = "06"
+        Me.lblResults6.AutoSize = True
+        Me.lblResults6.Location = New System.Drawing.Point(641, 434)
+        Me.lblResults6.Name = "lblResults6"
+        Me.lblResults6.Size = New System.Drawing.Size(23, 15)
+        Me.lblResults6.TabIndex = 27
+        Me.lblResults6.Text = "06"
         '
-        'Label7
+        'lblResults7
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(738, 66)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(23, 15)
-        Me.Label7.TabIndex = 28
-        Me.Label7.Text = "07"
+        Me.lblResults7.AutoSize = True
+        Me.lblResults7.Location = New System.Drawing.Point(738, 66)
+        Me.lblResults7.Name = "lblResults7"
+        Me.lblResults7.Size = New System.Drawing.Size(23, 15)
+        Me.lblResults7.TabIndex = 28
+        Me.lblResults7.Text = "07"
         '
-        'Label8
+        'lblResults8
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(738, 434)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(23, 15)
-        Me.Label8.TabIndex = 29
-        Me.Label8.Text = "08"
+        Me.lblResults8.AutoSize = True
+        Me.lblResults8.Location = New System.Drawing.Point(738, 434)
+        Me.lblResults8.Name = "lblResults8"
+        Me.lblResults8.Size = New System.Drawing.Size(23, 15)
+        Me.lblResults8.TabIndex = 29
+        Me.lblResults8.Text = "08"
         '
-        'Label9
+        'lblResults9
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(838, 66)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(23, 15)
-        Me.Label9.TabIndex = 30
-        Me.Label9.Text = "09"
+        Me.lblResults9.AutoSize = True
+        Me.lblResults9.Location = New System.Drawing.Point(838, 66)
+        Me.lblResults9.Name = "lblResults9"
+        Me.lblResults9.Size = New System.Drawing.Size(23, 15)
+        Me.lblResults9.TabIndex = 30
+        Me.lblResults9.Text = "09"
         '
-        'Label10
+        'lblResults10
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(838, 434)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(23, 15)
-        Me.Label10.TabIndex = 31
-        Me.Label10.Text = "10"
+        Me.lblResults10.AutoSize = True
+        Me.lblResults10.Location = New System.Drawing.Point(838, 434)
+        Me.lblResults10.Name = "lblResults10"
+        Me.lblResults10.Size = New System.Drawing.Size(23, 15)
+        Me.lblResults10.TabIndex = 31
+        Me.lblResults10.Text = "10"
         '
-        'Label11
+        'lblResults11
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(932, 66)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(23, 15)
-        Me.Label11.TabIndex = 32
-        Me.Label11.Text = "11"
+        Me.lblResults11.AutoSize = True
+        Me.lblResults11.Location = New System.Drawing.Point(932, 66)
+        Me.lblResults11.Name = "lblResults11"
+        Me.lblResults11.Size = New System.Drawing.Size(23, 15)
+        Me.lblResults11.TabIndex = 32
+        Me.lblResults11.Text = "11"
         '
-        'Label12
+        'lblResults12
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(932, 434)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(23, 15)
-        Me.Label12.TabIndex = 33
-        Me.Label12.Text = "12"
+        Me.lblResults12.AutoSize = True
+        Me.lblResults12.Location = New System.Drawing.Point(932, 434)
+        Me.lblResults12.Name = "lblResults12"
+        Me.lblResults12.Size = New System.Drawing.Size(23, 15)
+        Me.lblResults12.TabIndex = 33
+        Me.lblResults12.Text = "12"
         '
-        'Label13
+        'lblResults13
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(1035, 66)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(23, 15)
-        Me.Label13.TabIndex = 34
-        Me.Label13.Text = "13"
+        Me.lblResults13.AutoSize = True
+        Me.lblResults13.Location = New System.Drawing.Point(1035, 66)
+        Me.lblResults13.Name = "lblResults13"
+        Me.lblResults13.Size = New System.Drawing.Size(23, 15)
+        Me.lblResults13.TabIndex = 34
+        Me.lblResults13.Text = "13"
         '
-        'Label14
+        'lblResults14
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(1035, 434)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(23, 15)
-        Me.Label14.TabIndex = 35
-        Me.Label14.Text = "14"
+        Me.lblResults14.AutoSize = True
+        Me.lblResults14.Location = New System.Drawing.Point(1035, 434)
+        Me.lblResults14.Name = "lblResults14"
+        Me.lblResults14.Size = New System.Drawing.Size(23, 15)
+        Me.lblResults14.TabIndex = 35
+        Me.lblResults14.Text = "14"
         '
         'Label15
         '
@@ -218,7 +218,7 @@ Partial Class viewBasketball
         '
         Me.OleDbSelectCommand1.CommandText = "SELECT  Vaddress, INrental, OUTrental" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM      Vtype" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "WHERE   (Vname = '篮球场')"
         '
-        'odadSelBaseket
+        'OleDbDataAdapter1
         '
         Me.OleDbDataAdapter1.SelectCommand = Me.OleDbSelectCommand1
         Me.OleDbDataAdapter1.TableMappings.AddRange(New System.Data.Common.DataTableMapping() {New System.Data.Common.DataTableMapping("Table", "Vtype", New System.Data.Common.DataColumnMapping() {New System.Data.Common.DataColumnMapping("Vaddress", "Vaddress"), New System.Data.Common.DataColumnMapping("INrental", "INrental"), New System.Data.Common.DataColumnMapping("OUTrental", "OUTrental")})})
@@ -227,244 +227,244 @@ Partial Class viewBasketball
         '
         Me.DataSet1.DataSetName = "NewDataSet"
         '
-        'PictureBox14
+        'picBasketball14
         '
-        Me.PictureBox14.BackgroundImage = CType(resources.GetObject("PictureBox14.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox14.Location = New System.Drawing.Point(994, 259)
-        Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(100, 160)
-        Me.PictureBox14.TabIndex = 21
-        Me.PictureBox14.TabStop = False
+        Me.picBasketball14.BackgroundImage = CType(resources.GetObject("picBasketball14.BackgroundImage"), System.Drawing.Image)
+        Me.picBasketball14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picBasketball14.Location = New System.Drawing.Point(994, 259)
+        Me.picBasketball14.Name = "picBasketball14"
+        Me.picBasketball14.Size = New System.Drawing.Size(100, 160)
+        Me.picBasketball14.TabIndex = 21
+        Me.picBasketball14.TabStop = False
         '
-        'PictureBox13
+        'picBasketball13
         '
-        Me.PictureBox13.BackgroundImage = CType(resources.GetObject("PictureBox13.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox13.Location = New System.Drawing.Point(994, 93)
-        Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(100, 160)
-        Me.PictureBox13.TabIndex = 20
-        Me.PictureBox13.TabStop = False
+        Me.picBasketball13.BackgroundImage = CType(resources.GetObject("picBasketball13.BackgroundImage"), System.Drawing.Image)
+        Me.picBasketball13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picBasketball13.Location = New System.Drawing.Point(994, 93)
+        Me.picBasketball13.Name = "picBasketball13"
+        Me.picBasketball13.Size = New System.Drawing.Size(100, 160)
+        Me.picBasketball13.TabIndex = 20
+        Me.picBasketball13.TabStop = False
         '
-        'PictureBox12
+        'picBasketball12
         '
-        Me.PictureBox12.BackgroundImage = CType(resources.GetObject("PictureBox12.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox12.Location = New System.Drawing.Point(897, 259)
-        Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(100, 160)
-        Me.PictureBox12.TabIndex = 19
-        Me.PictureBox12.TabStop = False
+        Me.picBasketball12.BackgroundImage = CType(resources.GetObject("picBasketball12.BackgroundImage"), System.Drawing.Image)
+        Me.picBasketball12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picBasketball12.Location = New System.Drawing.Point(897, 259)
+        Me.picBasketball12.Name = "picBasketball12"
+        Me.picBasketball12.Size = New System.Drawing.Size(100, 160)
+        Me.picBasketball12.TabIndex = 19
+        Me.picBasketball12.TabStop = False
         '
-        'PictureBox11
+        'picBasketball11
         '
-        Me.PictureBox11.BackgroundImage = CType(resources.GetObject("PictureBox11.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox11.Location = New System.Drawing.Point(897, 93)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(100, 160)
-        Me.PictureBox11.TabIndex = 18
-        Me.PictureBox11.TabStop = False
+        Me.picBasketball11.BackgroundImage = CType(resources.GetObject("picBasketball11.BackgroundImage"), System.Drawing.Image)
+        Me.picBasketball11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picBasketball11.Location = New System.Drawing.Point(897, 93)
+        Me.picBasketball11.Name = "picBasketball11"
+        Me.picBasketball11.Size = New System.Drawing.Size(100, 160)
+        Me.picBasketball11.TabIndex = 18
+        Me.picBasketball11.TabStop = False
         '
-        'PictureBox10
+        'picBasketball10
         '
-        Me.PictureBox10.BackgroundImage = CType(resources.GetObject("PictureBox10.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox10.Location = New System.Drawing.Point(800, 259)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(100, 160)
-        Me.PictureBox10.TabIndex = 17
-        Me.PictureBox10.TabStop = False
+        Me.picBasketball10.BackgroundImage = CType(resources.GetObject("picBasketball10.BackgroundImage"), System.Drawing.Image)
+        Me.picBasketball10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picBasketball10.Location = New System.Drawing.Point(800, 259)
+        Me.picBasketball10.Name = "picBasketball10"
+        Me.picBasketball10.Size = New System.Drawing.Size(100, 160)
+        Me.picBasketball10.TabIndex = 17
+        Me.picBasketball10.TabStop = False
         '
-        'PictureBox9
+        'picBasketball9
         '
-        Me.PictureBox9.BackgroundImage = CType(resources.GetObject("PictureBox9.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox9.Location = New System.Drawing.Point(800, 93)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(100, 160)
-        Me.PictureBox9.TabIndex = 16
-        Me.PictureBox9.TabStop = False
+        Me.picBasketball9.BackgroundImage = CType(resources.GetObject("picBasketball9.BackgroundImage"), System.Drawing.Image)
+        Me.picBasketball9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picBasketball9.Location = New System.Drawing.Point(800, 93)
+        Me.picBasketball9.Name = "picBasketball9"
+        Me.picBasketball9.Size = New System.Drawing.Size(100, 160)
+        Me.picBasketball9.TabIndex = 16
+        Me.picBasketball9.TabStop = False
         '
-        'PictureBox8
+        'picBasketball8
         '
-        Me.PictureBox8.BackgroundImage = CType(resources.GetObject("PictureBox8.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox8.Location = New System.Drawing.Point(703, 259)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(100, 160)
-        Me.PictureBox8.TabIndex = 15
-        Me.PictureBox8.TabStop = False
+        Me.picBasketball8.BackgroundImage = CType(resources.GetObject("picBasketball8.BackgroundImage"), System.Drawing.Image)
+        Me.picBasketball8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picBasketball8.Location = New System.Drawing.Point(703, 259)
+        Me.picBasketball8.Name = "picBasketball8"
+        Me.picBasketball8.Size = New System.Drawing.Size(100, 160)
+        Me.picBasketball8.TabIndex = 15
+        Me.picBasketball8.TabStop = False
         '
-        'PictureBox7
+        'picBasketball7
         '
-        Me.PictureBox7.BackgroundImage = CType(resources.GetObject("PictureBox7.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox7.Location = New System.Drawing.Point(703, 93)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(100, 160)
-        Me.PictureBox7.TabIndex = 14
-        Me.PictureBox7.TabStop = False
+        Me.picBasketball7.BackgroundImage = CType(resources.GetObject("picBasketball7.BackgroundImage"), System.Drawing.Image)
+        Me.picBasketball7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picBasketball7.Location = New System.Drawing.Point(703, 93)
+        Me.picBasketball7.Name = "picBasketball7"
+        Me.picBasketball7.Size = New System.Drawing.Size(100, 160)
+        Me.picBasketball7.TabIndex = 14
+        Me.picBasketball7.TabStop = False
         '
-        'PictureBox6
+        'picBasketball6
         '
-        Me.PictureBox6.BackgroundImage = CType(resources.GetObject("PictureBox6.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox6.Location = New System.Drawing.Point(603, 259)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(100, 160)
-        Me.PictureBox6.TabIndex = 13
-        Me.PictureBox6.TabStop = False
+        Me.picBasketball6.BackgroundImage = CType(resources.GetObject("picBasketball6.BackgroundImage"), System.Drawing.Image)
+        Me.picBasketball6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picBasketball6.Location = New System.Drawing.Point(603, 259)
+        Me.picBasketball6.Name = "picBasketball6"
+        Me.picBasketball6.Size = New System.Drawing.Size(100, 160)
+        Me.picBasketball6.TabIndex = 13
+        Me.picBasketball6.TabStop = False
         '
-        'PictureBox5
+        'picBasketball5
         '
-        Me.PictureBox5.BackgroundImage = CType(resources.GetObject("PictureBox5.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox5.Location = New System.Drawing.Point(603, 93)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(100, 160)
-        Me.PictureBox5.TabIndex = 12
-        Me.PictureBox5.TabStop = False
+        Me.picBasketball5.BackgroundImage = CType(resources.GetObject("picBasketball5.BackgroundImage"), System.Drawing.Image)
+        Me.picBasketball5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picBasketball5.Location = New System.Drawing.Point(603, 93)
+        Me.picBasketball5.Name = "picBasketball5"
+        Me.picBasketball5.Size = New System.Drawing.Size(100, 160)
+        Me.picBasketball5.TabIndex = 12
+        Me.picBasketball5.TabStop = False
         '
-        'PictureBox3
+        'picBasketball3
         '
-        Me.PictureBox3.BackgroundImage = CType(resources.GetObject("PictureBox3.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox3.Location = New System.Drawing.Point(337, 93)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(160, 100)
-        Me.PictureBox3.TabIndex = 11
-        Me.PictureBox3.TabStop = False
+        Me.picBasketball3.BackgroundImage = CType(resources.GetObject("picBasketball3.BackgroundImage"), System.Drawing.Image)
+        Me.picBasketball3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picBasketball3.Location = New System.Drawing.Point(337, 93)
+        Me.picBasketball3.Name = "picBasketball3"
+        Me.picBasketball3.Size = New System.Drawing.Size(160, 100)
+        Me.picBasketball3.TabIndex = 11
+        Me.picBasketball3.TabStop = False
         '
-        'PictureBox2
+        'picBasketball2
         '
-        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox2.Location = New System.Drawing.Point(180, 93)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(160, 100)
-        Me.PictureBox2.TabIndex = 10
-        Me.PictureBox2.TabStop = False
+        Me.picBasketball2.BackgroundImage = CType(resources.GetObject("picBasketball2.BackgroundImage"), System.Drawing.Image)
+        Me.picBasketball2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picBasketball2.Location = New System.Drawing.Point(180, 93)
+        Me.picBasketball2.Name = "picBasketball2"
+        Me.picBasketball2.Size = New System.Drawing.Size(160, 100)
+        Me.picBasketball2.TabIndex = 10
+        Me.picBasketball2.TabStop = False
         '
-        'PictureBox4
+        'picBasketball4
         '
-        Me.PictureBox4.BackgroundImage = CType(resources.GetObject("PictureBox4.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox4.Location = New System.Drawing.Point(503, 93)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(100, 160)
-        Me.PictureBox4.TabIndex = 9
-        Me.PictureBox4.TabStop = False
+        Me.picBasketball4.BackgroundImage = CType(resources.GetObject("picBasketball4.BackgroundImage"), System.Drawing.Image)
+        Me.picBasketball4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picBasketball4.Location = New System.Drawing.Point(503, 93)
+        Me.picBasketball4.Name = "picBasketball4"
+        Me.picBasketball4.Size = New System.Drawing.Size(100, 160)
+        Me.picBasketball4.TabIndex = 9
+        Me.picBasketball4.TabStop = False
         '
-        'PictureBox1
+        'picBasketball1
         '
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(23, 93)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(160, 100)
-        Me.PictureBox1.TabIndex = 7
-        Me.PictureBox1.TabStop = False
+        Me.picBasketball1.BackgroundImage = CType(resources.GetObject("picBasketball1.BackgroundImage"), System.Drawing.Image)
+        Me.picBasketball1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.picBasketball1.Location = New System.Drawing.Point(23, 93)
+        Me.picBasketball1.Name = "picBasketball1"
+        Me.picBasketball1.Size = New System.Drawing.Size(160, 100)
+        Me.picBasketball1.TabIndex = 7
+        Me.picBasketball1.TabStop = False
         '
-        'Label16
+        'lblResults16
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(78, 315)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(71, 15)
-        Me.Label16.TabIndex = 37
-        Me.Label16.Text = "lblInfor"
+        Me.lblResults16.AutoSize = True
+        Me.lblResults16.Location = New System.Drawing.Point(78, 315)
+        Me.lblResults16.Name = "lblResults16"
+        Me.lblResults16.Size = New System.Drawing.Size(71, 15)
+        Me.lblResults16.TabIndex = 37
+        Me.lblResults16.Text = "lblInfor"
         '
         'viewBasketball
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1121, 497)
-        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.lblResults16)
         Me.Controls.Add(Me.Label15)
-        Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.Label13)
-        Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PictureBox14)
-        Me.Controls.Add(Me.PictureBox13)
-        Me.Controls.Add(Me.PictureBox12)
-        Me.Controls.Add(Me.PictureBox11)
-        Me.Controls.Add(Me.PictureBox10)
-        Me.Controls.Add(Me.PictureBox9)
-        Me.Controls.Add(Me.PictureBox8)
-        Me.Controls.Add(Me.PictureBox7)
-        Me.Controls.Add(Me.PictureBox6)
-        Me.Controls.Add(Me.PictureBox5)
-        Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.PictureBox4)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.lblResults14)
+        Me.Controls.Add(Me.lblResults13)
+        Me.Controls.Add(Me.lblResults12)
+        Me.Controls.Add(Me.lblResults11)
+        Me.Controls.Add(Me.lblResults10)
+        Me.Controls.Add(Me.lblResults9)
+        Me.Controls.Add(Me.lblResults8)
+        Me.Controls.Add(Me.lblResults7)
+        Me.Controls.Add(Me.lblResults6)
+        Me.Controls.Add(Me.lblResults5)
+        Me.Controls.Add(Me.lblResults4)
+        Me.Controls.Add(Me.lblResults3)
+        Me.Controls.Add(Me.lblResults2)
+        Me.Controls.Add(Me.lblResults1)
+        Me.Controls.Add(Me.picBasketball14)
+        Me.Controls.Add(Me.picBasketball13)
+        Me.Controls.Add(Me.picBasketball12)
+        Me.Controls.Add(Me.picBasketball11)
+        Me.Controls.Add(Me.picBasketball10)
+        Me.Controls.Add(Me.picBasketball9)
+        Me.Controls.Add(Me.picBasketball8)
+        Me.Controls.Add(Me.picBasketball7)
+        Me.Controls.Add(Me.picBasketball6)
+        Me.Controls.Add(Me.picBasketball5)
+        Me.Controls.Add(Me.picBasketball3)
+        Me.Controls.Add(Me.picBasketball2)
+        Me.Controls.Add(Me.picBasketball4)
+        Me.Controls.Add(Me.picBasketball1)
         Me.Name = "viewBasketball"
         Me.Text = "篮球场"
         CType(Me.DataSet1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBasketball14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBasketball13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBasketball12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBasketball11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBasketball10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBasketball9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBasketball8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBasketball7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBasketball6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBasketball5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBasketball3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBasketball2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBasketball4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picBasketball1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents PictureBox6 As PictureBox
-    Friend WithEvents PictureBox7 As PictureBox
-    Friend WithEvents PictureBox8 As PictureBox
-    Friend WithEvents PictureBox9 As PictureBox
-    Friend WithEvents PictureBox10 As PictureBox
-    Friend WithEvents PictureBox11 As PictureBox
-    Friend WithEvents PictureBox12 As PictureBox
-    Friend WithEvents PictureBox13 As PictureBox
-    Friend WithEvents PictureBox14 As PictureBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Label14 As Label
+    Friend WithEvents picBasketball1 As PictureBox
+    Friend WithEvents picBasketball4 As PictureBox
+    Friend WithEvents picBasketball2 As PictureBox
+    Friend WithEvents picBasketball3 As PictureBox
+    Friend WithEvents picBasketball5 As PictureBox
+    Friend WithEvents picBasketball6 As PictureBox
+    Friend WithEvents picBasketball7 As PictureBox
+    Friend WithEvents picBasketball8 As PictureBox
+    Friend WithEvents picBasketball9 As PictureBox
+    Friend WithEvents picBasketball10 As PictureBox
+    Friend WithEvents picBasketball11 As PictureBox
+    Friend WithEvents picBasketball12 As PictureBox
+    Friend WithEvents picBasketball13 As PictureBox
+    Friend WithEvents picBasketball14 As PictureBox
+    Friend WithEvents lblResults1 As Label
+    Friend WithEvents lblResults2 As Label
+    Friend WithEvents lblResults3 As Label
+    Friend WithEvents lblResults4 As Label
+    Friend WithEvents lblResults5 As Label
+    Friend WithEvents lblResults6 As Label
+    Friend WithEvents lblResults7 As Label
+    Friend WithEvents lblResults8 As Label
+    Friend WithEvents lblResults9 As Label
+    Friend WithEvents lblResults10 As Label
+    Friend WithEvents lblResults11 As Label
+    Friend WithEvents lblResults12 As Label
+    Friend WithEvents lblResults13 As Label
+    Friend WithEvents lblResults14 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents OleDbConnection1 As OleDb.OleDbConnection
     Friend WithEvents OleDbSelectCommand1 As OleDb.OleDbCommand
     Friend WithEvents OleDbDataAdapter1 As OleDb.OleDbDataAdapter
     Friend WithEvents DataSet1 As DataSet
-    Friend WithEvents Label16 As Label
+    Friend WithEvents lblResults16 As Label
 End Class
