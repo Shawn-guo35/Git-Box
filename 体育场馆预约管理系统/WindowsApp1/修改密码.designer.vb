@@ -22,90 +22,90 @@ Partial Class 修改密码
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.lblResults1 = New System.Windows.Forms.Label()
+        Me.lblResults2 = New System.Windows.Forms.Label()
+        Me.lblResults3 = New System.Windows.Forms.Label()
+        Me.btnSubmit = New System.Windows.Forms.Button()
+        Me.txtOldPwd = New System.Windows.Forms.TextBox()
+        Me.txtNewPwd = New System.Windows.Forms.TextBox()
+        Me.txtNewPwd1 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
-        'Label1
+        'lblResults1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label1.Location = New System.Drawing.Point(51, 96)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(129, 20)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "输入旧密码："
+        Me.lblResults1.AutoSize = True
+        Me.lblResults1.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.lblResults1.Location = New System.Drawing.Point(51, 96)
+        Me.lblResults1.Name = "lblResults1"
+        Me.lblResults1.Size = New System.Drawing.Size(129, 20)
+        Me.lblResults1.TabIndex = 0
+        Me.lblResults1.Text = "输入旧密码："
         '
-        'Label2
+        'lblResults2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label2.Location = New System.Drawing.Point(51, 160)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(129, 20)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "输入新密码："
+        Me.lblResults2.AutoSize = True
+        Me.lblResults2.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.lblResults2.Location = New System.Drawing.Point(51, 160)
+        Me.lblResults2.Name = "lblResults2"
+        Me.lblResults2.Size = New System.Drawing.Size(129, 20)
+        Me.lblResults2.TabIndex = 1
+        Me.lblResults2.Text = "输入新密码："
         '
-        'Label3
+        'lblResults3
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label3.Location = New System.Drawing.Point(51, 222)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(129, 20)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "确认新密码："
+        Me.lblResults3.AutoSize = True
+        Me.lblResults3.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.lblResults3.Location = New System.Drawing.Point(51, 222)
+        Me.lblResults3.Name = "lblResults3"
+        Me.lblResults3.Size = New System.Drawing.Size(129, 20)
+        Me.lblResults3.TabIndex = 2
+        Me.lblResults3.Text = "确认新密码："
         '
-        'Button1
+        'btnSubmit
         '
-        Me.Button1.Location = New System.Drawing.Point(136, 276)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(101, 57)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "确认修改"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnSubmit.Location = New System.Drawing.Point(136, 276)
+        Me.btnSubmit.Name = "btnSubmit"
+        Me.btnSubmit.Size = New System.Drawing.Size(101, 57)
+        Me.btnSubmit.TabIndex = 3
+        Me.btnSubmit.Text = "确认修改"
+        Me.btnSubmit.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'txtOldPwd
         '
-        Me.TextBox1.Location = New System.Drawing.Point(192, 91)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox1.Size = New System.Drawing.Size(146, 25)
-        Me.TextBox1.TabIndex = 4
+        Me.txtOldPwd.Location = New System.Drawing.Point(192, 91)
+        Me.txtOldPwd.Name = "txtOldPwd"
+        Me.txtOldPwd.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtOldPwd.Size = New System.Drawing.Size(146, 25)
+        Me.txtOldPwd.TabIndex = 4
         '
-        'TextBox2
+        'txtNewPwd
         '
-        Me.TextBox2.Location = New System.Drawing.Point(192, 160)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(146, 25)
-        Me.TextBox2.TabIndex = 5
+        Me.txtNewPwd.Location = New System.Drawing.Point(192, 160)
+        Me.txtNewPwd.Name = "txtNewPwd"
+        Me.txtNewPwd.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtNewPwd.Size = New System.Drawing.Size(146, 25)
+        Me.txtNewPwd.TabIndex = 5
         '
-        'TextBox3
+        'txtNewPwd1
         '
-        Me.TextBox3.Location = New System.Drawing.Point(192, 217)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox3.Size = New System.Drawing.Size(146, 25)
-        Me.TextBox3.TabIndex = 6
+        Me.txtNewPwd1.Location = New System.Drawing.Point(192, 217)
+        Me.txtNewPwd1.Name = "txtNewPwd1"
+        Me.txtNewPwd1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtNewPwd1.Size = New System.Drawing.Size(146, 25)
+        Me.txtNewPwd1.TabIndex = 6
         '
         '修改密码
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(397, 374)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.txtNewPwd1)
+        Me.Controls.Add(Me.txtNewPwd)
+        Me.Controls.Add(Me.txtOldPwd)
+        Me.Controls.Add(Me.btnSubmit)
+        Me.Controls.Add(Me.lblResults3)
+        Me.Controls.Add(Me.lblResults2)
+        Me.Controls.Add(Me.lblResults1)
         Me.Name = "修改密码"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "修改密码"
@@ -114,11 +114,11 @@ Partial Class 修改密码
 
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents lblResults1 As Label
+    Friend WithEvents lblResults2 As Label
+    Friend WithEvents lblResults3 As Label
+    Friend WithEvents btnSubmit As Button
+    Friend WithEvents txtOldPwd As TextBox
+    Friend WithEvents txtNewPwd As TextBox
+    Friend WithEvents txtNewPwd1 As TextBox
 End Class

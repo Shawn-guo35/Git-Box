@@ -4,6 +4,7 @@ Public Class 登录界面
     Dim cm As SqlCommand
 
     Private Sub 登陆界面_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        '登录界面为启动页面为了让欢迎界面先出现 设置两个timer来登录界面隐藏
         欢迎界面.Show()
         Timer1.Interval = 1 '1000=1秒
         Timer1.Enabled = True
@@ -22,12 +23,12 @@ Public Class 登录界面
         Timer2.Enabled = False
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
+    Private Sub btnRegister_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
         Me.Hide()
         注册界面.Show()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
+    Private Sub btnLogin2_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
         If txtID.Text = "" Then
             MsgBox("请输入账号！")
 

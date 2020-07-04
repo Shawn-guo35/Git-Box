@@ -23,17 +23,17 @@ Partial Class 添加场地类型
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(添加场地类型))
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.lblResults1 = New System.Windows.Forms.Label()
+        Me.lblResults2 = New System.Windows.Forms.Label()
+        Me.lblResults3 = New System.Windows.Forms.Label()
+        Me.lblResults4 = New System.Windows.Forms.Label()
+        Me.txtGymName = New System.Windows.Forms.TextBox()
+        Me.txtGymInrent = New System.Windows.Forms.TextBox()
+        Me.txtGymOutrent = New System.Windows.Forms.TextBox()
+        Me.txtGymAddress = New System.Windows.Forms.TextBox()
+        Me.btnInsertVenue = New System.Windows.Forms.Button()
+        Me.btnCancel = New System.Windows.Forms.Button()
+        Me.btnReturn = New System.Windows.Forms.Button()
         Me.SqlDataAdapter1 = New System.Data.SqlClient.SqlDataAdapter()
         Me.SqlDeleteCommand1 = New System.Data.SqlClient.SqlCommand()
         Me.SqlConnection1 = New System.Data.SqlClient.SqlConnection()
@@ -44,97 +44,97 @@ Partial Class 添加场地类型
         CType(Me.ChangguanDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Label1
+        'lblResults1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("宋体", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label1.Location = New System.Drawing.Point(70, 26)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(104, 19)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "场地名称："
+        Me.lblResults1.AutoSize = True
+        Me.lblResults1.Font = New System.Drawing.Font("宋体", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.lblResults1.Location = New System.Drawing.Point(70, 26)
+        Me.lblResults1.Name = "lblResults1"
+        Me.lblResults1.Size = New System.Drawing.Size(104, 19)
+        Me.lblResults1.TabIndex = 0
+        Me.lblResults1.Text = "场地名称："
         '
-        'Label2
+        'lblResults2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("宋体", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label2.Location = New System.Drawing.Point(51, 87)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(142, 19)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "校内人员租金："
+        Me.lblResults2.AutoSize = True
+        Me.lblResults2.Font = New System.Drawing.Font("宋体", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.lblResults2.Location = New System.Drawing.Point(51, 87)
+        Me.lblResults2.Name = "lblResults2"
+        Me.lblResults2.Size = New System.Drawing.Size(142, 19)
+        Me.lblResults2.TabIndex = 1
+        Me.lblResults2.Text = "校内人员租金："
         '
-        'Label3
+        'lblResults3
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("宋体", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label3.Location = New System.Drawing.Point(51, 150)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(142, 19)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "校外人员租金："
+        Me.lblResults3.AutoSize = True
+        Me.lblResults3.Font = New System.Drawing.Font("宋体", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.lblResults3.Location = New System.Drawing.Point(51, 150)
+        Me.lblResults3.Name = "lblResults3"
+        Me.lblResults3.Size = New System.Drawing.Size(142, 19)
+        Me.lblResults3.TabIndex = 2
+        Me.lblResults3.Text = "校外人员租金："
         '
-        'Label4
+        'lblResults4
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("宋体", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label4.Location = New System.Drawing.Point(70, 218)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(104, 19)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "场地地址："
+        Me.lblResults4.AutoSize = True
+        Me.lblResults4.Font = New System.Drawing.Font("宋体", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.lblResults4.Location = New System.Drawing.Point(70, 218)
+        Me.lblResults4.Name = "lblResults4"
+        Me.lblResults4.Size = New System.Drawing.Size(104, 19)
+        Me.lblResults4.TabIndex = 3
+        Me.lblResults4.Text = "场地地址："
         '
-        'TextBox1
+        'txtGymName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(248, 20)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 25)
-        Me.TextBox1.TabIndex = 5
+        Me.txtGymName.Location = New System.Drawing.Point(248, 20)
+        Me.txtGymName.Name = "txtGymName"
+        Me.txtGymName.Size = New System.Drawing.Size(100, 25)
+        Me.txtGymName.TabIndex = 5
         '
-        'TextBox2
+        'txtGymInrent
         '
-        Me.TextBox2.Location = New System.Drawing.Point(248, 84)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 25)
-        Me.TextBox2.TabIndex = 6
+        Me.txtGymInrent.Location = New System.Drawing.Point(248, 84)
+        Me.txtGymInrent.Name = "txtGymInrent"
+        Me.txtGymInrent.Size = New System.Drawing.Size(100, 25)
+        Me.txtGymInrent.TabIndex = 6
         '
-        'TextBox3
+        'txtGymOutrent
         '
-        Me.TextBox3.Location = New System.Drawing.Point(248, 147)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 25)
-        Me.TextBox3.TabIndex = 7
+        Me.txtGymOutrent.Location = New System.Drawing.Point(248, 147)
+        Me.txtGymOutrent.Name = "txtGymOutrent"
+        Me.txtGymOutrent.Size = New System.Drawing.Size(100, 25)
+        Me.txtGymOutrent.TabIndex = 7
         '
-        'TextBox4
+        'txtGymAddress
         '
-        Me.TextBox4.Location = New System.Drawing.Point(248, 212)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 25)
-        Me.TextBox4.TabIndex = 8
+        Me.txtGymAddress.Location = New System.Drawing.Point(248, 212)
+        Me.txtGymAddress.Name = "txtGymAddress"
+        Me.txtGymAddress.Size = New System.Drawing.Size(100, 25)
+        Me.txtGymAddress.TabIndex = 8
         '
-        'Button1
+        'btnInsertVenue
         '
-        Me.Button1.Location = New System.Drawing.Point(38, 280)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(96, 51)
-        Me.Button1.TabIndex = 16
-        Me.Button1.Text = "确认添加"
+        Me.btnInsertVenue.Location = New System.Drawing.Point(38, 280)
+        Me.btnInsertVenue.Name = "btnInsertVenue"
+        Me.btnInsertVenue.Size = New System.Drawing.Size(96, 51)
+        Me.btnInsertVenue.TabIndex = 16
+        Me.btnInsertVenue.Text = "确认添加"
         '
-        'Button2
+        'btnCancel
         '
-        Me.Button2.Location = New System.Drawing.Point(189, 280)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(96, 51)
-        Me.Button2.TabIndex = 17
-        Me.Button2.Text = "取消添加"
+        Me.btnCancel.Location = New System.Drawing.Point(189, 280)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(96, 51)
+        Me.btnCancel.TabIndex = 17
+        Me.btnCancel.Text = "取消添加"
         '
-        'Button3
+        'btnReturn
         '
-        Me.Button3.Location = New System.Drawing.Point(335, 280)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(96, 51)
-        Me.Button3.TabIndex = 18
-        Me.Button3.Text = "退出"
+        Me.btnReturn.Location = New System.Drawing.Point(335, 280)
+        Me.btnReturn.Name = "btnReturn"
+        Me.btnReturn.Size = New System.Drawing.Size(96, 51)
+        Me.btnReturn.TabIndex = 18
+        Me.btnReturn.Text = "退出"
         '
         'SqlDataAdapter1
         '
@@ -187,17 +187,17 @@ Partial Class 添加场地类型
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(471, 363)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.btnReturn)
+        Me.Controls.Add(Me.btnCancel)
+        Me.Controls.Add(Me.btnInsertVenue)
+        Me.Controls.Add(Me.txtGymAddress)
+        Me.Controls.Add(Me.txtGymOutrent)
+        Me.Controls.Add(Me.txtGymInrent)
+        Me.Controls.Add(Me.txtGymName)
+        Me.Controls.Add(Me.lblResults4)
+        Me.Controls.Add(Me.lblResults3)
+        Me.Controls.Add(Me.lblResults2)
+        Me.Controls.Add(Me.lblResults1)
         Me.Name = "添加场地类型"
         Me.Text = "添加场地类型"
         CType(Me.ChangguanDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -206,17 +206,17 @@ Partial Class 添加场地类型
 
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents lblResults1 As Label
+    Friend WithEvents lblResults2 As Label
+    Friend WithEvents lblResults3 As Label
+    Friend WithEvents lblResults4 As Label
+    Friend WithEvents txtGymName As TextBox
+    Friend WithEvents txtGymInrent As TextBox
+    Friend WithEvents txtGymOutrent As TextBox
+    Friend WithEvents txtGymAddress As TextBox
+    Friend WithEvents btnInsertVenue As Button
+    Friend WithEvents btnCancel As Button
+    Friend WithEvents btnReturn As Button
     Friend WithEvents SqlDataAdapter1 As SqlClient.SqlDataAdapter
     Friend WithEvents SqlDeleteCommand1 As SqlClient.SqlCommand
     Friend WithEvents SqlConnection1 As SqlClient.SqlConnection

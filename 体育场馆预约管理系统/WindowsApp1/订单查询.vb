@@ -3,7 +3,7 @@ Public Class 订单查询
     Dim objdataset As New DataSet
     Dim dataset1 As New DataSet
     Dim dataset2 As New DataSet
-    Dim constr$, sqlstr$
+    Dim constr, sqlstr As String
 
     Private Sub btnReturn_Click(sender As Object, e As EventArgs) Handles btnReturn.Click
         Me.Close()

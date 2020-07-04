@@ -26,15 +26,15 @@ Partial Class 用户管理
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(用户管理))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.btnClose = New System.Windows.Forms.Button()
+        Me.btnInsertUsers = New System.Windows.Forms.Button()
+        Me.txtCondition = New System.Windows.Forms.TextBox()
+        Me.cbmGym = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.btnDeleteUsers = New System.Windows.Forms.Button()
+        Me.btnUpdateUsers = New System.Windows.Forms.Button()
+        Me.gvwUsers = New System.Windows.Forms.DataGridView()
         Me.IDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.UnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.UidentityDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -49,7 +49,7 @@ Partial Class 用户管理
         Me.UsersTableAdapter = New WindowsApp1.changguanDataSet1TableAdapters.UsersTableAdapter()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.gvwUsers, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UsersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ChangguanDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ChangguanDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -58,14 +58,14 @@ Partial Class 用户管理
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.DataGridView2)
-        Me.GroupBox1.Controls.Add(Me.Button5)
-        Me.GroupBox1.Controls.Add(Me.Button4)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.btnClose)
+        Me.GroupBox1.Controls.Add(Me.btnInsertUsers)
+        Me.GroupBox1.Controls.Add(Me.txtCondition)
+        Me.GroupBox1.Controls.Add(Me.cbmGym)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.Button3)
-        Me.GroupBox1.Controls.Add(Me.Button2)
+        Me.GroupBox1.Controls.Add(Me.btnDeleteUsers)
+        Me.GroupBox1.Controls.Add(Me.btnUpdateUsers)
         Me.GroupBox1.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(1, 12)
         Me.GroupBox1.Name = "GroupBox1"
@@ -83,40 +83,40 @@ Partial Class 用户管理
         Me.DataGridView2.Size = New System.Drawing.Size(10, 10)
         Me.DataGridView2.TabIndex = 2
         '
-        'Button5
+        'btnClose
         '
-        Me.Button5.Location = New System.Drawing.Point(666, 107)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(107, 51)
-        Me.Button5.TabIndex = 8
-        Me.Button5.Text = "退出"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btnClose.Location = New System.Drawing.Point(666, 107)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(107, 51)
+        Me.btnClose.TabIndex = 8
+        Me.btnClose.Text = "退出"
+        Me.btnClose.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnInsertUsers
         '
-        Me.Button4.Location = New System.Drawing.Point(518, 107)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(107, 51)
-        Me.Button4.TabIndex = 7
-        Me.Button4.Text = "查询"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnInsertUsers.Location = New System.Drawing.Point(518, 107)
+        Me.btnInsertUsers.Name = "btnInsertUsers"
+        Me.btnInsertUsers.Size = New System.Drawing.Size(107, 51)
+        Me.btnInsertUsers.TabIndex = 7
+        Me.btnInsertUsers.Text = "查询"
+        Me.btnInsertUsers.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'txtCondition
         '
-        Me.TextBox1.Location = New System.Drawing.Point(340, 133)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(135, 25)
-        Me.TextBox1.TabIndex = 6
+        Me.txtCondition.Location = New System.Drawing.Point(340, 133)
+        Me.txtCondition.Multiline = True
+        Me.txtCondition.Name = "txtCondition"
+        Me.txtCondition.Size = New System.Drawing.Size(135, 25)
+        Me.txtCondition.TabIndex = 6
         '
-        'ComboBox1
+        'cbmGym
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"帐号", "姓名", "身份"})
-        Me.ComboBox1.Location = New System.Drawing.Point(182, 130)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 28)
-        Me.ComboBox1.TabIndex = 5
+        Me.cbmGym.FormattingEnabled = True
+        Me.cbmGym.Items.AddRange(New Object() {"帐号", "姓名", "身份"})
+        Me.cbmGym.Location = New System.Drawing.Point(182, 130)
+        Me.cbmGym.Name = "cbmGym"
+        Me.cbmGym.Size = New System.Drawing.Size(121, 28)
+        Me.cbmGym.TabIndex = 5
         '
         'Label2
         '
@@ -136,36 +136,36 @@ Partial Class 用户管理
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "查询方式"
         '
-        'Button3
+        'btnDeleteUsers
         '
-        Me.Button3.Location = New System.Drawing.Point(142, 36)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(68, 41)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "删除"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnDeleteUsers.Location = New System.Drawing.Point(142, 36)
+        Me.btnDeleteUsers.Name = "btnDeleteUsers"
+        Me.btnDeleteUsers.Size = New System.Drawing.Size(68, 41)
+        Me.btnDeleteUsers.TabIndex = 2
+        Me.btnDeleteUsers.Text = "删除"
+        Me.btnDeleteUsers.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnUpdateUsers
         '
-        Me.Button2.Location = New System.Drawing.Point(29, 36)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(65, 41)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "修改"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnUpdateUsers.Location = New System.Drawing.Point(29, 36)
+        Me.btnUpdateUsers.Name = "btnUpdateUsers"
+        Me.btnUpdateUsers.Size = New System.Drawing.Size(65, 41)
+        Me.btnUpdateUsers.TabIndex = 1
+        Me.btnUpdateUsers.Text = "修改"
+        Me.btnUpdateUsers.UseVisualStyleBackColor = True
         '
-        'DataGridView1
+        'gvwUsers
         '
-        Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.BackgroundColor = System.Drawing.Color.Silver
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDDataGridViewTextBoxColumn, Me.UnameDataGridViewTextBoxColumn, Me.UidentityDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.UsersBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(1, 208)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowTemplate.Height = 27
-        Me.DataGridView1.Size = New System.Drawing.Size(800, 245)
-        Me.DataGridView1.TabIndex = 1
+        Me.gvwUsers.AutoGenerateColumns = False
+        Me.gvwUsers.BackgroundColor = System.Drawing.Color.Silver
+        Me.gvwUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.gvwUsers.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDDataGridViewTextBoxColumn, Me.UnameDataGridViewTextBoxColumn, Me.UidentityDataGridViewTextBoxColumn})
+        Me.gvwUsers.DataSource = Me.UsersBindingSource
+        Me.gvwUsers.Location = New System.Drawing.Point(1, 208)
+        Me.gvwUsers.Name = "gvwUsers"
+        Me.gvwUsers.RowTemplate.Height = 27
+        Me.gvwUsers.Size = New System.Drawing.Size(800, 245)
+        Me.gvwUsers.TabIndex = 1
         '
         'IDDataGridViewTextBoxColumn
         '
@@ -240,14 +240,14 @@ Partial Class 用户管理
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(821, 453)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.gvwUsers)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "用户管理"
         Me.Text = "用户管理系统"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gvwUsers, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.UsersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ChangguanDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ChangguanDataSet, System.ComponentModel.ISupportInitialize).EndInit()
@@ -256,15 +256,15 @@ Partial Class 用户管理
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents btnDeleteUsers As Button
+    Friend WithEvents btnUpdateUsers As Button
+    Friend WithEvents btnClose As Button
+    Friend WithEvents btnInsertUsers As Button
+    Friend WithEvents txtCondition As TextBox
+    Friend WithEvents cbmGym As ComboBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents gvwUsers As DataGridView
     Friend WithEvents DataGridView2 As DataGridView
     Friend WithEvents SqlConnection1 As SqlClient.SqlConnection
     Friend WithEvents SqlDataAdapter1 As SqlClient.SqlDataAdapter

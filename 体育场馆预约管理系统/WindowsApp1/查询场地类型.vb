@@ -5,47 +5,40 @@
 
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub btnSelcetVenue_Click(sender As Object, e As EventArgs) Handles btnSelcetVenue.Click
         Dim s As String
-        If TextBox1.Text = "" Then
+        If txtCondition.Text = "" Then
             MsgBox("请输入查询条件", MsgBoxStyle.Exclamation, "警告")
             Exit Sub
         End If
-        Select Case ComboBox1.SelectedItem
+        Select Case cbmGym.SelectedItem
             Case "场地名称"
                 ChangguanDataSet1.Tables("Vtype").Clear()
-                s = "select  *  from  Vtype  where  Vname ='" + TextBox1.Text + "'"
+                s = "select  *  from  Vtype  where  Vname ='" + txtCondition.Text + "'"
                 SqlDataAdapter1.SelectCommand.CommandText = s
                 SqlDataAdapter1.Fill(ChangguanDataSet1)
-                DataGridView1.DataSource = ChangguanDataSet1.Tables("Vtype")
+                gvwVtype.DataSource = ChangguanDataSet1.Tables("Vtype")
 
         End Select
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub btnUpdteVenue_Click(sender As Object, e As EventArgs) Handles btnUpdteVenue.Click
         SqlDataAdapter1.Update(ChangguanDataSet1)
         MsgBox("数据已修改", MsgBoxStyle.Information, "恭喜")
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Dim x As Integer
+    Private Sub btnDeleteVenue_Click(sender As Object, e As EventArgs) Handles btnDeleteVenue.Click
+        Dim x As Integer    '要删除的行数
         If MsgBox("您真的删除该条数据吗？", MsgBoxStyle.YesNo + MsgBoxStyle.Question, "删除数据") = DialogResult.Yes Then
-            x = DataGridView1.CurrentRow.Index()
+            x = gvwVtype.CurrentRow.Index()
             ChangguanDataSet1.Tables("Vtype").Rows(x).Delete()
             SqlDataAdapter1.Update(ChangguanDataSet1)
             MsgBox("删除成功", MsgBoxStyle.Information, "恭喜")
         End If
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+    Private Sub btnReturn_Click(sender As Object, e As EventArgs) Handles btnReturn.Click
         Me.Close()
     End Sub
 
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
-
-    End Sub
-
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
-
-    End Sub
 End Class

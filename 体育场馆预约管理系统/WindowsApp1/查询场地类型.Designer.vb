@@ -25,15 +25,15 @@ Partial Class 查询场地类型
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(查询场地类型))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.btnReturn = New System.Windows.Forms.Button()
+        Me.btnSelcetVenue = New System.Windows.Forms.Button()
+        Me.txtCondition = New System.Windows.Forms.TextBox()
+        Me.lblResults2 = New System.Windows.Forms.Label()
+        Me.cbmGym = New System.Windows.Forms.ComboBox()
+        Me.lblResults1 = New System.Windows.Forms.Label()
+        Me.btnDeleteVenue = New System.Windows.Forms.Button()
+        Me.btnUpdteVenue = New System.Windows.Forms.Button()
+        Me.gvwVtype = New System.Windows.Forms.DataGridView()
         Me.VnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.INrentalDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.OUTrentalDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -49,7 +49,7 @@ Partial Class 查询场地类型
         Me.ChangguanDataSet1 = New WindowsApp1.changguanDataSet()
         Me.VtypeTableAdapter = New WindowsApp1.changguanDataSet3TableAdapters.VtypeTableAdapter()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.gvwVtype, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VtypeBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ChangguanDataSet3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ChangguanDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -57,14 +57,14 @@ Partial Class 查询场地类型
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Button5)
-        Me.GroupBox1.Controls.Add(Me.Button4)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.Button3)
-        Me.GroupBox1.Controls.Add(Me.Button2)
+        Me.GroupBox1.Controls.Add(Me.btnReturn)
+        Me.GroupBox1.Controls.Add(Me.btnSelcetVenue)
+        Me.GroupBox1.Controls.Add(Me.txtCondition)
+        Me.GroupBox1.Controls.Add(Me.lblResults2)
+        Me.GroupBox1.Controls.Add(Me.cbmGym)
+        Me.GroupBox1.Controls.Add(Me.lblResults1)
+        Me.GroupBox1.Controls.Add(Me.btnDeleteVenue)
+        Me.GroupBox1.Controls.Add(Me.btnUpdteVenue)
         Me.GroupBox1.Location = New System.Drawing.Point(3, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(798, 177)
@@ -72,89 +72,89 @@ Partial Class 查询场地类型
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "查询场地类型"
         '
-        'Button5
+        'btnReturn
         '
-        Me.Button5.Location = New System.Drawing.Point(648, 106)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(107, 51)
-        Me.Button5.TabIndex = 10
-        Me.Button5.Text = "退出"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btnReturn.Location = New System.Drawing.Point(648, 106)
+        Me.btnReturn.Name = "btnReturn"
+        Me.btnReturn.Size = New System.Drawing.Size(107, 51)
+        Me.btnReturn.TabIndex = 10
+        Me.btnReturn.Text = "退出"
+        Me.btnReturn.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnSelcetVenue
         '
-        Me.Button4.Location = New System.Drawing.Point(500, 106)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(107, 51)
-        Me.Button4.TabIndex = 9
-        Me.Button4.Text = "查询"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnSelcetVenue.Location = New System.Drawing.Point(500, 106)
+        Me.btnSelcetVenue.Name = "btnSelcetVenue"
+        Me.btnSelcetVenue.Size = New System.Drawing.Size(107, 51)
+        Me.btnSelcetVenue.TabIndex = 9
+        Me.btnSelcetVenue.Text = "查询"
+        Me.btnSelcetVenue.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'txtCondition
         '
-        Me.TextBox1.Location = New System.Drawing.Point(300, 132)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(135, 25)
-        Me.TextBox1.TabIndex = 8
+        Me.txtCondition.Location = New System.Drawing.Point(300, 132)
+        Me.txtCondition.Multiline = True
+        Me.txtCondition.Name = "txtCondition"
+        Me.txtCondition.Size = New System.Drawing.Size(135, 25)
+        Me.txtCondition.TabIndex = 8
         '
-        'Label2
+        'lblResults2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(331, 101)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(67, 15)
-        Me.Label2.TabIndex = 7
-        Me.Label2.Text = "查询条件"
+        Me.lblResults2.AutoSize = True
+        Me.lblResults2.Location = New System.Drawing.Point(331, 101)
+        Me.lblResults2.Name = "lblResults2"
+        Me.lblResults2.Size = New System.Drawing.Size(67, 15)
+        Me.lblResults2.TabIndex = 7
+        Me.lblResults2.Text = "查询条件"
         '
-        'ComboBox1
+        'cbmGym
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"场地名称"})
-        Me.ComboBox1.Location = New System.Drawing.Point(139, 134)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 23)
-        Me.ComboBox1.TabIndex = 6
-        Me.ComboBox1.Text = "场地名称"
+        Me.cbmGym.FormattingEnabled = True
+        Me.cbmGym.Items.AddRange(New Object() {"场地名称"})
+        Me.cbmGym.Location = New System.Drawing.Point(139, 134)
+        Me.cbmGym.Name = "cbmGym"
+        Me.cbmGym.Size = New System.Drawing.Size(121, 23)
+        Me.cbmGym.TabIndex = 6
+        Me.cbmGym.Text = "场地名称"
         '
-        'Label1
+        'lblResults1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(163, 101)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(67, 15)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "查询方式"
+        Me.lblResults1.AutoSize = True
+        Me.lblResults1.Location = New System.Drawing.Point(163, 101)
+        Me.lblResults1.Name = "lblResults1"
+        Me.lblResults1.Size = New System.Drawing.Size(67, 15)
+        Me.lblResults1.TabIndex = 5
+        Me.lblResults1.Text = "查询方式"
         '
-        'Button3
+        'btnDeleteVenue
         '
-        Me.Button3.Location = New System.Drawing.Point(103, 36)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(55, 52)
-        Me.Button3.TabIndex = 4
-        Me.Button3.Text = "删除"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnDeleteVenue.Location = New System.Drawing.Point(103, 36)
+        Me.btnDeleteVenue.Name = "btnDeleteVenue"
+        Me.btnDeleteVenue.Size = New System.Drawing.Size(55, 52)
+        Me.btnDeleteVenue.TabIndex = 4
+        Me.btnDeleteVenue.Text = "删除"
+        Me.btnDeleteVenue.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnUpdteVenue
         '
-        Me.Button2.Location = New System.Drawing.Point(30, 36)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(55, 52)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "修改"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnUpdteVenue.Location = New System.Drawing.Point(30, 36)
+        Me.btnUpdteVenue.Name = "btnUpdteVenue"
+        Me.btnUpdteVenue.Size = New System.Drawing.Size(55, 52)
+        Me.btnUpdteVenue.TabIndex = 3
+        Me.btnUpdteVenue.Text = "修改"
+        Me.btnUpdteVenue.UseVisualStyleBackColor = True
         '
-        'DataGridView1
+        'gvwVtype
         '
-        Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.VnameDataGridViewTextBoxColumn, Me.INrentalDataGridViewTextBoxColumn, Me.OUTrentalDataGridViewTextBoxColumn, Me.VaddressDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.VtypeBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(3, 195)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowTemplate.Height = 27
-        Me.DataGridView1.Size = New System.Drawing.Size(798, 256)
-        Me.DataGridView1.TabIndex = 1
+        Me.gvwVtype.AutoGenerateColumns = False
+        Me.gvwVtype.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.gvwVtype.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.VnameDataGridViewTextBoxColumn, Me.INrentalDataGridViewTextBoxColumn, Me.OUTrentalDataGridViewTextBoxColumn, Me.VaddressDataGridViewTextBoxColumn})
+        Me.gvwVtype.DataSource = Me.VtypeBindingSource
+        Me.gvwVtype.Location = New System.Drawing.Point(3, 195)
+        Me.gvwVtype.Name = "gvwVtype"
+        Me.gvwVtype.RowTemplate.Height = 27
+        Me.gvwVtype.Size = New System.Drawing.Size(798, 256)
+        Me.gvwVtype.TabIndex = 1
         '
         'VnameDataGridViewTextBoxColumn
         '
@@ -249,13 +249,13 @@ Partial Class 查询场地类型
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.gvwVtype)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "查询场地类型"
         Me.Text = "查询场地类型"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.gvwVtype, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.VtypeBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ChangguanDataSet3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ChangguanDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -264,15 +264,15 @@ Partial Class 查询场地类型
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents btnDeleteVenue As Button
+    Friend WithEvents btnUpdteVenue As Button
+    Friend WithEvents lblResults1 As Label
+    Friend WithEvents cbmGym As ComboBox
+    Friend WithEvents lblResults2 As Label
+    Friend WithEvents txtCondition As TextBox
+    Friend WithEvents btnReturn As Button
+    Friend WithEvents btnSelcetVenue As Button
+    Friend WithEvents gvwVtype As DataGridView
     Friend WithEvents SqlDataAdapter1 As SqlClient.SqlDataAdapter
     Friend WithEvents SqlDeleteCommand1 As SqlClient.SqlCommand
     Friend WithEvents SqlConnection1 As SqlClient.SqlConnection

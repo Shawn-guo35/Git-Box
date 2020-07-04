@@ -24,14 +24,14 @@ Partial Class 用户界面
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(用户界面))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.注销ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.查询历史订单ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.帮助ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.退出ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.注销ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.退出ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiUser = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiUserPwd = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiUserOrders = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiAppointment = New System.Windows.Forms.ToolStripMenuItem()
+        Me.帮助tsmiHelp = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiClose = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiCancellation = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmiClose1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -40,51 +40,51 @@ Partial Class 用户界面
         Me.MenuStrip1.BackColor = System.Drawing.Color.Transparent
         resources.ApplyResources(Me.MenuStrip1, "MenuStrip1")
         Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ToolStripMenuItem2, Me.帮助ToolStripMenuItem, Me.退出ToolStripMenuItem1})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiUser, Me.tsmiAppointment, Me.帮助tsmiHelp, Me.tsmiClose})
         Me.MenuStrip1.Name = "MenuStrip1"
         '
-        'ToolStripMenuItem1
+        'tsmiUser
         '
-        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.注销ToolStripMenuItem, Me.查询历史订单ToolStripMenuItem})
-        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        resources.ApplyResources(Me.ToolStripMenuItem1, "ToolStripMenuItem1")
+        Me.tsmiUser.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiUserPwd, Me.tsmiUserOrders})
+        Me.tsmiUser.Name = "tsmiUser"
+        resources.ApplyResources(Me.tsmiUser, "tsmiUser")
         '
-        '注销ToolStripMenuItem
+        'tsmiUserPwd
         '
-        Me.注销ToolStripMenuItem.Name = "注销ToolStripMenuItem"
-        resources.ApplyResources(Me.注销ToolStripMenuItem, "注销ToolStripMenuItem")
+        Me.tsmiUserPwd.Name = "tsmiUserPwd"
+        resources.ApplyResources(Me.tsmiUserPwd, "tsmiUserPwd")
         '
-        '查询历史订单ToolStripMenuItem
+        'tsmiUserOrders
         '
-        Me.查询历史订单ToolStripMenuItem.Name = "查询历史订单ToolStripMenuItem"
-        resources.ApplyResources(Me.查询历史订单ToolStripMenuItem, "查询历史订单ToolStripMenuItem")
+        Me.tsmiUserOrders.Name = "tsmiUserOrders"
+        resources.ApplyResources(Me.tsmiUserOrders, "tsmiUserOrders")
         '
-        'ToolStripMenuItem2
+        'tsmiAppointment
         '
-        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        resources.ApplyResources(Me.ToolStripMenuItem2, "ToolStripMenuItem2")
+        Me.tsmiAppointment.Name = "tsmiAppointment"
+        resources.ApplyResources(Me.tsmiAppointment, "tsmiAppointment")
         '
-        '帮助ToolStripMenuItem
+        '帮助tsmiHelp
         '
-        Me.帮助ToolStripMenuItem.ForeColor = System.Drawing.Color.Black
-        Me.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem"
-        resources.ApplyResources(Me.帮助ToolStripMenuItem, "帮助ToolStripMenuItem")
+        Me.帮助tsmiHelp.ForeColor = System.Drawing.Color.Black
+        Me.帮助tsmiHelp.Name = "帮助tsmiHelp"
+        resources.ApplyResources(Me.帮助tsmiHelp, "帮助tsmiHelp")
         '
-        '退出ToolStripMenuItem1
+        'tsmiClose
         '
-        Me.退出ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.注销ToolStripMenuItem1, Me.退出ToolStripMenuItem2})
-        Me.退出ToolStripMenuItem1.Name = "退出ToolStripMenuItem1"
-        resources.ApplyResources(Me.退出ToolStripMenuItem1, "退出ToolStripMenuItem1")
+        Me.tsmiClose.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmiCancellation, Me.tsmiClose1})
+        Me.tsmiClose.Name = "tsmiClose"
+        resources.ApplyResources(Me.tsmiClose, "tsmiClose")
         '
-        '注销ToolStripMenuItem1
+        'tsmiCancellation
         '
-        Me.注销ToolStripMenuItem1.Name = "注销ToolStripMenuItem1"
-        resources.ApplyResources(Me.注销ToolStripMenuItem1, "注销ToolStripMenuItem1")
+        Me.tsmiCancellation.Name = "tsmiCancellation"
+        resources.ApplyResources(Me.tsmiCancellation, "tsmiCancellation")
         '
-        '退出ToolStripMenuItem2
+        'tsmiClose1
         '
-        Me.退出ToolStripMenuItem2.Name = "退出ToolStripMenuItem2"
-        resources.ApplyResources(Me.退出ToolStripMenuItem2, "退出ToolStripMenuItem2")
+        Me.tsmiClose1.Name = "tsmiClose1"
+        resources.ApplyResources(Me.tsmiClose1, "tsmiClose1")
         '
         '用户界面
         '
@@ -103,12 +103,12 @@ Partial Class 用户界面
     End Sub
 
     Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents 注销ToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
-    Friend WithEvents 帮助ToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents 退出ToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents 注销ToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents 退出ToolStripMenuItem2 As ToolStripMenuItem
-    Friend WithEvents 查询历史订单ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents tsmiUser As ToolStripMenuItem
+    Friend WithEvents tsmiUserPwd As ToolStripMenuItem
+    Friend WithEvents tsmiAppointment As ToolStripMenuItem
+    Friend WithEvents 帮助tsmiHelp As ToolStripMenuItem
+    Friend WithEvents tsmiClose As ToolStripMenuItem
+    Friend WithEvents tsmiCancellation As ToolStripMenuItem
+    Friend WithEvents tsmiClose1 As ToolStripMenuItem
+    Friend WithEvents tsmiUserOrders As ToolStripMenuItem
 End Class

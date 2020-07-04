@@ -22,69 +22,69 @@ Partial Class 场地管理
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.btnSelectVenue = New System.Windows.Forms.Button()
+        Me.btnSelectVtype = New System.Windows.Forms.Button()
+        Me.btnSelectLease = New System.Windows.Forms.Button()
+        Me.btnInsertVenue = New System.Windows.Forms.Button()
+        Me.btnInsertVtype = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button6 = New System.Windows.Forms.Button()
+        Me.btnReturn = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Button1
+        'btnSelectVenue
         '
-        Me.Button1.Location = New System.Drawing.Point(63, 60)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(150, 70)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "查询场地类型"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnSelectVenue.Location = New System.Drawing.Point(63, 60)
+        Me.btnSelectVenue.Name = "btnSelectVenue"
+        Me.btnSelectVenue.Size = New System.Drawing.Size(150, 70)
+        Me.btnSelectVenue.TabIndex = 0
+        Me.btnSelectVenue.Text = "查询场地类型"
+        Me.btnSelectVenue.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnSelectVtype
         '
-        Me.Button2.Location = New System.Drawing.Point(273, 60)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(150, 70)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "查询场地信息"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnSelectVtype.Location = New System.Drawing.Point(273, 60)
+        Me.btnSelectVtype.Name = "btnSelectVtype"
+        Me.btnSelectVtype.Size = New System.Drawing.Size(150, 70)
+        Me.btnSelectVtype.TabIndex = 1
+        Me.btnSelectVtype.Text = "查询场地信息"
+        Me.btnSelectVtype.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnSelectLease
         '
-        Me.Button3.Location = New System.Drawing.Point(489, 60)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(150, 70)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "查询场地租借情况"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnSelectLease.Location = New System.Drawing.Point(489, 60)
+        Me.btnSelectLease.Name = "btnSelectLease"
+        Me.btnSelectLease.Size = New System.Drawing.Size(150, 70)
+        Me.btnSelectLease.TabIndex = 2
+        Me.btnSelectLease.Text = "查询场地租借情况"
+        Me.btnSelectLease.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnInsertVenue
         '
-        Me.Button4.Location = New System.Drawing.Point(63, 209)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(150, 70)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "添加场地类型"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnInsertVenue.Location = New System.Drawing.Point(63, 209)
+        Me.btnInsertVenue.Name = "btnInsertVenue"
+        Me.btnInsertVenue.Size = New System.Drawing.Size(150, 70)
+        Me.btnInsertVenue.TabIndex = 3
+        Me.btnInsertVenue.Text = "添加场地类型"
+        Me.btnInsertVenue.UseVisualStyleBackColor = True
         '
-        'Button5
+        'btnInsertVtype
         '
-        Me.Button5.Location = New System.Drawing.Point(273, 209)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(150, 70)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "添加场地信息"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btnInsertVtype.Location = New System.Drawing.Point(273, 209)
+        Me.btnInsertVtype.Name = "btnInsertVtype"
+        Me.btnInsertVtype.Size = New System.Drawing.Size(150, 70)
+        Me.btnInsertVtype.TabIndex = 4
+        Me.btnInsertVtype.Text = "添加场地信息"
+        Me.btnInsertVtype.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Button6)
-        Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Controls.Add(Me.Button3)
-        Me.GroupBox1.Controls.Add(Me.Button5)
-        Me.GroupBox1.Controls.Add(Me.Button2)
-        Me.GroupBox1.Controls.Add(Me.Button4)
+        Me.GroupBox1.Controls.Add(Me.btnReturn)
+        Me.GroupBox1.Controls.Add(Me.btnSelectVenue)
+        Me.GroupBox1.Controls.Add(Me.btnSelectLease)
+        Me.GroupBox1.Controls.Add(Me.btnInsertVtype)
+        Me.GroupBox1.Controls.Add(Me.btnSelectVtype)
+        Me.GroupBox1.Controls.Add(Me.btnInsertVenue)
         Me.GroupBox1.Font = New System.Drawing.Font("宋体", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(-1, 14)
         Me.GroupBox1.Name = "GroupBox1"
@@ -93,14 +93,14 @@ Partial Class 场地管理
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "场地管理系统"
         '
-        'Button6
+        'btnReturn
         '
-        Me.Button6.Location = New System.Drawing.Point(489, 209)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(150, 70)
-        Me.Button6.TabIndex = 5
-        Me.Button6.Text = "退出"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.btnReturn.Location = New System.Drawing.Point(489, 209)
+        Me.btnReturn.Name = "btnReturn"
+        Me.btnReturn.Size = New System.Drawing.Size(150, 70)
+        Me.btnReturn.TabIndex = 5
+        Me.btnReturn.Text = "退出"
+        Me.btnReturn.UseVisualStyleBackColor = True
         '
         '场地管理
         '
@@ -115,11 +115,11 @@ Partial Class 场地管理
 
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
+    Friend WithEvents btnSelectVenue As Button
+    Friend WithEvents btnSelectVtype As Button
+    Friend WithEvents btnSelectLease As Button
+    Friend WithEvents btnInsertVenue As Button
+    Friend WithEvents btnInsertVtype As Button
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Button6 As Button
+    Friend WithEvents btnReturn As Button
 End Class

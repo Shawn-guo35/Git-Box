@@ -5,12 +5,12 @@ Public Class 注册界面
     Dim ds As DataSet
     Dim cm As SqlCommand
     Dim sqlstr As String
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnReturn.Click
+    Private Sub btnReturn_Click(sender As Object, e As EventArgs) Handles btnReturn.Click
         Me.Close()
         登录界面.Show()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
+    Private Sub btnRegister_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
         If txtID.Text = "" Then
             MsgBox("请输入账号！")
         End If
