@@ -93,56 +93,60 @@ namespace WindowsApp1
 		
 		public void btnLogin2_Click(object sender, EventArgs e)
 		{
-			if (txtID.Text == "")
-			{
-				MessageBox.Show("请输入账号！");
+            //调试
+            用户界面.Default.Show();
+            this.Visible = false;
+
+   //         if (txtID.Text == "")
+			//{
+			//	MessageBox.Show("请输入账号！");
 				
-			}
-			if (txtPwd.Text == "")
-			{
-				MessageBox.Show("请输入密码！");
-			}
-			string cnStr = "Data Source=DESKTOP-DSP6URK\\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=changguan;";
-			cn = new SqlConnection(cnStr);
-			cn.Open();
+			//}
+			//if (txtPwd.Text == "")
+			//{
+			//	MessageBox.Show("请输入密码！");
+			//}
+			//string cnStr = "Data Source=DESKTOP-DSP6URK\\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=changguan;";
+			//cn = new SqlConnection(cnStr);
+			//cn.Open();
 			
-			if (radUser.Checked)
-			{
-				cm = new SqlCommand("select count(*) from Users where ID='" + txtID.Text + "'and Upassword='" + txtPwd.Text + "'", cn);
-				var num1 = Convert.ToInt32(cm.ExecuteScalar());
-				if (num1 > 0)
-				{
-					cn.Close();
-					MessageBox.Show("登录成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-					用户界面.Default.Show();
-					this.Visible = false;
-				}
-				else
-				{
-					MessageBox.Show("用户名或密码错误", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information);
-				}
-			}
-			else if (radAdmin.Checked)
-			{
-				cm = new SqlCommand("select count(*) from Users where ID='" + txtID.Text + "'and Upassword='" + txtPwd.Text + "'", cn);
-				var num2 = Convert.ToInt32(cm.ExecuteScalar());
-				if (num2 > 0)
-				{
-					cn.Close();
-					MessageBox.Show("登录成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-					管理员界面.Default.Show();
-					this.Visible = false;
-				}
-				else
-				{
-					MessageBox.Show("用户名或密码错误", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information);
-				}
+			//if (radUser.Checked)
+			//{
+			//	cm = new SqlCommand("select count(*) from Users where ID='" + txtID.Text + "'and Upassword='" + txtPwd.Text + "'", cn);
+			//	var num1 = Convert.ToInt32(cm.ExecuteScalar());
+			//	if (num1 > 0)
+			//	{
+			//		cn.Close();
+			//		MessageBox.Show("登录成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			//		用户界面.Default.Show();
+			//		this.Visible = false;
+			//	}
+			//	else
+			//	{
+			//		MessageBox.Show("用户名或密码错误", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			//	}
+			//}
+			//else if (radAdmin.Checked)
+			//{
+			//	cm = new SqlCommand("select count(*) from Users where ID='" + txtID.Text + "'and Upassword='" + txtPwd.Text + "'", cn);
+			//	var num2 = Convert.ToInt32(cm.ExecuteScalar());
+			//	if (num2 > 0)
+			//	{
+			//		cn.Close();
+			//		MessageBox.Show("登录成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			//		管理员界面.Default.Show();
+			//		this.Visible = false;
+			//	}
+			//	else
+			//	{
+			//		MessageBox.Show("用户名或密码错误", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			//	}
 				
-			}
-			else
-			{
-				MessageBox.Show("请选择登录类型！");
-			}
+			//}
+			//else
+			//{
+			//	MessageBox.Show("请选择登录类型！");
+			//}
 			
 		}
 		
