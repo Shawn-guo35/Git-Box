@@ -57,25 +57,25 @@ namespace WindowsApp1
             this.tsmiCancellation = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiClose1 = new System.Windows.Forms.ToolStripMenuItem();
             this.funcpanel = new System.Windows.Forms.Panel();
-            this.reserve = new System.Windows.Forms.Button();
-            this.Settingpanel = new System.Windows.Forms.Panel();
-            this.equipmentMg = new System.Windows.Forms.Button();
-            this.equipmentRent = new System.Windows.Forms.Button();
-            this.changguanDataSet61 = new WindowsApp1.changguanDataSet6();
-            this.groundTypeSearch = new System.Windows.Forms.Button();
-            this.userMg = new System.Windows.Forms.Button();
-            this.orderSearch = new System.Windows.Forms.Button();
-            this.incomeStatistics = new System.Windows.Forms.Button();
-            this.bulletin = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groundInfoSearch = new System.Windows.Forms.Button();
-            this.lentInfoSearch = new System.Windows.Forms.Button();
-            this.addGroundType = new System.Windows.Forms.Button();
-            this.addGroundNum = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.updatePass = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.updatePass = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.addGroundNum = new System.Windows.Forms.Button();
+            this.addGroundType = new System.Windows.Forms.Button();
+            this.lentInfoSearch = new System.Windows.Forms.Button();
+            this.groundInfoSearch = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.bulletin = new System.Windows.Forms.Button();
+            this.incomeStatistics = new System.Windows.Forms.Button();
+            this.orderSearch = new System.Windows.Forms.Button();
+            this.userMg = new System.Windows.Forms.Button();
+            this.groundTypeSearch = new System.Windows.Forms.Button();
+            this.equipmentMg = new System.Windows.Forms.Button();
+            this.reserve = new System.Windows.Forms.Button();
+            this.equipmentRent = new System.Windows.Forms.Button();
+            this.Settingpanel = new System.Windows.Forms.Panel();
+            this.changguanDataSet61 = new WindowsApp1.changguanDataSet6();
             this.MenuStrip1.SuspendLayout();
             this.funcpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.changguanDataSet61)).BeginInit();
@@ -166,111 +166,17 @@ namespace WindowsApp1
             this.funcpanel.Controls.Add(this.equipmentRent);
             resources.ApplyResources(this.funcpanel, "funcpanel");
             this.funcpanel.Name = "funcpanel";
+            this.funcpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.funcpanel_Paint);
             // 
-            // reserve
+            // label4
             // 
-            resources.ApplyResources(this.reserve, "reserve");
-            this.reserve.Name = "reserve";
-            this.reserve.UseVisualStyleBackColor = true;
-            this.reserve.Click += new System.EventHandler(this.reserve_Click);
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
             // 
-            // Settingpanel
+            // label3
             // 
-            resources.ApplyResources(this.Settingpanel, "Settingpanel");
-            this.Settingpanel.Name = "Settingpanel";
-            // 
-            // equipmentMg
-            // 
-            resources.ApplyResources(this.equipmentMg, "equipmentMg");
-            this.equipmentMg.Name = "equipmentMg";
-            this.equipmentMg.UseVisualStyleBackColor = true;
-            this.equipmentMg.Click += new System.EventHandler(this.equipmentMg_Click);
-            // 
-            // equipmentRent
-            // 
-            resources.ApplyResources(this.equipmentRent, "equipmentRent");
-            this.equipmentRent.Name = "equipmentRent";
-            this.equipmentRent.UseVisualStyleBackColor = true;
-            this.equipmentRent.Click += new System.EventHandler(this.equipmentRent_Click);
-            // 
-            // changguanDataSet61
-            // 
-            this.changguanDataSet61.DataSetName = "changguanDataSet6";
-            this.changguanDataSet61.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // groundTypeSearch
-            // 
-            resources.ApplyResources(this.groundTypeSearch, "groundTypeSearch");
-            this.groundTypeSearch.Name = "groundTypeSearch";
-            this.groundTypeSearch.UseVisualStyleBackColor = true;
-            this.groundTypeSearch.Click += new System.EventHandler(this.groundTypeSearch_Click);
-            // 
-            // userMg
-            // 
-            resources.ApplyResources(this.userMg, "userMg");
-            this.userMg.Name = "userMg";
-            this.userMg.UseVisualStyleBackColor = true;
-            this.userMg.Click += new System.EventHandler(this.userMg_Click);
-            // 
-            // orderSearch
-            // 
-            resources.ApplyResources(this.orderSearch, "orderSearch");
-            this.orderSearch.Name = "orderSearch";
-            this.orderSearch.UseVisualStyleBackColor = true;
-            this.orderSearch.Click += new System.EventHandler(this.orderSearch_Click);
-            // 
-            // incomeStatistics
-            // 
-            resources.ApplyResources(this.incomeStatistics, "incomeStatistics");
-            this.incomeStatistics.Name = "incomeStatistics";
-            this.incomeStatistics.UseVisualStyleBackColor = true;
-            this.incomeStatistics.Click += new System.EventHandler(this.incomeStatistics_Click);
-            // 
-            // bulletin
-            // 
-            resources.ApplyResources(this.bulletin, "bulletin");
-            this.bulletin.Name = "bulletin";
-            this.bulletin.UseVisualStyleBackColor = true;
-            this.bulletin.Click += new System.EventHandler(this.bulletin_Click);
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // groundInfoSearch
-            // 
-            resources.ApplyResources(this.groundInfoSearch, "groundInfoSearch");
-            this.groundInfoSearch.Name = "groundInfoSearch";
-            this.groundInfoSearch.UseVisualStyleBackColor = true;
-            this.groundInfoSearch.Click += new System.EventHandler(this.groundInfoSearch_Click);
-            // 
-            // lentInfoSearch
-            // 
-            resources.ApplyResources(this.lentInfoSearch, "lentInfoSearch");
-            this.lentInfoSearch.Name = "lentInfoSearch";
-            this.lentInfoSearch.UseVisualStyleBackColor = true;
-            this.lentInfoSearch.Click += new System.EventHandler(this.lentInfoSearch_Click);
-            // 
-            // addGroundType
-            // 
-            resources.ApplyResources(this.addGroundType, "addGroundType");
-            this.addGroundType.Name = "addGroundType";
-            this.addGroundType.UseVisualStyleBackColor = true;
-            this.addGroundType.Click += new System.EventHandler(this.addGroundType_Click);
-            // 
-            // addGroundNum
-            // 
-            resources.ApplyResources(this.addGroundNum, "addGroundNum");
-            this.addGroundNum.Name = "addGroundNum";
-            this.addGroundNum.UseVisualStyleBackColor = true;
-            this.addGroundNum.Click += new System.EventHandler(this.addGroundNum_Click);
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
             // 
             // updatePass
             // 
@@ -279,15 +185,111 @@ namespace WindowsApp1
             this.updatePass.UseVisualStyleBackColor = true;
             this.updatePass.Click += new System.EventHandler(this.updatePass_Click);
             // 
-            // label3
+            // label2
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label4
+            // addGroundNum
             // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
+            resources.ApplyResources(this.addGroundNum, "addGroundNum");
+            this.addGroundNum.Name = "addGroundNum";
+            this.addGroundNum.UseVisualStyleBackColor = true;
+            this.addGroundNum.Click += new System.EventHandler(this.addGroundNum_Click);
+            // 
+            // addGroundType
+            // 
+            resources.ApplyResources(this.addGroundType, "addGroundType");
+            this.addGroundType.Name = "addGroundType";
+            this.addGroundType.UseVisualStyleBackColor = true;
+            this.addGroundType.Click += new System.EventHandler(this.addGroundType_Click);
+            // 
+            // lentInfoSearch
+            // 
+            resources.ApplyResources(this.lentInfoSearch, "lentInfoSearch");
+            this.lentInfoSearch.Name = "lentInfoSearch";
+            this.lentInfoSearch.UseVisualStyleBackColor = true;
+            this.lentInfoSearch.Click += new System.EventHandler(this.lentInfoSearch_Click);
+            // 
+            // groundInfoSearch
+            // 
+            resources.ApplyResources(this.groundInfoSearch, "groundInfoSearch");
+            this.groundInfoSearch.Name = "groundInfoSearch";
+            this.groundInfoSearch.UseVisualStyleBackColor = true;
+            this.groundInfoSearch.Click += new System.EventHandler(this.groundInfoSearch_Click);
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // bulletin
+            // 
+            resources.ApplyResources(this.bulletin, "bulletin");
+            this.bulletin.Name = "bulletin";
+            this.bulletin.UseVisualStyleBackColor = true;
+            this.bulletin.Click += new System.EventHandler(this.bulletin_Click);
+            // 
+            // incomeStatistics
+            // 
+            resources.ApplyResources(this.incomeStatistics, "incomeStatistics");
+            this.incomeStatistics.Name = "incomeStatistics";
+            this.incomeStatistics.UseVisualStyleBackColor = true;
+            this.incomeStatistics.Click += new System.EventHandler(this.incomeStatistics_Click);
+            // 
+            // orderSearch
+            // 
+            resources.ApplyResources(this.orderSearch, "orderSearch");
+            this.orderSearch.Name = "orderSearch";
+            this.orderSearch.UseVisualStyleBackColor = true;
+            this.orderSearch.Click += new System.EventHandler(this.orderSearch_Click);
+            // 
+            // userMg
+            // 
+            resources.ApplyResources(this.userMg, "userMg");
+            this.userMg.Name = "userMg";
+            this.userMg.UseVisualStyleBackColor = true;
+            this.userMg.Click += new System.EventHandler(this.userMg_Click);
+            // 
+            // groundTypeSearch
+            // 
+            resources.ApplyResources(this.groundTypeSearch, "groundTypeSearch");
+            this.groundTypeSearch.Name = "groundTypeSearch";
+            this.groundTypeSearch.UseVisualStyleBackColor = true;
+            this.groundTypeSearch.Click += new System.EventHandler(this.groundTypeSearch_Click);
+            // 
+            // equipmentMg
+            // 
+            resources.ApplyResources(this.equipmentMg, "equipmentMg");
+            this.equipmentMg.Name = "equipmentMg";
+            this.equipmentMg.UseVisualStyleBackColor = true;
+            this.equipmentMg.Click += new System.EventHandler(this.equipmentMg_Click);
+            // 
+            // reserve
+            // 
+            resources.ApplyResources(this.reserve, "reserve");
+            this.reserve.Name = "reserve";
+            this.reserve.UseVisualStyleBackColor = true;
+            this.reserve.Click += new System.EventHandler(this.reserve_Click);
+            // 
+            // equipmentRent
+            // 
+            resources.ApplyResources(this.equipmentRent, "equipmentRent");
+            this.equipmentRent.Name = "equipmentRent";
+            this.equipmentRent.UseVisualStyleBackColor = true;
+            this.equipmentRent.Click += new System.EventHandler(this.equipmentRent_Click);
+            // 
+            // Settingpanel
+            // 
+            resources.ApplyResources(this.Settingpanel, "Settingpanel");
+            this.Settingpanel.Name = "Settingpanel";
+            this.Settingpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.Settingpanel_Paint);
+            // 
+            // changguanDataSet61
+            // 
+            this.changguanDataSet61.DataSetName = "changguanDataSet6";
+            this.changguanDataSet61.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // 用户界面
             // 

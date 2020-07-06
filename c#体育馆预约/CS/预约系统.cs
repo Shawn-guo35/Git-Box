@@ -65,8 +65,10 @@ namespace WindowsApp1
 		
 		public void btnBasketball_Click(object sender, EventArgs e)
 		{
-			//Me.Hide()
-			orderBasketball.Default.Show();
+            //Me.Hide()
+            //Form form = new orderBasketball();
+
+            orderBasketball.Default.Show();
 		}
 		
 		public void btnSoccer_Click(object sender, EventArgs e)

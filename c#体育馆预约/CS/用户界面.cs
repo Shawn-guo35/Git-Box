@@ -218,6 +218,16 @@ namespace WindowsApp1
             Form form = new 发布公告();
             showChildForm(form);
         }
+
+        private void Settingpanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void funcpanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 	
 }
