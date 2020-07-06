@@ -25,7 +25,6 @@ namespace WindowsApp1
 			//Added to support default instance behavour in C#
 			if (defaultInstance == null)
 				defaultInstance = this;
-            this.IsMdiContainer = true;
 		}
 		
 #region Default Instance
