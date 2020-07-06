@@ -25,6 +25,7 @@ namespace WindowsApp1
 			//Added to support default instance behavour in C#
 			if (defaultInstance == null)
 				defaultInstance = this;
+            this.IsMdiContainer = true;
 		}
 		
 #region Default Instance
@@ -65,8 +66,15 @@ namespace WindowsApp1
 		
 		public void btnBasketball_Click(object sender, EventArgs e)
 		{
+            //显示篮球场预约的详细界面
 			//Me.Hide()
-			orderBasketball.Default.Show();
+			//orderBasketball.Default.Show();
+            Form form = new orderBasketball();
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.ControlBox = false;
+            form.Size = this.Size;
+            form.Location = this.Location;
+            form.Show();
 		}
 		
 		public void btnSoccer_Click(object sender, EventArgs e)
