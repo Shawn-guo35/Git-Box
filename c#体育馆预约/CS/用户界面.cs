@@ -80,7 +80,7 @@ namespace WindowsApp1
             funcpanel.Height = System.Windows.Forms.Screen.PrimaryScreen.Bounds.Height - MenuStrip1.Location.Y - MenuStrip1.Height - 3;
             Settingpanel.Location = new Point(funcpanel.Location.X + funcpanel.Width, funcpanel.Location.Y);
             Settingpanel.Height = 100;
-            Settingpanel.Width = this.Width - 200;
+            Settingpanel.Width = this.Width - funcpanel.Width;
             this.IsMdiContainer = true;
 		}
 		
@@ -115,10 +115,12 @@ namespace WindowsApp1
             //去除控制栏
             form.FormBorderStyle = FormBorderStyle.None;
             //去除边框
-            form.Width = this.Width - 200;
+            form.Width = this.Width - funcpanel.Width;
             form.Height = SystemInformation.WorkingArea.Height - funcpanel.Location.Y - Settingpanel.Height - 6;
             form.Show();
-            form.Location = new Point(200, 103);
+            form.Location = new Point(funcpanel.Width, Settingpanel.Height + 3);
+            //MessageBox.Show(form.Width + "  " + form.Height);
+            //输出form窗体的大小
         }
 
         private void reserve_Click(object sender, EventArgs e)
