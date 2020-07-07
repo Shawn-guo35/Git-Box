@@ -26,7 +26,6 @@ namespace WindowsApp1
 			//Added to support default instance behavour in C#
 			if (defaultInstance == null)
 				defaultInstance = this;
-            
 		}
 		
 #region Default Instance
@@ -71,8 +70,7 @@ namespace WindowsApp1
 			Timer1.Enabled = true;
 			Timer2.Interval = 3000; //1000=1秒
 			Timer2.Enabled = true;
-            this.WindowState = FormWindowState.Maximized;
-        }
+		}
 		
 		public void Timer1_Tick(object sender, EventArgs e)
 		{
