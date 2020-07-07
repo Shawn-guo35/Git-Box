@@ -44,149 +44,168 @@ namespace WindowsApp1
 		//不要使用代码编辑器修改它。
 		[System.Diagnostics.DebuggerStepThrough()]private void InitializeComponent()
 		{
-			this.lblResults1 = new System.Windows.Forms.Label();
-			base.Load += new System.EventHandler(添加场地信息_Load);
-			this.lblResults2 = new System.Windows.Forms.Label();
-			this.txtGymName = new System.Windows.Forms.TextBox();
-			this.txtGymNum = new System.Windows.Forms.TextBox();
-			this.btnReturn = new System.Windows.Forms.Button();
-			this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
-			this.btnCancel = new System.Windows.Forms.Button();
-			this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-			this.btnInsertVtype = new System.Windows.Forms.Button();
-			this.btnInsertVtype.Click += new System.EventHandler(this.btnInsertVtype_Click);
-			this.SqlDataAdapter1 = new System.Data.SqlClient.SqlDataAdapter();
-			this.SqlDeleteCommand1 = new System.Data.SqlClient.SqlCommand();
-			this.SqlConnection1 = new System.Data.SqlClient.SqlConnection();
-			this.SqlInsertCommand = new System.Data.SqlClient.SqlCommand();
-			this.SqlSelectCommand1 = new System.Data.SqlClient.SqlCommand();
-			this.SqlUpdateCommand1 = new System.Data.SqlClient.SqlCommand();
-			this.ChangguanDataSet1 = new WindowsApp1.changguanDataSet();
-			((System.ComponentModel.ISupportInitialize) this.ChangguanDataSet1).BeginInit();
-			this.SuspendLayout();
-			//
-			//lblResults1
-			//
-			this.lblResults1.AutoSize = true;
-			this.lblResults1.Font = new System.Drawing.Font("宋体", (float) (10.8F), System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, System.Convert.ToByte(134));
-			this.lblResults1.Location = new System.Drawing.Point(106, 64);
-			this.lblResults1.Name = "lblResults1";
-			this.lblResults1.Size = new System.Drawing.Size(104, 19);
-			this.lblResults1.TabIndex = 0;
-			this.lblResults1.Text = "场地名称：";
-			//
-			//lblResults2
-			//
-			this.lblResults2.AutoSize = true;
-			this.lblResults2.Font = new System.Drawing.Font("宋体", (float) (10.8F), System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, System.Convert.ToByte(134));
-			this.lblResults2.Location = new System.Drawing.Point(106, 164);
-			this.lblResults2.Name = "lblResults2";
-			this.lblResults2.Size = new System.Drawing.Size(104, 19);
-			this.lblResults2.TabIndex = 1;
-			this.lblResults2.Text = "场地编号：";
-			//
-			//txtGymName
-			//
-			this.txtGymName.Location = new System.Drawing.Point(264, 61);
-			this.txtGymName.Name = "txtGymName";
-			this.txtGymName.Size = new System.Drawing.Size(100, 25);
-			this.txtGymName.TabIndex = 2;
-			//
-			//txtGymNum
-			//
-			this.txtGymNum.Location = new System.Drawing.Point(264, 161);
-			this.txtGymNum.Name = "txtGymNum";
-			this.txtGymNum.Size = new System.Drawing.Size(100, 25);
-			this.txtGymNum.TabIndex = 3;
-			//
-			//btnReturn
-			//
-			this.btnReturn.Location = new System.Drawing.Point(322, 278);
-			this.btnReturn.Name = "btnReturn";
-			this.btnReturn.Size = new System.Drawing.Size(96, 51);
-			this.btnReturn.TabIndex = 21;
-			this.btnReturn.Text = "退出";
-			//
-			//btnCancel
-			//
-			this.btnCancel.Location = new System.Drawing.Point(181, 278);
-			this.btnCancel.Name = "btnCancel";
-			this.btnCancel.Size = new System.Drawing.Size(96, 51);
-			this.btnCancel.TabIndex = 20;
-			this.btnCancel.Text = "取消添加";
-			//
-			//btnInsertVtype
-			//
-			this.btnInsertVtype.Location = new System.Drawing.Point(33, 278);
-			this.btnInsertVtype.Name = "btnInsertVtype";
-			this.btnInsertVtype.Size = new System.Drawing.Size(96, 51);
-			this.btnInsertVtype.TabIndex = 19;
-			this.btnInsertVtype.Text = "确认添加";
-			//
-			//SqlDataAdapter1
-			//
-			this.SqlDataAdapter1.DeleteCommand = this.SqlDeleteCommand1;
-			this.SqlDataAdapter1.InsertCommand = this.SqlInsertCommand;
-			this.SqlDataAdapter1.SelectCommand = this.SqlSelectCommand1;
-			this.SqlDataAdapter1.TableMappings.AddRange(new System.Data.Common.DataTableMapping[] {new System.Data.Common.DataTableMapping("Table", "Venue", new System.Data.Common.DataColumnMapping[] {new System.Data.Common.DataColumnMapping("Vname", "Vname"), new System.Data.Common.DataColumnMapping("Vno", "Vno")})});
-			this.SqlDataAdapter1.UpdateCommand = this.SqlUpdateCommand1;
-			//
-			//SqlDeleteCommand1
-			//
-			this.SqlDeleteCommand1.CommandText = "DELETE FROM [Venue] WHERE (([Vname] = @Original_Vname) AND ([Vno] = @Original_Vno" +
-				"))";
-			this.SqlDeleteCommand1.Connection = this.SqlConnection1;
-			this.SqlDeleteCommand1.Parameters.AddRange(new System.Data.SqlClient.SqlParameter[] {new System.Data.SqlClient.SqlParameter("@Original_Vname", System.Data.SqlDbType.VarChar, 0, System.Data.ParameterDirection.Input, false, System.Convert.ToByte(0), System.Convert.ToByte(0), "Vname", System.Data.DataRowVersion.Original, null), new System.Data.SqlClient.SqlParameter("@Original_Vno", System.Data.SqlDbType.VarChar, 0, System.Data.ParameterDirection.Input, false, System.Convert.ToByte(0), System.Convert.ToByte(0), "Vno", System.Data.DataRowVersion.Original, null)});
-			//
-			//SqlConnection1
-			//
-			this.SqlConnection1.ConnectionString = "Data Source=DESKTOP-DSP6URK\\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=c" +
-				"hangguan;";
-			this.SqlConnection1.FireInfoMessageEventOnUserErrors = false;
-			//
-			//SqlInsertCommand
-			//
-			this.SqlInsertCommand.CommandText = "INSERT INTO [Venue] ([Vname], [Vno]) VALUES (@Vname, @Vno);" + System.Convert.ToString(global::Microsoft.VisualBasic.Strings.ChrW(13)) + System.Convert.ToString(global::Microsoft.VisualBasic.Strings.ChrW(10)) + "SELECT Vname, Vno FR" +
-				"OM Venue WHERE (Vname = @Vname) AND (Vno = @Vno)";
-			this.SqlInsertCommand.Connection = this.SqlConnection1;
-			this.SqlInsertCommand.Parameters.AddRange(new System.Data.SqlClient.SqlParameter[] {new System.Data.SqlClient.SqlParameter("@Vname", System.Data.SqlDbType.VarChar, 0, "Vname"), new System.Data.SqlClient.SqlParameter("@Vno", System.Data.SqlDbType.VarChar, 0, "Vno")});
-			//
-			//SqlSelectCommand1
-			//
-			this.SqlSelectCommand1.CommandText = "SELECT    Vname, Vno  FROM  Venue";
-			this.SqlSelectCommand1.Connection = this.SqlConnection1;
-			//
-			//SqlUpdateCommand1
-			//
-			this.SqlUpdateCommand1.CommandText = "UPDATE [Venue] SET [Vname] = @Vname, [Vno] = @Vno WHERE (([Vname] = @Original_Vna" +
-				"me) AND ([Vno] = @Original_Vno));" + System.Convert.ToString(global::Microsoft.VisualBasic.Strings.ChrW(13)) + System.Convert.ToString(global::Microsoft.VisualBasic.Strings.ChrW(10)) + "SELECT Vname, Vno FROM Venue WHERE (Vname = @" +
-"Vname) AND (Vno = @Vno)";
-			this.SqlUpdateCommand1.Connection = this.SqlConnection1;
-			this.SqlUpdateCommand1.Parameters.AddRange(new System.Data.SqlClient.SqlParameter[] {new System.Data.SqlClient.SqlParameter("@Vname", System.Data.SqlDbType.VarChar, 0, "Vname"), new System.Data.SqlClient.SqlParameter("@Vno", System.Data.SqlDbType.VarChar, 0, "Vno"), new System.Data.SqlClient.SqlParameter("@Original_Vname", System.Data.SqlDbType.VarChar, 0, System.Data.ParameterDirection.Input, false, System.Convert.ToByte(0), System.Convert.ToByte(0), "Vname", System.Data.DataRowVersion.Original, null), new System.Data.SqlClient.SqlParameter("@Original_Vno", System.Data.SqlDbType.VarChar, 0, System.Data.ParameterDirection.Input, false, System.Convert.ToByte(0), System.Convert.ToByte(0), "Vno", System.Data.DataRowVersion.Original, null)});
-			//
-			//ChangguanDataSet1
-			//
-			this.ChangguanDataSet1.DataSetName = "changguanDataSet";
-			this.ChangguanDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-			//
-			//添加场地信息
-			//
-			this.AutoScaleDimensions = new System.Drawing.SizeF((float) (8.0F), (float) (15.0F));
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(469, 362);
-			this.Controls.Add(this.btnReturn);
-			this.Controls.Add(this.btnCancel);
-			this.Controls.Add(this.btnInsertVtype);
-			this.Controls.Add(this.txtGymNum);
-			this.Controls.Add(this.txtGymName);
-			this.Controls.Add(this.lblResults2);
-			this.Controls.Add(this.lblResults1);
-			this.Name = "添加场地信息";
-			this.Text = "添加场地信息";
-			((System.ComponentModel.ISupportInitialize) this.ChangguanDataSet1).EndInit();
-			this.ResumeLayout(false);
-			this.PerformLayout();
-			
+            this.lblResults1 = new System.Windows.Forms.Label();
+            this.lblResults2 = new System.Windows.Forms.Label();
+            this.txtGymName = new System.Windows.Forms.TextBox();
+            this.txtGymNum = new System.Windows.Forms.TextBox();
+            this.btnReturn = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnInsertVtype = new System.Windows.Forms.Button();
+            this.SqlDataAdapter1 = new System.Data.SqlClient.SqlDataAdapter();
+            this.SqlDeleteCommand1 = new System.Data.SqlClient.SqlCommand();
+            this.SqlConnection1 = new System.Data.SqlClient.SqlConnection();
+            this.SqlInsertCommand = new System.Data.SqlClient.SqlCommand();
+            this.SqlSelectCommand1 = new System.Data.SqlClient.SqlCommand();
+            this.SqlUpdateCommand1 = new System.Data.SqlClient.SqlCommand();
+            this.ChangguanDataSet1 = new WindowsApp1.changguanDataSet();
+            ((System.ComponentModel.ISupportInitialize)(this.ChangguanDataSet1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // lblResults1
+            // 
+            this.lblResults1.AutoSize = true;
+            this.lblResults1.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblResults1.Location = new System.Drawing.Point(753, 286);
+            this.lblResults1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblResults1.Name = "lblResults1";
+            this.lblResults1.Size = new System.Drawing.Size(82, 15);
+            this.lblResults1.TabIndex = 0;
+            this.lblResults1.Text = "场地名称：";
+            // 
+            // lblResults2
+            // 
+            this.lblResults2.AutoSize = true;
+            this.lblResults2.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblResults2.Location = new System.Drawing.Point(753, 366);
+            this.lblResults2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblResults2.Name = "lblResults2";
+            this.lblResults2.Size = new System.Drawing.Size(82, 15);
+            this.lblResults2.TabIndex = 1;
+            this.lblResults2.Text = "场地编号：";
+            // 
+            // txtGymName
+            // 
+            this.txtGymName.Location = new System.Drawing.Point(871, 284);
+            this.txtGymName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtGymName.Name = "txtGymName";
+            this.txtGymName.Size = new System.Drawing.Size(76, 21);
+            this.txtGymName.TabIndex = 2;
+            // 
+            // txtGymNum
+            // 
+            this.txtGymNum.Location = new System.Drawing.Point(871, 364);
+            this.txtGymNum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtGymNum.Name = "txtGymNum";
+            this.txtGymNum.Size = new System.Drawing.Size(76, 21);
+            this.txtGymNum.TabIndex = 3;
+            // 
+            // btnReturn
+            // 
+            this.btnReturn.Location = new System.Drawing.Point(915, 457);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(72, 41);
+            this.btnReturn.TabIndex = 21;
+            this.btnReturn.Text = "退出";
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(809, 457);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(72, 41);
+            this.btnCancel.TabIndex = 20;
+            this.btnCancel.Text = "取消添加";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // btnInsertVtype
+            // 
+            this.btnInsertVtype.Location = new System.Drawing.Point(698, 457);
+            this.btnInsertVtype.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnInsertVtype.Name = "btnInsertVtype";
+            this.btnInsertVtype.Size = new System.Drawing.Size(72, 41);
+            this.btnInsertVtype.TabIndex = 19;
+            this.btnInsertVtype.Text = "确认添加";
+            this.btnInsertVtype.Click += new System.EventHandler(this.btnInsertVtype_Click);
+            // 
+            // SqlDataAdapter1
+            // 
+            this.SqlDataAdapter1.DeleteCommand = this.SqlDeleteCommand1;
+            this.SqlDataAdapter1.InsertCommand = this.SqlInsertCommand;
+            this.SqlDataAdapter1.SelectCommand = this.SqlSelectCommand1;
+            this.SqlDataAdapter1.TableMappings.AddRange(new System.Data.Common.DataTableMapping[] {
+            new System.Data.Common.DataTableMapping("Table", "Venue", new System.Data.Common.DataColumnMapping[] {
+                        new System.Data.Common.DataColumnMapping("Vname", "Vname"),
+                        new System.Data.Common.DataColumnMapping("Vno", "Vno")})});
+            this.SqlDataAdapter1.UpdateCommand = this.SqlUpdateCommand1;
+            // 
+            // SqlDeleteCommand1
+            // 
+            this.SqlDeleteCommand1.CommandText = "DELETE FROM [Venue] WHERE (([Vname] = @Original_Vname) AND ([Vno] = @Original_Vno" +
+    "))";
+            this.SqlDeleteCommand1.Connection = this.SqlConnection1;
+            this.SqlDeleteCommand1.Parameters.AddRange(new System.Data.SqlClient.SqlParameter[] {
+            new System.Data.SqlClient.SqlParameter("@Original_Vname", System.Data.SqlDbType.VarChar, 0, System.Data.ParameterDirection.Input, false, ((byte)(0)), ((byte)(0)), "Vname", System.Data.DataRowVersion.Original, null),
+            new System.Data.SqlClient.SqlParameter("@Original_Vno", System.Data.SqlDbType.VarChar, 0, System.Data.ParameterDirection.Input, false, ((byte)(0)), ((byte)(0)), "Vno", System.Data.DataRowVersion.Original, null)});
+            // 
+            // SqlConnection1
+            // 
+            this.SqlConnection1.ConnectionString = "Data Source=DESKTOP-DSP6URK\\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=c" +
+    "hangguan;";
+            this.SqlConnection1.FireInfoMessageEventOnUserErrors = false;
+            // 
+            // SqlInsertCommand
+            // 
+            this.SqlInsertCommand.CommandText = "INSERT INTO [Venue] ([Vname], [Vno]) VALUES (@Vname, @Vno);\r\nSELECT Vname, Vno FR" +
+    "OM Venue WHERE (Vname = @Vname) AND (Vno = @Vno)";
+            this.SqlInsertCommand.Connection = this.SqlConnection1;
+            this.SqlInsertCommand.Parameters.AddRange(new System.Data.SqlClient.SqlParameter[] {
+            new System.Data.SqlClient.SqlParameter("@Vname", System.Data.SqlDbType.VarChar, 0, "Vname"),
+            new System.Data.SqlClient.SqlParameter("@Vno", System.Data.SqlDbType.VarChar, 0, "Vno")});
+            // 
+            // SqlSelectCommand1
+            // 
+            this.SqlSelectCommand1.CommandText = "SELECT    Vname, Vno  FROM  Venue";
+            this.SqlSelectCommand1.Connection = this.SqlConnection1;
+            // 
+            // SqlUpdateCommand1
+            // 
+            this.SqlUpdateCommand1.CommandText = "UPDATE [Venue] SET [Vname] = @Vname, [Vno] = @Vno WHERE (([Vname] = @Original_Vna" +
+    "me) AND ([Vno] = @Original_Vno));\r\nSELECT Vname, Vno FROM Venue WHERE (Vname = @" +
+    "Vname) AND (Vno = @Vno)";
+            this.SqlUpdateCommand1.Connection = this.SqlConnection1;
+            this.SqlUpdateCommand1.Parameters.AddRange(new System.Data.SqlClient.SqlParameter[] {
+            new System.Data.SqlClient.SqlParameter("@Vname", System.Data.SqlDbType.VarChar, 0, "Vname"),
+            new System.Data.SqlClient.SqlParameter("@Vno", System.Data.SqlDbType.VarChar, 0, "Vno"),
+            new System.Data.SqlClient.SqlParameter("@Original_Vname", System.Data.SqlDbType.VarChar, 0, System.Data.ParameterDirection.Input, false, ((byte)(0)), ((byte)(0)), "Vname", System.Data.DataRowVersion.Original, null),
+            new System.Data.SqlClient.SqlParameter("@Original_Vno", System.Data.SqlDbType.VarChar, 0, System.Data.ParameterDirection.Input, false, ((byte)(0)), ((byte)(0)), "Vno", System.Data.DataRowVersion.Original, null)});
+            // 
+            // ChangguanDataSet1
+            // 
+            this.ChangguanDataSet1.DataSetName = "changguanDataSet";
+            this.ChangguanDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // 添加场地信息
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1720, 862);
+            this.Controls.Add(this.btnReturn);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnInsertVtype);
+            this.Controls.Add(this.txtGymNum);
+            this.Controls.Add(this.txtGymName);
+            this.Controls.Add(this.lblResults2);
+            this.Controls.Add(this.lblResults1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "添加场地信息";
+            this.Text = "添加场地信息";
+            this.Load += new System.EventHandler(this.添加场地信息_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ChangguanDataSet1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
 		}
 		
 		internal Label lblResults1;
