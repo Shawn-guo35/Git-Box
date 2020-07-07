@@ -292,6 +292,9 @@
     <EmbeddedResource Include="器材租借.resx">
       <DependentUpon>器材租借.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="器材管理.resx">
+      <DependentUpon>器材管理.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="收入统计.resx">
       <DependentUpon>收入统计.cs</DependentUpon>
     </EmbeddedResource>
