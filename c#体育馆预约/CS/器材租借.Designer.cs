@@ -41,44 +41,44 @@
             // lblResults2
             // 
             this.lblResults2.AutoSize = true;
-            this.lblResults2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblResults2.Location = new System.Drawing.Point(112, 146);
+            this.lblResults2.Font = new System.Drawing.Font("微软雅黑", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblResults2.Location = new System.Drawing.Point(627, 225);
             this.lblResults2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResults2.Name = "lblResults2";
-            this.lblResults2.Size = new System.Drawing.Size(218, 21);
+            this.lblResults2.Size = new System.Drawing.Size(475, 46);
             this.lblResults2.TabIndex = 15;
             this.lblResults2.Text = "请在下方选择您想预约的器材";
             // 
             // lblResults1
             // 
             this.lblResults1.AutoSize = true;
-            this.lblResults1.Font = new System.Drawing.Font("黑体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblResults1.Location = new System.Drawing.Point(112, 88);
+            this.lblResults1.Font = new System.Drawing.Font("黑体", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblResults1.Location = new System.Drawing.Point(529, 114);
             this.lblResults1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResults1.Name = "lblResults1";
-            this.lblResults1.Size = new System.Drawing.Size(209, 20);
+            this.lblResults1.Size = new System.Drawing.Size(668, 64);
             this.lblResults1.TabIndex = 14;
             this.lblResults1.Text = "欢迎使用器材预约系统";
             // 
             // btnBasketball1
             // 
-            this.btnBasketball1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnBasketball1.Location = new System.Drawing.Point(116, 270);
+            this.btnBasketball1.Font = new System.Drawing.Font("微软雅黑", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnBasketball1.Location = new System.Drawing.Point(324, 505);
             this.btnBasketball1.Margin = new System.Windows.Forms.Padding(2);
             this.btnBasketball1.Name = "btnBasketball1";
-            this.btnBasketball1.Size = new System.Drawing.Size(135, 64);
+            this.btnBasketball1.Size = new System.Drawing.Size(351, 194);
             this.btnBasketball1.TabIndex = 13;
-            this.btnBasketball1.Text = "篮球馆";
+            this.btnBasketball1.Text = "其他球类";
             this.btnBasketball1.UseVisualStyleBackColor = true;
             this.btnBasketball1.Click += new System.EventHandler(this.btnBasketball1_Click);
             // 
             // btnTennis
             // 
-            this.btnTennis.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnTennis.Location = new System.Drawing.Point(278, 185);
+            this.btnTennis.Font = new System.Drawing.Font("微软雅黑", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnTennis.Location = new System.Drawing.Point(1034, 505);
             this.btnTennis.Margin = new System.Windows.Forms.Padding(2);
             this.btnTennis.Name = "btnTennis";
-            this.btnTennis.Size = new System.Drawing.Size(135, 64);
+            this.btnTennis.Size = new System.Drawing.Size(351, 194);
             this.btnTennis.TabIndex = 11;
             this.btnTennis.Text = "网球拍";
             this.btnTennis.UseVisualStyleBackColor = true;
@@ -86,11 +86,11 @@
             // 
             // btnPingpang
             // 
-            this.btnPingpang.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnPingpang.Location = new System.Drawing.Point(437, 270);
+            this.btnPingpang.Font = new System.Drawing.Font("微软雅黑", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnPingpang.Location = new System.Drawing.Point(679, 505);
             this.btnPingpang.Margin = new System.Windows.Forms.Padding(2);
             this.btnPingpang.Name = "btnPingpang";
-            this.btnPingpang.Size = new System.Drawing.Size(135, 64);
+            this.btnPingpang.Size = new System.Drawing.Size(351, 194);
             this.btnPingpang.TabIndex = 12;
             this.btnPingpang.Text = "乒乓球拍";
             this.btnPingpang.UseVisualStyleBackColor = true;
@@ -98,11 +98,11 @@
             // 
             // btnBasketball
             // 
-            this.btnBasketball.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnBasketball.Location = new System.Drawing.Point(116, 185);
+            this.btnBasketball.Font = new System.Drawing.Font("微软雅黑", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnBasketball.Location = new System.Drawing.Point(324, 307);
             this.btnBasketball.Margin = new System.Windows.Forms.Padding(2);
             this.btnBasketball.Name = "btnBasketball";
-            this.btnBasketball.Size = new System.Drawing.Size(135, 64);
+            this.btnBasketball.Size = new System.Drawing.Size(351, 194);
             this.btnBasketball.TabIndex = 8;
             this.btnBasketball.Text = "篮球";
             this.btnBasketball.UseVisualStyleBackColor = true;
@@ -110,11 +110,11 @@
             // 
             // btnSoccer
             // 
-            this.btnSoccer.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnSoccer.Location = new System.Drawing.Point(437, 185);
+            this.btnSoccer.Font = new System.Drawing.Font("微软雅黑", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnSoccer.Location = new System.Drawing.Point(1034, 307);
             this.btnSoccer.Margin = new System.Windows.Forms.Padding(2);
             this.btnSoccer.Name = "btnSoccer";
-            this.btnSoccer.Size = new System.Drawing.Size(135, 64);
+            this.btnSoccer.Size = new System.Drawing.Size(351, 194);
             this.btnSoccer.TabIndex = 10;
             this.btnSoccer.Text = "足球";
             this.btnSoccer.UseVisualStyleBackColor = true;
@@ -122,11 +122,11 @@
             // 
             // btnBadminton
             // 
-            this.btnBadminton.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnBadminton.Location = new System.Drawing.Point(278, 270);
+            this.btnBadminton.Font = new System.Drawing.Font("微软雅黑", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btnBadminton.Location = new System.Drawing.Point(679, 307);
             this.btnBadminton.Margin = new System.Windows.Forms.Padding(2);
             this.btnBadminton.Name = "btnBadminton";
-            this.btnBadminton.Size = new System.Drawing.Size(135, 64);
+            this.btnBadminton.Size = new System.Drawing.Size(351, 194);
             this.btnBadminton.TabIndex = 9;
             this.btnBadminton.Text = "羽毛球拍";
             this.btnBadminton.UseVisualStyleBackColor = true;

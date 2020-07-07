@@ -57,3 +57,4 @@ D:\新建文件夹\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.csproj.
 D:\新建文件夹\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.exe
 D:\新建文件夹\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.pdb
 D:\新建文件夹\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.器材租借.resources
+D:\新建文件夹\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.发布公告.resources

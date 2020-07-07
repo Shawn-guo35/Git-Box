@@ -286,6 +286,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="发布公告.resx">
+      <DependentUpon>发布公告.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="器材租借.resx">
       <DependentUpon>器材租借.cs</DependentUpon>
     </EmbeddedResource>
