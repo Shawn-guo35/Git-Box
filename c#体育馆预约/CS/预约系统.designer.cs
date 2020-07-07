@@ -57,10 +57,10 @@ namespace WindowsApp1
             // btnPingpang
             // 
             this.btnPingpang.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnPingpang.Location = new System.Drawing.Point(389, 218);
-            this.btnPingpang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPingpang.Location = new System.Drawing.Point(1034, 505);
+            this.btnPingpang.Margin = new System.Windows.Forms.Padding(2);
             this.btnPingpang.Name = "btnPingpang";
-            this.btnPingpang.Size = new System.Drawing.Size(135, 64);
+            this.btnPingpang.Size = new System.Drawing.Size(351, 194);
             this.btnPingpang.TabIndex = 4;
             this.btnPingpang.Text = "乒乓球馆";
             this.btnPingpang.UseVisualStyleBackColor = true;
@@ -69,10 +69,10 @@ namespace WindowsApp1
             // btnBadminton
             // 
             this.btnBadminton.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnBadminton.Location = new System.Drawing.Point(230, 218);
-            this.btnBadminton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBadminton.Location = new System.Drawing.Point(679, 505);
+            this.btnBadminton.Margin = new System.Windows.Forms.Padding(2);
             this.btnBadminton.Name = "btnBadminton";
-            this.btnBadminton.Size = new System.Drawing.Size(135, 64);
+            this.btnBadminton.Size = new System.Drawing.Size(351, 194);
             this.btnBadminton.TabIndex = 1;
             this.btnBadminton.Text = "羽毛球馆";
             this.btnBadminton.UseVisualStyleBackColor = true;
@@ -81,10 +81,10 @@ namespace WindowsApp1
             // btnBasketball1
             // 
             this.btnBasketball1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnBasketball1.Location = new System.Drawing.Point(68, 218);
-            this.btnBasketball1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBasketball1.Location = new System.Drawing.Point(324, 505);
+            this.btnBasketball1.Margin = new System.Windows.Forms.Padding(2);
             this.btnBasketball1.Name = "btnBasketball1";
-            this.btnBasketball1.Size = new System.Drawing.Size(135, 64);
+            this.btnBasketball1.Size = new System.Drawing.Size(351, 194);
             this.btnBasketball1.TabIndex = 5;
             this.btnBasketball1.Text = "篮球馆";
             this.btnBasketball1.UseVisualStyleBackColor = true;
@@ -93,10 +93,10 @@ namespace WindowsApp1
             // btnSoccer
             // 
             this.btnSoccer.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnSoccer.Location = new System.Drawing.Point(389, 133);
-            this.btnSoccer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSoccer.Location = new System.Drawing.Point(1034, 307);
+            this.btnSoccer.Margin = new System.Windows.Forms.Padding(2);
             this.btnSoccer.Name = "btnSoccer";
-            this.btnSoccer.Size = new System.Drawing.Size(135, 64);
+            this.btnSoccer.Size = new System.Drawing.Size(351, 194);
             this.btnSoccer.TabIndex = 2;
             this.btnSoccer.Text = "东足球场";
             this.btnSoccer.UseVisualStyleBackColor = true;
@@ -105,10 +105,10 @@ namespace WindowsApp1
             // btnTennis
             // 
             this.btnTennis.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnTennis.Location = new System.Drawing.Point(230, 133);
-            this.btnTennis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTennis.Location = new System.Drawing.Point(679, 307);
+            this.btnTennis.Margin = new System.Windows.Forms.Padding(2);
             this.btnTennis.Name = "btnTennis";
-            this.btnTennis.Size = new System.Drawing.Size(135, 64);
+            this.btnTennis.Size = new System.Drawing.Size(351, 194);
             this.btnTennis.TabIndex = 3;
             this.btnTennis.Text = "网球场";
             this.btnTennis.UseVisualStyleBackColor = true;
@@ -117,10 +117,10 @@ namespace WindowsApp1
             // btnBasketball
             // 
             this.btnBasketball.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnBasketball.Location = new System.Drawing.Point(68, 133);
-            this.btnBasketball.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBasketball.Location = new System.Drawing.Point(324, 307);
+            this.btnBasketball.Margin = new System.Windows.Forms.Padding(2);
             this.btnBasketball.Name = "btnBasketball";
-            this.btnBasketball.Size = new System.Drawing.Size(135, 64);
+            this.btnBasketball.Size = new System.Drawing.Size(351, 194);
             this.btnBasketball.TabIndex = 0;
             this.btnBasketball.Text = "篮球场";
             this.btnBasketball.UseVisualStyleBackColor = true;
@@ -129,22 +129,22 @@ namespace WindowsApp1
             // lblResults1
             // 
             this.lblResults1.AutoSize = true;
-            this.lblResults1.Font = new System.Drawing.Font("黑体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblResults1.Location = new System.Drawing.Point(64, 36);
+            this.lblResults1.Font = new System.Drawing.Font("黑体", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblResults1.Location = new System.Drawing.Point(529, 114);
             this.lblResults1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResults1.Name = "lblResults1";
-            this.lblResults1.Size = new System.Drawing.Size(209, 20);
+            this.lblResults1.Size = new System.Drawing.Size(668, 64);
             this.lblResults1.TabIndex = 6;
             this.lblResults1.Text = "欢迎使用场馆预约系统";
             // 
             // lblResults2
             // 
             this.lblResults2.AutoSize = true;
-            this.lblResults2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblResults2.Location = new System.Drawing.Point(64, 94);
+            this.lblResults2.Font = new System.Drawing.Font("微软雅黑", 26.25F);
+            this.lblResults2.Location = new System.Drawing.Point(627, 225);
             this.lblResults2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResults2.Name = "lblResults2";
-            this.lblResults2.Size = new System.Drawing.Size(218, 21);
+            this.lblResults2.Size = new System.Drawing.Size(475, 46);
             this.lblResults2.TabIndex = 7;
             this.lblResults2.Text = "请在下方选择您想预约的场地";
             // 
@@ -152,7 +152,7 @@ namespace WindowsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(586, 358);
+            this.ClientSize = new System.Drawing.Size(1720, 862);
             this.Controls.Add(this.lblResults2);
             this.Controls.Add(this.lblResults1);
             this.Controls.Add(this.btnBasketball1);
@@ -161,7 +161,7 @@ namespace WindowsApp1
             this.Controls.Add(this.btnBasketball);
             this.Controls.Add(this.btnSoccer);
             this.Controls.Add(this.btnBadminton);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Yuyue";
             this.Opacity = 0.5D;
             this.Text = "预约主界面";
