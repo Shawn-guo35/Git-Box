@@ -61,8 +61,8 @@ namespace WindowsApp1
 		}
 		
 #endregion
-		SqlConnection cn;
-		SqlCommand cm;
+        MySqlConnection con;
+        MySqlCommand cm;
 		
 		public void 登陆界面_Load(object sender, EventArgs e)
 		{
@@ -105,30 +105,29 @@ namespace WindowsApp1
                 MessageBox.Show("请输入账号！");
 
             }
-            if (txtPwd.Text == "")
+            else if (txtPwd.Text == "")
             {
                 MessageBox.Show("请输入密码！");
             }
-
-            //string conn = "Data Source=121.36.57.112;port=3306;user=customer;password=summer2020; database=Summer2020";
-            string conn = "server=121.36.57.112;Uid=customer;password=summer2020;Database=summer2020";
-            MySqlConnection con = new MySqlConnection(conn);
-            con.Open();
-            cm = new SqlCommand("select count(*) from Users where Uid='" + txtID.Text + "'and Upwd='" + txtPwd.Text + "'", cn);
-            var num1 = Convert.ToInt32(cm.ExecuteScalar());
-            if (num1 > 0)
-            {
-                cn.Close();
-                MessageBox.Show("登录成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                用户界面.Default.Show();
-                this.Visible = false;
-            }
             else
             {
-                MessageBox.Show("用户名或密码错误", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-
-        }
-		
+                string conn = "server=121.36.57.112;Uid=customer;password=Summer2020;Database=summer2020";
+                con = new MySqlConnection(conn);
+                con.Open();
+                cm = new MySqlCommand("select * from v_users where Uid='" + txtID.Text + "'and Upwd='" + txtPwd.Text + "'", con);
+                var num1 = Convert.ToInt32(cm.ExecuteScalar());
+                if (num1 > 0)
+                {
+                    con.Close();
+                    MessageBox.Show("登录成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    用户界面.Default.Show();
+                    this.Visible = false;
+                }
+                else
+                {
+                    MessageBox.Show("用户名或密码错误", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }            
+        }		
 	}
 }
