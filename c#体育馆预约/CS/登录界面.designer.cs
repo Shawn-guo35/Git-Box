@@ -51,8 +51,6 @@ namespace WindowsApp1
             this.lblResults3 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
             this.txtPwd = new System.Windows.Forms.TextBox();
-            this.radUser = new System.Windows.Forms.RadioButton();
-            this.radAdmin = new System.Windows.Forms.RadioButton();
             this.Timer1 = new System.Windows.Forms.Timer(this.components);
             this.Timer2 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -75,7 +73,7 @@ namespace WindowsApp1
             // 
             this.btnRegister.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnRegister.Location = new System.Drawing.Point(193, 261);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(71, 28);
             this.btnRegister.TabIndex = 1;
@@ -89,7 +87,7 @@ namespace WindowsApp1
             this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLogin.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnLogin.Location = new System.Drawing.Point(46, 261);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(71, 28);
             this.btnLogin.TabIndex = 2;
@@ -123,7 +121,7 @@ namespace WindowsApp1
             // txtID
             // 
             this.txtID.Location = new System.Drawing.Point(138, 99);
-            this.txtID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtID.Margin = new System.Windows.Forms.Padding(2);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(134, 21);
             this.txtID.TabIndex = 5;
@@ -131,35 +129,11 @@ namespace WindowsApp1
             // txtPwd
             // 
             this.txtPwd.Location = new System.Drawing.Point(138, 152);
-            this.txtPwd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPwd.Margin = new System.Windows.Forms.Padding(2);
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.PasswordChar = '*';
             this.txtPwd.Size = new System.Drawing.Size(134, 21);
             this.txtPwd.TabIndex = 6;
-            // 
-            // radUser
-            // 
-            this.radUser.AutoSize = true;
-            this.radUser.Location = new System.Drawing.Point(51, 206);
-            this.radUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.radUser.Name = "radUser";
-            this.radUser.Size = new System.Drawing.Size(47, 16);
-            this.radUser.TabIndex = 7;
-            this.radUser.TabStop = true;
-            this.radUser.Text = "用户";
-            this.radUser.UseVisualStyleBackColor = true;
-            // 
-            // radAdmin
-            // 
-            this.radAdmin.AutoSize = true;
-            this.radAdmin.Location = new System.Drawing.Point(201, 206);
-            this.radAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.radAdmin.Name = "radAdmin";
-            this.radAdmin.Size = new System.Drawing.Size(59, 16);
-            this.radAdmin.TabIndex = 8;
-            this.radAdmin.TabStop = true;
-            this.radAdmin.Text = "管理员";
-            this.radAdmin.UseVisualStyleBackColor = true;
             // 
             // Timer1
             // 
@@ -173,9 +147,7 @@ namespace WindowsApp1
             // 
             this.groupBox1.Controls.Add(this.lblResults1);
             this.groupBox1.Controls.Add(this.btnRegister);
-            this.groupBox1.Controls.Add(this.radAdmin);
             this.groupBox1.Controls.Add(this.btnLogin);
-            this.groupBox1.Controls.Add(this.radUser);
             this.groupBox1.Controls.Add(this.lblResults2);
             this.groupBox1.Controls.Add(this.txtPwd);
             this.groupBox1.Controls.Add(this.lblResults3);
@@ -196,7 +168,7 @@ namespace WindowsApp1
             this.Controls.Add(this.groupBox1);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "登录界面";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "登录";
@@ -213,8 +185,6 @@ namespace WindowsApp1
 		internal Label lblResults3;
 		internal TextBox txtID;
 		internal TextBox txtPwd;
-		internal RadioButton radUser;
-		internal RadioButton radAdmin;
 		internal Timer Timer1;
 		internal Timer Timer2;
 		protected Button btnRegister;

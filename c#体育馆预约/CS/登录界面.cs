@@ -14,6 +14,7 @@ using System.Windows.Forms;
 
 using System.Data.SqlClient;
 using WindowsApp1;
+using MySql.Data.MySqlClient;
 
 namespace WindowsApp1
 {
@@ -96,61 +97,38 @@ namespace WindowsApp1
 		public void btnLogin2_Click(object sender, EventArgs e)
 		{
             //调试
-            用户界面.Default.Show();
-            this.Visible = false;
+            //用户界面.Default.Show();
+            //this.Visible = false;
 
-   //         if (txtID.Text == "")
-			//{
-			//	MessageBox.Show("请输入账号！");
-				
-			//}
-			//if (txtPwd.Text == "")
-			//{
-			//	MessageBox.Show("请输入密码！");
-			//}
-			//string cnStr = "Data Source=DESKTOP-DSP6URK\\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=changguan;";
-			//cn = new SqlConnection(cnStr);
-			//cn.Open();
-			
-			//if (radUser.Checked)
-			//{
-			//	cm = new SqlCommand("select count(*) from Users where ID='" + txtID.Text + "'and Upassword='" + txtPwd.Text + "'", cn);
-			//	var num1 = Convert.ToInt32(cm.ExecuteScalar());
-			//	if (num1 > 0)
-			//	{
-			//		cn.Close();
-			//		MessageBox.Show("登录成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-			//		用户界面.Default.Show();
-			//		this.Visible = false;
-			//	}
-			//	else
-			//	{
-			//		MessageBox.Show("用户名或密码错误", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information);
-			//	}
-			//}
-			//else if (radAdmin.Checked)
-			//{
-			//	cm = new SqlCommand("select count(*) from Users where ID='" + txtID.Text + "'and Upassword='" + txtPwd.Text + "'", cn);
-			//	var num2 = Convert.ToInt32(cm.ExecuteScalar());
-			//	if (num2 > 0)
-			//	{
-			//		cn.Close();
-			//		MessageBox.Show("登录成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-			//		管理员界面.Default.Show();
-			//		this.Visible = false;
-			//	}
-			//	else
-			//	{
-			//		MessageBox.Show("用户名或密码错误", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information);
-			//	}
-				
-			//}
-			//else
-			//{
-			//	MessageBox.Show("请选择登录类型！");
-			//}
-			
-		}
+            if (txtID.Text == "")
+            {
+                MessageBox.Show("请输入账号！");
+
+            }
+            if (txtPwd.Text == "")
+            {
+                MessageBox.Show("请输入密码！");
+            }
+
+            //string conn = "Data Source=121.36.57.112;port=3306;user=customer;password=summer2020; database=Summer2020";
+            string conn = "server=121.36.57.112;Uid=customer;password=summer2020;Database=summer2020";
+            MySqlConnection con = new MySqlConnection(conn);
+            con.Open();
+            cm = new SqlCommand("select count(*) from Users where Uid='" + txtID.Text + "'and Upwd='" + txtPwd.Text + "'", cn);
+            var num1 = Convert.ToInt32(cm.ExecuteScalar());
+            if (num1 > 0)
+            {
+                cn.Close();
+                MessageBox.Show("登录成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                用户界面.Default.Show();
+                this.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("用户名或密码错误", "警告", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        }
 		
 	}
 }
