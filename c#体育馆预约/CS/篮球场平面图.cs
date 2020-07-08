@@ -11,11 +11,10 @@ using Microsoft.VisualBasic;
 using System.Collections;
 using System.Windows.Forms;
 // End of VB project level imports
-
+using MySql.Data.MySqlClient;
 using WindowsApp1;
-
 namespace WindowsApp1
-{
+{    
 	public partial class viewBasketball
 	{
 		public viewBasketball()
@@ -61,13 +60,20 @@ namespace WindowsApp1
 		//Picturebox均为篮球场平面图
 		public void viewBasketball_Load(object sender, EventArgs e)
 		{
-			string sql = "";
-			sql = "select * from Vtype where Vname='篮球场'";
-			OleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter(sql, OleDbConnection1);
-			OleDbDataAdapter1.Fill(DataSet1, "ss");
-			lblResults16.Text = "篮球场地址：" + DataSet1.Tables["ss"].Rows[0][3].ToString() + "\r\n" 
-				+ "校内人员租金为" + DataSet1.Tables["ss"].Rows[0][1] + "元/小时" + "\r\n" 
-				+ "校外人员租金为" + DataSet1.Tables["ss"].Rows[0][2] + "元/小时";
+            MySqlConnection con;
+            MySqlCommand cm;
+            ConDatabase conDatabase = new ConDatabase();
+            cm = conDatabase.OpenDatabase("select * from vtype where vname='篮球场'");
+            con = conDatabase.getCon();
+            MySqlDataAdapter adapter = new MySqlDataAdapter(cm);
+            adapter.Fill(DataSet1, "ss");
+			//string sql = "";
+			//sql = "select * from Vtype where Vname='篮球场'";
+			//OleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter(sql, OleDbConnection1);
+			//OleDbDataAdapter1.Fill(DataSet1, "ss");
+			lblResults16.Text = "篮球场地址：" + DataSet1.Tables["ss"].Rows[0][1].ToString() + "\r\n" 
+				+ "校内人员租金为" + DataSet1.Tables["ss"].Rows[0][2] + "元/小时" + "\r\n" 
+				+ "校外人员租金为" + DataSet1.Tables["ss"].Rows[0][3] + "元/小时";
 		}
 		
 	}

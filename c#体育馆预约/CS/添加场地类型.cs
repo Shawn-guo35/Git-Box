@@ -13,14 +13,20 @@ using System.Windows.Forms;
 // End of VB project level imports
 
 using WindowsApp1;
+using MySql.Data.MySqlClient;
 
 namespace WindowsApp1
 {
 	public partial class 添加场地类型
 	{
+        ConDatabase ConDatabase = new ConDatabase();
+        MySqlConnection con;
+        MySqlCommand cm;
 		public 添加场地类型()
 		{
 			InitializeComponent();
+            cm = ConDatabase.OpenDatabase("");
+            con = ConDatabase.getCon();
 		}
 		public void btnReturn_Click(object sender, EventArgs e)
 		{
@@ -42,8 +48,11 @@ namespace WindowsApp1
 			{
 				ChangguanDataSet1.Tables["Vtype"].Clear();
 				n = "select  *  from Vtype where  Vname ='" + txtGymName.Text.Trim() + "'";
-				SqlDataAdapter1.SelectCommand.CommandText = n;
-				SqlDataAdapter1.Fill(ChangguanDataSet1);
+                //SqlDataAdapter1.SelectCommand.CommandText = n;
+                //SqlDataAdapter1.Fill(ChangguanDataSet1);
+                cm = ConDatabase.OpenDatabase(n);
+                MySqlDataAdapter adapter = new MySqlDataAdapter(cm);
+                adapter.Fill(ChangguanDataSet1);
 				r = ChangguanDataSet1.Vtype.Rows.Count;
 				if (r != 0)
 				{
@@ -57,8 +66,11 @@ namespace WindowsApp1
 				else
 				{
 					s = "insert into Vtype values('" + txtGymName.Text + "','" + txtGymInrent.Text + "','" + txtGymOutrent.Text + "','" + txtGymAddress.Text + "')";
-					SqlDataAdapter1.SelectCommand.CommandText = s;
-					SqlDataAdapter1.Fill(ChangguanDataSet1);
+                    //SqlDataAdapter1.SelectCommand.CommandText = s;
+                    //SqlDataAdapter1.Fill(ChangguanDataSet1);
+                    cm = ConDatabase.OpenDatabase(n);
+                    adapter = new MySqlDataAdapter(cm);
+                    adapter.Fill(ChangguanDataSet1);
 					Interaction.MsgBox("添加成功", MsgBoxStyle.Information, "恭喜");
 					txtGymName.Text = "";
 					txtGymName.Focus();

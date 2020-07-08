@@ -13,11 +13,16 @@ using System.Windows.Forms;
 // End of VB project level imports
 
 using WindowsApp1;
+using MySql.Data.MySqlClient;
 
 namespace WindowsApp1
 {
 	public partial class 查询场地租借情况
 	{
+        ConDatabase ConDatabase = new ConDatabase();
+        MySqlConnection con;
+        MySqlCommand cm;
+
 		public 查询场地租借情况()
 		{
 			InitializeComponent();
@@ -27,7 +32,8 @@ namespace WindowsApp1
 		{
 			//TODO: 这行代码将数据加载到表“ChangguanDataSet6.Lease”中。您可以根据需要移动或删除它。
 			this.LeaseTableAdapter.Fill(this.ChangguanDataSet6.Lease);
-			
+            cm = ConDatabase.OpenDatabase("");
+            con = ConDatabase.getCon();
 		}
 		
 		
@@ -45,18 +51,22 @@ namespace WindowsApp1
 			{
 				ChangguanDataSet1.Tables["Lease"].Clear();
 				s = "select  *  from  Lease  where  Vname ='" + txtGymName.Text + "'";
-				SqlDataAdapter1.SelectCommand.CommandText = s;
-				SqlDataAdapter1.Fill(ChangguanDataSet1);
+                //SqlDataAdapter1.SelectCommand.CommandText = s;
+                //SqlDataAdapter1.Fill(ChangguanDataSet1);
+                cm = ConDatabase.OpenDatabase(s);
+                MySqlDataAdapter adapter = new MySqlDataAdapter(cm);
+                adapter.Fill(ChangguanDataSet1);
 				txtGymLease.DataSource = ChangguanDataSet1.Tables["Lease"];
 			}
 			else if ((string) cbmGym.SelectedItem == "场地名称&场地编号")
 			{
 				ChangguanDataSet1.Tables["Lease"].Clear();
 				s = "select  *  from Lease where  Vno ='" + txtGymNum.Text.Trim() + "'and Vname ='" + txtGymName.Text.Trim() + "'";
-				
-				
-				SqlDataAdapter1.SelectCommand.CommandText = s;
-				SqlDataAdapter1.Fill(ChangguanDataSet1);
+                cm = ConDatabase.OpenDatabase(s);
+                MySqlDataAdapter adapter = new MySqlDataAdapter(cm);
+                adapter.Fill(ChangguanDataSet1);
+				//SqlDataAdapter1.SelectCommand.CommandText = s;
+				//SqlDataAdapter1.Fill(ChangguanDataSet1);
 				txtGymLease.DataSource = ChangguanDataSet1.Tables["Lease"];
 			}
 		}

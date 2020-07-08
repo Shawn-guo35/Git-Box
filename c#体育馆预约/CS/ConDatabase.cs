@@ -11,7 +11,7 @@ namespace WindowsApp1
     {
         MySqlConnection con;
         MySqlCommand cm;
-        public string Conn { get; set; } = "server=121.36.57.112;Uid=customer;password=Summer2020;Database=summer2020";
+        public string Conn { get; set; } = "server=121.36.57.112;Uid=customer;password=Summer2020;Database=summer2020;Charset=utf8";
 
         public MySqlCommand OpenDatabase(string inquerystring="")
         {
