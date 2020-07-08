@@ -11,7 +11,7 @@ using Microsoft.VisualBasic;
 using System.Collections;
 using System.Windows.Forms;
 // End of VB project level imports
-
+using MySql.Data.MySqlClient;
 using WindowsApp1;
 
 namespace WindowsApp1
@@ -56,12 +56,14 @@ namespace WindowsApp1
 		{
 			defaultInstance = null;
 		}
-		
-#endregion
-		
-		
-		
-		public void 用户管理系统_Load(object sender, EventArgs e)
+
+        #endregion
+        ConDatabase ConDatabase = new ConDatabase();
+        MySqlConnection con;
+        MySqlCommand cm;
+
+
+        public void 用户管理系统_Load(object sender, EventArgs e)
 		{
 			//TODO: 这行代码将数据加载到表“ChangguanDataSet1.Users”中。您可以根据需要移动或删除它。
 			this.UsersTableAdapter.Fill(this.ChangguanDataSet1.Users);

@@ -101,7 +101,7 @@ namespace WindowsApp1
 				if (num1 == 0)
 				{
 
-                    string sqlstr = "insert into  Users values('" + txtID.Text + "','" + txtName.Text + "','" + "校内人员 " + "','" + txtPwd.Text + "','" + txtID.Text + "')";
+                    string sqlstr = "insert into  Users(Uid,Uname,Uidentity,Upwd,Uphone)  values('" + txtID.Text + "','" + txtName.Text + "','" + "校内人员 " + "','" + txtPwd.Text + "','" + txtID.Text + "')";
 					cm = new MySqlCommand(sqlstr, con);
 					cm.ExecuteNonQuery();
 					con.Close();
