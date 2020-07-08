@@ -29,7 +29,8 @@ namespace WindowsApp1
 			if (defaultInstance == null)
 				defaultInstance = this;
 		}
-        public static string conn = ConfigurationManager.ConnectionStrings["connstr"].ToString();
+        //public static string conn = ConfigurationManager.ConnectionStrings["connstr"].ToString();
+        ConDatabase ConDatabase = new ConDatabase();
         MySqlConnection con;
         MySqlCommand cm;
         #region Default Instance
@@ -91,18 +92,15 @@ namespace WindowsApp1
 			{
 				MessageBox.Show("两次输入密码不一致");
 			}
-            //string conn = "server=121.36.57.112;Uid=customer;password=Summer2020;Database=summer2020";
-            con = new MySqlConnection(conn);
-            con.Open();
+            cm = ConDatabase.OpenDatabase();
+            con = ConDatabase.getCon();
             if (radInside.Checked)
 			{
-				cm = new MySqlCommand("select count(*) from Users where Uid='" + txtID.Text + "'", con);
-				var num1 = Convert.ToInt32(cm.ExecuteScalar());
+                cm = ConDatabase.OpenDatabase("select count(*) from Users where Uid = '" + txtID.Text + "'");
+                var num1 = Convert.ToInt32(cm.ExecuteScalar());
 				if (num1 == 0)
 				{
-
-                    string sqlstr = "insert into  Users values('" + txtID.Text + "','" + txtName.Text + "','" + "校内人员 " + "','" + txtPwd.Text + "','" + txtID.Text + "')";
-					cm = new MySqlCommand(sqlstr, con);
+                    cm = ConDatabase.OpenDatabase("insert into  users(Uid,Uname,Uidentity,Upwd,Uphone) values('" + txtID.Text + "','" + txtName.Text + "','" + "校内人员 " + "','" + txtPwd.Text + "','" + txtID.Text + "')");
 					cm.ExecuteNonQuery();
 					con.Close();
 					MessageBox.Show("注册成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -116,13 +114,11 @@ namespace WindowsApp1
 			}
 			else if (radOutside.Checked)
 			{
-				cm = new MySqlCommand("select count(*) from Users where Uid='" + txtID.Text + "'", con);
-				var num2 = Convert.ToInt32(cm.ExecuteScalar());
+                cm = ConDatabase.OpenDatabase("select count(*) from Users where Uid='" + txtID.Text + "'");
+                var num2 = Convert.ToInt32(cm.ExecuteScalar());
 				if (num2 == 0)
 				{
-					
-					string sqlstr = "insert into  Users(Uid,Uname,Uidentity,Upwd,Uphone) values('" + txtID.Text + "','" + txtName.Text + "','" + radOutside.Text + "','" + txtPwd.Text + "','" + txtID.Text + "')";
-					cm = new MySqlCommand(sqlstr, con);
+                    cm = ConDatabase.OpenDatabase("insert into  Users(Uid,Uname,Uidentity,Upwd,Uphone) values('" + txtID.Text + "','" + txtName.Text + "','" + radOutside.Text + "','" + txtPwd.Text + "','" + txtID.Text + "')");
 					cm.ExecuteNonQuery();
 					con.Close();
 					MessageBox.Show("注册成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
