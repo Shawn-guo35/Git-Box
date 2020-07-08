@@ -84,7 +84,7 @@ namespace WindowsApp1
             // 
             this.btnGymorder.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnGymorder.Location = new System.Drawing.Point(1039, 290);
-            this.btnGymorder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGymorder.Margin = new System.Windows.Forms.Padding(2);
             this.btnGymorder.Name = "btnGymorder";
             this.btnGymorder.Size = new System.Drawing.Size(134, 30);
             this.btnGymorder.TabIndex = 3;
@@ -96,7 +96,7 @@ namespace WindowsApp1
             // 
             this.btnTimeorder.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnTimeorder.Location = new System.Drawing.Point(1039, 375);
-            this.btnTimeorder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTimeorder.Margin = new System.Windows.Forms.Padding(2);
             this.btnTimeorder.Name = "btnTimeorder";
             this.btnTimeorder.Size = new System.Drawing.Size(134, 30);
             this.btnTimeorder.TabIndex = 4;
@@ -108,7 +108,7 @@ namespace WindowsApp1
             // 
             this.btnGymview.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnGymview.Location = new System.Drawing.Point(1039, 205);
-            this.btnGymview.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGymview.Margin = new System.Windows.Forms.Padding(2);
             this.btnGymview.Name = "btnGymview";
             this.btnGymview.Size = new System.Drawing.Size(134, 30);
             this.btnGymview.TabIndex = 5;
@@ -133,7 +133,7 @@ namespace WindowsApp1
             this.dgvOrder.AllowUserToDeleteRows = false;
             this.dgvOrder.ColumnHeadersHeight = 40;
             this.dgvOrder.Location = new System.Drawing.Point(506, 190);
-            this.dgvOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvOrder.Margin = new System.Windows.Forms.Padding(2);
             this.dgvOrder.MultiSelect = false;
             this.dgvOrder.Name = "dgvOrder";
             this.dgvOrder.ReadOnly = true;
@@ -158,7 +158,7 @@ namespace WindowsApp1
             this.btnSubmit1.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.btnSubmit1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnSubmit1.Location = new System.Drawing.Point(807, 471);
-            this.btnSubmit1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSubmit1.Margin = new System.Windows.Forms.Padding(2);
             this.btnSubmit1.Name = "btnSubmit1";
             this.btnSubmit1.Size = new System.Drawing.Size(56, 22);
             this.btnSubmit1.TabIndex = 15;
@@ -170,7 +170,7 @@ namespace WindowsApp1
             // 
             this.btnSubmit2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnSubmit2.Location = new System.Drawing.Point(1022, 591);
-            this.btnSubmit2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSubmit2.Margin = new System.Windows.Forms.Padding(2);
             this.btnSubmit2.Name = "btnSubmit2";
             this.btnSubmit2.Size = new System.Drawing.Size(56, 22);
             this.btnSubmit2.TabIndex = 16;
@@ -215,7 +215,7 @@ namespace WindowsApp1
             "18:00",
             "19:00"});
             this.cmbBegintime.Location = new System.Drawing.Point(826, 573);
-            this.cmbBegintime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbBegintime.Margin = new System.Windows.Forms.Padding(2);
             this.cmbBegintime.Name = "cmbBegintime";
             this.cmbBegintime.Size = new System.Drawing.Size(92, 22);
             this.cmbBegintime.TabIndex = 20;
@@ -226,7 +226,7 @@ namespace WindowsApp1
             // 
             this.dtpTime.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.dtpTime.Location = new System.Drawing.Point(416, 591);
-            this.dtpTime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpTime.Margin = new System.Windows.Forms.Padding(2);
             this.dtpTime.MinDate = new System.DateTime(2019, 7, 2, 0, 0, 0, 0);
             this.dtpTime.Name = "dtpTime";
             this.dtpTime.Size = new System.Drawing.Size(151, 24);
@@ -240,7 +240,7 @@ namespace WindowsApp1
             // 
             this.txtEndtime.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtEndtime.Location = new System.Drawing.Point(826, 605);
-            this.txtEndtime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEndtime.Margin = new System.Windows.Forms.Padding(2);
             this.txtEndtime.Name = "txtEndtime";
             this.txtEndtime.Size = new System.Drawing.Size(92, 24);
             this.txtEndtime.TabIndex = 23;
@@ -250,7 +250,7 @@ namespace WindowsApp1
             this.cbmGymnum.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.cbmGymnum.FormattingEnabled = true;
             this.cbmGymnum.Location = new System.Drawing.Point(673, 470);
-            this.cbmGymnum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbmGymnum.Margin = new System.Windows.Forms.Padding(2);
             this.cbmGymnum.Name = "cbmGymnum";
             this.cbmGymnum.Size = new System.Drawing.Size(64, 22);
             this.cbmGymnum.TabIndex = 24;
@@ -259,7 +259,7 @@ namespace WindowsApp1
             // 
             this.Label3.AutoSize = true;
             this.Label3.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Label3.Location = new System.Drawing.Point(432, 145);
+            this.Label3.Location = new System.Drawing.Point(473, 145);
             this.Label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label3.Name = "Label3";
             this.Label3.Size = new System.Drawing.Size(264, 28);
@@ -294,7 +294,7 @@ namespace WindowsApp1
             this.Controls.Add(this.btnTimeorder);
             this.Controls.Add(this.btnGymorder);
             this.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "orderBasketball";
             this.Text = "篮球场预约";
             this.Load += new System.EventHandler(this.orderBasketball_Load);

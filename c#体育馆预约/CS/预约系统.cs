@@ -30,7 +30,6 @@ namespace WindowsApp1
 #region Default Instance
 		
 		private static Yuyue defaultInstance;
-		
 		/// <summary>
 		/// Added by the VB.Net to C# Converter to support default instance behavour in C#
 		/// </summary>
@@ -66,13 +65,19 @@ namespace WindowsApp1
 		public void btnBasketball_Click(object sender, EventArgs e)
 		{
             //Me.Hide()
+
+            //用户界面 form0 = new 用户界面();
             Form form = new orderBasketball();
+            //form0 = (用户界面)this.Owner;
+            //form0.showChildForm(form);
+
             form.FormBorderStyle = FormBorderStyle.None;
             form.ControlBox = false;
             form.Size = this.Size;
             form.Location = this.Location;
+            form.Show();
             //orderBasketball.Default.Show();           
-		}
+        }
 		
 		public void btnSoccer_Click(object sender, EventArgs e)
 		{

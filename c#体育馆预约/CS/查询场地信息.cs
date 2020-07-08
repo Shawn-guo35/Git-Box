@@ -13,14 +13,21 @@ using System.Windows.Forms;
 // End of VB project level imports
 
 using WindowsApp1;
+using MySql.Data.MySqlClient;
 
 namespace WindowsApp1
 {
 	public partial class 查询场地信息
 	{
+        ConDatabase ConDatabase = new ConDatabase();
+        MySqlConnection con;
+        MySqlCommand cm;
 		public 查询场地信息()
 		{
 			InitializeComponent();
+            cm = ConDatabase.OpenDatabase("");
+            con = ConDatabase.getCon();
+
 		}
 		
 		
@@ -37,8 +44,11 @@ namespace WindowsApp1
 			{
 				ChangguanDataSet1.Tables["Venue"].Clear();
 				s = "select  *  from  Venue  where  Vname ='" + txtCondition.Text + "'";
-				SqlDataAdapter1.SelectCommand.CommandText = s;
-				SqlDataAdapter1.Fill(ChangguanDataSet1);
+                //SqlDataAdapter1.SelectCommand.CommandText = s;
+                //SqlDataAdapter1.Fill(ChangguanDataSet1);
+                cm = ConDatabase.OpenDatabase(s);
+                MySqlDataAdapter adapter = new MySqlDataAdapter(cm);
+                adapter.Fill(ChangguanDataSet1);
 				gvwVenue.DataSource = ChangguanDataSet1.Tables["Venue"];
 				//Case "场地编号"
 				//    DataDataSet.Tables("Venue").Clear()
@@ -61,7 +71,9 @@ namespace WindowsApp1
 			{
 				x = gvwVenue.CurrentRow.Index;
 				ChangguanDataSet1.Tables["Venue"].Rows[x].Delete();
-				SqlDataAdapter1.Update(ChangguanDataSet1);
+                //SqlDataAdapter1.Update(ChangguanDataSet1);
+                MySqlDataAdapter adapter = new MySqlDataAdapter();
+                adapter.Update(ChangguanDataSet1);
 				Interaction.MsgBox("删除成功", MsgBoxStyle.Information, "恭喜");
 			}
 		}
