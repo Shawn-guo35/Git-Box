@@ -5,7 +5,7 @@
 
     Private Sub btnInsertVenue_Click(sender As Object, e As EventArgs) Handles btnInsertVenue.Click
         Dim s, n As String
-        Dim r As Integer
+        Dim r As Integer    '查询出的行数
         If txtGymName.Text = "" Then
             MsgBox("场地名称不能为空", MsgBoxStyle.Exclamation, "警告")
             txtGymName.Focus()

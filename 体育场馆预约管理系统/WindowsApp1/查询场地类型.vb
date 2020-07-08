@@ -28,7 +28,7 @@
     End Sub
 
     Private Sub btnDeleteVenue_Click(sender As Object, e As EventArgs) Handles btnDeleteVenue.Click
-        Dim x As Integer
+        Dim x As Integer    '要删除的行数
         If MsgBox("您真的删除该条数据吗？", MsgBoxStyle.YesNo + MsgBoxStyle.Question, "删除数据") = DialogResult.Yes Then
             x = gvwVtype.CurrentRow.Index()
             ChangguanDataSet1.Tables("Vtype").Rows(x).Delete()

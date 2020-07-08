@@ -19,7 +19,7 @@
     Private Sub btnDeleteUsers_Click(sender As Object, e As EventArgs) Handles btnDeleteUsers.Click
         Dim x As Integer
         If MsgBox("您真的删除该条数据吗？", MsgBoxStyle.YesNo + MsgBoxStyle.Question, "删除数据") = DialogResult.Yes Then
-            x = gvwUsers.CurrentRow.Index()
+            x = gvwUsers.CurrentRow.Index() 'gvw中选择的行号
             ChangguanDataSet.Tables("Users").Rows(x).Delete()
             SqlDataAdapter1.Update(ChangguanDataSet)
             MsgBox("删除成功", MsgBoxStyle.Information, "恭喜")
@@ -32,7 +32,7 @@
             MsgBox("请输入查询条件", MsgBoxStyle.Exclamation, "警告")
             Exit Sub
         End If
-        Select Case cbmGym.SelectedItem
+        Select Case cbmGym.SelectedItem '三种查询用户的方式
             Case "帐号"
                 ChangguanDataSet.Tables("Users").Clear()
                 s = "select  *  from  Users  where  ID ='" + txtCondition.Text + "'"
