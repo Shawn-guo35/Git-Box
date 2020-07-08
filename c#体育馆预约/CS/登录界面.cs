@@ -59,10 +59,12 @@ namespace WindowsApp1
 		{
 			defaultInstance = null;
 		}
-		
-#endregion
+
+        #endregion
+        ConDatabase ConDatabase = new ConDatabase();
         MySqlConnection con;
         MySqlCommand cm;
+        
 		
 		public void 登陆界面_Load(object sender, EventArgs e)
 		{
@@ -99,7 +101,8 @@ namespace WindowsApp1
             //调试
             //用户界面.Default.Show();
             //this.Visible = false;
-
+            cm = ConDatabase.OpenDatabase("select * from v_users where Uid='" + txtID.Text + "'and Upwd='" + txtPwd.Text + "'");
+            con = ConDatabase.getCon();
             if (txtID.Text == "")
             {
                 MessageBox.Show("请输入账号！");
@@ -111,13 +114,13 @@ namespace WindowsApp1
             }
             else
             {
-                string conn = "server=121.36.57.112;Uid=customer;password=Summer2020;Database=summer2020";
-                con = new MySqlConnection(conn);
-                con.Open();
-                cm = new MySqlCommand("select * from v_users where Uid='" + txtID.Text + "'and Upwd='" + txtPwd.Text + "'", con);
+                //string conn = "server=121.36.57.112;Uid=customer;password=Summer2020;Database=summer2020";
+                //con = new MySqlConnection(conn);
+                //con.Open();                
+                //cm = new MySqlCommand("select * from v_users where Uid='" + txtID.Text + "'and Upwd='" + txtPwd.Text + "'", con);
                 var num1 = Convert.ToInt32(cm.ExecuteScalar());
                 if (num1 > 0)
-                {
+                {                    
                     con.Close();
                     MessageBox.Show("登录成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     用户界面.Default.Show();

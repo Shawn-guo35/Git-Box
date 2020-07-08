@@ -171,6 +171,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>changguanDataSet6.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ConDatabase.cs" />
     <Compile Include="dataDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
