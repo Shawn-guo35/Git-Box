@@ -13,7 +13,7 @@ namespace WindowsApp1
         MySqlCommand cm;
         public string Conn { get; set; } = "server=121.36.57.112;Uid=customer;password=Summer2020;Database=summer2020;Charset=utf8;";
 
-        public MySqlCommand OpenDatabase(string inquerystring)
+        public MySqlCommand OpenDatabase(string inquerystring="")
         {
             //连接数据库并配置查询语句
             con = new MySqlConnection(Conn);
