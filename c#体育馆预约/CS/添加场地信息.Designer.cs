@@ -58,6 +58,10 @@ namespace WindowsApp1
             this.SqlSelectCommand1 = new System.Data.SqlClient.SqlCommand();
             this.SqlUpdateCommand1 = new System.Data.SqlClient.SqlCommand();
             this.ChangguanDataSet1 = new WindowsApp1.changguanDataSet();
+            this.lblResults3 = new System.Windows.Forms.Label();
+            this.txtGymTypeID = new System.Windows.Forms.TextBox();
+            this.lblResults4 = new System.Windows.Forms.Label();
+            this.txtState = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.ChangguanDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,7 +69,7 @@ namespace WindowsApp1
             // 
             this.lblResults1.AutoSize = true;
             this.lblResults1.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblResults1.Location = new System.Drawing.Point(753, 286);
+            this.lblResults1.Location = new System.Drawing.Point(738, 206);
             this.lblResults1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResults1.Name = "lblResults1";
             this.lblResults1.Size = new System.Drawing.Size(82, 15);
@@ -76,33 +80,34 @@ namespace WindowsApp1
             // 
             this.lblResults2.AutoSize = true;
             this.lblResults2.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblResults2.Location = new System.Drawing.Point(753, 366);
+            this.lblResults2.Location = new System.Drawing.Point(738, 258);
             this.lblResults2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResults2.Name = "lblResults2";
             this.lblResults2.Size = new System.Drawing.Size(82, 15);
             this.lblResults2.TabIndex = 1;
             this.lblResults2.Text = "场地编号：";
+            this.lblResults2.Click += new System.EventHandler(this.lblResults2_Click);
             // 
             // txtGymName
             // 
-            this.txtGymName.Location = new System.Drawing.Point(871, 284);
-            this.txtGymName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtGymName.Location = new System.Drawing.Point(856, 204);
+            this.txtGymName.Margin = new System.Windows.Forms.Padding(2);
             this.txtGymName.Name = "txtGymName";
-            this.txtGymName.Size = new System.Drawing.Size(76, 21);
+            this.txtGymName.Size = new System.Drawing.Size(100, 21);
             this.txtGymName.TabIndex = 2;
             // 
             // txtGymNum
             // 
-            this.txtGymNum.Location = new System.Drawing.Point(871, 364);
-            this.txtGymNum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtGymNum.Location = new System.Drawing.Point(856, 258);
+            this.txtGymNum.Margin = new System.Windows.Forms.Padding(2);
             this.txtGymNum.Name = "txtGymNum";
-            this.txtGymNum.Size = new System.Drawing.Size(76, 21);
+            this.txtGymNum.Size = new System.Drawing.Size(100, 21);
             this.txtGymNum.TabIndex = 3;
             // 
             // btnReturn
             // 
             this.btnReturn.Location = new System.Drawing.Point(915, 457);
-            this.btnReturn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(2);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(72, 41);
             this.btnReturn.TabIndex = 21;
@@ -112,7 +117,7 @@ namespace WindowsApp1
             // btnCancel
             // 
             this.btnCancel.Location = new System.Drawing.Point(809, 457);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(72, 41);
             this.btnCancel.TabIndex = 20;
@@ -122,7 +127,7 @@ namespace WindowsApp1
             // btnInsertVtype
             // 
             this.btnInsertVtype.Location = new System.Drawing.Point(698, 457);
-            this.btnInsertVtype.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnInsertVtype.Margin = new System.Windows.Forms.Padding(2);
             this.btnInsertVtype.Name = "btnInsertVtype";
             this.btnInsertVtype.Size = new System.Drawing.Size(72, 41);
             this.btnInsertVtype.TabIndex = 19;
@@ -186,11 +191,49 @@ namespace WindowsApp1
             this.ChangguanDataSet1.DataSetName = "changguanDataSet";
             this.ChangguanDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // lblResults3
+            // 
+            this.lblResults3.AutoSize = true;
+            this.lblResults3.Font = new System.Drawing.Font("宋体", 10.8F);
+            this.lblResults3.Location = new System.Drawing.Point(738, 310);
+            this.lblResults3.Name = "lblResults3";
+            this.lblResults3.Size = new System.Drawing.Size(112, 15);
+            this.lblResults3.TabIndex = 22;
+            this.lblResults3.Text = "场地类型编号：";
+            // 
+            // txtGymTypeID
+            // 
+            this.txtGymTypeID.Location = new System.Drawing.Point(856, 310);
+            this.txtGymTypeID.Name = "txtGymTypeID";
+            this.txtGymTypeID.Size = new System.Drawing.Size(100, 21);
+            this.txtGymTypeID.TabIndex = 23;
+            // 
+            // lblResults4
+            // 
+            this.lblResults4.AutoSize = true;
+            this.lblResults4.Font = new System.Drawing.Font("宋体", 10.8F);
+            this.lblResults4.Location = new System.Drawing.Point(738, 357);
+            this.lblResults4.Name = "lblResults4";
+            this.lblResults4.Size = new System.Drawing.Size(82, 15);
+            this.lblResults4.TabIndex = 24;
+            this.lblResults4.Text = "场地状态：";
+            // 
+            // txtState
+            // 
+            this.txtState.Location = new System.Drawing.Point(856, 351);
+            this.txtState.Name = "txtState";
+            this.txtState.Size = new System.Drawing.Size(100, 21);
+            this.txtState.TabIndex = 25;
+            // 
             // 添加场地信息
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1720, 862);
+            this.Controls.Add(this.txtState);
+            this.Controls.Add(this.lblResults4);
+            this.Controls.Add(this.txtGymTypeID);
+            this.Controls.Add(this.lblResults3);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnInsertVtype);
@@ -198,7 +241,7 @@ namespace WindowsApp1
             this.Controls.Add(this.txtGymName);
             this.Controls.Add(this.lblResults2);
             this.Controls.Add(this.lblResults1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "添加场地信息";
             this.Text = "添加场地信息";
             this.Load += new System.EventHandler(this.添加场地信息_Load);
@@ -222,6 +265,10 @@ namespace WindowsApp1
 		internal System.Data.SqlClient.SqlCommand SqlUpdateCommand1;
 		internal System.Data.SqlClient.SqlConnection SqlConnection1;
 		internal changguanDataSet ChangguanDataSet1;
-	}
+        private Label lblResults3;
+        private TextBox txtGymTypeID;
+        private Label lblResults4;
+        private TextBox txtState;
+    }
 	
 }

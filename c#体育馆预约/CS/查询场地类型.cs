@@ -59,7 +59,9 @@ namespace WindowsApp1
 		
 		public void btnUpdteVenue_Click(object sender, EventArgs e)
 		{
-			SqlDataAdapter1.Update(ChangguanDataSet1);
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            adapter.Update(ChangguanDataSet1);
+			//SqlDataAdapter1.Update(ChangguanDataSet1);
 			Interaction.MsgBox("数据已修改", MsgBoxStyle.Information, "恭喜");
 		}
 		

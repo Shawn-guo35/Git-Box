@@ -65,7 +65,7 @@ namespace WindowsApp1
 				}
 				else
 				{
-					s = "insert into Vtype values('" + txtGymName.Text + "','" + txtGymInrent.Text + "','" + txtGymOutrent.Text + "','" + txtGymAddress.Text + "')";
+					s = "insert into Vtype（vtname,vtinrank,vtoutrank,vtremarks） values('" + txtGymName.Text + "','" + txtGymInrent.Text + "','" + txtGymOutrent.Text + "','" + txtGymAddress.Text + "')";
                     //SqlDataAdapter1.SelectCommand.CommandText = s;
                     //SqlDataAdapter1.Fill(ChangguanDataSet1);
                     cm = ConDatabase.OpenDatabase(n);
