@@ -51,8 +51,6 @@ namespace WindowsApp1
             this.lblResults1 = new System.Windows.Forms.Label();
             this.btnDeleteVtype = new System.Windows.Forms.Button();
             this.gvwVenue = new System.Windows.Forms.DataGridView();
-            this.VnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VenueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ChangguanDataSet5 = new WindowsApp1.changguanDataSet5();
             this.SqlDataAdapter1 = new System.Data.SqlClient.SqlDataAdapter();
@@ -80,9 +78,9 @@ namespace WindowsApp1
             this.GroupBox1.Controls.Add(this.lblResults1);
             this.GroupBox1.Controls.Add(this.btnDeleteVtype);
             this.GroupBox1.Location = new System.Drawing.Point(478, 150);
-            this.GroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GroupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.GroupBox1.Size = new System.Drawing.Size(783, 146);
             this.GroupBox1.TabIndex = 0;
             this.GroupBox1.TabStop = false;
@@ -91,7 +89,7 @@ namespace WindowsApp1
             // btnReturn
             // 
             this.btnReturn.Location = new System.Drawing.Point(638, 64);
-            this.btnReturn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(2);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(80, 41);
             this.btnReturn.TabIndex = 18;
@@ -102,7 +100,7 @@ namespace WindowsApp1
             // btnSelectVtype
             // 
             this.btnSelectVtype.Location = new System.Drawing.Point(382, 62);
-            this.btnSelectVtype.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSelectVtype.Margin = new System.Windows.Forms.Padding(2);
             this.btnSelectVtype.Name = "btnSelectVtype";
             this.btnSelectVtype.Size = new System.Drawing.Size(80, 41);
             this.btnSelectVtype.TabIndex = 17;
@@ -113,7 +111,7 @@ namespace WindowsApp1
             // txtCondition
             // 
             this.txtCondition.Location = new System.Drawing.Point(200, 87);
-            this.txtCondition.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCondition.Margin = new System.Windows.Forms.Padding(2);
             this.txtCondition.Multiline = true;
             this.txtCondition.Name = "txtCondition";
             this.txtCondition.Size = new System.Drawing.Size(102, 21);
@@ -135,7 +133,7 @@ namespace WindowsApp1
             this.cbmGym.Items.AddRange(new object[] {
             "场地名称"});
             this.cbmGym.Location = new System.Drawing.Point(45, 89);
-            this.cbmGym.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbmGym.Margin = new System.Windows.Forms.Padding(2);
             this.cbmGym.Name = "cbmGym";
             this.cbmGym.Size = new System.Drawing.Size(92, 20);
             this.cbmGym.TabIndex = 14;
@@ -154,7 +152,7 @@ namespace WindowsApp1
             // btnDeleteVtype
             // 
             this.btnDeleteVtype.Location = new System.Drawing.Point(542, 63);
-            this.btnDeleteVtype.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDeleteVtype.Margin = new System.Windows.Forms.Padding(2);
             this.btnDeleteVtype.Name = "btnDeleteVtype";
             this.btnDeleteVtype.Size = new System.Drawing.Size(41, 42);
             this.btnDeleteVtype.TabIndex = 12;
@@ -164,30 +162,13 @@ namespace WindowsApp1
             // 
             // gvwVenue
             // 
-            this.gvwVenue.AutoGenerateColumns = false;
             this.gvwVenue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvwVenue.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.VnameDataGridViewTextBoxColumn,
-            this.VnoDataGridViewTextBoxColumn});
-            this.gvwVenue.DataSource = this.VenueBindingSource;
             this.gvwVenue.Location = new System.Drawing.Point(563, 364);
-            this.gvwVenue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gvwVenue.Margin = new System.Windows.Forms.Padding(2);
             this.gvwVenue.Name = "gvwVenue";
             this.gvwVenue.RowTemplate.Height = 27;
             this.gvwVenue.Size = new System.Drawing.Size(599, 201);
             this.gvwVenue.TabIndex = 1;
-            // 
-            // VnameDataGridViewTextBoxColumn
-            // 
-            this.VnameDataGridViewTextBoxColumn.DataPropertyName = "Vname";
-            this.VnameDataGridViewTextBoxColumn.HeaderText = "场地名称";
-            this.VnameDataGridViewTextBoxColumn.Name = "VnameDataGridViewTextBoxColumn";
-            // 
-            // VnoDataGridViewTextBoxColumn
-            // 
-            this.VnoDataGridViewTextBoxColumn.DataPropertyName = "Vno";
-            this.VnoDataGridViewTextBoxColumn.HeaderText = "场地编号";
-            this.VnoDataGridViewTextBoxColumn.Name = "VnoDataGridViewTextBoxColumn";
             // 
             // VenueBindingSource
             // 
@@ -267,7 +248,7 @@ namespace WindowsApp1
             this.ClientSize = new System.Drawing.Size(1720, 862);
             this.Controls.Add(this.gvwVenue);
             this.Controls.Add(this.GroupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "查询场地信息";
             this.Text = "查询场地信息";
             this.Load += new System.EventHandler(this.查询场地信息_Load);
@@ -300,8 +281,6 @@ namespace WindowsApp1
 		internal changguanDataSet5 ChangguanDataSet5;
 		internal BindingSource VenueBindingSource;
 		internal changguanDataSet5TableAdapters.VenueTableAdapter VenueTableAdapter;
-		internal DataGridViewTextBoxColumn VnameDataGridViewTextBoxColumn;
-		internal DataGridViewTextBoxColumn VnoDataGridViewTextBoxColumn;
         private System.ComponentModel.IContainer components;
     }
 	

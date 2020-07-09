@@ -56,11 +56,6 @@ namespace WindowsApp1
             this.lblResults2 = new System.Windows.Forms.Label();
             this.lblResults1 = new System.Windows.Forms.Label();
             this.txtGymLease = new System.Windows.Forms.DataGridView();
-            this.VnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.EtimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ConditionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LeaseBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ChangguanDataSet6 = new WindowsApp1.changguanDataSet6();
             this.SqlDataAdapter1 = new System.Data.SqlClient.SqlDataAdapter();
@@ -90,9 +85,9 @@ namespace WindowsApp1
             this.GroupBox1.Controls.Add(this.lblResults2);
             this.GroupBox1.Controls.Add(this.lblResults1);
             this.GroupBox1.Location = new System.Drawing.Point(536, 149);
-            this.GroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GroupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.GroupBox1.Size = new System.Drawing.Size(796, 172);
             this.GroupBox1.TabIndex = 0;
             this.GroupBox1.TabStop = false;
@@ -122,7 +117,7 @@ namespace WindowsApp1
             // txtGymNum
             // 
             this.txtGymNum.Location = new System.Drawing.Point(492, 112);
-            this.txtGymNum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtGymNum.Margin = new System.Windows.Forms.Padding(2);
             this.txtGymNum.Name = "txtGymNum";
             this.txtGymNum.Size = new System.Drawing.Size(105, 21);
             this.txtGymNum.TabIndex = 29;
@@ -131,7 +126,7 @@ namespace WindowsApp1
             // btnReturn
             // 
             this.btnReturn.Location = new System.Drawing.Point(684, 112);
-            this.btnReturn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(2);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(80, 41);
             this.btnReturn.TabIndex = 28;
@@ -142,7 +137,7 @@ namespace WindowsApp1
             // btnSelectLease
             // 
             this.btnSelectLease.Location = new System.Drawing.Point(684, 30);
-            this.btnSelectLease.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSelectLease.Margin = new System.Windows.Forms.Padding(2);
             this.btnSelectLease.Name = "btnSelectLease";
             this.btnSelectLease.Size = new System.Drawing.Size(80, 41);
             this.btnSelectLease.TabIndex = 27;
@@ -153,7 +148,7 @@ namespace WindowsApp1
             // txtGymName
             // 
             this.txtGymName.Location = new System.Drawing.Point(492, 65);
-            this.txtGymName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtGymName.Margin = new System.Windows.Forms.Padding(2);
             this.txtGymName.Name = "txtGymName";
             this.txtGymName.Size = new System.Drawing.Size(105, 21);
             this.txtGymName.TabIndex = 26;
@@ -165,7 +160,7 @@ namespace WindowsApp1
             "场地名称",
             "场地名称&场地编号"});
             this.cbmGym.Location = new System.Drawing.Point(164, 67);
-            this.cbmGym.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbmGym.Margin = new System.Windows.Forms.Padding(2);
             this.cbmGym.Name = "cbmGym";
             this.cbmGym.Size = new System.Drawing.Size(144, 20);
             this.cbmGym.TabIndex = 25;
@@ -192,57 +187,14 @@ namespace WindowsApp1
             // 
             // txtGymLease
             // 
-            this.txtGymLease.AutoGenerateColumns = false;
             this.txtGymLease.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.txtGymLease.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.VnameDataGridViewTextBoxColumn,
-            this.VnoDataGridViewTextBoxColumn,
-            this.StimeDataGridViewTextBoxColumn,
-            this.EtimeDataGridViewTextBoxColumn,
-            this.ConditionDataGridViewTextBoxColumn});
-            this.txtGymLease.DataSource = this.LeaseBindingSource;
             this.txtGymLease.Location = new System.Drawing.Point(626, 373);
-            this.txtGymLease.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtGymLease.Margin = new System.Windows.Forms.Padding(2);
             this.txtGymLease.Name = "txtGymLease";
             this.txtGymLease.ReadOnly = true;
             this.txtGymLease.RowTemplate.Height = 27;
             this.txtGymLease.Size = new System.Drawing.Size(598, 194);
             this.txtGymLease.TabIndex = 1;
-            // 
-            // VnameDataGridViewTextBoxColumn
-            // 
-            this.VnameDataGridViewTextBoxColumn.DataPropertyName = "Vname";
-            this.VnameDataGridViewTextBoxColumn.HeaderText = "场地名称";
-            this.VnameDataGridViewTextBoxColumn.Name = "VnameDataGridViewTextBoxColumn";
-            this.VnameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // VnoDataGridViewTextBoxColumn
-            // 
-            this.VnoDataGridViewTextBoxColumn.DataPropertyName = "Vno";
-            this.VnoDataGridViewTextBoxColumn.HeaderText = "场地编号";
-            this.VnoDataGridViewTextBoxColumn.Name = "VnoDataGridViewTextBoxColumn";
-            this.VnoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // StimeDataGridViewTextBoxColumn
-            // 
-            this.StimeDataGridViewTextBoxColumn.DataPropertyName = "Stime";
-            this.StimeDataGridViewTextBoxColumn.HeaderText = "开始时间";
-            this.StimeDataGridViewTextBoxColumn.Name = "StimeDataGridViewTextBoxColumn";
-            this.StimeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // EtimeDataGridViewTextBoxColumn
-            // 
-            this.EtimeDataGridViewTextBoxColumn.DataPropertyName = "Etime";
-            this.EtimeDataGridViewTextBoxColumn.HeaderText = "结束时间";
-            this.EtimeDataGridViewTextBoxColumn.Name = "EtimeDataGridViewTextBoxColumn";
-            this.EtimeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // ConditionDataGridViewTextBoxColumn
-            // 
-            this.ConditionDataGridViewTextBoxColumn.DataPropertyName = "Condition";
-            this.ConditionDataGridViewTextBoxColumn.HeaderText = "场地状态";
-            this.ConditionDataGridViewTextBoxColumn.Name = "ConditionDataGridViewTextBoxColumn";
-            this.ConditionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // LeaseBindingSource
             // 
@@ -335,7 +287,7 @@ namespace WindowsApp1
             this.ClientSize = new System.Drawing.Size(1720, 862);
             this.Controls.Add(this.txtGymLease);
             this.Controls.Add(this.GroupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "查询场地租借情况";
             this.Text = "查询场地租借情况";
             this.Load += new System.EventHandler(this.场地管理系统_Load);
@@ -370,11 +322,6 @@ namespace WindowsApp1
 		internal changguanDataSet6 ChangguanDataSet6;
 		internal BindingSource LeaseBindingSource;
 		internal changguanDataSet6TableAdapters.LeaseTableAdapter LeaseTableAdapter;
-		internal DataGridViewTextBoxColumn VnameDataGridViewTextBoxColumn;
-		internal DataGridViewTextBoxColumn VnoDataGridViewTextBoxColumn;
-		internal DataGridViewTextBoxColumn StimeDataGridViewTextBoxColumn;
-		internal DataGridViewTextBoxColumn EtimeDataGridViewTextBoxColumn;
-		internal DataGridViewTextBoxColumn ConditionDataGridViewTextBoxColumn;
         private System.ComponentModel.IContainer components;
     }
 	

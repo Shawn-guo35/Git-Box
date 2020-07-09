@@ -53,10 +53,6 @@ namespace WindowsApp1
             this.btnDeleteVenue = new System.Windows.Forms.Button();
             this.btnUpdteVenue = new System.Windows.Forms.Button();
             this.gvwVtype = new System.Windows.Forms.DataGridView();
-            this.VnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.INrentalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OUTrentalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.VaddressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.VtypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ChangguanDataSet3 = new WindowsApp1.changguanDataSet3();
             this.SqlDataAdapter1 = new System.Data.SqlClient.SqlDataAdapter();
@@ -85,9 +81,9 @@ namespace WindowsApp1
             this.GroupBox1.Controls.Add(this.btnDeleteVenue);
             this.GroupBox1.Controls.Add(this.btnUpdteVenue);
             this.GroupBox1.Location = new System.Drawing.Point(398, 150);
-            this.GroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GroupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.GroupBox1.Size = new System.Drawing.Size(839, 142);
             this.GroupBox1.TabIndex = 0;
             this.GroupBox1.TabStop = false;
@@ -96,7 +92,7 @@ namespace WindowsApp1
             // btnReturn
             // 
             this.btnReturn.Location = new System.Drawing.Point(728, 97);
-            this.btnReturn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(2);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(80, 41);
             this.btnReturn.TabIndex = 10;
@@ -107,7 +103,7 @@ namespace WindowsApp1
             // btnSelcetVenue
             // 
             this.btnSelcetVenue.Location = new System.Drawing.Point(728, 21);
-            this.btnSelcetVenue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSelcetVenue.Margin = new System.Windows.Forms.Padding(2);
             this.btnSelcetVenue.Name = "btnSelcetVenue";
             this.btnSelcetVenue.Size = new System.Drawing.Size(80, 41);
             this.btnSelcetVenue.TabIndex = 9;
@@ -118,7 +114,7 @@ namespace WindowsApp1
             // txtCondition
             // 
             this.txtCondition.Location = new System.Drawing.Point(503, 75);
-            this.txtCondition.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCondition.Margin = new System.Windows.Forms.Padding(2);
             this.txtCondition.Multiline = true;
             this.txtCondition.Name = "txtCondition";
             this.txtCondition.Size = new System.Drawing.Size(102, 21);
@@ -140,7 +136,7 @@ namespace WindowsApp1
             this.cbmGym.Items.AddRange(new object[] {
             "场地名称"});
             this.cbmGym.Location = new System.Drawing.Point(321, 80);
-            this.cbmGym.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbmGym.Margin = new System.Windows.Forms.Padding(2);
             this.cbmGym.Name = "cbmGym";
             this.cbmGym.Size = new System.Drawing.Size(92, 20);
             this.cbmGym.TabIndex = 6;
@@ -159,7 +155,7 @@ namespace WindowsApp1
             // btnDeleteVenue
             // 
             this.btnDeleteVenue.Location = new System.Drawing.Point(177, 54);
-            this.btnDeleteVenue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDeleteVenue.Margin = new System.Windows.Forms.Padding(2);
             this.btnDeleteVenue.Name = "btnDeleteVenue";
             this.btnDeleteVenue.Size = new System.Drawing.Size(41, 42);
             this.btnDeleteVenue.TabIndex = 4;
@@ -170,7 +166,7 @@ namespace WindowsApp1
             // btnUpdteVenue
             // 
             this.btnUpdteVenue.Location = new System.Drawing.Point(85, 54);
-            this.btnUpdteVenue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUpdteVenue.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdteVenue.Name = "btnUpdteVenue";
             this.btnUpdteVenue.Size = new System.Drawing.Size(41, 42);
             this.btnUpdteVenue.TabIndex = 3;
@@ -180,48 +176,13 @@ namespace WindowsApp1
             // 
             // gvwVtype
             // 
-            this.gvwVtype.AutoGenerateColumns = false;
             this.gvwVtype.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvwVtype.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.VnameDataGridViewTextBoxColumn,
-            this.INrentalDataGridViewTextBoxColumn,
-            this.OUTrentalDataGridViewTextBoxColumn,
-            this.VaddressDataGridViewTextBoxColumn});
-            this.gvwVtype.DataSource = this.VtypeBindingSource;
             this.gvwVtype.Location = new System.Drawing.Point(510, 352);
-            this.gvwVtype.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gvwVtype.Margin = new System.Windows.Forms.Padding(2);
             this.gvwVtype.Name = "gvwVtype";
             this.gvwVtype.RowTemplate.Height = 27;
             this.gvwVtype.Size = new System.Drawing.Size(598, 205);
             this.gvwVtype.TabIndex = 1;
-            // 
-            // VnameDataGridViewTextBoxColumn
-            // 
-            this.VnameDataGridViewTextBoxColumn.DataPropertyName = "Vname";
-            this.VnameDataGridViewTextBoxColumn.HeaderText = "场地名称";
-            this.VnameDataGridViewTextBoxColumn.Name = "VnameDataGridViewTextBoxColumn";
-            this.VnameDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // INrentalDataGridViewTextBoxColumn
-            // 
-            this.INrentalDataGridViewTextBoxColumn.DataPropertyName = "INrental";
-            this.INrentalDataGridViewTextBoxColumn.HeaderText = "校内人员租金";
-            this.INrentalDataGridViewTextBoxColumn.Name = "INrentalDataGridViewTextBoxColumn";
-            this.INrentalDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // OUTrentalDataGridViewTextBoxColumn
-            // 
-            this.OUTrentalDataGridViewTextBoxColumn.DataPropertyName = "OUTrental";
-            this.OUTrentalDataGridViewTextBoxColumn.HeaderText = "校外人员租金";
-            this.OUTrentalDataGridViewTextBoxColumn.Name = "OUTrentalDataGridViewTextBoxColumn";
-            this.OUTrentalDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // VaddressDataGridViewTextBoxColumn
-            // 
-            this.VaddressDataGridViewTextBoxColumn.DataPropertyName = "Vaddress";
-            this.VaddressDataGridViewTextBoxColumn.HeaderText = "场地地址";
-            this.VaddressDataGridViewTextBoxColumn.Name = "VaddressDataGridViewTextBoxColumn";
-            this.VaddressDataGridViewTextBoxColumn.Width = 150;
             // 
             // VtypeBindingSource
             // 
@@ -311,7 +272,7 @@ namespace WindowsApp1
             this.ClientSize = new System.Drawing.Size(1720, 862);
             this.Controls.Add(this.gvwVtype);
             this.Controls.Add(this.GroupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "查询场地类型";
             this.Text = "查询场地类型";
             this.Load += new System.EventHandler(this.查询场地类型_Load);
@@ -345,10 +306,6 @@ namespace WindowsApp1
 		internal changguanDataSet3 ChangguanDataSet3;
 		internal BindingSource VtypeBindingSource;
 		internal changguanDataSet3TableAdapters.VtypeTableAdapter VtypeTableAdapter;
-		internal DataGridViewTextBoxColumn VnameDataGridViewTextBoxColumn;
-		internal DataGridViewTextBoxColumn INrentalDataGridViewTextBoxColumn;
-		internal DataGridViewTextBoxColumn OUTrentalDataGridViewTextBoxColumn;
-		internal DataGridViewTextBoxColumn VaddressDataGridViewTextBoxColumn;
         private System.ComponentModel.IContainer components;
     }
 	

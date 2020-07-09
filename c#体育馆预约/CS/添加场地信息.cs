@@ -66,17 +66,17 @@ namespace WindowsApp1
 				r = ChangguanDataSet1.Venue.Rows.Count;
 				if (r != 0)
 				{
-					Interaction.MsgBox("该场地已存在，请重新输入", MsgBoxStyle.Exclamation, "警告");
+					Interaction.MsgBox("该场地不存在，请重新输入", MsgBoxStyle.Exclamation, "警告");
 					txtGymName.Text = "";
 					txtGymName.Focus();
 					txtGymNum.Text = "";
 				}
 				else
 				{
-					s = "insert into Venue values('" + txtGymName.Text + "','" + txtGymNum.Text + "')";
+					s = "insert into Venue(vtname,vnid,vtidn,vnstate) values('" + txtGymName.Text + "','" + Convert.ToInt32(txtGymNum.Text) + "','"+ Convert.ToInt32(txtGymTypeID.Text) + "','" + txtState.Text +"')";
                     //SqlDataAdapter1.SelectCommand.CommandText = s;
                     //SqlDataAdapter1.Fill(ChangguanDataSet1);
-                    cm = ConDatabase.OpenDatabase(n);
+                    cm = ConDatabase.OpenDatabase(s);
                     adapter = new MySqlDataAdapter(cm);
                     adapter.Fill(ChangguanDataSet1);
 					Interaction.MsgBox("添加成功", MsgBoxStyle.Information, "恭喜");
@@ -101,5 +101,10 @@ namespace WindowsApp1
 		{
 			
 		}
-	}
+
+        private void lblResults2_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
