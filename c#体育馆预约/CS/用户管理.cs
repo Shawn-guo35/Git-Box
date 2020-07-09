@@ -13,6 +13,7 @@ using System.Windows.Forms;
 // End of VB project level imports
 using MySql.Data.MySqlClient;
 using WindowsApp1;
+using System.Configuration;
 
 namespace WindowsApp1
 {
@@ -58,19 +59,25 @@ namespace WindowsApp1
 		}
 
         #endregion
-        ConDatabase ConDatabase = new ConDatabase();
+        public static string conn = ConfigurationManager.ConnectionStrings["connstr"].ToString();
         MySqlConnection con;
         MySqlCommand cm;
 
 
         public void 用户管理系统_Load(object sender, EventArgs e)
 		{
-			//TODO: 这行代码将数据加载到表“ChangguanDataSet1.Users”中。您可以根据需要移动或删除它。
-			this.UsersTableAdapter.Fill(this.ChangguanDataSet1.Users);
-			
-			
-			
-		}
+            //TODO: 这行代码将数据加载到表“ChangguanDataSet1.Users”中。您可以根据需要移动或删除它。
+            //this.UsersTableAdapter.Fill(this.ChangguanDataSet1.Users);
+            //con = new MySqlConnection(conn);
+            //con.Open();
+            string SqlStr = string.Format("select count(*) from Users");
+            MySqlDataAdapter adapter = new MySqlDataAdapter(SqlStr, conn);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            this.gvwUsers.DataSource = dt;
+
+
+        }
 		
 		public void btnUpdateUsers_Click(object sender, EventArgs e)
 		{
