@@ -124,6 +124,18 @@
   <data name="MenuStrip1.Font" type="System.Drawing.Font, System.Drawing">
     <value>楷体, 16.2pt, style=Bold</value>
   </data>
+  <data name="tsmiUserPwd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 26</value>
+  </data>
+  <data name="tsmiUserPwd.Text" xml:space="preserve">
+    <value>修改账号密码</value>
+  </data>
+  <data name="tsmiUserOrders.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 26</value>
+  </data>
+  <data name="tsmiUserOrders.Text" xml:space="preserve">
+    <value>查询历史订单</value>
+  </data>
   <data name="tsmiUser.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 26</value>
   </data>
@@ -141,6 +153,18 @@
   </data>
   <data name="帮助tsmiHelp.Text" xml:space="preserve">
     <value>帮助</value>
+  </data>
+  <data name="tsmiCancellation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 26</value>
+  </data>
+  <data name="tsmiCancellation.Text" xml:space="preserve">
+    <value>注销</value>
+  </data>
+  <data name="tsmiClose1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 26</value>
+  </data>
+  <data name="tsmiClose1.Text" xml:space="preserve">
+    <value>退出</value>
   </data>
   <data name="tsmiClose.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 26</value>
@@ -176,30 +200,6 @@
   </data>
   <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="tsmiUserPwd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 26</value>
-  </data>
-  <data name="tsmiUserPwd.Text" xml:space="preserve">
-    <value>修改账号密码</value>
-  </data>
-  <data name="tsmiUserOrders.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 26</value>
-  </data>
-  <data name="tsmiUserOrders.Text" xml:space="preserve">
-    <value>查询历史订单</value>
-  </data>
-  <data name="tsmiCancellation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 26</value>
-  </data>
-  <data name="tsmiCancellation.Text" xml:space="preserve">
-    <value>注销</value>
-  </data>
-  <data name="tsmiClose1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 26</value>
-  </data>
-  <data name="tsmiClose1.Text" xml:space="preserve">
-    <value>退出</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -490,7 +490,7 @@
     <value>4</value>
   </data>
   <data name="orderSearch.Text" xml:space="preserve">
-    <value>用户订单查询</value>
+    <value>订单查询</value>
   </data>
   <data name="&gt;&gt;orderSearch.Name" xml:space="preserve">
     <value>orderSearch</value>
