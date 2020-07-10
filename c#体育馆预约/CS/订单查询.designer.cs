@@ -46,7 +46,7 @@ namespace WindowsApp1
 		[System.Diagnostics.DebuggerStepThrough()]
 			private void InitializeComponent()
 			{
-            this.DataGridView1 = new System.Windows.Forms.DataGridView();
+            this.gvwOrders = new System.Windows.Forms.DataGridView();
             this.txtOrderNo = new System.Windows.Forms.TextBox();
             this.btnSelect = new System.Windows.Forms.Button();
             this.btnReturn = new System.Windows.Forms.Button();
@@ -69,23 +69,23 @@ namespace WindowsApp1
             this.lblResults7 = new System.Windows.Forms.Label();
             this.lblResults6 = new System.Windows.Forms.Label();
             this.btnSelOrder = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvwOrders)).BeginInit();
             this.SuspendLayout();
             // 
-            // DataGridView1
+            // gvwOrders
             // 
-            this.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridView1.Location = new System.Drawing.Point(425, 124);
-            this.DataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.DataGridView1.Name = "DataGridView1";
-            this.DataGridView1.RowTemplate.Height = 27;
-            this.DataGridView1.Size = new System.Drawing.Size(808, 347);
-            this.DataGridView1.TabIndex = 0;
+            this.gvwOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvwOrders.Location = new System.Drawing.Point(425, 124);
+            this.gvwOrders.Margin = new System.Windows.Forms.Padding(2);
+            this.gvwOrders.Name = "gvwOrders";
+            this.gvwOrders.RowTemplate.Height = 27;
+            this.gvwOrders.Size = new System.Drawing.Size(808, 347);
+            this.gvwOrders.TabIndex = 0;
             // 
             // txtOrderNo
             // 
             this.txtOrderNo.Location = new System.Drawing.Point(762, 487);
-            this.txtOrderNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtOrderNo.Margin = new System.Windows.Forms.Padding(2);
             this.txtOrderNo.Name = "txtOrderNo";
             this.txtOrderNo.Size = new System.Drawing.Size(76, 21);
             this.txtOrderNo.TabIndex = 1;
@@ -95,7 +95,7 @@ namespace WindowsApp1
             this.btnSelect.Font = new System.Drawing.Font("宋体", 12F);
             this.btnSelect.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnSelect.Location = new System.Drawing.Point(712, 589);
-            this.btnSelect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSelect.Margin = new System.Windows.Forms.Padding(2);
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.Size = new System.Drawing.Size(56, 26);
             this.btnSelect.TabIndex = 2;
@@ -109,7 +109,7 @@ namespace WindowsApp1
             this.btnReturn.Font = new System.Drawing.Font("宋体", 12F);
             this.btnReturn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnReturn.Location = new System.Drawing.Point(848, 589);
-            this.btnReturn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(2);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(56, 26);
             this.btnReturn.TabIndex = 3;
@@ -168,7 +168,7 @@ namespace WindowsApp1
             // txtID
             // 
             this.txtID.Location = new System.Drawing.Point(633, 546);
-            this.txtID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtID.Margin = new System.Windows.Forms.Padding(2);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(61, 21);
             this.txtID.TabIndex = 8;
@@ -176,7 +176,7 @@ namespace WindowsApp1
             // txtStime
             // 
             this.txtStime.Location = new System.Drawing.Point(777, 546);
-            this.txtStime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtStime.Margin = new System.Windows.Forms.Padding(2);
             this.txtStime.Name = "txtStime";
             this.txtStime.Size = new System.Drawing.Size(61, 21);
             this.txtStime.TabIndex = 9;
@@ -209,7 +209,7 @@ namespace WindowsApp1
             // 
             this.cmbPlaceName.FormattingEnabled = true;
             this.cmbPlaceName.Location = new System.Drawing.Point(926, 547);
-            this.cmbPlaceName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbPlaceName.Margin = new System.Windows.Forms.Padding(2);
             this.cmbPlaceName.Name = "cmbPlaceName";
             this.cmbPlaceName.Size = new System.Drawing.Size(61, 20);
             this.cmbPlaceName.TabIndex = 13;
@@ -218,7 +218,7 @@ namespace WindowsApp1
             // 
             this.cmbPlaceNo.FormattingEnabled = true;
             this.cmbPlaceNo.Location = new System.Drawing.Point(1077, 547);
-            this.cmbPlaceNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbPlaceNo.Margin = new System.Windows.Forms.Padding(2);
             this.cmbPlaceNo.Name = "cmbPlaceNo";
             this.cmbPlaceNo.Size = new System.Drawing.Size(61, 20);
             this.cmbPlaceNo.TabIndex = 14;
@@ -251,7 +251,7 @@ namespace WindowsApp1
             this.btnSelOrder.Font = new System.Drawing.Font("宋体", 12F);
             this.btnSelOrder.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.btnSelOrder.Location = new System.Drawing.Point(874, 487);
-            this.btnSelOrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSelOrder.Margin = new System.Windows.Forms.Padding(2);
             this.btnSelOrder.Name = "btnSelOrder";
             this.btnSelOrder.Size = new System.Drawing.Size(56, 26);
             this.btnSelOrder.TabIndex = 18;
@@ -280,18 +280,18 @@ namespace WindowsApp1
             this.Controls.Add(this.lblResults1);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.btnSelect);
-            this.Controls.Add(this.DataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.gvwOrders);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "订单查询";
             this.Text = "订单查询";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gvwOrders)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
 		}
 		
-		internal DataGridView DataGridView1;
+		internal DataGridView gvwOrders;
 		internal TextBox txtOrderNo;
 		internal Button btnSelect;
 		internal Button btnReturn;

@@ -120,9 +120,6 @@
   <metadata name="VtypeBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>645, 59</value>
   </metadata>
-  <metadata name="ChangguanDataSet3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>436, 59</value>
-  </metadata>
   <metadata name="SqlDataAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>579, 19</value>
   </metadata>
@@ -169,13 +166,10 @@
     <value>UPDATE [Vtype] SET [Vname] = @Vname, [INrental] = @INrental, [OUTrental] = @OUTrental, [Vaddress] = @Vaddress WHERE (([Vname] = @Original_Vname) AND ([INrental] = @Original_INrental) AND ([OUTrental] = @Original_OUTrental) AND ([Vaddress] = @Original_Vaddress));
 SELECT Vname, INrental, OUTrental, Vaddress FROM Vtype WHERE (Vname = @Vname)</value>
   </data>
-  <metadata name="ChangguanDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>227, 59</value>
-  </metadata>
   <metadata name="VtypeTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>852, 59</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>64</value>
+    <value>151</value>
   </metadata>
 </root>

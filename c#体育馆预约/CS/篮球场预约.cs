@@ -14,15 +14,19 @@ using System.Windows.Forms;
 
 using static System.String;
 using WindowsApp1;
+using MySql.Data.MySqlClient;
 
 namespace WindowsApp1
 {
 	public partial class orderBasketball
 	{
+        ConDatabase ConDatabase = new ConDatabase();
+        MySqlConnection con;
+        MySqlCommand cm;       
+
 		public orderBasketball()
 		{
 			InitializeComponent();
-			
 			//Added to support default instance behavour in C#
 			if (defaultInstance == null)
 				defaultInstance = this;
@@ -95,12 +99,16 @@ namespace WindowsApp1
 			}
 			
 			//连接数据库 更改表格
-			string sql = "";
+			//string sql = "";
 			//查询Lease表 得出空闲的场地
-			sql = "select convert(date,Stime),convert(time,Stime,8),convert(time,Etime),Condition from Lease where Vno='" + cbmGymnum.SelectedValue.ToString() + "' and Vname='篮球场'";
-			dstBasketLease.Reset();
-			odadSelBaseket = new System.Data.OleDb.OleDbDataAdapter(sql, OleDbConnection1);
-			odadSelBaseket.Fill(dstBasketLease, "ss");
+			//sql = "select convert(date,Stime),convert(time,Stime,8),convert(time,Etime),Condition from Lease where Vno='" + cbmGymnum.SelectedValue.ToString() + "' and Vname='篮球场'";
+            cm = ConDatabase.OpenDatabase("select convert(date,Stime),convert(time,Stime,8),convert(time,Etime),Condition from Lease where Vno='" + cbmGymnum.SelectedValue.ToString() + "' and Vname='篮球场'");
+            con = ConDatabase.getCon();
+            dstBasketLease.Reset();
+            MySqlDataAdapter adapter = new MySqlDataAdapter(cm);
+            adapter.Fill(dstBasketLease, "ss");
+			//odadSelBaseket = new System.Data.OleDb.OleDbDataAdapter(sql, OleDbConnection1);
+			//odadSelBaseket.Fill(dstBasketLease, "ss");
 			if (dstBasketLease.Tables["ss"].Rows.Count != 0)
 			{
 				for (var j = 1; j <= dstBasketLease.Tables["ss"].Rows.Count; j++)
@@ -146,9 +154,13 @@ namespace WindowsApp1
 			string uname = ""; //用户姓名
 			string userId = "";
 			userId = 登录界面.Default.txtID.Text;
-			//获取用户姓名和租金
-			odadSelBaseket = new System.Data.OleDb.OleDbDataAdapter("select Uname,Uidentity,INrental,OUTrental from Users,Vtype where ID='" + userId + "' and Vname='篮球场'", OleDbConnection1);
-			odadSelBaseket.Fill(dstBasketLease, "ff");
+            //获取用户姓名和租金
+            cm = ConDatabase.OpenDatabase("select Uname,Uidentity,INrental,OUTrental from Users,Vtype where ID='" + userId + "' and Vname='篮球场'");
+            con = ConDatabase.getCon();
+            MySqlDataAdapter adapter1 = new MySqlDataAdapter(cm);
+            adapter1.Fill(dstBasketLease, "ff");
+			//odadSelBaseket = new System.Data.OleDb.OleDbDataAdapter("select Uname,Uidentity,INrental,OUTrental from Users,Vtype where ID='" + userId + "' and Vname='篮球场'", OleDbConnection1);
+			//odadSelBaseket.Fill(dstBasketLease, "ff");
 			if (dstBasketLease.Tables["ff"].Rows[0][1] == "校外人员")
 			{
 				fee = System.Convert.ToDouble(dstBasketLease.Tables["ff"].Rows[0][3]); //校外人员价格
@@ -158,12 +170,15 @@ namespace WindowsApp1
 				fee = System.Convert.ToDouble(dstBasketLease.Tables["ff"].Rows[0][2]); //校内人员价格
 			}
 			uname = System.Convert.ToString(dstBasketLease.Tables["ff"].Rows[0][0]);
-			
-			//判断租借场地是否达到上限
-			sql3 = "select * from Orders where ID='" + 登录界面.Default.txtID.Text + "' and Stime between '" + System.Convert.ToString(DateTime.Now.Date) + "' and '" + System.Convert.ToString(DateTime.Now.Date.AddDays(6)) + "'";
-			odadSelOrder = new System.Data.OleDb.OleDbDataAdapter(sql3, OleDbConnection1);
-			odadSelOrder.Fill(dstSelOrder, "order");
-			if (dstSelOrder.Tables["order"].Rows.Count >= 5)
+
+            //判断租借场地是否达到上限
+            //sql3 = "select * from Orders where ID='" + 登录界面.Default.txtID.Text + "' and Stime between '" + System.Convert.ToString(DateTime.Now.Date) + "' and '" + System.Convert.ToString(DateTime.Now.Date.AddDays(6)) + "'";
+            //odadSelOrder = new System.Data.OleDb.OleDbDataAdapter(sql3, OleDbConnection1);
+            //odadSelOrder.Fill(dstSelOrder, "order");
+            cm = ConDatabase.OpenDatabase("select * from Orders where ID='" + 登录界面.Default.txtID.Text + "' and Stime between '" + System.Convert.ToString(DateTime.Now.Date) + "' and '" + System.Convert.ToString(DateTime.Now.Date.AddDays(6)) + "'");
+            MySqlDataAdapter adapter2 = new MySqlDataAdapter(cm);
+            adapter2.Fill(dstSelOrder, "order");
+            if (dstSelOrder.Tables["order"].Rows.Count >= 5)
 			{
 				MessageBox.Show("抱歉，一周内预订总时长不能超过五小时。");
 			}
@@ -183,12 +198,17 @@ namespace WindowsApp1
 							sql1 = "insert into Lease values('篮球场','" + Vno + "','" + Stime + "','" + Etime + "','" + "已借出')";
 							sql2 = "insert into Orders values('" + 登录界面.Default.txtID.Text + "','篮球场','" + Vno + "','" + Stime + "','" + Etime + "',1," + System.Convert.ToString(fee) +
 								",'" + DateTime.Now.ToString("yyyyMMddhhmm") + "b" + Vno + "','" + uname + "','')";
-							odcmdInsLease = new System.Data.OleDb.OleDbCommand(sql1, OleDbConnection1);
-							odcmdInsOrder = new System.Data.OleDb.OleDbCommand(sql2, OleDbConnection1);
-							OleDbConnection1.Open();
-							odcmdInsLease.ExecuteNonQuery();
-							odcmdInsOrder.ExecuteNonQuery();
-							OleDbConnection1.Close();
+                            //odcmdInsLease = new System.Data.OleDb.OleDbCommand(sql1, OleDbConnection1);
+                            //odcmdInsOrder = new System.Data.OleDb.OleDbCommand(sql2, OleDbConnection1);
+                            //OleDbConnection1.Open();
+                            //odcmdInsLease.ExecuteNonQuery();
+                            //odcmdInsOrder.ExecuteNonQuery();
+                            //OleDbConnection1.Close();
+                            cm = ConDatabase.OpenDatabase(sql1);
+                            cm.ExecuteNonQuery();
+                            cm = ConDatabase.OpenDatabase(sql2);
+                            cm.ExecuteNonQuery();
+                            con.Close();
 							MessageBox.Show("预订成功");
 						}
 					}
@@ -230,13 +250,18 @@ namespace WindowsApp1
 								sql2 = "insert into Orders values('" + 登录界面.Default.txtID.Text + "','篮球场','" + Vno + "','" + dgvOrder.Columns[e.ColumnIndex].Name + " 19:00:00','" + dgvOrder.Columns[e.ColumnIndex].Name + " 20:00:00',1," + System.Convert.ToString(fee) +
 									",'" + DateTime.Now.ToString("yyyyMMddhhmm") + "b" + Vno + "','" + uname + "','')";
 							}
-							odcmdInsLease = new System.Data.OleDb.OleDbCommand(sql1, OleDbConnection1);
-							odcmdInsOrder = new System.Data.OleDb.OleDbCommand(sql2, OleDbConnection1);
-							OleDbConnection1.Open();
-							odcmdInsLease.ExecuteNonQuery();
-							odcmdInsOrder.ExecuteNonQuery();
-							OleDbConnection1.Close();
-							MessageBox.Show("预订成功");
+                            //odcmdInsLease = new System.Data.OleDb.OleDbCommand(sql1, OleDbConnection1);
+                            //odcmdInsOrder = new System.Data.OleDb.OleDbCommand(sql2, OleDbConnection1);
+                            //OleDbConnection1.Open();
+                            //odcmdInsLease.ExecuteNonQuery();
+                            //odcmdInsOrder.ExecuteNonQuery();
+                            //OleDbConnection1.Close();
+                            cm = ConDatabase.OpenDatabase(sql1);
+                            cm.ExecuteNonQuery();
+                            cm = ConDatabase.OpenDatabase(sql2);
+                            cm.ExecuteNonQuery();
+                            con.Close();
+                            MessageBox.Show("预订成功");
 						}
 					}
 				}
@@ -270,12 +295,19 @@ namespace WindowsApp1
 			string sql2 = "";
 			sql1 = "select Vno from Venue where Vname='篮球场'";
 			dstBasketLease.Reset();
-			odadSelBaseket = new System.Data.OleDb.OleDbDataAdapter(sql1, OleDbConnection1);
-			odadSelBaseket.Fill(dstBasketLease, "ss");
+            cm = ConDatabase.OpenDatabase(sql1);
+            con = ConDatabase.getCon();
+            MySqlDataAdapter adapter1 = new MySqlDataAdapter(cm);
+            adapter1.Fill(dstBasketLease, "ss");
+			//odadSelBaseket = new System.Data.OleDb.OleDbDataAdapter(sql1, OleDbConnection1);
+			//odadSelBaseket.Fill(dstBasketLease, "ss");
 			sql2 = "select Vno from Lease where Vname='篮球场' and Stime = '" 
 				+ dtpTime.Value.Date.ToString("yyyy-MM-dd") + " " + cmbBegintime.SelectedItem.ToString() + "'";
-			odadSelBaseket = new System.Data.OleDb.OleDbDataAdapter(sql2, OleDbConnection1);
-			odadSelBaseket.Fill(dstBasketLease, "aa");
+            cm = ConDatabase.OpenDatabase(sql2);
+            MySqlDataAdapter adapter2 = new MySqlDataAdapter(cm);
+            adapter2.Fill(dstBasketLease, "aa");
+			//odadSelBaseket = new System.Data.OleDb.OleDbDataAdapter(sql2, OleDbConnection1);
+			//odadSelBaseket.Fill(dstBasketLease, "aa");
 			
 			//显示表格
 			dgvOrder.Rows.Clear();
@@ -303,21 +335,26 @@ namespace WindowsApp1
 		
 		public void orderBasketball_Load(object sender, EventArgs e)
 		{
-			btnSubmit1.Visible = false;
-			Label4.Visible = false;
-			cbmGymnum.Visible = false;
-			dtpTime.Visible = false;
-			Label1.Visible = false;
-			Label2.Visible = false;
-			txtEndtime.Visible = false;
-			cmbBegintime.Visible = false;
-			btnSubmit2.Visible = false;
+            //btnSubmit1.Visible = true;
+            //Label4.Visible = false;
+            //cbmGymnum.Visible = false;
+            //dtpTime.Visible = false;
+            //Label1.Visible = false;
+            //Label2.Visible = false;
+            //txtEndtime.Visible = false;
+            //cmbBegintime.Visible = false;
+            //btnSubmit2.Visible = false;
+            Label3.Visible = true;
 			dtpTime.MinDate = DateTime.Now;
 			dtpTime.MaxDate = DateTime.Now.AddDays(6); //只可预订一周的场地
-			string sql = "select Vno from Venue where Vname='篮球场' order by Vno";
+			string sql = "select Vtidn from Venue where Vtnamen='篮球场' order by Vtidn";
 			dstSelOrder.Reset();
-			odadSelBaseket = new System.Data.OleDb.OleDbDataAdapter(sql, OleDbConnection1);
-			odadSelBaseket.Fill(dstSelOrder, "ss");
+            cm = ConDatabase.OpenDatabase(sql);
+            con = ConDatabase.getCon();
+            MySqlDataAdapter adapter = new MySqlDataAdapter(cm);
+            adapter.Fill(dstSelOrder, "ss");
+			//odadSelBaseket = new System.Data.OleDb.OleDbDataAdapter(sql, OleDbConnection1);
+			//odadSelBaseket.Fill(dstSelOrder, "ss");
 			cbmGymnum.DataSource = dstSelOrder.Tables["ss"];
 			for (var i = 0; i <= dstSelOrder.Tables["ss"].Rows.Count - 1; i++)
 			{
@@ -360,6 +397,11 @@ namespace WindowsApp1
 			dgvOrder.Rows.Clear();
 			dgvOrder.Columns.Clear();
 		}
-	}
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 	
 }

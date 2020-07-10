@@ -124,6 +124,18 @@
   <data name="MenuStrip1.Font" type="System.Drawing.Font, System.Drawing">
     <value>楷体, 16.2pt, style=Bold</value>
   </data>
+  <data name="tsmiUserPwd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 26</value>
+  </data>
+  <data name="tsmiUserPwd.Text" xml:space="preserve">
+    <value>修改账号密码</value>
+  </data>
+  <data name="tsmiUserOrders.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 26</value>
+  </data>
+  <data name="tsmiUserOrders.Text" xml:space="preserve">
+    <value>查询历史订单</value>
+  </data>
   <data name="tsmiUser.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 26</value>
   </data>
@@ -141,6 +153,18 @@
   </data>
   <data name="帮助tsmiHelp.Text" xml:space="preserve">
     <value>帮助</value>
+  </data>
+  <data name="tsmiCancellation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 26</value>
+  </data>
+  <data name="tsmiCancellation.Text" xml:space="preserve">
+    <value>注销</value>
+  </data>
+  <data name="tsmiClose1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 26</value>
+  </data>
+  <data name="tsmiClose1.Text" xml:space="preserve">
+    <value>退出</value>
   </data>
   <data name="tsmiClose.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 26</value>
@@ -177,29 +201,29 @@
   <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="tsmiUserPwd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 26</value>
+  <data name="oederBasket.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 78</value>
   </data>
-  <data name="tsmiUserPwd.Text" xml:space="preserve">
-    <value>修改账号密码</value>
+  <data name="oederBasket.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
-  <data name="tsmiUserOrders.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 26</value>
+  <data name="oederBasket.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
-  <data name="tsmiUserOrders.Text" xml:space="preserve">
-    <value>查询历史订单</value>
+  <data name="oederBasket.Text" xml:space="preserve">
+    <value>篮球场预约</value>
   </data>
-  <data name="tsmiCancellation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 26</value>
+  <data name="&gt;&gt;oederBasket.Name" xml:space="preserve">
+    <value>oederBasket</value>
   </data>
-  <data name="tsmiCancellation.Text" xml:space="preserve">
-    <value>注销</value>
+  <data name="&gt;&gt;oederBasket.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tsmiClose1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 26</value>
+  <data name="&gt;&gt;oederBasket.Parent" xml:space="preserve">
+    <value>funcpanel</value>
   </data>
-  <data name="tsmiClose1.Text" xml:space="preserve">
-    <value>退出</value>
+  <data name="&gt;&gt;oederBasket.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -226,13 +250,13 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>45, 453</value>
+    <value>45, 495</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 12</value>
@@ -253,10 +277,10 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="updatePass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 418</value>
+    <value>37, 460</value>
   </data>
   <data name="updatePass.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 23</value>
@@ -277,13 +301,13 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;updatePass.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 328</value>
+    <value>35, 370</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 12</value>
@@ -304,10 +328,10 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="addGroundNum.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 302</value>
+    <value>37, 344</value>
   </data>
   <data name="addGroundNum.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 23</value>
@@ -328,10 +352,10 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;addGroundNum.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="addGroundType.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 273</value>
+    <value>37, 315</value>
   </data>
   <data name="addGroundType.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 23</value>
@@ -352,13 +376,13 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;addGroundType.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="lentInfoSearch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="lentInfoSearch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 243</value>
+    <value>37, 285</value>
   </data>
   <data name="lentInfoSearch.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 23</value>
@@ -379,10 +403,10 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;lentInfoSearch.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="groundInfoSearch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 214</value>
+    <value>37, 256</value>
   </data>
   <data name="groundInfoSearch.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 23</value>
@@ -403,13 +427,13 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;groundInfoSearch.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 123</value>
+    <value>35, 165</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 12</value>
@@ -430,7 +454,7 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="bulletin.Location" type="System.Drawing.Point, System.Drawing">
     <value>37, 526</value>
@@ -454,10 +478,10 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;bulletin.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="incomeStatistics.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 492</value>
+    <value>37, 555</value>
   </data>
   <data name="incomeStatistics.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -478,10 +502,10 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;incomeStatistics.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="orderSearch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 388</value>
+    <value>37, 430</value>
   </data>
   <data name="orderSearch.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 23</value>
@@ -490,7 +514,7 @@
     <value>4</value>
   </data>
   <data name="orderSearch.Text" xml:space="preserve">
-    <value>用户订单查询</value>
+    <value>订单查询</value>
   </data>
   <data name="&gt;&gt;orderSearch.Name" xml:space="preserve">
     <value>orderSearch</value>
@@ -502,10 +526,10 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;orderSearch.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="userMg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 359</value>
+    <value>37, 401</value>
   </data>
   <data name="userMg.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 23</value>
@@ -526,10 +550,10 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;userMg.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="groundTypeSearch.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 184</value>
+    <value>37, 226</value>
   </data>
   <data name="groundTypeSearch.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 23</value>
@@ -550,10 +574,10 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;groundTypeSearch.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="equipmentMg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 155</value>
+    <value>37, 197</value>
   </data>
   <data name="equipmentMg.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -574,7 +598,7 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;equipmentMg.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="reserve.Location" type="System.Drawing.Point, System.Drawing">
     <value>37, 49</value>
@@ -598,13 +622,13 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;reserve.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="equipmentRent.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="equipmentRent.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 88</value>
+    <value>39, 123</value>
   </data>
   <data name="equipmentRent.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -625,7 +649,7 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;equipmentRent.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="funcpanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 33</value>

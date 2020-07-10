@@ -11,9 +11,10 @@ using Microsoft.VisualBasic;
 using System.Collections;
 using System.Windows.Forms;
 // End of VB project level imports
-
+using System.Configuration;
 using System.Data.OleDb;
 using WindowsApp1;
+using MySql.Data.MySqlClient;
 
 namespace WindowsApp1
 {
@@ -57,15 +58,16 @@ namespace WindowsApp1
 		{
 			defaultInstance = null;
 		}
-		
-#endregion
-		DataSet objdataset = new DataSet();
-		DataSet dataset1 = new DataSet();
-		DataSet dataset2 = new DataSet();
-		string constr;
-		string sqlstr;
-		
-		public void btnReturn_Click(object sender, EventArgs e)
+
+        #endregion
+        public static string conn = ConfigurationManager.ConnectionStrings["connstr"].ToString();
+        MySqlConnection con;
+        MySqlCommand cm;
+        MySqlDataAdapter sqld;
+        DataSet ds;
+        string sqlstr;
+
+        public void btnReturn_Click(object sender, EventArgs e)
 		{
 			this.Close();
 			
@@ -136,10 +138,12 @@ namespace WindowsApp1
 		}
 		public void dispp(dynamic sql)
 		{
-			OleDbDataAdapter1 = new OleDbDataAdapter(sqlstr, OleDbConnection1);
-			objdataset.Reset();
-			OleDbDataAdapter1.Fill(objdataset, "订单查询");
-			DataGridView1.DataSource = objdataset.Tables["订单查询"];
+            ds = new DataSet();
+            con = new MySqlConnection(conn);
+            sqld = new MySqlDataAdapter(sqlstr, con);
+            ds.Reset();
+			OleDbDataAdapter1.Fill(ds, "订单查询");
+			gvwOrders.DataSource = ds.Tables["订单查询"];
 		}
 		
 		
@@ -152,33 +156,41 @@ namespace WindowsApp1
 		//窗体加载
 		public void Form1_Load(object sender, EventArgs e)
 		{
-			sqlstr = "select * from orders ";
-			OleDbDataAdapter1 = new OleDbDataAdapter(sqlstr, OleDbConnection1);
-			objdataset.Reset();
-			OleDbDataAdapter1.Fill(objdataset, "订单");
-			DataGridView1.DataSource = objdataset.Tables["订单"];
-			DataGridView1.Columns[0].HeaderText = "编号";
-			
-			string sql = "select Vno from Venue ";
-			dataset1.Reset();
-			OleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter(sql, OleDbConnection1);
-			OleDbDataAdapter1.Fill(dataset1, "ss");
-			cmbPlaceNo.DataSource = dataset1.Tables["ss"];
-			for (var i = 0; i <= dataset1.Tables["ss"].Rows.Count - 1; i++)
-			{
-				cmbPlaceNo.ValueMember = dataset1.Tables["ss"].Columns[0].ToString();
-			}
-			cmbPlaceNo.Text = "";
-			sql = "select distinct Vname from Venue ";
-			dataset2.Reset();
-			OleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter(sql, OleDbConnection1);
-			OleDbDataAdapter1.Fill(dataset2, "ss");
-			cmbPlaceName.DataSource = dataset2.Tables["ss"];
-			for (var i = 0; i <= dataset2.Tables["ss"].Rows.Count - 1; i++)
-			{
-				cmbPlaceName.ValueMember = dataset2.Tables["ss"].Columns[0].ToString();
-			}
-			cmbPlaceName.Text = "";
+            //sqlstr = "select * from orders ";
+            //OleDbDataAdapter1 = new OleDbDataAdapter(sqlstr, OleDbConnection1);
+            //objdataset.Reset();
+            //OleDbDataAdapter1.Fill(objdataset, "订单");
+            //DataGridView1.DataSource = objdataset.Tables["订单"];
+            //DataGridView1.Columns[0].HeaderText = "编号";
+            ds = new DataSet();
+            using (con = new MySqlConnection(conn))//链接数据库
+            {
+                sqld = new MySqlDataAdapter("select * from Vorder", con);//最后一个字符串为数据库的链接名
+                sqld.Fill(ds, "orderm");
+            }
+            gvwOrders.DataSource = ds.Tables["orderm"].DefaultView;
+
+
+   //         string sql = "select Vno from Venue ";
+			//dataset1.Reset();
+			//OleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter(sql, OleDbConnection1);
+			//OleDbDataAdapter1.Fill(dataset1, "ss");
+			//cmbPlaceNo.DataSource = dataset1.Tables["ss"];
+			//for (var i = 0; i <= dataset1.Tables["ss"].Rows.Count - 1; i++)
+			//{
+			//	cmbPlaceNo.ValueMember = dataset1.Tables["ss"].Columns[0].ToString();
+			//}
+			//cmbPlaceNo.Text = "";
+			//sql = "select distinct Vname from Venue ";
+			//dataset2.Reset();
+			//OleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter(sql, OleDbConnection1);
+			//OleDbDataAdapter1.Fill(dataset2, "ss");
+			//cmbPlaceName.DataSource = dataset2.Tables["ss"];
+			//for (var i = 0; i <= dataset2.Tables["ss"].Rows.Count - 1; i++)
+			//{
+			//	cmbPlaceName.ValueMember = dataset2.Tables["ss"].Columns[0].ToString();
+			//}
+			//cmbPlaceName.Text = "";
 		}
 	}
 	

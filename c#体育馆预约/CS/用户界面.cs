@@ -82,6 +82,7 @@ namespace WindowsApp1
             Settingpanel.Height = 100;
             Settingpanel.Width = this.Width - funcpanel.Width;
             this.IsMdiContainer = true;
+
 		}
 		
 
@@ -115,7 +116,7 @@ namespace WindowsApp1
             //去除控制栏
             form.FormBorderStyle = FormBorderStyle.None;
             //去除边框
-            form.Width = this.Width - funcpanel.Width;
+            form.Width = SystemInformation.WorkingArea.Width - funcpanel.Width;
             form.Height = SystemInformation.WorkingArea.Height - funcpanel.Location.Y - Settingpanel.Height - 6;
             form.Show();
             form.Location = new Point(funcpanel.Width, Settingpanel.Height + 3);
@@ -229,6 +230,12 @@ namespace WindowsApp1
         private void funcpanel_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void oederBasket_Click(object sender, EventArgs e)
+        {
+            Form form = new orderBasketball();
+            showChildForm(form);
         }
     }
 	

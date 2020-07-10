@@ -122,7 +122,7 @@ namespace WindowsApp1
                 if (num1 > 0)
                 {                    
                     con.Close();
-                    MessageBox.Show("登录成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //MessageBox.Show("登录成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     用户界面.Default.Show();
                     this.Visible = false;
                 }
