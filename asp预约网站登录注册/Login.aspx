@@ -6,11 +6,10 @@
     <p>
     登录</p>
 <p>
-    用户名：<asp:TextBox ID="txtUname" runat="server"></asp:TextBox>
+    &nbsp; 账号：&nbsp; <asp:TextBox ID="txtUname" runat="server"></asp:TextBox>
 </p>
 <br />
-&nbsp;密码：&nbsp;&nbsp; 
-<asp:TextBox ID="txtUpwd" runat="server"></asp:TextBox>
+&nbsp;密码：&nbsp;&nbsp;<asp:TextBox ID="txtUpwd" runat="server" TextMode="Password"></asp:TextBox>
 <br />
 <br />
 <asp:Button ID="btnLogin" runat="server" OnClick="btnLogin_Click" Text="登录" />

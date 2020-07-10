@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
 using MySql.Data.MySqlClient;
 
 public partial class Login : System.Web.UI.Page
@@ -18,30 +19,41 @@ public partial class Login : System.Web.UI.Page
     {
         // 登录
 
-        string userName = this.txtUname.Text;
+        string userId = this.txtUname.Text;
         string userPassword = this.txtUpwd.Text;
 
-        if (userName.Equals("") || userPassword.Equals(""))
+        if (userId.Equals("") || userPassword.Equals(""))
         {
             Response.Write("<script>alert('没有输入账号或密码！')</script>");
         }
         else
         {
-            string strcon = "server=121.36.57.112;database=summer2020;user id=customer;password=Summer2020";
+            string strcon = "server=121.36.57.112;database=summer2020;user id=customer;password=Summer2020;Charset=utf8";
             MySqlConnection con = new MySqlConnection(strcon);
+            MySqlDataAdapter a = null;
+            DataSet ds = new DataSet();
             try
             {
                 con.Open();
-                string sqlSel = "select count(*) from v_users where Uname = '" + userName + "' and Upwd = '" + userPassword + "'";
+                string sqlSel = "select * from v_users where Uid = '" + userId + "' and Upwd = '" + userPassword + "'";
                 MySqlCommand com = new MySqlCommand(sqlSel, con);
-                MySqlDataReader sdr = com.ExecuteReader();
-                if (sdr.Read())
+                a = new MySqlDataAdapter(com);
+                a.Fill(ds, "vuser");
+                //MySqlCommand MySqlComGet = new MySqlCommand();
+                //MySqlComGet.Connection = con;
+                //MySqlComGet.CommandText  = "select count(*) from v_users where Uname = '" + userName + "' and Upwd = '" + userPassword + "'";
+                ////MySqlCommand com = new MySqlCommand(sqlSel, con);
+                //MySqlDataReader sdr = MySqlComGet.ExecuteReader();
+                if (Convert.ToInt32(com.ExecuteScalar()) > 0)
                 {
-
-                    Session["Uname"] = userName;     
+                    //Response.Write(sdr["Uname"].ToString());
+                    //Response.Write(sdr["Upwd"].ToString());
+                    Session["Uid"] = userId;
                     Session["Upwd"] = userPassword;
-                    Response.Write("<script>alert('登录成功！')</script>");
-                    Response.Redirect("Loginsuccess.aspx");
+                    Session["Uname"] = ds.Tables["vuser"].Rows[0][2].ToString();
+                    Response.Write("<script>alert('登录成功！');location.href='Loginsuccess.aspx'</script>");
+                    con.Close();
+                    //Response.Redirect("Loginsuccess.aspx");
                 }
 
                 else

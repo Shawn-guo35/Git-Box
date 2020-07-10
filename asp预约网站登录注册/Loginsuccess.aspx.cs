@@ -15,6 +15,19 @@ public partial class Loginsuccess : System.Web.UI.Page
 
     protected void btnLogout_Click(object sender, EventArgs e)
     {
+
         Response.Redirect("Login.aspx");
+    }
+
+    protected void lbtCupwd_Click(object sender, EventArgs e)
+    {
+        Session["Uname"] = Label1.Text;
+        Response.Redirect("Changepassword.aspx");
+    }
+
+    protected void lbtMufile_Click(object sender, EventArgs e)
+    {
+        Session["Uname"] = Label1.Text;
+        Response.Redirect("Modifyuserprofile.aspx");
     }
 }

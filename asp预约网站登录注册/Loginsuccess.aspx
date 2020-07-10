@@ -12,7 +12,11 @@
         <asp:Button ID="btnLogout" runat="server" OnClick="btnLogout_Click" Text="注销" />
     </p>
     <p>
-        <asp:LinkButton ID="LinkButton1" runat="server">用户中心</asp:LinkButton>
+        &nbsp;</p>
+    <p>
+        <asp:LinkButton ID="lbtCupwd" runat="server" OnClick="lbtCupwd_Click">修改密码</asp:LinkButton>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:LinkButton ID="lbtMufile" runat="server" OnClick="lbtMufile_Click">修改个人信息</asp:LinkButton>
     </p>
 </asp:Content>
 
