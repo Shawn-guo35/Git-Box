@@ -76,6 +76,7 @@ namespace WindowsApp1
             this.equipmentRent = new System.Windows.Forms.Button();
             this.Settingpanel = new System.Windows.Forms.Panel();
             this.changguanDataSet61 = new WindowsApp1.changguanDataSet6();
+            this.oederBasket = new System.Windows.Forms.Button();
             this.MenuStrip1.SuspendLayout();
             this.funcpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.changguanDataSet61)).BeginInit();
@@ -147,6 +148,7 @@ namespace WindowsApp1
             // 
             // funcpanel
             // 
+            this.funcpanel.Controls.Add(this.oederBasket);
             this.funcpanel.Controls.Add(this.label4);
             this.funcpanel.Controls.Add(this.label3);
             this.funcpanel.Controls.Add(this.updatePass);
@@ -291,6 +293,13 @@ namespace WindowsApp1
             this.changguanDataSet61.DataSetName = "changguanDataSet6";
             this.changguanDataSet61.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // oederBasket
+            // 
+            resources.ApplyResources(this.oederBasket, "oederBasket");
+            this.oederBasket.Name = "oederBasket";
+            this.oederBasket.UseVisualStyleBackColor = true;
+            this.oederBasket.Click += new System.EventHandler(this.oederBasket_Click);
+            // 
             // 用户界面
             // 
             resources.ApplyResources(this, "$this");
@@ -342,6 +351,7 @@ namespace WindowsApp1
         private Label label4;
         private Label label3;
         private Button updatePass;
+        private Button oederBasket;
     }
 	
 }

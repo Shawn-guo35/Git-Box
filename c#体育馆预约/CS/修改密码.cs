@@ -90,10 +90,11 @@ namespace WindowsApp1
             //com.CommandText = "select Upassword from Users where ID='" + 登录界面.Default.txtID.Text + "'";
             //com.Connection = con;
             //ads.SelectCommand = com;
-            cm = ConDatabase.OpenDatabase("select Upwd from Users where ID='" + 登录界面.Default.txtID.Text + "'");
+            cm = ConDatabase.OpenDatabase("select Upwd from Users where Uid = '" + 登录界面.Default.txtID.Text + "'");
             //ads.Fill(ds, "Stable");
+            adapter = new MySqlDataAdapter(cm);
             adapter.Fill(ds, "Stable");
-			if (txtOldPwd.Text != ds.Tables["Stable"].Rows[0]["Upassword"])
+			if (txtOldPwd.Text != ds.Tables["Stable"].Rows[0][0].ToString())
 			{
 				Interaction.MsgBox(Prompt: "密码不正确", Title: "系统提示");
 				return;
@@ -101,7 +102,7 @@ namespace WindowsApp1
             //com.CommandText = "update Users set Upassword= '" + txtNewPwd.Text + "' where ID='" + 登录界面.Default.txtID.Text + "'";
             //con.Open();
             //com.ExecuteNonQuery();
-            cm = ConDatabase.OpenDatabase("update Users set Upwd= '" + txtNewPwd.Text + "' where ID='" + 登录界面.Default.txtID.Text + "'");
+            cm = ConDatabase.OpenDatabase("update Users set Upwd= '" + txtNewPwd.Text + "' where Uid='" + 登录界面.Default.txtID.Text + "'");
             cm.ExecuteNonQuery()
 ;			con.Close();
 			Interaction.MsgBox(Prompt: "修改完成", Title: "系统提示");

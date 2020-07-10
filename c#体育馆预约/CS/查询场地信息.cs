@@ -70,12 +70,15 @@ namespace WindowsApp1
 			int x = 0; //要删除的行数
 			if ((int)Interaction.MsgBox("您真的删除该条数据吗？", (int) MsgBoxStyle.YesNo + MsgBoxStyle.Question, "删除数据") == (int)DialogResult.Yes)
 			{
-				x = gvwVenue.CurrentRow.Index;
+                //x = gvwVenue.CurrentRow.Index;
                 //ChangguanDataSet1.Tables["Venue"].Rows[x].Delete();
-                ds.Tables["v_venue"].Rows[x].Delete();
+                //ds.Tables["v_venue"].Rows[x].Delete();
                 //SqlDataAdapter1.Update(ChangguanDataSet1);
-                MySqlDataAdapter adapter = new MySqlDataAdapter();
-                adapter.Update(ds);
+                //MySqlDataAdapter adapter = new MySqlDataAdapter();
+                //adapter.Update(ds);
+                string com = "delete from Venue where vtnamen = '" + gvwVenue.CurrentRow.Cells[3].Value + "'";
+                cm = ConDatabase.OpenDatabase(com);
+                cm.ExecuteNonQuery();
 				Interaction.MsgBox("删除成功", MsgBoxStyle.Information, "恭喜");
 			}
 		}

@@ -332,7 +332,6 @@ F:\school\2020六月小学期\2020summer\c#体育馆预约\CS\bin\Debug\System.R
 F:\school\2020六月小学期\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.exe.config
 F:\school\2020六月小学期\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.器材管理.resources
 F:\school\2020六月小学期\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.csproj.CopyComplete
-F:\school\2020六月小学期\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.csprojAssemblyReference.cache
 F:\school\2020六月小学期\备份3\2020summer\c#体育馆预约\CS\bin\Debug\WindowsApp1.exe.config
 F:\school\2020六月小学期\备份3\2020summer\c#体育馆预约\CS\bin\Debug\WindowsApp1.exe
 F:\school\2020六月小学期\备份3\2020summer\c#体育馆预约\CS\bin\Debug\WindowsApp1.pdb
@@ -486,3 +485,4 @@ F:\school\2020六月小学期\备份3\2020summer\c#体育馆预约\CS\obj\Debug\
 F:\school\2020六月小学期\备份3\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.csproj.CopyComplete
 F:\school\2020六月小学期\备份3\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.exe
 F:\school\2020六月小学期\备份3\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.pdb
+F:\school\2020六月小学期\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.csprojAssemblyReference.cache
