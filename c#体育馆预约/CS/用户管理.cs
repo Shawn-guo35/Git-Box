@@ -113,16 +113,26 @@ namespace WindowsApp1
 		
 		public void btnDeleteUsers_Click(object sender, EventArgs e)
 		{
-            MySqlCommandBuilder scb = new MySqlCommandBuilder(sqld);
-            int x = 0;
-			if ((int)Interaction.MsgBox("您真的删除该条数据吗？", (int) MsgBoxStyle.YesNo + MsgBoxStyle.Question, "删除数据") == (int)DialogResult.Yes)
-			{
-				x = gvwUsers.CurrentRow.Index; //gvw中选择的行号
+            //         MySqlCommandBuilder scb = new MySqlCommandBuilder(sqld);
+            //         int x = 0;
+            //if ((int)Interaction.MsgBox("您真的删除该条数据吗？", (int) MsgBoxStyle.YesNo + MsgBoxStyle.Question, "删除数据") == (int)DialogResult.Yes)
+            //{
+            //	x = gvwUsers.CurrentRow.Index; //gvw中选择的行号
+            //             ds.Tables["userm"].Rows[x].Delete();
+            //             sqld.Update(ds.Tables["userm"]);
+            //	Interaction.MsgBox("删除成功", MsgBoxStyle.Information, "恭喜");
+            //}
+            int x = 0; //要删除的行数
+            if ((int)Interaction.MsgBox("您真的删除该条数据吗？", (int)MsgBoxStyle.YesNo + MsgBoxStyle.Question, "删除数据") == (int)DialogResult.Yes)
+            {
+                x = gvwUsers.CurrentRow.Index;
                 ds.Tables["userm"].Rows[x].Delete();
+                //SqlDataAdapter1.Update(ChangguanDataSet1);
+                sqld = new MySqlDataAdapter();
                 sqld.Update(ds.Tables["userm"]);
-				Interaction.MsgBox("删除成功", MsgBoxStyle.Information, "恭喜");
-			}
-		}
+                Interaction.MsgBox("删除成功", MsgBoxStyle.Information, "恭喜");
+            }
+        }
 		
 		public void btnInsertUsers_Click(object sender, EventArgs e)
 		{
