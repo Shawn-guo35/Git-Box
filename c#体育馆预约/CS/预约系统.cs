@@ -21,7 +21,6 @@ namespace WindowsApp1
 		public Yuyue()
 		{
 			InitializeComponent();
-			
 			//Added to support default instance behavour in C#
 			if (defaultInstance == null)
 				defaultInstance = this;
@@ -68,13 +67,12 @@ namespace WindowsApp1
 
             //用户界面 form0 = new 用户界面();
             Form form = new orderBasketball();
-            //form0 = (用户界面)this.Owner;
             //form0.showChildForm(form);
-
+            
             form.FormBorderStyle = FormBorderStyle.None;
             form.ControlBox = false;
-            form.Size = this.Size;
-            form.Location = this.Location;
+            form.Size = new Size(this.Size.Width - 15, this.Size.Height - 25);
+            form.Location = new Point(SystemInformation.WorkingArea.Width - form.Width, SystemInformation.WorkingArea.Height - form.Height);
             form.Show();
             //orderBasketball.Default.Show();           
         }

@@ -59,21 +59,23 @@ namespace WindowsApp1
                 cm = ConDatabase.OpenDatabase(s);
                 adapter = new MySqlDataAdapter(cm);
                 adapter.Fill(ds,"v_vtype");
-				gvwVtype.DataSource = ds.Tables["v_vtype"];
+                gvwVtype.DataSource = ds.Tables["v_vtype"].DefaultView;
 			}
 		}
 		
 		public void btnUpdteVenue_Click(object sender, EventArgs e)
 		{
-            string updatecom = "update v_vtype set Vtinrank = '"+ Convert.ToDecimal(gvwVtype.Rows[0].Cells[2].Value) +"',Vtoutrank = '" + Convert .ToDecimal(gvwVtype.Rows[0].Cells[3].Value) +"'," +
-                "Vttime = '" + Convert.ToInt32(gvwVtype.Rows[0].Cells[4].Value) +"',Vtetime = '"+ Convert.ToInt32(gvwVtype.Rows[0].Cells[5].Value)+"' where Vtid = '"+gvwVtype.Rows[0].Cells[0].Value +"'" ;
+            //string updatecom = "update v_vtype set Vtinrank = '"+ Convert.ToDecimal(gvwVtype.Rows[0].Cells[2].Value) +"',Vtoutrank = '" + Convert .ToDecimal(gvwVtype.Rows[0].Cells[3].Value) +"'," +
+            //"Vttime = '" + Convert.ToInt32(gvwVtype.Rows[0].Cells[4].Value) +"',Vtetime = '"+ Convert.ToInt32(gvwVtype.Rows[0].Cells[5].Value)+"' where Vtid = '"+gvwVtype.Rows[0].Cells[0].Value +"'" ;
             //MySqlDataAdapter adapter = new MySqlDataAdapter();
             //adapter.UpdateCommand = new MySqlCommand(updatecom);
             //MySqlCommandBuilder mcb = new MySqlCommandBuilder(adapter);
             //adapter.Update(ds.Tables["v_vtype"]);            
             //SqlDataAdapter1.Update(ChangguanDataSet1);
-            cm = ConDatabase.OpenDatabase(updatecom);
-            cm.ExecuteNonQuery();
+            //cm = ConDatabase.OpenDatabase(updatecom);
+            //cm.ExecuteNonQuery();
+            MySqlCommandBuilder mcb = new MySqlCommandBuilder(adapter);
+            adapter.Update(ds.Tables["v_vtype"]);
 			Interaction.MsgBox("数据已修改", MsgBoxStyle.Information, "恭喜");
 		}
 		

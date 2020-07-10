@@ -27,7 +27,6 @@ namespace WindowsApp1
 		public orderBasketball()
 		{
 			InitializeComponent();
-			
 			//Added to support default instance behavour in C#
 			if (defaultInstance == null)
 				defaultInstance = this;
@@ -336,18 +335,19 @@ namespace WindowsApp1
 		
 		public void orderBasketball_Load(object sender, EventArgs e)
 		{
-			btnSubmit1.Visible = false;
-			Label4.Visible = false;
-			cbmGymnum.Visible = false;
-			dtpTime.Visible = false;
-			Label1.Visible = false;
-			Label2.Visible = false;
-			txtEndtime.Visible = false;
-			cmbBegintime.Visible = false;
-			btnSubmit2.Visible = false;
+            //btnSubmit1.Visible = true;
+            //Label4.Visible = false;
+            //cbmGymnum.Visible = false;
+            //dtpTime.Visible = false;
+            //Label1.Visible = false;
+            //Label2.Visible = false;
+            //txtEndtime.Visible = false;
+            //cmbBegintime.Visible = false;
+            //btnSubmit2.Visible = false;
+            Label3.Visible = true;
 			dtpTime.MinDate = DateTime.Now;
 			dtpTime.MaxDate = DateTime.Now.AddDays(6); //只可预订一周的场地
-			string sql = "select Vno from Venue where Vname='篮球场' order by Vno";
+			string sql = "select Vtidn from Venue where Vtnamen='篮球场' order by Vtidn";
 			dstSelOrder.Reset();
             cm = ConDatabase.OpenDatabase(sql);
             con = ConDatabase.getCon();
@@ -397,6 +397,11 @@ namespace WindowsApp1
 			dgvOrder.Rows.Clear();
 			dgvOrder.Columns.Clear();
 		}
-	}
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 	
 }

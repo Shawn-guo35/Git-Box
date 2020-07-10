@@ -63,7 +63,7 @@ namespace WindowsApp1
             MySqlConnection con;
             MySqlCommand cm;
             ConDatabase conDatabase = new ConDatabase();
-            cm = conDatabase.OpenDatabase("select * from vtype where vname='篮球场'");
+            cm = conDatabase.OpenDatabase("select * from vtype where vtname='篮球场'");
             con = conDatabase.getCon();
             MySqlDataAdapter adapter = new MySqlDataAdapter(cm);
             adapter.Fill(DataSet1, "ss");
