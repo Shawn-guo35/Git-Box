@@ -56,9 +56,6 @@ namespace WindowsApp1
             this.btnDeleteUsers = new System.Windows.Forms.Button();
             this.btnUpdateUsers = new System.Windows.Forms.Button();
             this.gvwUsers = new System.Windows.Forms.DataGridView();
-            this.IDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UidentityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UsersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ChangguanDataSet1 = new WindowsApp1.changguanDataSet1();
             this.SqlConnection1 = new System.Data.SqlClient.SqlConnection();
@@ -89,9 +86,9 @@ namespace WindowsApp1
             this.GroupBox1.Controls.Add(this.btnUpdateUsers);
             this.GroupBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.GroupBox1.Location = new System.Drawing.Point(526, 65);
-            this.GroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GroupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.GroupBox1.Size = new System.Drawing.Size(615, 176);
             this.GroupBox1.TabIndex = 0;
             this.GroupBox1.TabStop = false;
@@ -102,7 +99,7 @@ namespace WindowsApp1
             // 
             this.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridView2.Location = new System.Drawing.Point(592, 152);
-            this.DataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.DataGridView2.Name = "DataGridView2";
             this.DataGridView2.RowTemplate.Height = 27;
             this.DataGridView2.Size = new System.Drawing.Size(8, 8);
@@ -111,7 +108,7 @@ namespace WindowsApp1
             // btnClose
             // 
             this.btnClose.Location = new System.Drawing.Point(500, 86);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(80, 41);
             this.btnClose.TabIndex = 8;
@@ -122,7 +119,7 @@ namespace WindowsApp1
             // btnInsertUsers
             // 
             this.btnInsertUsers.Location = new System.Drawing.Point(388, 86);
-            this.btnInsertUsers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnInsertUsers.Margin = new System.Windows.Forms.Padding(2);
             this.btnInsertUsers.Name = "btnInsertUsers";
             this.btnInsertUsers.Size = new System.Drawing.Size(80, 41);
             this.btnInsertUsers.TabIndex = 7;
@@ -133,7 +130,7 @@ namespace WindowsApp1
             // txtCondition
             // 
             this.txtCondition.Location = new System.Drawing.Point(255, 106);
-            this.txtCondition.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCondition.Margin = new System.Windows.Forms.Padding(2);
             this.txtCondition.Multiline = true;
             this.txtCondition.Name = "txtCondition";
             this.txtCondition.Size = new System.Drawing.Size(102, 21);
@@ -147,7 +144,7 @@ namespace WindowsApp1
             "姓名",
             "身份"});
             this.cbmGym.Location = new System.Drawing.Point(136, 104);
-            this.cbmGym.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbmGym.Margin = new System.Windows.Forms.Padding(2);
             this.cbmGym.Name = "cbmGym";
             this.cbmGym.Size = new System.Drawing.Size(92, 24);
             this.cbmGym.TabIndex = 5;
@@ -175,7 +172,7 @@ namespace WindowsApp1
             // btnDeleteUsers
             // 
             this.btnDeleteUsers.Location = new System.Drawing.Point(106, 29);
-            this.btnDeleteUsers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDeleteUsers.Margin = new System.Windows.Forms.Padding(2);
             this.btnDeleteUsers.Name = "btnDeleteUsers";
             this.btnDeleteUsers.Size = new System.Drawing.Size(51, 33);
             this.btnDeleteUsers.TabIndex = 2;
@@ -186,7 +183,7 @@ namespace WindowsApp1
             // btnUpdateUsers
             // 
             this.btnUpdateUsers.Location = new System.Drawing.Point(10, 29);
-            this.btnUpdateUsers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUpdateUsers.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdateUsers.Name = "btnUpdateUsers";
             this.btnUpdateUsers.Size = new System.Drawing.Size(49, 33);
             this.btnUpdateUsers.TabIndex = 1;
@@ -196,38 +193,15 @@ namespace WindowsApp1
             // 
             // gvwUsers
             // 
-            this.gvwUsers.AutoGenerateColumns = false;
             this.gvwUsers.BackgroundColor = System.Drawing.Color.Silver;
             this.gvwUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvwUsers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IDDataGridViewTextBoxColumn,
-            this.UnameDataGridViewTextBoxColumn,
-            this.UidentityDataGridViewTextBoxColumn});
-            this.gvwUsers.DataSource = this.UsersBindingSource;
             this.gvwUsers.Location = new System.Drawing.Point(361, 265);
-            this.gvwUsers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gvwUsers.Margin = new System.Windows.Forms.Padding(2);
             this.gvwUsers.Name = "gvwUsers";
             this.gvwUsers.RowTemplate.Height = 27;
             this.gvwUsers.Size = new System.Drawing.Size(936, 468);
             this.gvwUsers.TabIndex = 1;
-            // 
-            // IDDataGridViewTextBoxColumn
-            // 
-            this.IDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.IDDataGridViewTextBoxColumn.HeaderText = "账号";
-            this.IDDataGridViewTextBoxColumn.Name = "IDDataGridViewTextBoxColumn";
-            // 
-            // UnameDataGridViewTextBoxColumn
-            // 
-            this.UnameDataGridViewTextBoxColumn.DataPropertyName = "Uname";
-            this.UnameDataGridViewTextBoxColumn.HeaderText = "姓名";
-            this.UnameDataGridViewTextBoxColumn.Name = "UnameDataGridViewTextBoxColumn";
-            // 
-            // UidentityDataGridViewTextBoxColumn
-            // 
-            this.UidentityDataGridViewTextBoxColumn.DataPropertyName = "Uidentity";
-            this.UidentityDataGridViewTextBoxColumn.HeaderText = "身份";
-            this.UidentityDataGridViewTextBoxColumn.Name = "UidentityDataGridViewTextBoxColumn";
+            this.gvwUsers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvwUsers_CellContentClick);
             // 
             // UsersBindingSource
             // 
@@ -299,7 +273,7 @@ namespace WindowsApp1
             this.ClientSize = new System.Drawing.Size(1720, 862);
             this.Controls.Add(this.gvwUsers);
             this.Controls.Add(this.GroupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "用户管理";
             this.Text = "用户管理系统";
             this.Load += new System.EventHandler(this.用户管理系统_Load);
@@ -334,9 +308,6 @@ namespace WindowsApp1
 		internal changguanDataSet1 ChangguanDataSet1;
 		internal BindingSource UsersBindingSource;
 		internal changguanDataSet1TableAdapters.UsersTableAdapter UsersTableAdapter;
-		internal DataGridViewTextBoxColumn IDDataGridViewTextBoxColumn;
-		internal DataGridViewTextBoxColumn UnameDataGridViewTextBoxColumn;
-		internal DataGridViewTextBoxColumn UidentityDataGridViewTextBoxColumn;
         private System.ComponentModel.IContainer components;
     }
 	
