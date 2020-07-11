@@ -275,7 +275,7 @@ namespace WindowsApp1
             this.picBasketball14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picBasketball14.BackgroundImage")));
             this.picBasketball14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picBasketball14.Location = new System.Drawing.Point(1424, 412);
-            this.picBasketball14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBasketball14.Margin = new System.Windows.Forms.Padding(2);
             this.picBasketball14.Name = "picBasketball14";
             this.picBasketball14.Size = new System.Drawing.Size(120, 175);
             this.picBasketball14.TabIndex = 21;
@@ -286,7 +286,7 @@ namespace WindowsApp1
             this.picBasketball13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picBasketball13.BackgroundImage")));
             this.picBasketball13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picBasketball13.Location = new System.Drawing.Point(1424, 233);
-            this.picBasketball13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBasketball13.Margin = new System.Windows.Forms.Padding(2);
             this.picBasketball13.Name = "picBasketball13";
             this.picBasketball13.Size = new System.Drawing.Size(120, 175);
             this.picBasketball13.TabIndex = 20;
@@ -297,7 +297,7 @@ namespace WindowsApp1
             this.picBasketball12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picBasketball12.BackgroundImage")));
             this.picBasketball12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picBasketball12.Location = new System.Drawing.Point(1300, 411);
-            this.picBasketball12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBasketball12.Margin = new System.Windows.Forms.Padding(2);
             this.picBasketball12.Name = "picBasketball12";
             this.picBasketball12.Size = new System.Drawing.Size(120, 175);
             this.picBasketball12.TabIndex = 19;
@@ -308,7 +308,7 @@ namespace WindowsApp1
             this.picBasketball11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picBasketball11.BackgroundImage")));
             this.picBasketball11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picBasketball11.Location = new System.Drawing.Point(1300, 233);
-            this.picBasketball11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBasketball11.Margin = new System.Windows.Forms.Padding(2);
             this.picBasketball11.Name = "picBasketball11";
             this.picBasketball11.Size = new System.Drawing.Size(120, 175);
             this.picBasketball11.TabIndex = 18;
@@ -319,7 +319,7 @@ namespace WindowsApp1
             this.picBasketball10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picBasketball10.BackgroundImage")));
             this.picBasketball10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picBasketball10.Location = new System.Drawing.Point(1176, 412);
-            this.picBasketball10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBasketball10.Margin = new System.Windows.Forms.Padding(2);
             this.picBasketball10.Name = "picBasketball10";
             this.picBasketball10.Size = new System.Drawing.Size(120, 175);
             this.picBasketball10.TabIndex = 17;
@@ -330,7 +330,7 @@ namespace WindowsApp1
             this.picBasketball9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picBasketball9.BackgroundImage")));
             this.picBasketball9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picBasketball9.Location = new System.Drawing.Point(1176, 233);
-            this.picBasketball9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBasketball9.Margin = new System.Windows.Forms.Padding(2);
             this.picBasketball9.Name = "picBasketball9";
             this.picBasketball9.Size = new System.Drawing.Size(120, 175);
             this.picBasketball9.TabIndex = 16;
@@ -341,7 +341,7 @@ namespace WindowsApp1
             this.picBasketball8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picBasketball8.BackgroundImage")));
             this.picBasketball8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picBasketball8.Location = new System.Drawing.Point(1052, 412);
-            this.picBasketball8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBasketball8.Margin = new System.Windows.Forms.Padding(2);
             this.picBasketball8.Name = "picBasketball8";
             this.picBasketball8.Size = new System.Drawing.Size(120, 175);
             this.picBasketball8.TabIndex = 15;
@@ -352,7 +352,7 @@ namespace WindowsApp1
             this.picBasketball7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picBasketball7.BackgroundImage")));
             this.picBasketball7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picBasketball7.Location = new System.Drawing.Point(1052, 233);
-            this.picBasketball7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBasketball7.Margin = new System.Windows.Forms.Padding(2);
             this.picBasketball7.Name = "picBasketball7";
             this.picBasketball7.Size = new System.Drawing.Size(120, 175);
             this.picBasketball7.TabIndex = 14;
@@ -363,7 +363,7 @@ namespace WindowsApp1
             this.picBasketball6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picBasketball6.BackgroundImage")));
             this.picBasketball6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picBasketball6.Location = new System.Drawing.Point(928, 412);
-            this.picBasketball6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBasketball6.Margin = new System.Windows.Forms.Padding(2);
             this.picBasketball6.Name = "picBasketball6";
             this.picBasketball6.Size = new System.Drawing.Size(120, 175);
             this.picBasketball6.TabIndex = 13;
@@ -374,7 +374,7 @@ namespace WindowsApp1
             this.picBasketball5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picBasketball5.BackgroundImage")));
             this.picBasketball5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picBasketball5.Location = new System.Drawing.Point(928, 233);
-            this.picBasketball5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBasketball5.Margin = new System.Windows.Forms.Padding(2);
             this.picBasketball5.Name = "picBasketball5";
             this.picBasketball5.Size = new System.Drawing.Size(120, 175);
             this.picBasketball5.TabIndex = 12;
@@ -385,7 +385,7 @@ namespace WindowsApp1
             this.picBasketball3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picBasketball3.BackgroundImage")));
             this.picBasketball3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picBasketball3.Location = new System.Drawing.Point(619, 233);
-            this.picBasketball3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBasketball3.Margin = new System.Windows.Forms.Padding(2);
             this.picBasketball3.Name = "picBasketball3";
             this.picBasketball3.Size = new System.Drawing.Size(175, 120);
             this.picBasketball3.TabIndex = 11;
@@ -396,7 +396,7 @@ namespace WindowsApp1
             this.picBasketball2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picBasketball2.BackgroundImage")));
             this.picBasketball2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picBasketball2.Location = new System.Drawing.Point(440, 233);
-            this.picBasketball2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBasketball2.Margin = new System.Windows.Forms.Padding(2);
             this.picBasketball2.Name = "picBasketball2";
             this.picBasketball2.Size = new System.Drawing.Size(175, 120);
             this.picBasketball2.TabIndex = 10;
@@ -407,7 +407,7 @@ namespace WindowsApp1
             this.picBasketball4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picBasketball4.BackgroundImage")));
             this.picBasketball4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picBasketball4.Location = new System.Drawing.Point(804, 233);
-            this.picBasketball4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBasketball4.Margin = new System.Windows.Forms.Padding(2);
             this.picBasketball4.Name = "picBasketball4";
             this.picBasketball4.Size = new System.Drawing.Size(120, 175);
             this.picBasketball4.TabIndex = 9;
@@ -418,7 +418,7 @@ namespace WindowsApp1
             this.picBasketball1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picBasketball1.BackgroundImage")));
             this.picBasketball1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picBasketball1.Location = new System.Drawing.Point(261, 233);
-            this.picBasketball1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBasketball1.Margin = new System.Windows.Forms.Padding(2);
             this.picBasketball1.Name = "picBasketball1";
             this.picBasketball1.Size = new System.Drawing.Size(175, 120);
             this.picBasketball1.TabIndex = 7;
@@ -427,10 +427,11 @@ namespace WindowsApp1
             // lblResults16
             // 
             this.lblResults16.AutoSize = true;
-            this.lblResults16.Location = new System.Drawing.Point(200, 377);
+            this.lblResults16.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblResults16.Location = new System.Drawing.Point(285, 396);
             this.lblResults16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResults16.Name = "lblResults16";
-            this.lblResults16.Size = new System.Drawing.Size(53, 12);
+            this.lblResults16.Size = new System.Drawing.Size(84, 28);
             this.lblResults16.TabIndex = 37;
             this.lblResults16.Text = "lblInfor";
             // 
@@ -469,7 +470,7 @@ namespace WindowsApp1
             this.Controls.Add(this.picBasketball2);
             this.Controls.Add(this.picBasketball4);
             this.Controls.Add(this.picBasketball1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "viewBasketball";
             this.Text = "篮球场";
             this.Load += new System.EventHandler(this.viewBasketball_Load);

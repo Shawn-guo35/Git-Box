@@ -16,5 +16,10 @@ namespace WindowsApp1
         {
             InitializeComponent();
         }
+
+        private void 器材管理_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
