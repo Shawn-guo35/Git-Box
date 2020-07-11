@@ -22,11 +22,13 @@ namespace WindowsApp1
         ConDatabase ConDatabase = new ConDatabase();
         MySqlConnection con;
         MySqlCommand cm;
+        DataSet ds;
 		public 添加场地类型()
 		{
 			InitializeComponent();
             cm = ConDatabase.OpenDatabase("");
             con = ConDatabase.getCon();
+            ds = new DataSet();
 		}
 		public void btnReturn_Click(object sender, EventArgs e)
 		{
@@ -44,16 +46,16 @@ namespace WindowsApp1
 				txtGymName.Focus();
 				return;
 			}
-			try
-			{
-				ChangguanDataSet1.Tables["Vtype"].Clear();
-				n = "select  *  from Vtype where  Vname ='" + txtGymName.Text.Trim() + "'";
+            try
+            {
+                //ChangguanDataSet1.Tables["Vtype"].Clear();
+                n = "select  *  from v_vtype where  Vtname ='" + txtGymName.Text.Trim() + "'";
                 //SqlDataAdapter1.SelectCommand.CommandText = n;
                 //SqlDataAdapter1.Fill(ChangguanDataSet1);
                 cm = ConDatabase.OpenDatabase(n);
                 MySqlDataAdapter adapter = new MySqlDataAdapter(cm);
-                adapter.Fill(ChangguanDataSet1);
-				r = ChangguanDataSet1.Vtype.Rows.Count;
+                adapter.Fill(ds,"v_vtype");
+                r = ds.Tables["v_vtype"].Rows.Count;
 				if (r != 0)
 				{
 					Interaction.MsgBox("该场地名称已存在，请重新输入", MsgBoxStyle.Exclamation, "警告");
@@ -65,26 +67,32 @@ namespace WindowsApp1
 				}
 				else
 				{
-					s = "insert into Vtype（vtname,vtinrank,vtoutrank,vtremarks） values('" + txtGymName.Text + "','" + txtGymInrent.Text + "','" + txtGymOutrent.Text + "','" + txtGymAddress.Text + "')";
+					s = "insert into v_vtype(Vtid,Vtname,Vtinrank,Vtoutrank,Vttime,Vtetime,Vtremarks) values('" + Convert.ToInt32(groundType.Text) + "','" + txtGymName.Text + "','" + Convert.ToDecimal(txtGymInrent.Text) + "','" + Convert.ToDecimal(txtGymOutrent.Text) + "','" +  Convert.ToInt32(starttime.Text)+ "','" + Convert.ToInt32(stoptime.Text) + "','" + txtGymAddress.Text + "')";
                     //SqlDataAdapter1.SelectCommand.CommandText = s;
                     //SqlDataAdapter1.Fill(ChangguanDataSet1);
-                    cm = ConDatabase.OpenDatabase(n);
-                    adapter = new MySqlDataAdapter(cm);
-                    adapter.Fill(ChangguanDataSet1);
+                    cm = ConDatabase.OpenDatabase(s);
+                    con = ConDatabase.getCon();
+                    cm.ExecuteNonQuery();
+                    //adapter = new MySqlDataAdapter(cm);
+                    //adapter.Fill(ChangguanDataSet1);
 					Interaction.MsgBox("添加成功", MsgBoxStyle.Information, "恭喜");
 					txtGymName.Text = "";
 					txtGymName.Focus();
 					txtGymInrent.Text = "";
 					txtGymOutrent.Text = "";
 					txtGymAddress.Text = "";
-				}
+                    starttime.Text = "";
+                    stoptime.Text = "";
+                    groundType.Text = "";
+            }
+                con.Close();
+        }
+			catch (Exception )
+            {
+				Interaction.MsgBox("请输入正确信息" , MsgBoxStyle.Exclamation, "警告");
 			}
-			catch (Exception)
-			{
-				Interaction.MsgBox("请输入正确信息", MsgBoxStyle.Exclamation, "警告");
-			}
-			
-		}
+
+}
 		
 		public void btnCancel_Click(object sender, EventArgs e)
 		{
@@ -92,12 +100,20 @@ namespace WindowsApp1
 			txtGymInrent.Text = "";
 			txtGymOutrent.Text = "";
 			txtGymAddress.Text = "";
-			txtGymName.Focus();
+            starttime.Text = "";
+            stoptime.Text = "";
+            groundType.Text = "";
+            txtGymName.Focus();
 		}
 		
 		public void 添加场地类型_Load(object sender, EventArgs e)
 		{
 			
 		}
-	}
+
+        private void lblResults4_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
