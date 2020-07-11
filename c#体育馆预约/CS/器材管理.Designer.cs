@@ -130,6 +130,7 @@
             this.Controls.Add(this.GroupBox1);
             this.Name = "器材管理";
             this.Text = "器材管理";
+            this.Load += new System.EventHandler(this.器材管理_Load);
             this.GroupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 

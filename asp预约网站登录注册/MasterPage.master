@@ -36,6 +36,7 @@
                 <div id="content">
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                     </asp:ContentPlaceHolder>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <%--<div class="choose" id="sports">
 				<div>运动项目选择</div>
 				<!-- 以下部分应由js动态生成 -->

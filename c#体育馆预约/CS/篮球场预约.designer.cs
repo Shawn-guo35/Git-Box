@@ -140,6 +140,7 @@ namespace WindowsApp1
             this.dgvOrder.RowTemplate.Height = 27;
             this.dgvOrder.Size = new System.Drawing.Size(508, 225);
             this.dgvOrder.TabIndex = 12;
+            this.dgvOrder.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvOrder_CellContentClick);
             this.dgvOrder.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvOrder_CellContentDoubleClick);
             // 
             // Label1
