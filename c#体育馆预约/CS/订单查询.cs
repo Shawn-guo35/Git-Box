@@ -65,6 +65,8 @@ namespace WindowsApp1
         MySqlCommand cm;
         MySqlDataAdapter sqld;
         DataSet ds;
+        DataSet ds1;
+        DataSet ds2;
         string sqlstr;
 
         public void btnReturn_Click(object sender, EventArgs e)
@@ -79,78 +81,98 @@ namespace WindowsApp1
 			//三重查询
 			if (cmbPlaceNo.Text == "")
 			{
-				sqlstr = "select * from orders where ID='" + txtID.Text + "' AND Stime='" + txtStime.Text + "' AND vname='" + cmbPlaceName.Text + "'";
+				sqlstr = "select * from Vorder where Uidr='" + txtID.Text + "' AND Vrstart='" + txtStime.Text + "' AND Vtnamer='" + cmbPlaceName.Text + "'";
 				dispp(sqlstr);
 			}
 			
 			if (txtID.Text == "")
 			{
-				sqlstr = "select * from orders where Stime='" + txtStime.Text + "' AND vname='" + cmbPlaceName.Text + "' AND vno='" + cmbPlaceNo.Text + "'";
+				sqlstr = "select * from Vorder where Vrstart='" + txtStime.Text + "' AND Vtnamer='" + cmbPlaceName.Text + "' AND Vnidr='" + cmbPlaceNo.Text + "'";
 				dispp(sqlstr);
 			}
 			if (txtStime.Text == "")
 			{
-				sqlstr = "select * from orders where ID='" + txtID.Text + "' AND vname='" + cmbPlaceName.Text + "' AND vno='" + cmbPlaceNo.Text + "'";
+				sqlstr = "select * from Vorder where Uidr='" + txtID.Text + "' AND Vtnamer='" + cmbPlaceName.Text + "' AND Vnidr='" + cmbPlaceNo.Text + "'";
 				dispp(sqlstr);
 			}
-			
-			
-			//双重
-			if (txtStime.Text == "" && cmbPlaceNo.Text == "")
+            if (cmbPlaceName.Text == "")
+            {
+                sqlstr = "select * from Vorder where Uidr='" + txtID.Text + "' AND Vrstart='" + txtStime.Text + "' AND Vnidr='" + cmbPlaceNo.Text + "'";
+                dispp(sqlstr);
+            }
+
+
+            //双重
+            if (txtStime.Text == "" && cmbPlaceNo.Text == "")
 			{
-				sqlstr = "select * from orders where ID='" + txtID.Text + "' AND vname='" + cmbPlaceName.Text + "'";
+				sqlstr = "select * from Vorder where Uidr='" + txtID.Text + "' AND Vtnamer='" + cmbPlaceName.Text + "'";
 				dispp(sqlstr);
 			}
 			if (txtID.Text == "" && cmbPlaceNo.Text == "")
 			{
-				sqlstr = "select * from orders where Stime='" + txtStime.Text + "' AND vname='" + cmbPlaceName.Text + "'";
+				sqlstr = "select * from Vorder where Vrstart='" + txtStime.Text + "' AND Vtnamer='" + cmbPlaceName.Text + "'";
 				dispp(sqlstr);
 			}
 			if (cmbPlaceNo.Text == "" && cmbPlaceName.Text == "")
 			{
-				sqlstr = "select * from orders where Stime='" + txtStime.Text + "' AND ID='" + txtID.Text + "'";
+				sqlstr = "select * from Vorder where Vrstart='" + txtStime.Text + "' AND Uidr='" + txtID.Text + "'";
 				dispp(sqlstr);
 			}
 			if (txtID.Text == "" && txtStime.Text == "")
 			{
-				sqlstr = "select * from orders where vname='" + cmbPlaceName.Text + "' AND vno='" + cmbPlaceNo.Text + "'";
+				sqlstr = "select * from Vorder where Vtnamer='" + cmbPlaceName.Text + "' AND Vnidr='" + cmbPlaceNo.Text + "'";
 				dispp(sqlstr);
 			}
-			
-			//单次查询
-			
-			if (txtStime.Text == "" && cmbPlaceName.Text == "" && cmbPlaceNo.Text == "")
+            if (txtID.Text == "" && cmbPlaceName.Text == "")
+            {
+                sqlstr = "select * from Vorder where Vrstart='" + txtStime.Text + "' AND Vnidr='" + cmbPlaceNo.Text + "'";
+                dispp(sqlstr);
+            }
+            if (txtStime.Text == "" && cmbPlaceName.Text == "")
+            {
+                sqlstr = "select * from Vorder where Uidr='" + txtID.Text + "' AND Vnidr='" + cmbPlaceNo.Text + "'";
+                dispp(sqlstr);
+            }
+
+
+            //单次查询
+
+            if (txtStime.Text == "" && cmbPlaceName.Text == "" && cmbPlaceNo.Text == "")
 			{
-				sqlstr = "select * from orders where ID='" + txtID.Text + "'";
+				sqlstr = "select * from Vorder where Uidr='" + txtID.Text + "'";
 				dispp(sqlstr);
 			}
 			if (txtID.Text == "" && cmbPlaceName.Text == "" && cmbPlaceNo.Text == "")
 			{
-				sqlstr = "select * from orders where Stime='" + txtStime.Text + "'";
+				sqlstr = "select * from Vorder where Vrstart='" + txtStime.Text + "'";
 				dispp(sqlstr);
 			}
 			if (txtID.Text == "" && txtStime.Text == "" && cmbPlaceNo.Text == "")
 			{
-				sqlstr = "select * from orders where vname='" + cmbPlaceName.Text + "'";
+				sqlstr = "select * from Vorder where Vtnamer='" + cmbPlaceName.Text + "'";
 				dispp(sqlstr);
 			}
-			
-		}
+            if (txtID.Text == "" && txtStime.Text == "" && cmbPlaceName.Text == "")
+            {
+                sqlstr = "select * from Vorder where Vnidr='" + cmbPlaceNo.Text + "'";
+                dispp(sqlstr);
+            }
+
+        }
 		public void dispp(dynamic sql)
 		{
             ds = new DataSet();
             con = new MySqlConnection(conn);
             sqld = new MySqlDataAdapter(sqlstr, con);
-            ds.Reset();
-			OleDbDataAdapter1.Fill(ds, "订单查询");
-			gvwOrders.DataSource = ds.Tables["订单查询"];
+			sqld.Fill(ds, "orders");
+			gvwOrders.DataSource = ds.Tables["orders"];
 		}
 		
 		
 		//订单查找
 		public void btnSelOrder_Click(object sender, EventArgs e)
 		{
-			sqlstr = "select * from orders where orderno='" + txtOrderNo.Text + "'";
+			sqlstr = "select * from Vorder where Vrid='" + txtOrderNo.Text + "'";
 			dispp(sqlstr);
 		}
 		//窗体加载
@@ -170,28 +192,30 @@ namespace WindowsApp1
             }
             gvwOrders.DataSource = ds.Tables["orderm"].DefaultView;
 
+            ds1 = new DataSet();
+            sqlstr = "select Vnidr from Vorder ";
+            ds1.Reset();
+            sqld = new MySqlDataAdapter(sqlstr, con);
+            sqld.Fill(ds1, "Vno");
+            cmbPlaceNo.DataSource = ds1.Tables["Vno"];
+            for (var i = 0; i <= ds1.Tables["Vno"].Rows.Count - 1; i++)
+            {
+                cmbPlaceNo.ValueMember = ds1.Tables["Vno"].Columns[0].ToString();
+            }
+            cmbPlaceNo.Text = "";
 
-   //         string sql = "select Vno from Venue ";
-			//dataset1.Reset();
-			//OleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter(sql, OleDbConnection1);
-			//OleDbDataAdapter1.Fill(dataset1, "ss");
-			//cmbPlaceNo.DataSource = dataset1.Tables["ss"];
-			//for (var i = 0; i <= dataset1.Tables["ss"].Rows.Count - 1; i++)
-			//{
-			//	cmbPlaceNo.ValueMember = dataset1.Tables["ss"].Columns[0].ToString();
-			//}
-			//cmbPlaceNo.Text = "";
-			//sql = "select distinct Vname from Venue ";
-			//dataset2.Reset();
-			//OleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter(sql, OleDbConnection1);
-			//OleDbDataAdapter1.Fill(dataset2, "ss");
-			//cmbPlaceName.DataSource = dataset2.Tables["ss"];
-			//for (var i = 0; i <= dataset2.Tables["ss"].Rows.Count - 1; i++)
-			//{
-			//	cmbPlaceName.ValueMember = dataset2.Tables["ss"].Columns[0].ToString();
-			//}
-			//cmbPlaceName.Text = "";
-		}
+            ds2 = new DataSet();
+            sqlstr = "select distinct Vtnamer from Vorder ";
+            ds2.Reset();
+            sqld = new MySqlDataAdapter(sqlstr, con);
+            sqld.Fill(ds2, "Vname");
+            cmbPlaceName.DataSource = ds2.Tables["Vname"];
+            for (var i = 0; i <= ds2.Tables["Vname"].Rows.Count - 1; i++)
+            {
+                cmbPlaceName.ValueMember = ds2.Tables["Vname"].Columns[0].ToString();
+            }
+            cmbPlaceName.Text = "";
+        }
 	}
 	
 }
