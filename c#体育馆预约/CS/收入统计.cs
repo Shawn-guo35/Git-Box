@@ -11,9 +11,10 @@ using Microsoft.VisualBasic;
 using System.Collections;
 using System.Windows.Forms;
 // End of VB project level imports
-
+using System.Configuration;
 using System.Data.OleDb;
 using WindowsApp1;
+using MySql.Data.MySqlClient;
 
 namespace WindowsApp1
 {
@@ -66,43 +67,52 @@ namespace WindowsApp1
 		DataSet dataset4 = new DataSet();
 		DataSet dataset5 = new DataSet();
 		DataSet dataset6 = new DataSet();
-		string constr;
-		string sqlstr;
+        public static string conn = ConfigurationManager.ConnectionStrings["connstr"].ToString();
+        MySqlConnection con;
+        MySqlCommand cm;
+        MySqlDataAdapter sqld;
+        DataSet ds;
+        ConDatabase ConDatabase = new ConDatabase();
+        string sqlstr;
 		
 		public void btnSelIncome_Click(object sender, EventArgs e)
 		{
-			sqlstr = "select fee from orders where stime='" + cmbYear.Text + "/" + cmbMon.Text + "/" + cmbDay.Text + "'";
-			OleDbDataAdapter1 = new OleDbDataAdapter(sqlstr, OleDbConnection1);
+            con = new MySqlConnection(conn);
+            sqlstr = "select Vramount from Vorder where Vrend >='" + cmbYear.Text + "" + cmbMon.Text + "" + cmbDay.Text + "00.00' And Vrend<='" + cmbYear.Text + "" + cmbMon.Text + "" + cmbDay.Text + "00.00'";
+
+            sqld = new MySqlDataAdapter(sqlstr, con);
 			dataset4.Reset();
-			OleDbDataAdapter1.Fill(dataset4, "dfee");
+			sqld.Fill(dataset4, "dfee");
 			var dsum = 0;
 			for (var i = 0; i <= dataset4.Tables["dfee"].Rows.Count - 1; i++)
 			{
-				dsum = dsum + (int)dataset4.Tables["dfee"].Rows[i][0];
-			}
+				dsum = dsum + Convert.ToInt32(dataset4.Tables["dfee"].Rows[i][0]);
+            }
 			txtDaySum.Text = System.Convert.ToString(dsum);
 			
-			sqlstr = "select fee from orders where stime>='" + cmbYear.Text + "/01/01' And stime<='" + cmbYear.Text + "/12/30'";
-			OleDbDataAdapter1 = new OleDbDataAdapter(sqlstr, OleDbConnection1);
+			sqlstr = "select Vramount from Vorder where Vrend>='" + cmbYear.Text + "/01/01' And Vrend<='" + cmbYear.Text + "/12/30'";
+			sqld = new MySqlDataAdapter(sqlstr, con);
 			dataset5.Reset();
-			OleDbDataAdapter1.Fill(dataset5, "mfee");
+			sqld.Fill(dataset5, "yfee");
 			var ysum = 0;
-			for (var i = 0; i <= dataset5.Tables["mfee"].Rows.Count - 1; i++)
+			for (var i = 0; i <= dataset5.Tables["yfee"].Rows.Count - 1; i++)
 			{
-				ysum = ysum + (int)dataset5.Tables["mfee"].Rows[i][0];
-			}
+                ysum = ysum + Convert.ToInt32(dataset5.Tables["yfee"].Rows[i][0]);
+
+            }
 			txtYearSum.Text = System.Convert.ToString(ysum);
-			
-			
-			sqlstr = "select fee from orders where stime>='" + cmbYear.Text + "/" + cmbMon.Text + "/01' And stime<='" + cmbYear.Text + "/" + cmbMon.Text + "/30'";
-			OleDbDataAdapter1 = new OleDbDataAdapter(sqlstr, OleDbConnection1);
+            
+
+
+            sqlstr = "select Vramount from Vorder where Vrend>='" + cmbYear.Text + "/" + cmbMon.Text + "/01' And Vrend<='" + cmbYear.Text + "/" + cmbMon.Text + "/30'";
+			sqld = new MySqlDataAdapter(sqlstr, con);
 			dataset6.Reset();
-			OleDbDataAdapter1.Fill(dataset6, "mfee");
+			sqld.Fill(dataset6, "mfee");
 			var msum = 0;
 			for (var i = 0; i <= dataset6.Tables["mfee"].Rows.Count - 1; i++)
 			{
-				msum = msum + (int)dataset6.Tables["mfee"].Rows[i][0];
-			}
+				msum = msum + Convert.ToInt32(dataset6.Tables["mfee"].Rows[i][0]);
+            }
 			txtMonSum.Text = System.Convert.ToString(msum);
 			
 			
@@ -118,37 +128,39 @@ namespace WindowsApp1
 		//窗体加载
 		public void Form2_Load(object sender, EventArgs e)
 		{
-			sqlstr = "select orderno,stime,fee from orders ";
-			OleDbDataAdapter1 = new OleDbDataAdapter(sqlstr, OleDbConnection1);
-			objdataset.Reset();
-			OleDbDataAdapter1.Fill(objdataset, "收益");
-			dgwIncome.DataSource = objdataset.Tables["收益"];
+            ds = new DataSet();
+            con = new MySqlConnection(conn);
+            sqlstr = "select Vrid,Vrstart,Vramount from Vorder ";
+            sqld = new MySqlDataAdapter(sqlstr, con);
+			ds.Reset();
+            sqld.Fill(objdataset, "income");
+			dgwIncome.DataSource = objdataset.Tables["income"];
 			dgwIncome.Columns[0].HeaderText = "订单号";
 			
-			string sql = "select distinct datename(yy,stime) as year from orders ";
+			string sql = "select  YEAR(Vrend)  from Vorder ";
 			dataset2.Reset();
-			OleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter(sql, OleDbConnection1);
-			OleDbDataAdapter1.Fill(dataset2, "y");
+            sqld = new MySqlDataAdapter(sql, con);
+            sqld.Fill(dataset2, "y");
 			cmbYear.DataSource = dataset2.Tables["y"];
 			for (var i = 0; i <= dataset2.Tables["y"].Rows.Count - 1; i++)
 			{
 				cmbYear.ValueMember = dataset2.Tables["y"].Columns[0].ToString();
 			}
 			cmbYear.Text = "";
-			sql = "select distinct datename(dd,stime) as year from orders ";
+			sql = "select  day(Vrend)  from Vorder ";
 			dataset3.Reset();
-			OleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter(sql, OleDbConnection1);
-			OleDbDataAdapter1.Fill(dataset3, "d");
+			sqld = new MySqlDataAdapter(sql, con);
+			sqld.Fill(dataset3, "d");
 			cmbDay.DataSource = dataset3.Tables["d"];
 			for (var i = 0; i <= dataset3.Tables["d"].Rows.Count - 1; i++)
 			{
 				cmbDay.ValueMember = dataset3.Tables["d"].Columns[0].ToString();
 			}
 			cmbDay.Text = "";
-			sql = "select distinct datename(mm,stime) as year from orders ";
+			sql = "select  month(Vrend)  from Vorder ";
 			dataset1.Reset();
-			OleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter(sql, OleDbConnection1);
-			OleDbDataAdapter1.Fill(dataset1, "m");
+			sqld = new MySqlDataAdapter(sql, con);
+			sqld.Fill(dataset1, "m");
 			cmbMon.DataSource = dataset1.Tables["m"];
 			for (var i = 0; i <= dataset1.Tables["m"].Rows.Count - 1; i++)
 			{

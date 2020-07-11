@@ -64,6 +64,7 @@ namespace WindowsApp1
         MySqlCommand cm;
         MySqlDataAdapter sqld;
         DataSet ds;
+        ConDatabase ConDatabase = new ConDatabase();
         public void 用户管理系统_Load(object sender, EventArgs e)
 		{
             //TODO: 这行代码将数据加载到表“ChangguanDataSet1.Users”中。您可以根据需要移动或删除它。
@@ -113,16 +114,29 @@ namespace WindowsApp1
 		
 		public void btnDeleteUsers_Click(object sender, EventArgs e)
 		{
-            MySqlCommandBuilder scb = new MySqlCommandBuilder(sqld);
-            int x = 0;
-			if ((int)Interaction.MsgBox("您真的删除该条数据吗？", (int) MsgBoxStyle.YesNo + MsgBoxStyle.Question, "删除数据") == (int)DialogResult.Yes)
-			{
-				x = gvwUsers.CurrentRow.Index; //gvw中选择的行号
-                ds.Tables["userm"].Rows[x].Delete();
-                sqld.Update(ds.Tables["userm"]);
-				Interaction.MsgBox("删除成功", MsgBoxStyle.Information, "恭喜");
-			}
-		}
+            //         MySqlCommandBuilder scb = new MySqlCommandBuilder(sqld);
+            //         int x = 0;
+            //if ((int)Interaction.MsgBox("您真的删除该条数据吗？", (int) MsgBoxStyle.YesNo + MsgBoxStyle.Question, "删除数据") == (int)DialogResult.Yes)
+            //{
+            //	x = gvwUsers.CurrentRow.Index; //gvw中选择的行号
+            //             ds.Tables["userm"].Rows[x].Delete();
+            //             sqld.Update(ds.Tables["userm"]);
+            //	Interaction.MsgBox("删除成功", MsgBoxStyle.Information, "恭喜");
+            //}
+            int x = 0; //要删除的行数
+            if ((int)Interaction.MsgBox("您真的删除该条数据吗？", (int)MsgBoxStyle.YesNo + MsgBoxStyle.Question, "删除数据") == (int)DialogResult.Yes)
+            {
+                //x = gvwVtype.CurrentRow.Index;
+                //ds.Tables["Vtype"].Rows[x].Delete();
+                //SqlDataAdapter1.Update(ChangguanDataSet1);
+                //MySqlDataAdapter adapter = new MySqlDataAdapter();
+                string delecom = "delete from Users where Useq = '" + gvwUsers.CurrentRow.Cells[0].Value + "'";
+                //adapter.Update(ds);
+                cm = ConDatabase.OpenDatabase(delecom);
+                cm.ExecuteNonQuery();
+                Interaction.MsgBox("删除成功", MsgBoxStyle.Information, "恭喜");
+            }
+        }
 		
 		public void btnInsertUsers_Click(object sender, EventArgs e)
 		{
