@@ -57,6 +57,7 @@ namespace WindowsApp1
             this.tsmiCancellation = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiClose1 = new System.Windows.Forms.ToolStripMenuItem();
             this.funcpanel = new System.Windows.Forms.Panel();
+            this.oederBasket = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.updatePass = new System.Windows.Forms.Button();
@@ -72,11 +73,13 @@ namespace WindowsApp1
             this.userMg = new System.Windows.Forms.Button();
             this.groundTypeSearch = new System.Windows.Forms.Button();
             this.equipmentMg = new System.Windows.Forms.Button();
-            this.reserve = new System.Windows.Forms.Button();
             this.equipmentRent = new System.Windows.Forms.Button();
             this.Settingpanel = new System.Windows.Forms.Panel();
             this.changguanDataSet61 = new WindowsApp1.changguanDataSet6();
-            this.oederBasket = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.rentBasket = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.MenuStrip1.SuspendLayout();
             this.funcpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.changguanDataSet61)).BeginInit();
@@ -148,6 +151,10 @@ namespace WindowsApp1
             // 
             // funcpanel
             // 
+            this.funcpanel.Controls.Add(this.button3);
+            this.funcpanel.Controls.Add(this.rentBasket);
+            this.funcpanel.Controls.Add(this.button1);
+            this.funcpanel.Controls.Add(this.label5);
             this.funcpanel.Controls.Add(this.oederBasket);
             this.funcpanel.Controls.Add(this.label4);
             this.funcpanel.Controls.Add(this.label3);
@@ -164,11 +171,17 @@ namespace WindowsApp1
             this.funcpanel.Controls.Add(this.userMg);
             this.funcpanel.Controls.Add(this.groundTypeSearch);
             this.funcpanel.Controls.Add(this.equipmentMg);
-            this.funcpanel.Controls.Add(this.reserve);
             this.funcpanel.Controls.Add(this.equipmentRent);
             resources.ApplyResources(this.funcpanel, "funcpanel");
             this.funcpanel.Name = "funcpanel";
             this.funcpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.funcpanel_Paint);
+            // 
+            // oederBasket
+            // 
+            resources.ApplyResources(this.oederBasket, "oederBasket");
+            this.oederBasket.Name = "oederBasket";
+            this.oederBasket.UseVisualStyleBackColor = true;
+            this.oederBasket.Click += new System.EventHandler(this.oederBasket_Click);
             // 
             // label4
             // 
@@ -268,13 +281,6 @@ namespace WindowsApp1
             this.equipmentMg.UseVisualStyleBackColor = true;
             this.equipmentMg.Click += new System.EventHandler(this.equipmentMg_Click);
             // 
-            // reserve
-            // 
-            resources.ApplyResources(this.reserve, "reserve");
-            this.reserve.Name = "reserve";
-            this.reserve.UseVisualStyleBackColor = true;
-            this.reserve.Click += new System.EventHandler(this.reserve_Click);
-            // 
             // equipmentRent
             // 
             resources.ApplyResources(this.equipmentRent, "equipmentRent");
@@ -293,12 +299,28 @@ namespace WindowsApp1
             this.changguanDataSet61.DataSetName = "changguanDataSet6";
             this.changguanDataSet61.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // oederBasket
+            // label5
             // 
-            resources.ApplyResources(this.oederBasket, "oederBasket");
-            this.oederBasket.Name = "oederBasket";
-            this.oederBasket.UseVisualStyleBackColor = true;
-            this.oederBasket.Click += new System.EventHandler(this.oederBasket_Click);
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // rentBasket
+            // 
+            resources.ApplyResources(this.rentBasket, "rentBasket");
+            this.rentBasket.Name = "rentBasket";
+            this.rentBasket.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // 用户界面
             // 
@@ -333,7 +355,6 @@ namespace WindowsApp1
 		internal ToolStripMenuItem tsmiUserOrders;
         private Panel funcpanel;
         private Panel Settingpanel;
-        private Button reserve;
         private Button equipmentMg;
         private Button equipmentRent;
         private changguanDataSet6 changguanDataSet61;
@@ -352,6 +373,10 @@ namespace WindowsApp1
         private Label label3;
         private Button updatePass;
         private Button oederBasket;
+        private Label label5;
+        private Button button3;
+        private Button rentBasket;
+        private Button button1;
     }
 	
 }
