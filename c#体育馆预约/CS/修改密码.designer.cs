@@ -55,6 +55,7 @@ namespace WindowsApp1
             // 
             // lblResults1
             // 
+            this.lblResults1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblResults1.AutoSize = true;
             this.lblResults1.Font = new System.Drawing.Font("宋体", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblResults1.Location = new System.Drawing.Point(576, 249);
@@ -66,6 +67,7 @@ namespace WindowsApp1
             // 
             // lblResults2
             // 
+            this.lblResults2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblResults2.AutoSize = true;
             this.lblResults2.Font = new System.Drawing.Font("宋体", 24F);
             this.lblResults2.Location = new System.Drawing.Point(576, 333);
@@ -77,6 +79,7 @@ namespace WindowsApp1
             // 
             // lblResults3
             // 
+            this.lblResults3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblResults3.AutoSize = true;
             this.lblResults3.Font = new System.Drawing.Font("宋体", 24F);
             this.lblResults3.Location = new System.Drawing.Point(579, 422);
@@ -88,9 +91,10 @@ namespace WindowsApp1
             // 
             // btnSubmit
             // 
+            this.btnSubmit.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSubmit.Font = new System.Drawing.Font("宋体", 24F);
             this.btnSubmit.Location = new System.Drawing.Point(794, 561);
-            this.btnSubmit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(2);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(158, 46);
             this.btnSubmit.TabIndex = 3;
@@ -100,9 +104,10 @@ namespace WindowsApp1
             // 
             // txtOldPwd
             // 
+            this.txtOldPwd.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtOldPwd.Font = new System.Drawing.Font("宋体", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.txtOldPwd.Location = new System.Drawing.Point(827, 246);
-            this.txtOldPwd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtOldPwd.Margin = new System.Windows.Forms.Padding(2);
             this.txtOldPwd.Name = "txtOldPwd";
             this.txtOldPwd.PasswordChar = '*';
             this.txtOldPwd.Size = new System.Drawing.Size(300, 44);
@@ -110,9 +115,10 @@ namespace WindowsApp1
             // 
             // txtNewPwd
             // 
+            this.txtNewPwd.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtNewPwd.Font = new System.Drawing.Font("宋体", 24F);
             this.txtNewPwd.Location = new System.Drawing.Point(827, 333);
-            this.txtNewPwd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNewPwd.Margin = new System.Windows.Forms.Padding(2);
             this.txtNewPwd.Name = "txtNewPwd";
             this.txtNewPwd.PasswordChar = '*';
             this.txtNewPwd.Size = new System.Drawing.Size(300, 44);
@@ -120,9 +126,10 @@ namespace WindowsApp1
             // 
             // txtNewPwd1
             // 
+            this.txtNewPwd1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtNewPwd1.Font = new System.Drawing.Font("宋体", 24F);
             this.txtNewPwd1.Location = new System.Drawing.Point(827, 422);
-            this.txtNewPwd1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNewPwd1.Margin = new System.Windows.Forms.Padding(2);
             this.txtNewPwd1.Name = "txtNewPwd1";
             this.txtNewPwd1.PasswordChar = '*';
             this.txtNewPwd1.Size = new System.Drawing.Size(300, 44);
@@ -140,7 +147,7 @@ namespace WindowsApp1
             this.Controls.Add(this.lblResults3);
             this.Controls.Add(this.lblResults2);
             this.Controls.Add(this.lblResults1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "修改密码";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "修改密码";

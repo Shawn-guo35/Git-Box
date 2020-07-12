@@ -54,7 +54,9 @@ namespace WindowsApp1
             this.Timer1 = new System.Windows.Forms.Timer(this.components);
             this.Timer2 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblResults1
@@ -72,7 +74,7 @@ namespace WindowsApp1
             // btnRegister
             // 
             this.btnRegister.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnRegister.Location = new System.Drawing.Point(193, 261);
+            this.btnRegister.Location = new System.Drawing.Point(193, 252);
             this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(71, 28);
@@ -86,7 +88,7 @@ namespace WindowsApp1
             this.btnLogin.BackColor = System.Drawing.Color.Transparent;
             this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLogin.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnLogin.Location = new System.Drawing.Point(46, 261);
+            this.btnLogin.Location = new System.Drawing.Point(46, 252);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(71, 28);
@@ -145,6 +147,8 @@ namespace WindowsApp1
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.AutoSize = true;
             this.groupBox1.Controls.Add(this.lblResults1);
             this.groupBox1.Controls.Add(this.btnRegister);
             this.groupBox1.Controls.Add(this.btnLogin);
@@ -152,11 +156,22 @@ namespace WindowsApp1
             this.groupBox1.Controls.Add(this.txtPwd);
             this.groupBox1.Controls.Add(this.lblResults3);
             this.groupBox1.Controls.Add(this.txtID);
-            this.groupBox1.Location = new System.Drawing.Point(1320, 320);
+            this.groupBox1.Location = new System.Drawing.Point(951, 260);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(324, 322);
+            this.groupBox1.Size = new System.Drawing.Size(324, 300);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.AutoSize = true;
+            this.panel1.Controls.Add(this.groupBox1);
+            this.panel1.Location = new System.Drawing.Point(0, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1540, 845);
+            this.panel1.TabIndex = 11;
             // 
             // 登录界面
             // 
@@ -164,8 +179,8 @@ namespace WindowsApp1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1720, 862);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(1540, 845);
+            this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -175,7 +190,10 @@ namespace WindowsApp1
             this.Load += new System.EventHandler(this.登陆界面_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 		
@@ -190,6 +208,7 @@ namespace WindowsApp1
 		protected Button btnRegister;
         private GroupBox groupBox1;
         private System.ComponentModel.IContainer components;
+        private Panel panel1;
     }
 	
 }

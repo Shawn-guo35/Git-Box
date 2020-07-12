@@ -73,6 +73,7 @@ namespace WindowsApp1
 		
 		public void Form1_Load(object sender, EventArgs e)
 		{
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.WindowState = FormWindowState.Maximized;
             funcpanel.Location = new Point(MenuStrip1.Location.X, MenuStrip1.Location.Y + MenuStrip1.Height + 3);       
             funcpanel.Width = 200;

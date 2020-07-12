@@ -74,9 +74,10 @@ namespace WindowsApp1
             // 
             // lblResults1
             // 
+            this.lblResults1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblResults1.AutoSize = true;
             this.lblResults1.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblResults1.Location = new System.Drawing.Point(659, 313);
+            this.lblResults1.Location = new System.Drawing.Point(659, 290);
             this.lblResults1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResults1.Name = "lblResults1";
             this.lblResults1.Size = new System.Drawing.Size(82, 15);
@@ -85,9 +86,10 @@ namespace WindowsApp1
             // 
             // lblResults2
             // 
+            this.lblResults2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblResults2.AutoSize = true;
             this.lblResults2.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblResults2.Location = new System.Drawing.Point(629, 364);
+            this.lblResults2.Location = new System.Drawing.Point(629, 341);
             this.lblResults2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResults2.Name = "lblResults2";
             this.lblResults2.Size = new System.Drawing.Size(112, 15);
@@ -96,9 +98,10 @@ namespace WindowsApp1
             // 
             // lblResults3
             // 
+            this.lblResults3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblResults3.AutoSize = true;
             this.lblResults3.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblResults3.Location = new System.Drawing.Point(629, 417);
+            this.lblResults3.Location = new System.Drawing.Point(629, 394);
             this.lblResults3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResults3.Name = "lblResults3";
             this.lblResults3.Size = new System.Drawing.Size(112, 15);
@@ -107,9 +110,10 @@ namespace WindowsApp1
             // 
             // lblResults4
             // 
+            this.lblResults4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblResults4.AutoSize = true;
             this.lblResults4.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblResults4.Location = new System.Drawing.Point(659, 466);
+            this.lblResults4.Location = new System.Drawing.Point(659, 443);
             this.lblResults4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResults4.Name = "lblResults4";
             this.lblResults4.Size = new System.Drawing.Size(82, 15);
@@ -119,7 +123,8 @@ namespace WindowsApp1
             // 
             // txtGymName
             // 
-            this.txtGymName.Location = new System.Drawing.Point(777, 309);
+            this.txtGymName.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtGymName.Location = new System.Drawing.Point(777, 286);
             this.txtGymName.Margin = new System.Windows.Forms.Padding(2);
             this.txtGymName.Name = "txtGymName";
             this.txtGymName.Size = new System.Drawing.Size(76, 21);
@@ -127,7 +132,8 @@ namespace WindowsApp1
             // 
             // txtGymInrent
             // 
-            this.txtGymInrent.Location = new System.Drawing.Point(777, 359);
+            this.txtGymInrent.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtGymInrent.Location = new System.Drawing.Point(777, 336);
             this.txtGymInrent.Margin = new System.Windows.Forms.Padding(2);
             this.txtGymInrent.Name = "txtGymInrent";
             this.txtGymInrent.Size = new System.Drawing.Size(76, 21);
@@ -135,7 +141,8 @@ namespace WindowsApp1
             // 
             // txtGymOutrent
             // 
-            this.txtGymOutrent.Location = new System.Drawing.Point(777, 416);
+            this.txtGymOutrent.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtGymOutrent.Location = new System.Drawing.Point(777, 393);
             this.txtGymOutrent.Margin = new System.Windows.Forms.Padding(2);
             this.txtGymOutrent.Name = "txtGymOutrent";
             this.txtGymOutrent.Size = new System.Drawing.Size(76, 21);
@@ -143,7 +150,8 @@ namespace WindowsApp1
             // 
             // txtGymAddress
             // 
-            this.txtGymAddress.Location = new System.Drawing.Point(777, 465);
+            this.txtGymAddress.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtGymAddress.Location = new System.Drawing.Point(777, 442);
             this.txtGymAddress.Margin = new System.Windows.Forms.Padding(2);
             this.txtGymAddress.Name = "txtGymAddress";
             this.txtGymAddress.Size = new System.Drawing.Size(331, 21);
@@ -151,7 +159,8 @@ namespace WindowsApp1
             // 
             // btnInsertVenue
             // 
-            this.btnInsertVenue.Location = new System.Drawing.Point(698, 526);
+            this.btnInsertVenue.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnInsertVenue.Location = new System.Drawing.Point(698, 503);
             this.btnInsertVenue.Margin = new System.Windows.Forms.Padding(2);
             this.btnInsertVenue.Name = "btnInsertVenue";
             this.btnInsertVenue.Size = new System.Drawing.Size(72, 41);
@@ -161,7 +170,8 @@ namespace WindowsApp1
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(854, 526);
+            this.btnCancel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnCancel.Location = new System.Drawing.Point(854, 503);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(72, 41);
@@ -171,7 +181,8 @@ namespace WindowsApp1
             // 
             // btnReturn
             // 
-            this.btnReturn.Location = new System.Drawing.Point(992, 526);
+            this.btnReturn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnReturn.Location = new System.Drawing.Point(992, 503);
             this.btnReturn.Margin = new System.Windows.Forms.Padding(2);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(72, 41);
@@ -243,7 +254,8 @@ namespace WindowsApp1
             // 
             // starttime
             // 
-            this.starttime.Location = new System.Drawing.Point(1032, 359);
+            this.starttime.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.starttime.Location = new System.Drawing.Point(1032, 336);
             this.starttime.Margin = new System.Windows.Forms.Padding(2);
             this.starttime.Name = "starttime";
             this.starttime.Size = new System.Drawing.Size(76, 21);
@@ -251,7 +263,8 @@ namespace WindowsApp1
             // 
             // stoptime
             // 
-            this.stoptime.Location = new System.Drawing.Point(1032, 416);
+            this.stoptime.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.stoptime.Location = new System.Drawing.Point(1032, 393);
             this.stoptime.Margin = new System.Windows.Forms.Padding(2);
             this.stoptime.Name = "stoptime";
             this.stoptime.Size = new System.Drawing.Size(76, 21);
@@ -259,9 +272,10 @@ namespace WindowsApp1
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(884, 364);
+            this.label1.Location = new System.Drawing.Point(884, 341);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 15);
@@ -270,9 +284,10 @@ namespace WindowsApp1
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(884, 417);
+            this.label2.Location = new System.Drawing.Point(884, 394);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 15);
@@ -286,9 +301,10 @@ namespace WindowsApp1
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(884, 313);
+            this.label3.Location = new System.Drawing.Point(884, 290);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(112, 15);
@@ -297,7 +313,8 @@ namespace WindowsApp1
             // 
             // groundType
             // 
-            this.groundType.Location = new System.Drawing.Point(1032, 309);
+            this.groundType.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groundType.Location = new System.Drawing.Point(1032, 286);
             this.groundType.Margin = new System.Windows.Forms.Padding(2);
             this.groundType.Name = "groundType";
             this.groundType.Size = new System.Drawing.Size(76, 21);

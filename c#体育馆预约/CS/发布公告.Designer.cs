@@ -37,11 +37,14 @@
             this.oldContent = new System.Windows.Forms.RichTextBox();
             this.gridtitle = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridtitle)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(431, 106);
@@ -52,9 +55,10 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(434, 213);
+            this.label2.Location = new System.Drawing.Point(34, 94);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 25);
             this.label2.TabIndex = 1;
@@ -63,9 +67,10 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(433, 312);
+            this.label3.Location = new System.Drawing.Point(34, 188);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 25);
             this.label3.TabIndex = 2;
@@ -73,22 +78,25 @@
             // 
             // bulletinTitle
             // 
-            this.bulletinTitle.Location = new System.Drawing.Point(439, 252);
+            this.bulletinTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.bulletinTitle.Location = new System.Drawing.Point(38, 138);
             this.bulletinTitle.Name = "bulletinTitle";
             this.bulletinTitle.Size = new System.Drawing.Size(224, 21);
             this.bulletinTitle.TabIndex = 3;
             // 
             // bulletin
             // 
-            this.bulletin.Location = new System.Drawing.Point(439, 355);
+            this.bulletin.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.bulletin.Location = new System.Drawing.Point(38, 232);
             this.bulletin.Name = "bulletin";
-            this.bulletin.Size = new System.Drawing.Size(224, 290);
+            this.bulletin.Size = new System.Drawing.Size(224, 261);
             this.bulletin.TabIndex = 4;
             this.bulletin.Text = "";
             // 
             // submit
             // 
-            this.submit.Location = new System.Drawing.Point(499, 673);
+            this.submit.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.submit.Location = new System.Drawing.Point(116, 527);
             this.submit.Name = "submit";
             this.submit.Size = new System.Drawing.Size(75, 23);
             this.submit.TabIndex = 5;
@@ -98,31 +106,49 @@
             // 
             // oldContent
             // 
-            this.oldContent.Location = new System.Drawing.Point(1130, 355);
+            this.oldContent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.oldContent.Location = new System.Drawing.Point(1131, 187);
             this.oldContent.Name = "oldContent";
-            this.oldContent.Size = new System.Drawing.Size(226, 290);
+            this.oldContent.Size = new System.Drawing.Size(244, 456);
             this.oldContent.TabIndex = 6;
             this.oldContent.Text = "";
             // 
             // gridtitle
             // 
+            this.gridtitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.gridtitle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridtitle.Location = new System.Drawing.Point(854, 355);
+            this.gridtitle.Location = new System.Drawing.Point(855, 187);
             this.gridtitle.Name = "gridtitle";
             this.gridtitle.RowTemplate.Height = 23;
-            this.gridtitle.Size = new System.Drawing.Size(245, 290);
+            this.gridtitle.Size = new System.Drawing.Size(245, 456);
             this.gridtitle.TabIndex = 7;
             this.gridtitle.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.gridtitle_CellMouseDown);
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("微软雅黑", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(857, 280);
+            this.label4.Location = new System.Drawing.Point(858, 106);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(195, 46);
             this.label4.TabIndex = 8;
             this.label4.Text = "往期公告：";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBox1.Controls.Add(this.submit);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.bulletinTitle);
+            this.groupBox1.Controls.Add(this.bulletin);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Location = new System.Drawing.Point(400, 93);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(303, 571);
+            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.UseCompatibleTextRendering = true;
             // 
             // 发布公告
             // 
@@ -133,17 +159,16 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.gridtitle);
             this.Controls.Add(this.oldContent);
-            this.Controls.Add(this.submit);
-            this.Controls.Add(this.bulletin);
-            this.Controls.Add(this.bulletinTitle);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.groupBox1);
             this.Name = "发布公告";
             this.Opacity = 0.5D;
             this.Text = "发布公告";
             this.TransparencyKey = System.Drawing.Color.White;
+            this.Load += new System.EventHandler(this.发布公告_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridtitle)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,5 +185,6 @@
         private System.Windows.Forms.RichTextBox oldContent;
         private System.Windows.Forms.DataGridView gridtitle;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

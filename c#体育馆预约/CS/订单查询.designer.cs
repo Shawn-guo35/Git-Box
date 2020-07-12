@@ -74,8 +74,9 @@ namespace WindowsApp1
             // 
             // gvwOrders
             // 
+            this.gvwOrders.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.gvwOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvwOrders.Location = new System.Drawing.Point(425, 124);
+            this.gvwOrders.Location = new System.Drawing.Point(430, 165);
             this.gvwOrders.Margin = new System.Windows.Forms.Padding(2);
             this.gvwOrders.Name = "gvwOrders";
             this.gvwOrders.RowTemplate.Height = 27;
@@ -84,7 +85,8 @@ namespace WindowsApp1
             // 
             // txtOrderNo
             // 
-            this.txtOrderNo.Location = new System.Drawing.Point(762, 487);
+            this.txtOrderNo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.txtOrderNo.Location = new System.Drawing.Point(767, 528);
             this.txtOrderNo.Margin = new System.Windows.Forms.Padding(2);
             this.txtOrderNo.Name = "txtOrderNo";
             this.txtOrderNo.Size = new System.Drawing.Size(76, 21);
@@ -92,9 +94,10 @@ namespace WindowsApp1
             // 
             // btnSelect
             // 
+            this.btnSelect.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnSelect.Font = new System.Drawing.Font("宋体", 12F);
             this.btnSelect.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSelect.Location = new System.Drawing.Point(712, 589);
+            this.btnSelect.Location = new System.Drawing.Point(717, 630);
             this.btnSelect.Margin = new System.Windows.Forms.Padding(2);
             this.btnSelect.Name = "btnSelect";
             this.btnSelect.Size = new System.Drawing.Size(56, 26);
@@ -105,10 +108,11 @@ namespace WindowsApp1
             // 
             // btnReturn
             // 
+            this.btnReturn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnReturn.AutoSize = true;
             this.btnReturn.Font = new System.Drawing.Font("宋体", 12F);
             this.btnReturn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnReturn.Location = new System.Drawing.Point(848, 589);
+            this.btnReturn.Location = new System.Drawing.Point(853, 630);
             this.btnReturn.Margin = new System.Windows.Forms.Padding(2);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(56, 26);
@@ -119,10 +123,11 @@ namespace WindowsApp1
             // 
             // lblResults1
             // 
+            this.lblResults1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblResults1.AutoSize = true;
             this.lblResults1.Font = new System.Drawing.Font("宋体", 12F);
             this.lblResults1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblResults1.Location = new System.Drawing.Point(665, 492);
+            this.lblResults1.Location = new System.Drawing.Point(670, 533);
             this.lblResults1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResults1.Name = "lblResults1";
             this.lblResults1.Size = new System.Drawing.Size(72, 16);
@@ -131,10 +136,11 @@ namespace WindowsApp1
             // 
             // lblResults2
             // 
+            this.lblResults2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblResults2.AutoSize = true;
             this.lblResults2.Font = new System.Drawing.Font("宋体", 12F);
             this.lblResults2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblResults2.Location = new System.Drawing.Point(697, 550);
+            this.lblResults2.Location = new System.Drawing.Point(702, 591);
             this.lblResults2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResults2.Name = "lblResults2";
             this.lblResults2.Size = new System.Drawing.Size(88, 16);
@@ -143,10 +149,11 @@ namespace WindowsApp1
             // 
             // lblResults3
             // 
+            this.lblResults3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblResults3.AutoSize = true;
             this.lblResults3.Font = new System.Drawing.Font("宋体", 12F);
             this.lblResults3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblResults3.Location = new System.Drawing.Point(997, 549);
+            this.lblResults3.Location = new System.Drawing.Point(1002, 590);
             this.lblResults3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResults3.Name = "lblResults3";
             this.lblResults3.Size = new System.Drawing.Size(88, 16);
@@ -155,10 +162,11 @@ namespace WindowsApp1
             // 
             // lblResults4
             // 
+            this.lblResults4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblResults4.AutoSize = true;
             this.lblResults4.Font = new System.Drawing.Font("宋体", 12F);
             this.lblResults4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblResults4.Location = new System.Drawing.Point(554, 549);
+            this.lblResults4.Location = new System.Drawing.Point(559, 590);
             this.lblResults4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResults4.Name = "lblResults4";
             this.lblResults4.Size = new System.Drawing.Size(88, 16);
@@ -167,7 +175,8 @@ namespace WindowsApp1
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(633, 546);
+            this.txtID.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.txtID.Location = new System.Drawing.Point(638, 587);
             this.txtID.Margin = new System.Windows.Forms.Padding(2);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(61, 21);
@@ -175,7 +184,8 @@ namespace WindowsApp1
             // 
             // txtStime
             // 
-            this.txtStime.Location = new System.Drawing.Point(777, 546);
+            this.txtStime.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.txtStime.Location = new System.Drawing.Point(782, 587);
             this.txtStime.Margin = new System.Windows.Forms.Padding(2);
             this.txtStime.Name = "txtStime";
             this.txtStime.Size = new System.Drawing.Size(61, 21);
@@ -183,10 +193,11 @@ namespace WindowsApp1
             // 
             // lblResults5
             // 
+            this.lblResults5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblResults5.AutoSize = true;
             this.lblResults5.Font = new System.Drawing.Font("宋体", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblResults5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblResults5.Location = new System.Drawing.Point(669, 37);
+            this.lblResults5.Location = new System.Drawing.Point(674, 78);
             this.lblResults5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResults5.Name = "lblResults5";
             this.lblResults5.Size = new System.Drawing.Size(284, 64);
@@ -207,8 +218,9 @@ namespace WindowsApp1
             // 
             // cmbPlaceName
             // 
+            this.cmbPlaceName.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.cmbPlaceName.FormattingEnabled = true;
-            this.cmbPlaceName.Location = new System.Drawing.Point(926, 547);
+            this.cmbPlaceName.Location = new System.Drawing.Point(931, 588);
             this.cmbPlaceName.Margin = new System.Windows.Forms.Padding(2);
             this.cmbPlaceName.Name = "cmbPlaceName";
             this.cmbPlaceName.Size = new System.Drawing.Size(61, 20);
@@ -216,8 +228,9 @@ namespace WindowsApp1
             // 
             // cmbPlaceNo
             // 
+            this.cmbPlaceNo.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.cmbPlaceNo.FormattingEnabled = true;
-            this.cmbPlaceNo.Location = new System.Drawing.Point(1077, 547);
+            this.cmbPlaceNo.Location = new System.Drawing.Point(1082, 588);
             this.cmbPlaceNo.Margin = new System.Windows.Forms.Padding(2);
             this.cmbPlaceNo.Name = "cmbPlaceNo";
             this.cmbPlaceNo.Size = new System.Drawing.Size(61, 20);
@@ -225,9 +238,10 @@ namespace WindowsApp1
             // 
             // lblResults7
             // 
+            this.lblResults7.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblResults7.AutoSize = true;
             this.lblResults7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblResults7.Location = new System.Drawing.Point(733, 642);
+            this.lblResults7.Location = new System.Drawing.Point(738, 683);
             this.lblResults7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResults7.Name = "lblResults7";
             this.lblResults7.Size = new System.Drawing.Size(149, 12);
@@ -236,10 +250,11 @@ namespace WindowsApp1
             // 
             // lblResults6
             // 
+            this.lblResults6.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblResults6.AutoSize = true;
             this.lblResults6.Font = new System.Drawing.Font("宋体", 12F);
             this.lblResults6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblResults6.Location = new System.Drawing.Point(842, 550);
+            this.lblResults6.Location = new System.Drawing.Point(847, 591);
             this.lblResults6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResults6.Name = "lblResults6";
             this.lblResults6.Size = new System.Drawing.Size(88, 16);
@@ -248,9 +263,10 @@ namespace WindowsApp1
             // 
             // btnSelOrder
             // 
+            this.btnSelOrder.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnSelOrder.Font = new System.Drawing.Font("宋体", 12F);
             this.btnSelOrder.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSelOrder.Location = new System.Drawing.Point(874, 487);
+            this.btnSelOrder.Location = new System.Drawing.Point(879, 528);
             this.btnSelOrder.Margin = new System.Windows.Forms.Padding(2);
             this.btnSelOrder.Name = "btnSelOrder";
             this.btnSelOrder.Size = new System.Drawing.Size(56, 26);

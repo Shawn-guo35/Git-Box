@@ -75,6 +75,7 @@ namespace WindowsApp1
             // 
             // GroupBox1
             // 
+            this.GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.GroupBox1.Controls.Add(this.lblResults14);
             this.GroupBox1.Controls.Add(this.lblResults13);
             this.GroupBox1.Controls.Add(this.txtGymNum);
@@ -84,7 +85,7 @@ namespace WindowsApp1
             this.GroupBox1.Controls.Add(this.cbmGym);
             this.GroupBox1.Controls.Add(this.lblResults2);
             this.GroupBox1.Controls.Add(this.lblResults1);
-            this.GroupBox1.Location = new System.Drawing.Point(536, 149);
+            this.GroupBox1.Location = new System.Drawing.Point(473, 149);
             this.GroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.GroupBox1.Name = "GroupBox1";
             this.GroupBox1.Padding = new System.Windows.Forms.Padding(2);
@@ -187,8 +188,9 @@ namespace WindowsApp1
             // 
             // txtGymLease
             // 
+            this.txtGymLease.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtGymLease.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.txtGymLease.Location = new System.Drawing.Point(626, 373);
+            this.txtGymLease.Location = new System.Drawing.Point(564, 373);
             this.txtGymLease.Margin = new System.Windows.Forms.Padding(2);
             this.txtGymLease.Name = "txtGymLease";
             this.txtGymLease.ReadOnly = true;

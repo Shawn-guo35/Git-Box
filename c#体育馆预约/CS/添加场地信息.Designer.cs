@@ -67,6 +67,7 @@ namespace WindowsApp1
             // 
             // lblResults1
             // 
+            this.lblResults1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblResults1.AutoSize = true;
             this.lblResults1.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblResults1.Location = new System.Drawing.Point(738, 206);
@@ -78,6 +79,7 @@ namespace WindowsApp1
             // 
             // lblResults2
             // 
+            this.lblResults2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblResults2.AutoSize = true;
             this.lblResults2.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblResults2.Location = new System.Drawing.Point(738, 258);
@@ -90,6 +92,7 @@ namespace WindowsApp1
             // 
             // txtGymName
             // 
+            this.txtGymName.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtGymName.Location = new System.Drawing.Point(856, 204);
             this.txtGymName.Margin = new System.Windows.Forms.Padding(2);
             this.txtGymName.Name = "txtGymName";
@@ -98,6 +101,7 @@ namespace WindowsApp1
             // 
             // txtGymNum
             // 
+            this.txtGymNum.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtGymNum.Location = new System.Drawing.Point(856, 258);
             this.txtGymNum.Margin = new System.Windows.Forms.Padding(2);
             this.txtGymNum.Name = "txtGymNum";
@@ -106,6 +110,7 @@ namespace WindowsApp1
             // 
             // btnReturn
             // 
+            this.btnReturn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnReturn.Location = new System.Drawing.Point(915, 457);
             this.btnReturn.Margin = new System.Windows.Forms.Padding(2);
             this.btnReturn.Name = "btnReturn";
@@ -116,6 +121,7 @@ namespace WindowsApp1
             // 
             // btnCancel
             // 
+            this.btnCancel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnCancel.Location = new System.Drawing.Point(809, 457);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancel.Name = "btnCancel";
@@ -126,6 +132,7 @@ namespace WindowsApp1
             // 
             // btnInsertVtype
             // 
+            this.btnInsertVtype.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnInsertVtype.Location = new System.Drawing.Point(698, 457);
             this.btnInsertVtype.Margin = new System.Windows.Forms.Padding(2);
             this.btnInsertVtype.Name = "btnInsertVtype";
@@ -193,6 +200,7 @@ namespace WindowsApp1
             // 
             // lblResults3
             // 
+            this.lblResults3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblResults3.AutoSize = true;
             this.lblResults3.Font = new System.Drawing.Font("宋体", 10.8F);
             this.lblResults3.Location = new System.Drawing.Point(738, 310);
@@ -203,6 +211,7 @@ namespace WindowsApp1
             // 
             // txtGymTypeID
             // 
+            this.txtGymTypeID.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtGymTypeID.Location = new System.Drawing.Point(856, 310);
             this.txtGymTypeID.Name = "txtGymTypeID";
             this.txtGymTypeID.Size = new System.Drawing.Size(100, 21);
@@ -210,6 +219,7 @@ namespace WindowsApp1
             // 
             // lblResults4
             // 
+            this.lblResults4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblResults4.AutoSize = true;
             this.lblResults4.Font = new System.Drawing.Font("宋体", 10.8F);
             this.lblResults4.Location = new System.Drawing.Point(738, 357);
@@ -220,6 +230,7 @@ namespace WindowsApp1
             // 
             // txtState
             // 
+            this.txtState.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtState.Location = new System.Drawing.Point(856, 351);
             this.txtState.Name = "txtState";
             this.txtState.Size = new System.Drawing.Size(100, 21);

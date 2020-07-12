@@ -70,6 +70,7 @@ namespace WindowsApp1
             // 
             // GroupBox1
             // 
+            this.GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.GroupBox1.Controls.Add(this.btnReturn);
             this.GroupBox1.Controls.Add(this.btnSelectVtype);
             this.GroupBox1.Controls.Add(this.txtCondition);
@@ -77,11 +78,11 @@ namespace WindowsApp1
             this.GroupBox1.Controls.Add(this.cbmGym);
             this.GroupBox1.Controls.Add(this.lblResults1);
             this.GroupBox1.Controls.Add(this.btnDeleteVtype);
-            this.GroupBox1.Location = new System.Drawing.Point(478, 150);
+            this.GroupBox1.Location = new System.Drawing.Point(423, 150);
             this.GroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.GroupBox1.Name = "GroupBox1";
             this.GroupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.GroupBox1.Size = new System.Drawing.Size(783, 146);
+            this.GroupBox1.Size = new System.Drawing.Size(739, 146);
             this.GroupBox1.TabIndex = 0;
             this.GroupBox1.TabStop = false;
             this.GroupBox1.Text = "查询场地信息";
@@ -162,8 +163,9 @@ namespace WindowsApp1
             // 
             // gvwVenue
             // 
+            this.gvwVenue.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.gvwVenue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvwVenue.Location = new System.Drawing.Point(563, 364);
+            this.gvwVenue.Location = new System.Drawing.Point(491, 364);
             this.gvwVenue.Margin = new System.Windows.Forms.Padding(2);
             this.gvwVenue.Name = "gvwVenue";
             this.gvwVenue.RowTemplate.Height = 27;
@@ -245,7 +247,7 @@ namespace WindowsApp1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1720, 862);
+            this.ClientSize = new System.Drawing.Size(1540, 845);
             this.Controls.Add(this.gvwVenue);
             this.Controls.Add(this.GroupBox1);
             this.Margin = new System.Windows.Forms.Padding(2);

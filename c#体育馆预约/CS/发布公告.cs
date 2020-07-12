@@ -21,6 +21,7 @@ namespace WindowsApp1
         
         public 发布公告()
         {
+            this.AutoScaleMode = AutoScaleMode.Dpi;
             InitializeComponent();
             ConDatabase = new ConDatabase();
             cm = ConDatabase.OpenDatabase();
@@ -72,6 +73,11 @@ namespace WindowsApp1
             {
 
             }
+        }
+
+        private void 发布公告_Load(object sender, EventArgs e)
+        {
+            submit.Visible = true;
         }
     }
 }

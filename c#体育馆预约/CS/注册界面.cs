@@ -24,10 +24,11 @@ namespace WindowsApp1
         public 注册界面()
 		{
 			InitializeComponent();
-			
+            this.AutoScaleMode = AutoScaleMode.Font;
 			//Added to support default instance behavour in C#
 			if (defaultInstance == null)
 				defaultInstance = this;
+            this.WindowState = FormWindowState.Maximized;
 		}
         public static string conn = ConfigurationManager.ConnectionStrings["connstr"].ToString();
         MySqlConnection con;

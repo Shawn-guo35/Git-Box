@@ -487,3 +487,4 @@ D:\新建文件夹\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.器材�
 D:\新建文件夹\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.篮球器材租借.resources
 F:\school\2020六月小学期\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.篮球器材租借.resources
 F:\school\2020六月小学期\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.器材预约.resources
+F:\school\2020六月小学期\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.csprojAssemblyReference.cache

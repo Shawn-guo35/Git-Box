@@ -18,6 +18,7 @@ namespace WindowsApp1
         public 篮球器材租借()
         {
             InitializeComponent();
+            this.AutoScaleMode = AutoScaleMode.Dpi;
         }
 
         private void 器材租借_Load(object sender, EventArgs e)

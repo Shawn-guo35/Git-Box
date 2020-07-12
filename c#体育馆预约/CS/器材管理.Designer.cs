@@ -40,6 +40,7 @@
             // 
             // GroupBox1
             // 
+            this.GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.GroupBox1.Controls.Add(this.btnReturn);
             this.GroupBox1.Controls.Add(this.btnSelectVenue);
             this.GroupBox1.Controls.Add(this.btnSelectLease);
@@ -47,7 +48,7 @@
             this.GroupBox1.Controls.Add(this.btnSelectVtype);
             this.GroupBox1.Controls.Add(this.btnInsertVenue);
             this.GroupBox1.Font = new System.Drawing.Font("宋体", 48F);
-            this.GroupBox1.Location = new System.Drawing.Point(308, 59);
+            this.GroupBox1.Location = new System.Drawing.Point(218, 59);
             this.GroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.GroupBox1.Name = "GroupBox1";
             this.GroupBox1.Padding = new System.Windows.Forms.Padding(2);
@@ -58,6 +59,7 @@
             // 
             // btnReturn
             // 
+            this.btnReturn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnReturn.Font = new System.Drawing.Font("宋体", 24F);
             this.btnReturn.Location = new System.Drawing.Point(650, 377);
             this.btnReturn.Margin = new System.Windows.Forms.Padding(2);
@@ -69,6 +71,7 @@
             // 
             // btnSelectVenue
             // 
+            this.btnSelectVenue.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSelectVenue.Font = new System.Drawing.Font("宋体", 24F);
             this.btnSelectVenue.Location = new System.Drawing.Point(158, 273);
             this.btnSelectVenue.Margin = new System.Windows.Forms.Padding(2);
@@ -80,6 +83,7 @@
             // 
             // btnSelectLease
             // 
+            this.btnSelectLease.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSelectLease.Font = new System.Drawing.Font("宋体", 24F);
             this.btnSelectLease.Location = new System.Drawing.Point(650, 273);
             this.btnSelectLease.Margin = new System.Windows.Forms.Padding(2);
@@ -91,6 +95,7 @@
             // 
             // btnInsertVtype
             // 
+            this.btnInsertVtype.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnInsertVtype.Font = new System.Drawing.Font("宋体", 24F);
             this.btnInsertVtype.Location = new System.Drawing.Point(404, 377);
             this.btnInsertVtype.Margin = new System.Windows.Forms.Padding(2);
@@ -102,6 +107,7 @@
             // 
             // btnSelectVtype
             // 
+            this.btnSelectVtype.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSelectVtype.Font = new System.Drawing.Font("宋体", 24F);
             this.btnSelectVtype.Location = new System.Drawing.Point(404, 273);
             this.btnSelectVtype.Margin = new System.Windows.Forms.Padding(2);
@@ -113,6 +119,7 @@
             // 
             // btnInsertVenue
             // 
+            this.btnInsertVenue.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnInsertVenue.Font = new System.Drawing.Font("宋体", 24F);
             this.btnInsertVenue.Location = new System.Drawing.Point(158, 377);
             this.btnInsertVenue.Margin = new System.Windows.Forms.Padding(2);
@@ -126,7 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1720, 862);
+            this.ClientSize = new System.Drawing.Size(1540, 845);
             this.Controls.Add(this.GroupBox1);
             this.Name = "器材管理";
             this.Text = "器材管理";

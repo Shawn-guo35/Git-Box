@@ -59,9 +59,10 @@ namespace WindowsApp1
             // 
             // gvwOrders
             // 
+            this.gvwOrders.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.gvwOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvwOrders.Location = new System.Drawing.Point(386, 298);
-            this.gvwOrders.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gvwOrders.Margin = new System.Windows.Forms.Padding(2);
             this.gvwOrders.Name = "gvwOrders";
             this.gvwOrders.RowTemplate.Height = 27;
             this.gvwOrders.Size = new System.Drawing.Size(931, 436);
@@ -69,6 +70,7 @@ namespace WindowsApp1
             // 
             // lblResults2
             // 
+            this.lblResults2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblResults2.AutoSize = true;
             this.lblResults2.Font = new System.Drawing.Font("宋体", 12F);
             this.lblResults2.Location = new System.Drawing.Point(564, 234);
@@ -80,6 +82,7 @@ namespace WindowsApp1
             // 
             // lblResults5
             // 
+            this.lblResults5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblResults5.AutoSize = true;
             this.lblResults5.Font = new System.Drawing.Font("宋体", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.lblResults5.Location = new System.Drawing.Point(714, 78);
@@ -91,17 +94,19 @@ namespace WindowsApp1
             // 
             // cbmGym
             // 
+            this.cbmGym.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbmGym.FormattingEnabled = true;
             this.cbmGym.Items.AddRange(new object[] {
             "篮球场"});
             this.cbmGym.Location = new System.Drawing.Point(886, 232);
-            this.cbmGym.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbmGym.Margin = new System.Windows.Forms.Padding(2);
             this.cbmGym.Name = "cbmGym";
             this.cbmGym.Size = new System.Drawing.Size(61, 20);
             this.cbmGym.TabIndex = 13;
             // 
             // lblResults6
             // 
+            this.lblResults6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblResults6.AutoSize = true;
             this.lblResults6.Font = new System.Drawing.Font("宋体", 12F);
             this.lblResults6.Location = new System.Drawing.Point(799, 234);
@@ -113,9 +118,10 @@ namespace WindowsApp1
             // 
             // btnSelectOrders
             // 
+            this.btnSelectOrders.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSelectOrders.Font = new System.Drawing.Font("宋体", 12F);
             this.btnSelectOrders.Location = new System.Drawing.Point(962, 224);
-            this.btnSelectOrders.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSelectOrders.Margin = new System.Windows.Forms.Padding(2);
             this.btnSelectOrders.Name = "btnSelectOrders";
             this.btnSelectOrders.Size = new System.Drawing.Size(56, 26);
             this.btnSelectOrders.TabIndex = 18;
@@ -125,17 +131,19 @@ namespace WindowsApp1
             // 
             // dtpTime
             // 
+            this.dtpTime.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtpTime.Location = new System.Drawing.Point(636, 232);
-            this.dtpTime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpTime.Margin = new System.Windows.Forms.Padding(2);
             this.dtpTime.Name = "dtpTime";
             this.dtpTime.Size = new System.Drawing.Size(151, 21);
             this.dtpTime.TabIndex = 19;
             // 
             // btnSelectallOrders
             // 
+            this.btnSelectallOrders.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSelectallOrders.Font = new System.Drawing.Font("宋体", 12F);
             this.btnSelectallOrders.Location = new System.Drawing.Point(1034, 224);
-            this.btnSelectallOrders.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSelectallOrders.Margin = new System.Windows.Forms.Padding(2);
             this.btnSelectallOrders.Name = "btnSelectallOrders";
             this.btnSelectallOrders.Size = new System.Drawing.Size(86, 26);
             this.btnSelectallOrders.TabIndex = 20;
@@ -157,7 +165,7 @@ namespace WindowsApp1
             this.Controls.Add(this.lblResults5);
             this.Controls.Add(this.lblResults2);
             this.Controls.Add(this.gvwOrders);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "用户订单查询";
             this.Text = "订单查询";
             this.Load += new System.EventHandler(this.Form1_Load);
