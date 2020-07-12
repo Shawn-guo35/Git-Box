@@ -23,9 +23,9 @@ namespace WindowsApp1
 		public 登录界面()
 		{
 			InitializeComponent();
-			
-			//Added to support default instance behavour in C#
-			if (defaultInstance == null)
+            this.AutoScaleMode = AutoScaleMode.Font;
+            //Added to support default instance behavour in C#
+            if (defaultInstance == null)
 				defaultInstance = this;
             
 		}
@@ -75,6 +75,7 @@ namespace WindowsApp1
 			Timer2.Interval = 3000; //1000=1秒
 			Timer2.Enabled = true;
             this.WindowState = FormWindowState.Maximized;
+            
         }
 		
 		public void Timer1_Tick(object sender, EventArgs e)

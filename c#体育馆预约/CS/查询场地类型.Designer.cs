@@ -61,6 +61,7 @@ namespace WindowsApp1
             this.SqlSelectCommand1 = new System.Data.SqlClient.SqlCommand();
             this.SqlUpdateCommand1 = new System.Data.SqlClient.SqlCommand();
             this.VtypeTableAdapter = new WindowsApp1.changguanDataSet3TableAdapters.VtypeTableAdapter();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvwVtype)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.VtypeBindingSource)).BeginInit();
@@ -68,6 +69,8 @@ namespace WindowsApp1
             // 
             // GroupBox1
             // 
+            this.GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.GroupBox1.AutoSize = true;
             this.GroupBox1.Controls.Add(this.btnReturn);
             this.GroupBox1.Controls.Add(this.btnSelcetVenue);
             this.GroupBox1.Controls.Add(this.txtCondition);
@@ -76,11 +79,11 @@ namespace WindowsApp1
             this.GroupBox1.Controls.Add(this.lblResults1);
             this.GroupBox1.Controls.Add(this.btnDeleteVenue);
             this.GroupBox1.Controls.Add(this.btnUpdteVenue);
-            this.GroupBox1.Location = new System.Drawing.Point(398, 150);
+            this.GroupBox1.Location = new System.Drawing.Point(348, 150);
             this.GroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.GroupBox1.Name = "GroupBox1";
             this.GroupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.GroupBox1.Size = new System.Drawing.Size(839, 142);
+            this.GroupBox1.Size = new System.Drawing.Size(839, 156);
             this.GroupBox1.TabIndex = 0;
             this.GroupBox1.TabStop = false;
             this.GroupBox1.Text = "查询场地类型";
@@ -172,8 +175,9 @@ namespace WindowsApp1
             // 
             // gvwVtype
             // 
+            this.gvwVtype.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.gvwVtype.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvwVtype.Location = new System.Drawing.Point(510, 352);
+            this.gvwVtype.Location = new System.Drawing.Point(482, 352);
             this.gvwVtype.Margin = new System.Windows.Forms.Padding(2);
             this.gvwVtype.Name = "gvwVtype";
             this.gvwVtype.RowTemplate.Height = 27;
@@ -246,13 +250,24 @@ namespace WindowsApp1
             // 
             this.VtypeTableAdapter.ClearBeforeFill = true;
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.AutoSize = true;
+            this.panel1.Location = new System.Drawing.Point(0, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1539, 843);
+            this.panel1.TabIndex = 2;
+            // 
             // 查询场地类型
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1720, 862);
+            this.ClientSize = new System.Drawing.Size(1540, 845);
             this.Controls.Add(this.gvwVtype);
             this.Controls.Add(this.GroupBox1);
+            this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "查询场地类型";
             this.Text = "查询场地类型";
@@ -262,6 +277,7 @@ namespace WindowsApp1
             ((System.ComponentModel.ISupportInitialize)(this.gvwVtype)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.VtypeBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 		
@@ -284,6 +300,7 @@ namespace WindowsApp1
 		internal BindingSource VtypeBindingSource;
 		internal changguanDataSet3TableAdapters.VtypeTableAdapter VtypeTableAdapter;
         private System.ComponentModel.IContainer components;
+        private Panel panel1;
     }
 	
 }

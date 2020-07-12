@@ -46,7 +46,6 @@ namespace WindowsApp1
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(用户管理));
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
-            this.DataGridView2 = new System.Windows.Forms.DataGridView();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnInsertUsers = new System.Windows.Forms.Button();
             this.txtCondition = new System.Windows.Forms.TextBox();
@@ -55,6 +54,7 @@ namespace WindowsApp1
             this.Label1 = new System.Windows.Forms.Label();
             this.btnDeleteUsers = new System.Windows.Forms.Button();
             this.btnUpdateUsers = new System.Windows.Forms.Button();
+            this.DataGridView2 = new System.Windows.Forms.DataGridView();
             this.gvwUsers = new System.Windows.Forms.DataGridView();
             this.UsersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ChangguanDataSet1 = new WindowsApp1.changguanDataSet1();
@@ -63,8 +63,8 @@ namespace WindowsApp1
             this.SqlDeleteCommand1 = new System.Data.SqlClient.SqlCommand();
             this.SqlSelectCommand1 = new System.Data.SqlClient.SqlCommand();
             this.SqlUpdateCommand1 = new System.Data.SqlClient.SqlCommand();
-            this.ChangguanDataSet = new WindowsApp1.changguanDataSet();
             this.UsersTableAdapter = new WindowsApp1.changguanDataSet1TableAdapters.UsersTableAdapter();
+            this.ChangguanDataSet = new WindowsApp1.changguanDataSet();
             this.GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvwUsers)).BeginInit();
@@ -75,7 +75,8 @@ namespace WindowsApp1
             // 
             // GroupBox1
             // 
-            this.GroupBox1.Controls.Add(this.DataGridView2);
+            this.GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.GroupBox1.AutoSize = true;
             this.GroupBox1.Controls.Add(this.btnClose);
             this.GroupBox1.Controls.Add(this.btnInsertUsers);
             this.GroupBox1.Controls.Add(this.txtCondition);
@@ -84,26 +85,17 @@ namespace WindowsApp1
             this.GroupBox1.Controls.Add(this.Label1);
             this.GroupBox1.Controls.Add(this.btnDeleteUsers);
             this.GroupBox1.Controls.Add(this.btnUpdateUsers);
+            this.GroupBox1.Controls.Add(this.DataGridView2);
             this.GroupBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.GroupBox1.Location = new System.Drawing.Point(526, 65);
             this.GroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.GroupBox1.Name = "GroupBox1";
             this.GroupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.GroupBox1.Size = new System.Drawing.Size(615, 176);
+            this.GroupBox1.Size = new System.Drawing.Size(615, 183);
             this.GroupBox1.TabIndex = 0;
             this.GroupBox1.TabStop = false;
             this.GroupBox1.Text = "用户管理系统";
             this.GroupBox1.Enter += new System.EventHandler(this.GroupBox1_Enter);
-            // 
-            // DataGridView2
-            // 
-            this.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridView2.Location = new System.Drawing.Point(592, 152);
-            this.DataGridView2.Margin = new System.Windows.Forms.Padding(2);
-            this.DataGridView2.Name = "DataGridView2";
-            this.DataGridView2.RowTemplate.Height = 27;
-            this.DataGridView2.Size = new System.Drawing.Size(8, 8);
-            this.DataGridView2.TabIndex = 2;
             // 
             // btnClose
             // 
@@ -191,15 +183,26 @@ namespace WindowsApp1
             this.btnUpdateUsers.UseVisualStyleBackColor = true;
             this.btnUpdateUsers.Click += new System.EventHandler(this.btnUpdateUsers_Click);
             // 
+            // DataGridView2
+            // 
+            this.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridView2.Location = new System.Drawing.Point(592, 152);
+            this.DataGridView2.Margin = new System.Windows.Forms.Padding(2);
+            this.DataGridView2.Name = "DataGridView2";
+            this.DataGridView2.RowTemplate.Height = 27;
+            this.DataGridView2.Size = new System.Drawing.Size(8, 8);
+            this.DataGridView2.TabIndex = 2;
+            // 
             // gvwUsers
             // 
+            this.gvwUsers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.gvwUsers.BackgroundColor = System.Drawing.Color.Silver;
             this.gvwUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvwUsers.Location = new System.Drawing.Point(361, 265);
+            this.gvwUsers.Location = new System.Drawing.Point(440, 265);
             this.gvwUsers.Margin = new System.Windows.Forms.Padding(2);
             this.gvwUsers.Name = "gvwUsers";
             this.gvwUsers.RowTemplate.Height = 27;
-            this.gvwUsers.Size = new System.Drawing.Size(936, 468);
+            this.gvwUsers.Size = new System.Drawing.Size(811, 468);
             this.gvwUsers.TabIndex = 1;
             this.gvwUsers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvwUsers_CellContentClick);
             // 
@@ -257,22 +260,22 @@ namespace WindowsApp1
             new System.Data.SqlClient.SqlParameter("@Original_Uname", System.Data.SqlDbType.VarChar, 0, System.Data.ParameterDirection.Input, false, ((byte)(0)), ((byte)(0)), "Uname", System.Data.DataRowVersion.Original, null),
             new System.Data.SqlClient.SqlParameter("@Original_Uidentity", System.Data.SqlDbType.VarChar, 0, System.Data.ParameterDirection.Input, false, ((byte)(0)), ((byte)(0)), "Uidentity", System.Data.DataRowVersion.Original, null)});
             // 
+            // UsersTableAdapter
+            // 
+            this.UsersTableAdapter.ClearBeforeFill = true;
+            // 
             // ChangguanDataSet
             // 
             this.ChangguanDataSet.DataSetName = "changguanDataSet";
             this.ChangguanDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // UsersTableAdapter
-            // 
-            this.UsersTableAdapter.ClearBeforeFill = true;
             // 
             // 用户管理
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1720, 862);
-            this.Controls.Add(this.gvwUsers);
             this.Controls.Add(this.GroupBox1);
+            this.Controls.Add(this.gvwUsers);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "用户管理";
             this.Text = "用户管理系统";
@@ -285,6 +288,7 @@ namespace WindowsApp1
             ((System.ComponentModel.ISupportInitialize)(this.ChangguanDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChangguanDataSet)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 		

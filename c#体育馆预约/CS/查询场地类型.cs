@@ -32,6 +32,7 @@ namespace WindowsApp1
             con = ConDatabase.getCon();
             ds = new DataSet();
             adapter = new MySqlDataAdapter();
+            this.AutoScaleMode = AutoScaleMode.Dpi;
             //MySqlCommandBuilder cmb = new MySqlCommandBuilder(adapter);
             
 		}

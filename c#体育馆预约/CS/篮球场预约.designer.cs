@@ -75,6 +75,7 @@ namespace WindowsApp1
             this.OleDbUpdateCommand2 = new System.Data.OleDb.OleDbCommand();
             this.OleDbDeleteCommand2 = new System.Data.OleDb.OleDbCommand();
             this.odadSelOrder = new System.Data.OleDb.OleDbDataAdapter();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dstBasketLease)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dstSelOrder)).BeginInit();
@@ -82,8 +83,9 @@ namespace WindowsApp1
             // 
             // btnGymorder
             // 
+            this.btnGymorder.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnGymorder.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnGymorder.Location = new System.Drawing.Point(1039, 290);
+            this.btnGymorder.Location = new System.Drawing.Point(1028, 318);
             this.btnGymorder.Margin = new System.Windows.Forms.Padding(2);
             this.btnGymorder.Name = "btnGymorder";
             this.btnGymorder.Size = new System.Drawing.Size(134, 30);
@@ -94,8 +96,9 @@ namespace WindowsApp1
             // 
             // btnTimeorder
             // 
+            this.btnTimeorder.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnTimeorder.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnTimeorder.Location = new System.Drawing.Point(1039, 375);
+            this.btnTimeorder.Location = new System.Drawing.Point(1028, 403);
             this.btnTimeorder.Margin = new System.Windows.Forms.Padding(2);
             this.btnTimeorder.Name = "btnTimeorder";
             this.btnTimeorder.Size = new System.Drawing.Size(134, 30);
@@ -106,8 +109,9 @@ namespace WindowsApp1
             // 
             // btnGymview
             // 
+            this.btnGymview.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnGymview.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnGymview.Location = new System.Drawing.Point(1039, 205);
+            this.btnGymview.Location = new System.Drawing.Point(1028, 233);
             this.btnGymview.Margin = new System.Windows.Forms.Padding(2);
             this.btnGymview.Name = "btnGymview";
             this.btnGymview.Size = new System.Drawing.Size(134, 30);
@@ -118,9 +122,10 @@ namespace WindowsApp1
             // 
             // Label4
             // 
+            this.Label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Label4.AutoSize = true;
             this.Label4.Font = new System.Drawing.Font("微软雅黑", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Label4.Location = new System.Drawing.Point(511, 445);
+            this.Label4.Location = new System.Drawing.Point(565, 538);
             this.Label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label4.Name = "Label4";
             this.Label4.Size = new System.Drawing.Size(54, 20);
@@ -131,8 +136,9 @@ namespace WindowsApp1
             // 
             this.dgvOrder.AllowUserToAddRows = false;
             this.dgvOrder.AllowUserToDeleteRows = false;
+            this.dgvOrder.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dgvOrder.ColumnHeadersHeight = 40;
-            this.dgvOrder.Location = new System.Drawing.Point(506, 190);
+            this.dgvOrder.Location = new System.Drawing.Point(495, 218);
             this.dgvOrder.Margin = new System.Windows.Forms.Padding(2);
             this.dgvOrder.MultiSelect = false;
             this.dgvOrder.Name = "dgvOrder";
@@ -145,9 +151,10 @@ namespace WindowsApp1
             // 
             // Label1
             // 
+            this.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Label1.AutoSize = true;
             this.Label1.Font = new System.Drawing.Font("微软雅黑", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Label1.Location = new System.Drawing.Point(681, 557);
+            this.Label1.Location = new System.Drawing.Point(720, 520);
             this.Label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label1.Name = "Label1";
             this.Label1.Size = new System.Drawing.Size(99, 20);
@@ -156,9 +163,10 @@ namespace WindowsApp1
             // 
             // btnSubmit1
             // 
+            this.btnSubmit1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSubmit1.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.btnSubmit1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnSubmit1.Location = new System.Drawing.Point(761, 446);
+            this.btnSubmit1.Location = new System.Drawing.Point(815, 539);
             this.btnSubmit1.Margin = new System.Windows.Forms.Padding(2);
             this.btnSubmit1.Name = "btnSubmit1";
             this.btnSubmit1.Size = new System.Drawing.Size(56, 22);
@@ -169,8 +177,9 @@ namespace WindowsApp1
             // 
             // btnSubmit2
             // 
+            this.btnSubmit2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSubmit2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnSubmit2.Location = new System.Drawing.Point(1065, 573);
+            this.btnSubmit2.Location = new System.Drawing.Point(1104, 536);
             this.btnSubmit2.Margin = new System.Windows.Forms.Padding(2);
             this.btnSubmit2.Name = "btnSubmit2";
             this.btnSubmit2.Size = new System.Drawing.Size(56, 22);
@@ -181,9 +190,10 @@ namespace WindowsApp1
             // 
             // Label2
             // 
+            this.Label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Label2.AutoSize = true;
             this.Label2.Font = new System.Drawing.Font("微软雅黑", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Label2.Location = new System.Drawing.Point(681, 591);
+            this.Label2.Location = new System.Drawing.Point(720, 554);
             this.Label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label2.Name = "Label2";
             this.Label2.Size = new System.Drawing.Size(99, 20);
@@ -208,6 +218,7 @@ namespace WindowsApp1
             // 
             // cmbBegintime
             // 
+            this.cmbBegintime.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cmbBegintime.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.cmbBegintime.FormattingEnabled = true;
             this.cmbBegintime.Items.AddRange(new object[] {
@@ -215,7 +226,7 @@ namespace WindowsApp1
             "13:00",
             "18:00",
             "19:00"});
-            this.cmbBegintime.Location = new System.Drawing.Point(869, 555);
+            this.cmbBegintime.Location = new System.Drawing.Point(908, 518);
             this.cmbBegintime.Margin = new System.Windows.Forms.Padding(2);
             this.cmbBegintime.Name = "cmbBegintime";
             this.cmbBegintime.Size = new System.Drawing.Size(92, 22);
@@ -225,8 +236,9 @@ namespace WindowsApp1
             // 
             // dtpTime
             // 
+            this.dtpTime.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtpTime.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.dtpTime.Location = new System.Drawing.Point(459, 573);
+            this.dtpTime.Location = new System.Drawing.Point(498, 536);
             this.dtpTime.Margin = new System.Windows.Forms.Padding(2);
             this.dtpTime.MinDate = new System.DateTime(2019, 7, 2, 0, 0, 0, 0);
             this.dtpTime.Name = "dtpTime";
@@ -239,8 +251,9 @@ namespace WindowsApp1
             // 
             // txtEndtime
             // 
+            this.txtEndtime.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtEndtime.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtEndtime.Location = new System.Drawing.Point(869, 587);
+            this.txtEndtime.Location = new System.Drawing.Point(908, 550);
             this.txtEndtime.Margin = new System.Windows.Forms.Padding(2);
             this.txtEndtime.Name = "txtEndtime";
             this.txtEndtime.Size = new System.Drawing.Size(92, 24);
@@ -248,9 +261,10 @@ namespace WindowsApp1
             // 
             // cbmGymnum
             // 
+            this.cbmGymnum.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbmGymnum.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.cbmGymnum.FormattingEnabled = true;
-            this.cbmGymnum.Location = new System.Drawing.Point(627, 445);
+            this.cbmGymnum.Location = new System.Drawing.Point(679, 538);
             this.cbmGymnum.Margin = new System.Windows.Forms.Padding(2);
             this.cbmGymnum.Name = "cbmGymnum";
             this.cbmGymnum.Size = new System.Drawing.Size(64, 22);
@@ -258,9 +272,10 @@ namespace WindowsApp1
             // 
             // Label3
             // 
+            this.Label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Label3.AutoSize = true;
             this.Label3.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Label3.Location = new System.Drawing.Point(501, 150);
+            this.Label3.Location = new System.Drawing.Point(490, 178);
             this.Label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label3.Name = "Label3";
             this.Label3.Size = new System.Drawing.Size(264, 28);
@@ -275,11 +290,20 @@ namespace WindowsApp1
             this.odadSelOrder.SelectCommand = this.OleDbSelectCommand2;
             this.odadSelOrder.UpdateCommand = this.OleDbUpdateCommand2;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBox1.Location = new System.Drawing.Point(459, 471);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(718, 148);
+            this.groupBox1.TabIndex = 26;
+            this.groupBox1.TabStop = false;
+            // 
             // orderBasketball
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1720, 862);
+            this.ClientSize = new System.Drawing.Size(1540, 845);
             this.Controls.Add(this.Label3);
             this.Controls.Add(this.cbmGymnum);
             this.Controls.Add(this.txtEndtime);
@@ -294,6 +318,7 @@ namespace WindowsApp1
             this.Controls.Add(this.btnGymview);
             this.Controls.Add(this.btnTimeorder);
             this.Controls.Add(this.btnGymorder);
+            this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "orderBasketball";
@@ -336,6 +361,7 @@ namespace WindowsApp1
 		internal System.Data.OleDb.OleDbCommand OleDbUpdateCommand2;
 		internal System.Data.OleDb.OleDbCommand OleDbDeleteCommand2;
 		internal System.Data.OleDb.OleDbDataAdapter odadSelOrder;
+        private GroupBox groupBox1;
     }
 	
 }

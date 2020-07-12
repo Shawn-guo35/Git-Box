@@ -59,6 +59,7 @@ namespace WindowsApp1
             this.radOutside = new System.Windows.Forms.RadioButton();
             this.Label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -110,7 +111,7 @@ namespace WindowsApp1
             // txtID
             // 
             this.txtID.Location = new System.Drawing.Point(188, 141);
-            this.txtID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtID.Margin = new System.Windows.Forms.Padding(2);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(107, 21);
             this.txtID.TabIndex = 4;
@@ -118,7 +119,7 @@ namespace WindowsApp1
             // txtPwd
             // 
             this.txtPwd.Location = new System.Drawing.Point(188, 199);
-            this.txtPwd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPwd.Margin = new System.Windows.Forms.Padding(2);
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.PasswordChar = '*';
             this.txtPwd.Size = new System.Drawing.Size(107, 21);
@@ -127,7 +128,7 @@ namespace WindowsApp1
             // txtCpwd
             // 
             this.txtCpwd.Location = new System.Drawing.Point(188, 255);
-            this.txtCpwd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCpwd.Margin = new System.Windows.Forms.Padding(2);
             this.txtCpwd.Name = "txtCpwd";
             this.txtCpwd.PasswordChar = '*';
             this.txtCpwd.Size = new System.Drawing.Size(107, 21);
@@ -147,7 +148,7 @@ namespace WindowsApp1
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(188, 307);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(107, 21);
             this.txtName.TabIndex = 8;
@@ -156,7 +157,7 @@ namespace WindowsApp1
             // 
             this.btnRegister.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnRegister.Location = new System.Drawing.Point(43, 371);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(70, 29);
             this.btnRegister.TabIndex = 9;
@@ -168,7 +169,7 @@ namespace WindowsApp1
             // 
             this.btnReturn.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.btnReturn.Location = new System.Drawing.Point(243, 371);
-            this.btnReturn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReturn.Margin = new System.Windows.Forms.Padding(2);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(73, 29);
             this.btnReturn.TabIndex = 10;
@@ -181,7 +182,7 @@ namespace WindowsApp1
             this.radInside.AutoSize = true;
             this.radInside.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.radInside.Location = new System.Drawing.Point(64, 89);
-            this.radInside.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radInside.Margin = new System.Windows.Forms.Padding(2);
             this.radInside.Name = "radInside";
             this.radInside.Size = new System.Drawing.Size(85, 19);
             this.radInside.TabIndex = 14;
@@ -195,7 +196,7 @@ namespace WindowsApp1
             this.radOutside.AutoSize = true;
             this.radOutside.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.radOutside.Location = new System.Drawing.Point(219, 89);
-            this.radOutside.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radOutside.Margin = new System.Windows.Forms.Padding(2);
             this.radOutside.Name = "radOutside";
             this.radOutside.Size = new System.Drawing.Size(85, 19);
             this.radOutside.TabIndex = 15;
@@ -215,6 +216,9 @@ namespace WindowsApp1
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.AutoSize = true;
             this.groupBox1.Controls.Add(this.lblResults3);
             this.groupBox1.Controls.Add(this.Label6);
             this.groupBox1.Controls.Add(this.lblResults1);
@@ -231,9 +235,18 @@ namespace WindowsApp1
             this.groupBox1.Controls.Add(this.lblResults5);
             this.groupBox1.Location = new System.Drawing.Point(1320, 260);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(362, 421);
+            this.groupBox1.Size = new System.Drawing.Size(362, 460);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Location = new System.Drawing.Point(-3, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1909, 1039);
+            this.panel1.TabIndex = 18;
             // 
             // 注册界面
             // 
@@ -242,13 +255,15 @@ namespace WindowsApp1
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "注册界面";
             this.Text = "用户注册";
             this.Load += new System.EventHandler(this.注册界面_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
 		}
 		
@@ -267,6 +282,7 @@ namespace WindowsApp1
 		internal RadioButton radOutside;
 		internal Label Label6;
         private GroupBox groupBox1;
+        private Panel panel1;
     }
 	
 }

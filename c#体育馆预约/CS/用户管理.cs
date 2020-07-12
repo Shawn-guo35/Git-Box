@@ -26,6 +26,7 @@ namespace WindowsApp1
 			//Added to support default instance behavour in C#
 			if (defaultInstance == null)
 				defaultInstance = this;
+            this.AutoScaleMode = AutoScaleMode.Dpi;
 		}
 		
 #region Default Instance
