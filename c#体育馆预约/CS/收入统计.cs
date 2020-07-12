@@ -130,7 +130,7 @@ namespace WindowsApp1
 		//窗体加载
 		public void Form2_Load(object sender, EventArgs e)
 		{
-            ds = new DataSet();
+            objdataset = new DataSet();
             con = new MySqlConnection(conn);
             sqlstr = "select Vrid,Vrstart,Vramount from Vorder ";
             sqld = new MySqlDataAdapter(sqlstr, con);

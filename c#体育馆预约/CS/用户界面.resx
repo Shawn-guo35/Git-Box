@@ -201,6 +201,9 @@
   <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 223</value>
   </data>
@@ -225,29 +228,8 @@
   <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="rentBasket.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 192</value>
-  </data>
-  <data name="rentBasket.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="rentBasket.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="rentBasket.Text" xml:space="preserve">
-    <value>篮球租借</value>
-  </data>
-  <data name="&gt;&gt;rentBasket.Name" xml:space="preserve">
-    <value>rentBasket</value>
-  </data>
-  <data name="&gt;&gt;rentBasket.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rentBasket.Parent" xml:space="preserve">
-    <value>funcpanel</value>
-  </data>
-  <data name="&gt;&gt;rentBasket.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 123</value>
@@ -271,7 +253,7 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -301,7 +283,10 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
+  </data>
+  <data name="oederBasket.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="oederBasket.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 92</value>
@@ -325,10 +310,13 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;oederBasket.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
     <value>35, 67</value>
@@ -352,10 +340,13 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>35, 651</value>
@@ -379,7 +370,10 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
+  </data>
+  <data name="updatePass.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="updatePass.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 603</value>
@@ -403,10 +397,13 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;updatePass.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>35, 506</value>
@@ -430,7 +427,10 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
+  </data>
+  <data name="addGroundNum.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="addGroundNum.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 459</value>
@@ -454,7 +454,10 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;addGroundNum.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
+  </data>
+  <data name="addGroundType.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="addGroundType.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 426</value>
@@ -478,7 +481,7 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;addGroundType.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="lentInfoSearch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -505,7 +508,10 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;lentInfoSearch.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
+  </data>
+  <data name="groundInfoSearch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="groundInfoSearch.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 361</value>
@@ -529,10 +535,13 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;groundInfoSearch.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>11</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>35, 266</value>
@@ -556,7 +565,10 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>12</value>
+  </data>
+  <data name="bulletin.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="bulletin.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 685</value>
@@ -580,7 +592,10 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;bulletin.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>13</value>
+  </data>
+  <data name="incomeStatistics.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="incomeStatistics.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 719</value>
@@ -604,7 +619,10 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;incomeStatistics.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>14</value>
+  </data>
+  <data name="orderSearch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="orderSearch.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 569</value>
@@ -628,7 +646,10 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;orderSearch.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>15</value>
+  </data>
+  <data name="userMg.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="userMg.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 536</value>
@@ -652,7 +673,10 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;userMg.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>16</value>
+  </data>
+  <data name="groundTypeSearch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="groundTypeSearch.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 328</value>
@@ -676,7 +700,10 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;groundTypeSearch.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>17</value>
+  </data>
+  <data name="equipmentMg.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="equipmentMg.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 296</value>
@@ -700,13 +727,13 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;equipmentMg.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>18</value>
   </data>
   <data name="equipmentRent.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="equipmentRent.Location" type="System.Drawing.Point, System.Drawing">
-    <value>122, 152</value>
+    <value>47, 194</value>
   </data>
   <data name="equipmentRent.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -715,7 +742,7 @@
     <value>0</value>
   </data>
   <data name="equipmentRent.Text" xml:space="preserve">
-    <value>器材租借</value>
+    <value>篮球租借</value>
   </data>
   <data name="&gt;&gt;equipmentRent.Name" xml:space="preserve">
     <value>equipmentRent</value>
@@ -727,7 +754,7 @@
     <value>funcpanel</value>
   </data>
   <data name="&gt;&gt;equipmentRent.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>19</value>
   </data>
   <data name="funcpanel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 33</value>
@@ -788,6 +815,9 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1090, 841</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>

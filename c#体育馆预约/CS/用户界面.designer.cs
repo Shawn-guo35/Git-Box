@@ -57,6 +57,9 @@ namespace WindowsApp1
             this.tsmiCancellation = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiClose1 = new System.Windows.Forms.ToolStripMenuItem();
             this.funcpanel = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.oederBasket = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -76,10 +79,6 @@ namespace WindowsApp1
             this.equipmentRent = new System.Windows.Forms.Button();
             this.Settingpanel = new System.Windows.Forms.Panel();
             this.changguanDataSet61 = new WindowsApp1.changguanDataSet6();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.rentBasket = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.MenuStrip1.SuspendLayout();
             this.funcpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.changguanDataSet61)).BeginInit();
@@ -152,7 +151,6 @@ namespace WindowsApp1
             // funcpanel
             // 
             this.funcpanel.Controls.Add(this.button3);
-            this.funcpanel.Controls.Add(this.rentBasket);
             this.funcpanel.Controls.Add(this.button1);
             this.funcpanel.Controls.Add(this.label5);
             this.funcpanel.Controls.Add(this.oederBasket);
@@ -175,6 +173,23 @@ namespace WindowsApp1
             resources.ApplyResources(this.funcpanel, "funcpanel");
             this.funcpanel.Name = "funcpanel";
             this.funcpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.funcpanel_Paint);
+            // 
+            // button3
+            // 
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            resources.ApplyResources(this.label5, "label5");
+            this.label5.Name = "label5";
             // 
             // oederBasket
             // 
@@ -299,29 +314,6 @@ namespace WindowsApp1
             this.changguanDataSet61.DataSetName = "changguanDataSet6";
             this.changguanDataSet61.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // rentBasket
-            // 
-            resources.ApplyResources(this.rentBasket, "rentBasket");
-            this.rentBasket.Name = "rentBasket";
-            this.rentBasket.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            resources.ApplyResources(this.button3, "button3");
-            this.button3.Name = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // 用户界面
             // 
             resources.ApplyResources(this, "$this");
@@ -375,7 +367,6 @@ namespace WindowsApp1
         private Button oederBasket;
         private Label label5;
         private Button button3;
-        private Button rentBasket;
         private Button button1;
     }
 	

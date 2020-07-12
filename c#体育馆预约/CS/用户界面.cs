@@ -136,7 +136,7 @@ namespace WindowsApp1
         private void equipmentRent_Click(object sender, EventArgs e)
         {
             //器材租借
-            Form form = new 篮球器材租借();
+            Form form = new 器材预约();
             showChildForm(form);
         }
 
