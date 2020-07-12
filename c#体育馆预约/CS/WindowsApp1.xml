@@ -809,6 +809,23 @@
             Added by the VB.Net to C# Converter to support default instance behavour in C#
             </summary>
         </member>
+        <member name="F:WindowsApp1.器材预约.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WindowsApp1.器材预约.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WindowsApp1.器材预约.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
         <member name="F:WindowsApp1.发布公告.components">
             <summary>
             Required designer variable.
@@ -826,18 +843,18 @@
             the contents of this method with the code editor.
             </summary>
         </member>
-        <member name="F:WindowsApp1.器材租借.components">
+        <member name="F:WindowsApp1.篮球器材租借.components">
             <summary>
             Required designer variable.
             </summary>
         </member>
-        <member name="M:WindowsApp1.器材租借.Dispose(System.Boolean)">
+        <member name="M:WindowsApp1.篮球器材租借.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
-        <member name="M:WindowsApp1.器材租借.InitializeComponent">
+        <member name="M:WindowsApp1.篮球器材租借.InitializeComponent">
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.

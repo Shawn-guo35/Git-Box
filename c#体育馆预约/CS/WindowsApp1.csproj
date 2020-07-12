@@ -186,17 +186,23 @@
       <DependentUpon>场地管理.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="器材预约.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="器材预约.Designer.cs">
+      <DependentUpon>器材预约.cs</DependentUpon>
+    </Compile>
     <Compile Include="发布公告.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="发布公告.Designer.cs">
       <DependentUpon>发布公告.cs</DependentUpon>
     </Compile>
-    <Compile Include="器材租借.cs">
+    <Compile Include="篮球器材租借.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="器材租借.Designer.cs">
-      <DependentUpon>器材租借.cs</DependentUpon>
+    <Compile Include="篮球器材租借.Designer.cs">
+      <DependentUpon>篮球器材租借.cs</DependentUpon>
     </Compile>
     <Compile Include="器材管理.cs">
       <SubType>Form</SubType>
@@ -337,11 +343,14 @@
     <EmbeddedResource Include="发布公告.resx">
       <DependentUpon>发布公告.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="器材租借.resx">
-      <DependentUpon>器材租借.cs</DependentUpon>
+    <EmbeddedResource Include="篮球器材租借.resx">
+      <DependentUpon>篮球器材租借.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="器材管理.resx">
       <DependentUpon>器材管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="器材预约.resx">
+      <DependentUpon>器材预约.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="收入统计.resx">
       <DependentUpon>收入统计.cs</DependentUpon>

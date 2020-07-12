@@ -78,8 +78,10 @@ namespace WindowsApp1
 		public void btnSelIncome_Click(object sender, EventArgs e)
 		{
             con = new MySqlConnection(conn);
-            sqlstr = "select Vramount from Vorder where Vrend >='" + cmbYear.Text + "" + cmbMon.Text + "" + cmbDay.Text + "00.00' And Vrend<='" + cmbYear.Text + "" + cmbMon.Text + "" + cmbDay.Text + "00.00'";
-
+            string time = cmbYear.Text + cmbMon.Text + cmbDay.Text;
+            //sqlstr = "select Vramount from Vorder where Vrend >='" + cmbYear.Text + "-" + cmbMon.Text + "-" + cmbDay.Text + "00:00:00' And Vrend<='" + cmbYear.Text + "-" + cmbMon.Text + "-" + cmbDay.Text + "23:59:59'";
+            //sqlstr = "select Vramount from Vorder where  Vrend(varchar(10),[add_time],111) = '" + cmbYear.Text + cmbMon.Text + cmbDay.Text + "'";
+            sqlstr = "select Vramount from Vorder where Vrend >='" + time + "' And Vrend<='" + time + "'";
             sqld = new MySqlDataAdapter(sqlstr, con);
 			dataset4.Reset();
 			sqld.Fill(dataset4, "dfee");
@@ -104,7 +106,7 @@ namespace WindowsApp1
             
 
 
-            sqlstr = "select Vramount from Vorder where Vrend>='" + cmbYear.Text + "/" + cmbMon.Text + "/01' And Vrend<='" + cmbYear.Text + "/" + cmbMon.Text + "/30'";
+            sqlstr = "select Vramount from Vorder where Vrend>='" + cmbYear.Text + "/" + cmbMon.Text + "/01' And Vrend<='" + cmbYear.Text + "/" + cmbMon.Text + "/31'";
 			sqld = new MySqlDataAdapter(sqlstr, con);
 			dataset6.Reset();
 			sqld.Fill(dataset6, "mfee");
@@ -137,7 +139,7 @@ namespace WindowsApp1
 			dgwIncome.DataSource = objdataset.Tables["income"];
 			dgwIncome.Columns[0].HeaderText = "订单号";
 			
-			string sql = "select  YEAR(Vrend)  from Vorder ";
+			string sql = "select  YEAR(Vrend)  from Vorder group by YEAR(Vrend)";
 			dataset2.Reset();
             sqld = new MySqlDataAdapter(sql, con);
             sqld.Fill(dataset2, "y");
@@ -147,7 +149,7 @@ namespace WindowsApp1
 				cmbYear.ValueMember = dataset2.Tables["y"].Columns[0].ToString();
 			}
 			cmbYear.Text = "";
-			sql = "select  day(Vrend)  from Vorder ";
+			sql = "select  day(Vrend)  from Vorder group by day(Vrend)";
 			dataset3.Reset();
 			sqld = new MySqlDataAdapter(sql, con);
 			sqld.Fill(dataset3, "d");
@@ -157,7 +159,7 @@ namespace WindowsApp1
 				cmbDay.ValueMember = dataset3.Tables["d"].Columns[0].ToString();
 			}
 			cmbDay.Text = "";
-			sql = "select  month(Vrend)  from Vorder ";
+			sql = "select  month(Vrend)  from Vorder group by month(Vrend)";
 			dataset1.Reset();
 			sqld = new MySqlDataAdapter(sql, con);
 			sqld.Fill(dataset1, "m");
