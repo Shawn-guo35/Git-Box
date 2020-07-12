@@ -62,7 +62,6 @@ F:\school\2020六月小学期\2020summer\c#体育馆预约\CS\bin\Debug\WindowsA
 F:\school\2020六月小学期\2020summer\c#体育馆预约\CS\bin\Debug\WindowsApp1.pdb
 F:\school\2020六月小学期\2020summer\c#体育馆预约\CS\bin\Debug\WindowsApp1.xml
 F:\school\2020六月小学期\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.发布公告.resources
-F:\school\2020六月小学期\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.器材租借.resources
 F:\school\2020六月小学期\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.收入统计.resources
 F:\school\2020六月小学期\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.用户订单查询.resources
 F:\school\2020六月小学期\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.订单查询.resources
@@ -484,6 +483,7 @@ F:\school\2020六月小学期\备份3\2020summer\c#体育馆预约\CS\obj\Debug\
 F:\school\2020六月小学期\备份3\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.csproj.CopyComplete
 F:\school\2020六月小学期\备份3\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.exe
 F:\school\2020六月小学期\备份3\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.pdb
-F:\school\2020六月小学期\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.csprojAssemblyReference.cache
 D:\新建文件夹\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.器材预约.resources
 D:\新建文件夹\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.篮球器材租借.resources
+F:\school\2020六月小学期\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.篮球器材租借.resources
+F:\school\2020六月小学期\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.器材预约.resources

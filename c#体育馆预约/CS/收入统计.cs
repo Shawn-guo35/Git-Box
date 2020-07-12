@@ -78,10 +78,10 @@ namespace WindowsApp1
 		public void btnSelIncome_Click(object sender, EventArgs e)
 		{
             con = new MySqlConnection(conn);
-            string time = cmbYear.Text + cmbMon.Text + cmbDay.Text;
+            DateTime time = new DateTime(Convert.ToInt32(cmbYear.Text),Convert.ToInt32(cmbMon.Text),Convert.ToInt32(cmbDay.Text));
             //sqlstr = "select Vramount from Vorder where Vrend >='" + cmbYear.Text + "-" + cmbMon.Text + "-" + cmbDay.Text + "00:00:00' And Vrend<='" + cmbYear.Text + "-" + cmbMon.Text + "-" + cmbDay.Text + "23:59:59'";
             //sqlstr = "select Vramount from Vorder where  Vrend(varchar(10),[add_time],111) = '" + cmbYear.Text + cmbMon.Text + cmbDay.Text + "'";
-            sqlstr = "select Vramount from Vorder where Vrend >='" + time + "' And Vrend<='" + time + "'";
+            sqlstr = "select Vramount from Vorder where convert(Vrend,date) ='" + time + "'";
             sqld = new MySqlDataAdapter(sqlstr, con);
 			dataset4.Reset();
 			sqld.Fill(dataset4, "dfee");
