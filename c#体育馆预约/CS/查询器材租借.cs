@@ -33,7 +33,7 @@ namespace WindowsApp1
             ds = new DataSet();
             using (con = new MySqlConnection(conn))//链接数据库
             {
-                sqld = new MySqlDataAdapter("select * from  Eqlease", con);//最后一个字符串为数据库的链接名
+                sqld = new MySqlDataAdapter("select Elseq as 序号,Eqnamel as 器材名称,Elnum as 租借数量,Uidl as 用户账号,Unamel as 用户姓名,Elstart as 开始时间,Elend as 结束时间,Elcharge as 租借收费,Eldcharge as 押金收费,Elremarks as 订单备注 from  Eqlease", con);//最后一个字符串为数据库的链接名
                 sqld.Fill(ds, "Eql");
             }
             gvwEql.DataSource = ds.Tables["Eql"].DefaultView;
@@ -59,7 +59,7 @@ namespace WindowsApp1
             else
             {
                 ds.Tables["Eql"].Clear();
-                s = "select  *  from  Eqlease  where  Eqnamel ='" + txtCondition.Text + "'";
+                s = "select  Elseq as 序号,Eqnamel as 器材名称,Elnum as 租借数量,Uidl as 用户账号,Unamel as 用户姓名,Elstart as 开始时间,Elend as 结束时间,Elcharge as 租借收费,Eldcharge as 押金收费,Elremarks as 订单备注  from  Eqlease  where  Eqnamel ='" + txtCondition.Text + "'";
                 sqld.SelectCommand.CommandText = s;
                 sqld.Fill(ds, "Eql");
                 gvwEql.DataSource = ds.Tables["Eql"];

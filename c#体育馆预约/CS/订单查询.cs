@@ -81,23 +81,23 @@ namespace WindowsApp1
 			//三重查询
 			if (cmbPlaceNo.Text == "")
 			{
-				sqlstr = "select * from Vorder where Uidr='" + txtID.Text + "' AND Vrstart='" + txtStime.Text + "' AND Vtnamer='" + cmbPlaceName.Text + "'";
+				sqlstr = "select select Vrseq as 序号,Vrid as 编号,Uidr as 用户账号,Unamer as 用户姓名,Vramount as 订单金额,Vtnamer as 场地名称,Vnidr as 场地编号,Vrstart as 开始时间,Vrend as 结束时间,Vrstate as 订单状态,Vrremarks as 订单备注 from Vorder where Uidr='" + txtID.Text + "' AND Vrstart='" + txtStime.Text + "' AND Vtnamer='" + cmbPlaceName.Text + "'";
 				dispp(sqlstr);
 			}
 			
 			if (txtID.Text == "")
 			{
-				sqlstr = "select * from Vorder where Vrstart='" + txtStime.Text + "' AND Vtnamer='" + cmbPlaceName.Text + "' AND Vnidr='" + cmbPlaceNo.Text + "'";
+				sqlstr = "select select Vrseq as 序号,Vrid as 编号,Uidr as 用户账号,Unamer as 用户姓名,Vramount as 订单金额,Vtnamer as 场地名称,Vnidr as 场地编号,Vrstart as 开始时间,Vrend as 结束时间,Vrstate as 订单状态,Vrremarks as 订单备注 from Vorder where Vrstart='" + txtStime.Text + "' AND Vtnamer='" + cmbPlaceName.Text + "' AND Vnidr='" + cmbPlaceNo.Text + "'";
 				dispp(sqlstr);
 			}
 			if (txtStime.Text == "")
 			{
-				sqlstr = "select * from Vorder where Uidr='" + txtID.Text + "' AND Vtnamer='" + cmbPlaceName.Text + "' AND Vnidr='" + cmbPlaceNo.Text + "'";
+				sqlstr = "select select Vrseq as 序号,Vrid as 编号,Uidr as 用户账号,Unamer as 用户姓名,Vramount as 订单金额,Vtnamer as 场地名称,Vnidr as 场地编号,Vrstart as 开始时间,Vrend as 结束时间,Vrstate as 订单状态,Vrremarks as 订单备注 from Vorder where Uidr='" + txtID.Text + "' AND Vtnamer='" + cmbPlaceName.Text + "' AND Vnidr='" + cmbPlaceNo.Text + "'";
 				dispp(sqlstr);
 			}
             if (cmbPlaceName.Text == "")
             {
-                sqlstr = "select * from Vorder where Uidr='" + txtID.Text + "' AND Vrstart='" + txtStime.Text + "' AND Vnidr='" + cmbPlaceNo.Text + "'";
+                sqlstr = "select select Vrseq as 序号,Vrid as 编号,Uidr as 用户账号,Unamer as 用户姓名,Vramount as 订单金额,Vtnamer as 场地名称,Vnidr as 场地编号,Vrstart as 开始时间,Vrend as 结束时间,Vrstate as 订单状态,Vrremarks as 订单备注 from Vorder where Uidr='" + txtID.Text + "' AND Vrstart='" + txtStime.Text + "' AND Vnidr='" + cmbPlaceNo.Text + "'";
                 dispp(sqlstr);
             }
 
@@ -105,32 +105,32 @@ namespace WindowsApp1
             //双重
             if (txtStime.Text == "" && cmbPlaceNo.Text == "")
 			{
-				sqlstr = "select * from Vorder where Uidr='" + txtID.Text + "' AND Vtnamer='" + cmbPlaceName.Text + "'";
+				sqlstr = "select select Vrseq as 序号,Vrid as 编号,Uidr as 用户账号,Unamer as 用户姓名,Vramount as 订单金额,Vtnamer as 场地名称,Vnidr as 场地编号,Vrstart as 开始时间,Vrend as 结束时间,Vrstate as 订单状态,Vrremarks as 订单备注 from Vorder where Uidr='" + txtID.Text + "' AND Vtnamer='" + cmbPlaceName.Text + "'";
 				dispp(sqlstr);
 			}
 			if (txtID.Text == "" && cmbPlaceNo.Text == "")
 			{
-				sqlstr = "select * from Vorder where Vrstart='" + txtStime.Text + "' AND Vtnamer='" + cmbPlaceName.Text + "'";
+				sqlstr = "select select Vrseq as 序号,Vrid as 编号,Uidr as 用户账号,Unamer as 用户姓名,Vramount as 订单金额,Vtnamer as 场地名称,Vnidr as 场地编号,Vrstart as 开始时间,Vrend as 结束时间,Vrstate as 订单状态,Vrremarks as 订单备注 from Vorder where Vrstart='" + txtStime.Text + "' AND Vtnamer='" + cmbPlaceName.Text + "'";
 				dispp(sqlstr);
 			}
 			if (cmbPlaceNo.Text == "" && cmbPlaceName.Text == "")
 			{
-				sqlstr = "select * from Vorder where Vrstart='" + txtStime.Text + "' AND Uidr='" + txtID.Text + "'";
+				sqlstr = "select select Vrseq as 序号,Vrid as 编号,Uidr as 用户账号,Unamer as 用户姓名,Vramount as 订单金额,Vtnamer as 场地名称,Vnidr as 场地编号,Vrstart as 开始时间,Vrend as 结束时间,Vrstate as 订单状态,Vrremarks as 订单备注 from Vorder where Vrstart='" + txtStime.Text + "' AND Uidr='" + txtID.Text + "'";
 				dispp(sqlstr);
 			}
 			if (txtID.Text == "" && txtStime.Text == "")
 			{
-				sqlstr = "select * from Vorder where Vtnamer='" + cmbPlaceName.Text + "' AND Vnidr='" + cmbPlaceNo.Text + "'";
+				sqlstr = "select select Vrseq as 序号,Vrid as 编号,Uidr as 用户账号,Unamer as 用户姓名,Vramount as 订单金额,Vtnamer as 场地名称,Vnidr as 场地编号,Vrstart as 开始时间,Vrend as 结束时间,Vrstate as 订单状态,Vrremarks as 订单备注 from Vorder where Vtnamer='" + cmbPlaceName.Text + "' AND Vnidr='" + cmbPlaceNo.Text + "'";
 				dispp(sqlstr);
 			}
             if (txtID.Text == "" && cmbPlaceName.Text == "")
             {
-                sqlstr = "select * from Vorder where Vrstart='" + txtStime.Text + "' AND Vnidr='" + cmbPlaceNo.Text + "'";
+                sqlstr = "select select Vrseq as 序号,Vrid as 编号,Uidr as 用户账号,Unamer as 用户姓名,Vramount as 订单金额,Vtnamer as 场地名称,Vnidr as 场地编号,Vrstart as 开始时间,Vrend as 结束时间,Vrstate as 订单状态,Vrremarks as 订单备注 from Vorder where Vrstart='" + txtStime.Text + "' AND Vnidr='" + cmbPlaceNo.Text + "'";
                 dispp(sqlstr);
             }
             if (txtStime.Text == "" && cmbPlaceName.Text == "")
             {
-                sqlstr = "select * from Vorder where Uidr='" + txtID.Text + "' AND Vnidr='" + cmbPlaceNo.Text + "'";
+                sqlstr = "select select Vrseq as 序号,Vrid as 编号,Uidr as 用户账号,Unamer as 用户姓名,Vramount as 订单金额,Vtnamer as 场地名称,Vnidr as 场地编号,Vrstart as 开始时间,Vrend as 结束时间,Vrstate as 订单状态,Vrremarks as 订单备注 from Vorder where Uidr='" + txtID.Text + "' AND Vnidr='" + cmbPlaceNo.Text + "'";
                 dispp(sqlstr);
             }
 
@@ -139,22 +139,22 @@ namespace WindowsApp1
 
             if (txtStime.Text == "" && cmbPlaceName.Text == "" && cmbPlaceNo.Text == "")
 			{
-				sqlstr = "select * from Vorder where Uidr='" + txtID.Text + "'";
+				sqlstr = "select select Vrseq as 序号,Vrid as 编号,Uidr as 用户账号,Unamer as 用户姓名,Vramount as 订单金额,Vtnamer as 场地名称,Vnidr as 场地编号,Vrstart as 开始时间,Vrend as 结束时间,Vrstate as 订单状态,Vrremarks as 订单备注 from Vorder where Uidr='" + txtID.Text + "'";
 				dispp(sqlstr);
 			}
 			if (txtID.Text == "" && cmbPlaceName.Text == "" && cmbPlaceNo.Text == "")
 			{
-				sqlstr = "select * from Vorder where Vrstart='" + txtStime.Text + "'";
+				sqlstr = "select select Vrseq as 序号,Vrid as 编号,Uidr as 用户账号,Unamer as 用户姓名,Vramount as 订单金额,Vtnamer as 场地名称,Vnidr as 场地编号,Vrstart as 开始时间,Vrend as 结束时间,Vrstate as 订单状态,Vrremarks as 订单备注 from Vorder where Vrstart='" + txtStime.Text + "'";
 				dispp(sqlstr);
 			}
 			if (txtID.Text == "" && txtStime.Text == "" && cmbPlaceNo.Text == "")
 			{
-				sqlstr = "select * from Vorder where Vtnamer='" + cmbPlaceName.Text + "'";
+				sqlstr = "select select Vrseq as 序号,Vrid as 编号,Uidr as 用户账号,Unamer as 用户姓名,Vramount as 订单金额,Vtnamer as 场地名称,Vnidr as 场地编号,Vrstart as 开始时间,Vrend as 结束时间,Vrstate as 订单状态,Vrremarks as 订单备注 from Vorder where Vtnamer='" + cmbPlaceName.Text + "'";
 				dispp(sqlstr);
 			}
             if (txtID.Text == "" && txtStime.Text == "" && cmbPlaceName.Text == "")
             {
-                sqlstr = "select * from Vorder where Vnidr='" + cmbPlaceNo.Text + "'";
+                sqlstr = "select select Vrseq as 序号,Vrid as 编号,Uidr as 用户账号,Unamer as 用户姓名,Vramount as 订单金额,Vtnamer as 场地名称,Vnidr as 场地编号,Vrstart as 开始时间,Vrend as 结束时间,Vrstate as 订单状态,Vrremarks as 订单备注 from Vorder where Vnidr='" + cmbPlaceNo.Text + "'";
                 dispp(sqlstr);
             }
 
@@ -172,7 +172,7 @@ namespace WindowsApp1
 		//订单查找
 		public void btnSelOrder_Click(object sender, EventArgs e)
 		{
-			sqlstr = "select * from Vorder where Vrid='" + txtOrderNo.Text + "'";
+			sqlstr = "select select Vrseq as 序号,Vrid as 编号,Uidr as 用户账号,Unamer as 用户姓名,Vramount as 订单金额,Vtnamer as 场地名称,Vnidr as 场地编号,Vrstart as 开始时间,Vrend as 结束时间,Vrstate as 订单状态,Vrremarks as 订单备注 from Vorder where Vrid='" + txtOrderNo.Text + "'";
 			dispp(sqlstr);
 		}
 		//窗体加载
@@ -187,7 +187,7 @@ namespace WindowsApp1
             ds = new DataSet();
             using (con = new MySqlConnection(conn))//链接数据库
             {
-                sqld = new MySqlDataAdapter("select * from Vorder", con);//最后一个字符串为数据库的链接名
+                sqld = new MySqlDataAdapter("select Vrseq as 序号,Vrid as 编号,Uidr as 用户账号,Unamer as 用户姓名,Vramount as 订单金额,Vtnamer as 场地名称,Vnidr as 场地编号,Vrstart as 开始时间,Vrend as 结束时间,Vrstate as 订单状态,Vrremarks as 订单备注 from Vorder", con);//最后一个字符串为数据库的链接名
                 sqld.Fill(ds, "orderm");
             }
             gvwOrders.DataSource = ds.Tables["orderm"].DefaultView;

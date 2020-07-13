@@ -64,6 +64,7 @@ namespace WindowsApp1
             this.lblResults1.AutoSize = true;
             this.lblResults1.BackColor = System.Drawing.Color.Transparent;
             this.lblResults1.Font = new System.Drawing.Font("宋体", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lblResults1.ForeColor = System.Drawing.Color.Black;
             this.lblResults1.Location = new System.Drawing.Point(37, 28);
             this.lblResults1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResults1.Name = "lblResults1";
@@ -149,6 +150,7 @@ namespace WindowsApp1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.AutoSize = true;
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.lblResults1);
             this.groupBox1.Controls.Add(this.btnRegister);
             this.groupBox1.Controls.Add(this.btnLogin);
@@ -168,7 +170,7 @@ namespace WindowsApp1
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.AutoSize = true;
             this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Location = new System.Drawing.Point(0, 2);
+            this.panel1.Location = new System.Drawing.Point(-1, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1540, 845);
             this.panel1.TabIndex = 11;

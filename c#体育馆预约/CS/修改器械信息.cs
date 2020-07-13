@@ -13,10 +13,11 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using WindowsApp1;
 using System.Configuration;
+using CCWin;
 
 namespace WindowsApp1
 {
-    public partial class 修改器械信息 : Form
+    public partial class 修改器械信息 : Skin_VS
     {
         public 修改器械信息()
         {
@@ -35,7 +36,7 @@ namespace WindowsApp1
             ds = new DataSet();
             using (con = new MySqlConnection(conn))//链接数据库
             {
-                sqld = new MySqlDataAdapter("select * from Equipment", con);//最后一个字符串为数据库的链接名
+                sqld = new MySqlDataAdapter("select Eqseq as 序号,Eqname as 器材名称,Eqtotal as 器材总量,Eqrank as 租借价格,Eqdeposit as 押金金额,Eqremain as 器材余量,Eqremarks as 器材备注 from Equipment", con);//最后一个字符串为数据库的链接名
                 sqld.Fill(ds, "Eq");
             }
             gvwEq.DataSource = ds.Tables["Eq"].DefaultView;

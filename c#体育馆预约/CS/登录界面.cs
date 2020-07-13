@@ -11,14 +11,14 @@ using Microsoft.VisualBasic;
 using System.Collections;
 using System.Windows.Forms;
 // End of VB project level imports
-
+using CCWin;
 using System.Data.SqlClient;
 using WindowsApp1;
 using MySql.Data.MySqlClient;
 
 namespace WindowsApp1
 {
-	public partial class 登录界面
+	public partial class 登录界面 
 	{
 		public 登录界面()
 		{

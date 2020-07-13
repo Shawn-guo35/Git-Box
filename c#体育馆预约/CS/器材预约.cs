@@ -56,7 +56,7 @@ namespace WindowsApp1
             label5.Text = "最大数量为"+ Convert.ToInt32(cm.ExecuteScalar());
             ds = new DataSet();
             con = new MySqlConnection(conn);
-            sqlstr = "select * from Equipment where Eqname = '篮球'";
+            sqlstr = "select Eqseq as 序号,Eqname as 器材名称,Eqtotal as 器材总量,Eqrank as 租借价格,Eqdeposit as 押金金额,Eqremain as 器材余量,Eqremarks as 器材备注 from Equipment where Eqname = '篮球'";
             sqld = new MySqlDataAdapter(sqlstr, con);
             ds.Reset();
             sqld.Fill(ds, "income");

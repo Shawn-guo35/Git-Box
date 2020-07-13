@@ -86,7 +86,7 @@ namespace WindowsApp1
             ds = new DataSet();
             using (con = new MySqlConnection(conn))//链接数据库
             {
-                sqld = new MySqlDataAdapter("select * from Users", con);//最后一个字符串为数据库的链接名
+                sqld = new MySqlDataAdapter("select Useq as 序号,Uid as 账号,Uname as 姓名,Uidentity as 身份,Upwd as 密码,Uphone as 电话,Uremarks as 备注 from Users", con);//最后一个字符串为数据库的链接名
                 sqld.Fill(ds, "userm");
             }
             gvwUsers.DataSource = ds.Tables["userm"].DefaultView;
@@ -151,7 +151,7 @@ namespace WindowsApp1
 			if ((string) cbmGym.SelectedItem == "帐号")
 			{
 				ds.Tables["userm"].Clear();
-				s = "select  *  from  Users  where  Uid ='" + txtCondition.Text + "'";
+				s = "select  Useq as 序号,Uid as 账号,Uname as 姓名,Uidentity as 身份,Upwd as 密码,Uphone as 电话,Uremarks as 备注  from  Users  where  Uid ='" + txtCondition.Text + "'";
                 sqld.SelectCommand.CommandText = s;
                 sqld.Fill(ds, "userm");
 				gvwUsers.DataSource = ds.Tables["userm"];
@@ -159,7 +159,7 @@ namespace WindowsApp1
 			else if ((string) cbmGym.SelectedItem == "姓名")
 			{
 				ds.Tables["userm"].Clear();
-				s = "select  *  from  Users  where  Uname = '" + txtCondition.Text + "'";
+				s = "select  Useq as 序号,Uid as 账号,Uname as 姓名,Uidentity as 身份,Upwd as 密码,Uphone as 电话,Uremarks as 备注  from  Users  where  Uname = '" + txtCondition.Text + "'";
                 sqld.SelectCommand.CommandText = s;
                 sqld.Fill(ds, "userm");
 				gvwUsers.DataSource = ds.Tables["userm"];
@@ -167,7 +167,7 @@ namespace WindowsApp1
 			else if ((string) cbmGym.SelectedItem == "身份")
 			{
                 ds.Tables["userm"].Clear();
-				s = "select  *  from  Users  where Uidentity = '" + txtCondition.Text + "'";
+				s = "select  Useq as 序号,Uid as 账号,Uname as 姓名,Uidentity as 身份,Upwd as 密码,Uphone as 电话,Uremarks as 备注  from  Users  where Uidentity = '" + txtCondition.Text + "'";
                 sqld.SelectCommand.CommandText = s;
                 sqld.Fill(ds, "userm");
 				gvwUsers.DataSource = ds.Tables["userm"];

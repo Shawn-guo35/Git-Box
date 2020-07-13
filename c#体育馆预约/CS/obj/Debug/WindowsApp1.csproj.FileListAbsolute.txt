@@ -494,3 +494,5 @@ D:\新建文件夹\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.查询�
 F:\school\2020六月小学期\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.修改器械信息.resources
 F:\school\2020六月小学期\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.查询器材租借.resources
 F:\school\2020六月小学期\2020summer\c#体育馆预约\CS\obj\Debug\WindowsApp1.添加器材.resources
+D:\新建文件夹\2020summer\c#体育馆预约\CS\bin\Debug\CSkin.dll
+D:\新建文件夹\2020summer\c#体育馆预约\CS\bin\Debug\CSkin.xml

@@ -54,6 +54,7 @@
             this.GroupBox1.Controls.Add(this.btnUpdateEq);
             this.GroupBox1.Controls.Add(this.DataGridView2);
             this.GroupBox1.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.GroupBox1.ForeColor = System.Drawing.SystemColors.Window;
             this.GroupBox1.Location = new System.Drawing.Point(541, 97);
             this.GroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.GroupBox1.Name = "GroupBox1";
