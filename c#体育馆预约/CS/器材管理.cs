@@ -53,5 +53,23 @@ namespace WindowsApp1
         {
 
         }
+
+        private void btnInsertVenue_Click_1(object sender, EventArgs e)
+        {
+            Form form = new 添加器材();
+            form.Show();
+        }
+
+        private void btnInsertVtype_Click_1(object sender, EventArgs e)
+        {
+            Form form = new 修改器械信息();
+            form.Show();
+        }
+
+        private void btnSelectLease_Click_1(object sender, EventArgs e)
+        {
+            Form form = new 查询器材租借();
+            form.Show();
+        }
     }
 }

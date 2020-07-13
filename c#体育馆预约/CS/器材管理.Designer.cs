@@ -54,6 +54,7 @@
             this.btnSelectLease.TabIndex = 6;
             this.btnSelectLease.Text = "查询器材租借情况";
             this.btnSelectLease.UseVisualStyleBackColor = true;
+            this.btnSelectLease.Click += new System.EventHandler(this.btnSelectLease_Click_1);
             // 
             // btnInsertVtype
             // 
@@ -65,6 +66,7 @@
             this.btnInsertVtype.TabIndex = 8;
             this.btnInsertVtype.Text = "修改器材信息";
             this.btnInsertVtype.UseVisualStyleBackColor = true;
+            this.btnInsertVtype.Click += new System.EventHandler(this.btnInsertVtype_Click_1);
             // 
             // btnInsertVenue
             // 
@@ -76,6 +78,7 @@
             this.btnInsertVenue.TabIndex = 7;
             this.btnInsertVenue.Text = "添加器材类型";
             this.btnInsertVenue.UseVisualStyleBackColor = true;
+            this.btnInsertVenue.Click += new System.EventHandler(this.btnInsertVenue_Click_1);
             // 
             // 器材管理
             // 
