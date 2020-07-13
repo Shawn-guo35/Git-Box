@@ -21,7 +21,6 @@ namespace WindowsApp1
 		public Yuyue()
 		{
 			InitializeComponent();
-			
 			//Added to support default instance behavour in C#
 			if (defaultInstance == null)
 				defaultInstance = this;
@@ -30,7 +29,6 @@ namespace WindowsApp1
 #region Default Instance
 		
 		private static Yuyue defaultInstance;
-		
 		/// <summary>
 		/// Added by the VB.Net to C# Converter to support default instance behavour in C#
 		/// </summary>
@@ -65,9 +63,19 @@ namespace WindowsApp1
 		
 		public void btnBasketball_Click(object sender, EventArgs e)
 		{
-			//Me.Hide()
-			orderBasketball.Default.Show();
-		}
+            //Me.Hide()
+
+            //用户界面 form0 = new 用户界面();
+            Form form = new 器材预约();
+            //form0.showChildForm(form);
+            
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.ControlBox = false;
+            form.Size = new Size(this.Size.Width - 15, this.Size.Height - 25);
+            form.Location = new Point(SystemInformation.WorkingArea.Width - form.Width, SystemInformation.WorkingArea.Height - form.Height);
+            form.Show();
+            //orderBasketball.Default.Show();           
+        }
 		
 		public void btnSoccer_Click(object sender, EventArgs e)
 		{
@@ -93,5 +101,5 @@ namespace WindowsApp1
 		{
 			
 		}
-	}
+    }
 }

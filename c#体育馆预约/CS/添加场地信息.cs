@@ -13,14 +13,23 @@ using System.Windows.Forms;
 // End of VB project level imports
 
 using WindowsApp1;
+using MySql.Data.MySqlClient;
 
 namespace WindowsApp1
 {
+    
 	public partial class 添加场地信息
 	{
+        ConDatabase ConDatabase = new ConDatabase();
+        MySqlConnection con;
+        MySqlCommand cm;
+        DataSet ds;
 		public 添加场地信息()
 		{
 			InitializeComponent();
+            cm = ConDatabase.OpenDatabase("");
+            con = ConDatabase.getCon();
+            ds = new DataSet();
 		}
 		public void btnCancel_Click(object sender, EventArgs e)
 		{
@@ -48,29 +57,38 @@ namespace WindowsApp1
 			}
 			try
 			{
-				ChangguanDataSet1.Tables["Venue"].Clear();
-				n = "select  *  from Venue where  Vno ='" + txtGymNum.Text.Trim() + "'and Vname ='" + txtGymName.Text.Trim() + "'";
-				SqlDataAdapter1.SelectCommand.CommandText = n;
-				SqlDataAdapter1.Fill(ChangguanDataSet1);
-				r = ChangguanDataSet1.Venue.Rows.Count;
+				//ChangguanDataSet1.Tables["Venue"].Clear();
+				n = "select  *  from v_venue where  Vnid ='" + Convert.ToInt32(txtGymTypeID.Text.Trim()) + "'and Vtnamen ='" + txtGymName.Text.Trim() + "'";
+                //SqlDataAdapter1.SelectCommand.CommandText = n;
+                //SqlDataAdapter1.Fill(ChangguanDataSet1);
+                cm = ConDatabase.OpenDatabase(n);
+                MySqlDataAdapter adapter = new MySqlDataAdapter(cm);
+                adapter.Fill(ds,"v_venue");
+				r = ds.Tables["v_venue"].Rows.Count;                 
 				if (r != 0)
 				{
-					Interaction.MsgBox("该场地已存在，请重新输入", MsgBoxStyle.Exclamation, "警告");
+					Interaction.MsgBox("该场地不存在，请重新输入", MsgBoxStyle.Exclamation, "警告");
 					txtGymName.Text = "";
 					txtGymName.Focus();
 					txtGymNum.Text = "";
 				}
 				else
 				{
-					s = "insert into Venue values('" + txtGymName.Text + "','" + txtGymNum.Text + "')";
-					SqlDataAdapter1.SelectCommand.CommandText = s;
-					SqlDataAdapter1.Fill(ChangguanDataSet1);
+					s = "insert into v_venue(vtnamen,vnid,vtidn,vnstate) values('" + txtGymName.Text + "','" + Convert.ToInt32(txtGymNum.Text) + "','"+ Convert.ToInt32(txtGymTypeID.Text) + "','" + txtState.Text +"')";
+                    //SqlDataAdapter1.SelectCommand.CommandText = s;
+                    //SqlDataAdapter1.Fill(ChangguanDataSet1);
+                    cm = ConDatabase.OpenDatabase(s);
+                    con = ConDatabase.getCon();
+                    cm.ExecuteNonQuery();
+                    //adapter = new MySqlDataAdapter(cm);
+                    //adapter.Fill(ChangguanDataSet1);
 					Interaction.MsgBox("添加成功", MsgBoxStyle.Information, "恭喜");
 					txtGymName.Text = "";
 					txtGymName.Focus();
 					txtGymNum.Text = "";
 					
 				}
+                con.Close();
 			}
 			catch (Exception)
 			{
@@ -87,5 +105,10 @@ namespace WindowsApp1
 		{
 			
 		}
-	}
+
+        private void lblResults2_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

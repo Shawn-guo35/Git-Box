@@ -11,26 +11,31 @@ using Microsoft.VisualBasic;
 using System.Collections;
 using System.Windows.Forms;
 // End of VB project level imports
-
+using MySql.Data.MySqlClient;
 using System.Data.SqlClient;
 using WindowsApp1;
+using System.Configuration;
 
 namespace WindowsApp1
 {
 	public partial class 注册界面
 	{
-		public 注册界面()
+
+        public 注册界面()
 		{
 			InitializeComponent();
-			
+            this.AutoScaleMode = AutoScaleMode.Font;
 			//Added to support default instance behavour in C#
 			if (defaultInstance == null)
 				defaultInstance = this;
+            this.WindowState = FormWindowState.Maximized;
 		}
-		
-#region Default Instance
-		
-		private static 注册界面 defaultInstance;
+        public static string conn = ConfigurationManager.ConnectionStrings["connstr"].ToString();
+        MySqlConnection con;
+        MySqlCommand cm;
+        #region Default Instance
+
+        private static 注册界面 defaultInstance;
 		
 		/// <summary>
 		/// Added by the VB.Net to C# Converter to support default instance behavour in C#
@@ -57,13 +62,8 @@ namespace WindowsApp1
 		{
 			defaultInstance = null;
 		}
-		
-#endregion
-		SqlConnection cn;
-		SqlDataAdapter da;
-		DataSet ds;
-		SqlCommand cm;
-		string sqlstr;
+
+        #endregion
 		public void btnReturn_Click(object sender, EventArgs e)
 		{
 			this.Close();
@@ -92,20 +92,20 @@ namespace WindowsApp1
 			{
 				MessageBox.Show("两次输入密码不一致");
 			}
-			string cnStr = "Data Source=DESKTOP-DSP6URK\\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=changguan";
-			cn = new SqlConnection(cnStr);
-			cn.Open();
-			if (radInside.Checked)
+            //string conn = "server=121.36.57.112;Uid=customer;password=Summer2020;Database=summer2020";
+            con = new MySqlConnection(conn);
+            con.Open();
+            if (radInside.Checked)
 			{
-				cm = new SqlCommand("select count(*) from Users where ID='" + txtID.Text + "'", cn);
+				cm = new MySqlCommand("select count(*) from Users where Uid='" + txtID.Text + "'", con);
 				var num1 = Convert.ToInt32(cm.ExecuteScalar());
 				if (num1 == 0)
 				{
 
-                    sqlstr = "insert into  Users values('" + txtID.Text + "','" + txtName.Text + "','" + "校内人员 " + "; //,'" + txtPwd.Text + "')";
-					cm = new SqlCommand(sqlstr, cn);
+                    string sqlstr = "insert into  Users(Uid,Uname,Uidentity,Upwd,Uphone)  values('" + txtID.Text + "','" + txtName.Text + "','" + "校内人员 " + "','" + txtPwd.Text + "','" + txtID.Text + "')";
+					cm = new MySqlCommand(sqlstr, con);
 					cm.ExecuteNonQuery();
-					cn.Close();
+					con.Close();
 					MessageBox.Show("注册成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
 					登录界面.Default.Show();
 					this.Visible = false;
@@ -117,15 +117,15 @@ namespace WindowsApp1
 			}
 			else if (radOutside.Checked)
 			{
-				cm = new SqlCommand("select count(*) from Users where ID='" + txtID.Text + "'", cn);
+				cm = new MySqlCommand("select count(*) from Users where Uid='" + txtID.Text + "'", con);
 				var num2 = Convert.ToInt32(cm.ExecuteScalar());
 				if (num2 == 0)
 				{
 					
-					sqlstr = "insert into  Users values('" + txtID.Text + "','" + txtName.Text + "','" + "校外人员" + "','" + txtPwd.Text + "')";
-					cm = new SqlCommand(sqlstr, cn);
+					string sqlstr = "insert into  Users(Uid,Uname,Uidentity,Upwd,Uphone) values('" + txtID.Text + "','" + txtName.Text + "','" + radOutside.Text + "','" + txtPwd.Text + "','" + txtID.Text + "')";
+					cm = new MySqlCommand(sqlstr, con);
 					cm.ExecuteNonQuery();
-					cn.Close();
+					con.Close();
 					MessageBox.Show("注册成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
 					登录界面.Default.Show();
 					this.Visible = false;
