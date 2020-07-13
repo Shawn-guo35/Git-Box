@@ -76,9 +76,12 @@ namespace WindowsApp1
             this.OleDbDeleteCommand2 = new System.Data.OleDb.OleDbCommand();
             this.odadSelOrder = new System.Data.OleDb.OleDbDataAdapter();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.userID = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dstBasketLease)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dstSelOrder)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnGymorder
@@ -293,11 +296,30 @@ namespace WindowsApp1
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBox1.Controls.Add(this.userID);
+            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Location = new System.Drawing.Point(459, 471);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(718, 148);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Location = new System.Drawing.Point(188, 17);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 17);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "用户ID：";
+            // 
+            // userID
+            // 
+            this.userID.Location = new System.Drawing.Point(260, 13);
+            this.userID.Name = "userID";
+            this.userID.Size = new System.Drawing.Size(100, 21);
+            this.userID.TabIndex = 1;
             // 
             // orderBasketball
             // 
@@ -328,6 +350,8 @@ namespace WindowsApp1
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrder)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dstBasketLease)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dstSelOrder)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -362,6 +386,8 @@ namespace WindowsApp1
 		internal System.Data.OleDb.OleDbCommand OleDbDeleteCommand2;
 		internal System.Data.OleDb.OleDbDataAdapter odadSelOrder;
         private GroupBox groupBox1;
+        private TextBox userID;
+        private Label label5;
     }
 	
 }

@@ -27,7 +27,7 @@ namespace WindowsApp1
             cm = ConDatabase.OpenDatabase();
             con = ConDatabase.getCon();
             ds = new dataDataSet();           
-            string inquery = "select Ntdate,Ntitle,Ntcontent from v_notice";        
+            string inquery = "select Ntdate as 发布日期,Ntitle as 标题,Ntcontent as 内容 from v_notice";        
             cm = ConDatabase.OpenDatabase(inquery);
             adapter = new MySqlDataAdapter(cm);
             adapter.Fill(ds, "content");

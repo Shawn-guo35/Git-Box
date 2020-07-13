@@ -52,7 +52,7 @@ namespace WindowsApp1
 			if ((string) cbmGym.SelectedItem == "场地名称")
 			{
 				//ChangguanDataSet1.Tables["Lease"].Clear();
-				s = "select  *  from  v_state  where  Vtnames ='" + txtGymName.Text + "'";
+				s = "select Vsseq as 序号,Vtnames as 名称,Vnids as 编号,Vsstart as 开始时间,Vsend as 结束时间,Vsstate as 状态,Vsremarks as 备注 from  v_state  where  Vtnames ='" + txtGymName.Text + "'";
                 //SqlDataAdapter1.SelectCommand.CommandText = s;
                 //SqlDataAdapter1.Fill(ChangguanDataSet1);
                 cm = ConDatabase.OpenDatabase(s);
@@ -63,7 +63,7 @@ namespace WindowsApp1
 			else if ((string) cbmGym.SelectedItem == "场地名称&场地编号")
 			{
 				//ChangguanDataSet1.Tables["Lease"].Clear();
-				s = "select  *  from v_state where  Vnids ='" + txtGymNum.Text.Trim() + "'and Vtnames ='" + txtGymName.Text.Trim() + "'";
+				s = "select Vsseq as 序号,Vtnames as 名称,Vnids as 编号,Vsstart as 开始时间,Vsend as 结束时间,Vsstate as 状态,Vsremarks as 备注 from v_state where  Vnids ='" + txtGymNum.Text.Trim() + "'and Vtnames ='" + txtGymName.Text.Trim() + "'";
                 cm = ConDatabase.OpenDatabase(s);
                 MySqlDataAdapter adapter = new MySqlDataAdapter(cm);
                 adapter.Fill(ds,"v_state");

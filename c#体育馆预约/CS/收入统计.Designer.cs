@@ -72,7 +72,7 @@ namespace WindowsApp1
             // 
             this.lblResults5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblResults5.AutoSize = true;
-            this.lblResults5.Location = new System.Drawing.Point(510, 241);
+            this.lblResults5.Location = new System.Drawing.Point(659, 241);
             this.lblResults5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResults5.Name = "lblResults5";
             this.lblResults5.Size = new System.Drawing.Size(89, 12);
@@ -97,7 +97,7 @@ namespace WindowsApp1
             "10月",
             "11月",
             "12月"});
-            this.cmbYear.Location = new System.Drawing.Point(512, 420);
+            this.cmbYear.Location = new System.Drawing.Point(661, 420);
             this.cmbYear.Margin = new System.Windows.Forms.Padding(2);
             this.cmbYear.Name = "cmbYear";
             this.cmbYear.Size = new System.Drawing.Size(63, 41);
@@ -152,7 +152,7 @@ namespace WindowsApp1
             "29号",
             "30号",
             "31号"});
-            this.cmbDay.Location = new System.Drawing.Point(512, 286);
+            this.cmbDay.Location = new System.Drawing.Point(661, 286);
             this.cmbDay.Margin = new System.Windows.Forms.Padding(2);
             this.cmbDay.Name = "cmbDay";
             this.cmbDay.Size = new System.Drawing.Size(63, 41);
@@ -176,7 +176,7 @@ namespace WindowsApp1
             "10月",
             "11月",
             "12月"});
-            this.cmbMon.Location = new System.Drawing.Point(512, 353);
+            this.cmbMon.Location = new System.Drawing.Point(661, 353);
             this.cmbMon.Margin = new System.Windows.Forms.Padding(2);
             this.cmbMon.Name = "cmbMon";
             this.cmbMon.Size = new System.Drawing.Size(63, 41);
@@ -187,7 +187,7 @@ namespace WindowsApp1
             this.lblResults3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblResults3.AutoSize = true;
             this.lblResults3.Font = new System.Drawing.Font("宋体", 24F);
-            this.lblResults3.Location = new System.Drawing.Point(373, 356);
+            this.lblResults3.Location = new System.Drawing.Point(522, 356);
             this.lblResults3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResults3.Name = "lblResults3";
             this.lblResults3.Size = new System.Drawing.Size(111, 33);
@@ -199,7 +199,7 @@ namespace WindowsApp1
             this.lblResults2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblResults2.AutoSize = true;
             this.lblResults2.Font = new System.Drawing.Font("宋体", 24F);
-            this.lblResults2.Location = new System.Drawing.Point(373, 423);
+            this.lblResults2.Location = new System.Drawing.Point(522, 423);
             this.lblResults2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResults2.Name = "lblResults2";
             this.lblResults2.Size = new System.Drawing.Size(111, 33);
@@ -211,7 +211,7 @@ namespace WindowsApp1
             this.lblResults1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblResults1.AutoSize = true;
             this.lblResults1.Font = new System.Drawing.Font("宋体", 24F);
-            this.lblResults1.Location = new System.Drawing.Point(373, 286);
+            this.lblResults1.Location = new System.Drawing.Point(522, 286);
             this.lblResults1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblResults1.Name = "lblResults1";
             this.lblResults1.Size = new System.Drawing.Size(111, 33);
@@ -222,7 +222,7 @@ namespace WindowsApp1
             // 
             this.btnReturn.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnReturn.Font = new System.Drawing.Font("宋体", 24F);
-            this.btnReturn.Location = new System.Drawing.Point(583, 512);
+            this.btnReturn.Location = new System.Drawing.Point(732, 512);
             this.btnReturn.Margin = new System.Windows.Forms.Padding(2);
             this.btnReturn.Name = "btnReturn";
             this.btnReturn.Size = new System.Drawing.Size(95, 44);
@@ -235,7 +235,7 @@ namespace WindowsApp1
             // 
             this.btnSelIncome.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSelIncome.Font = new System.Drawing.Font("宋体", 24F);
-            this.btnSelIncome.Location = new System.Drawing.Point(414, 512);
+            this.btnSelIncome.Location = new System.Drawing.Point(563, 512);
             this.btnSelIncome.Margin = new System.Windows.Forms.Padding(2);
             this.btnSelIncome.Name = "btnSelIncome";
             this.btnSelIncome.Size = new System.Drawing.Size(95, 44);
@@ -248,7 +248,7 @@ namespace WindowsApp1
             // 
             this.txtYearSum.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtYearSum.Font = new System.Drawing.Font("宋体", 24F);
-            this.txtYearSum.Location = new System.Drawing.Point(585, 420);
+            this.txtYearSum.Location = new System.Drawing.Point(734, 420);
             this.txtYearSum.Margin = new System.Windows.Forms.Padding(2);
             this.txtYearSum.Name = "txtYearSum";
             this.txtYearSum.Size = new System.Drawing.Size(93, 44);
@@ -258,7 +258,7 @@ namespace WindowsApp1
             // 
             this.txtMonSum.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtMonSum.Font = new System.Drawing.Font("宋体", 24F);
-            this.txtMonSum.Location = new System.Drawing.Point(585, 353);
+            this.txtMonSum.Location = new System.Drawing.Point(734, 353);
             this.txtMonSum.Margin = new System.Windows.Forms.Padding(2);
             this.txtMonSum.Name = "txtMonSum";
             this.txtMonSum.Size = new System.Drawing.Size(93, 44);
@@ -268,7 +268,7 @@ namespace WindowsApp1
             // 
             this.txtDaySum.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtDaySum.Font = new System.Drawing.Font("宋体", 24F);
-            this.txtDaySum.Location = new System.Drawing.Point(585, 286);
+            this.txtDaySum.Location = new System.Drawing.Point(734, 286);
             this.txtDaySum.Margin = new System.Windows.Forms.Padding(2);
             this.txtDaySum.Name = "txtDaySum";
             this.txtDaySum.Size = new System.Drawing.Size(93, 44);
@@ -278,11 +278,11 @@ namespace WindowsApp1
             // 
             this.dgwIncome.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dgwIncome.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwIncome.Location = new System.Drawing.Point(737, 228);
+            this.dgwIncome.Location = new System.Drawing.Point(886, 228);
             this.dgwIncome.Margin = new System.Windows.Forms.Padding(2);
             this.dgwIncome.Name = "dgwIncome";
             this.dgwIncome.RowTemplate.Height = 27;
-            this.dgwIncome.Size = new System.Drawing.Size(714, 410);
+            this.dgwIncome.Size = new System.Drawing.Size(402, 410);
             this.dgwIncome.TabIndex = 14;
             // 
             // OleDbConnection1

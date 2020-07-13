@@ -76,11 +76,11 @@ namespace WindowsApp1
             // 
             this.gvwOrders.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.gvwOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvwOrders.Location = new System.Drawing.Point(430, 165);
+            this.gvwOrders.Location = new System.Drawing.Point(234, 166);
             this.gvwOrders.Margin = new System.Windows.Forms.Padding(2);
             this.gvwOrders.Name = "gvwOrders";
             this.gvwOrders.RowTemplate.Height = 27;
-            this.gvwOrders.Size = new System.Drawing.Size(808, 347);
+            this.gvwOrders.Size = new System.Drawing.Size(1153, 347);
             this.gvwOrders.TabIndex = 0;
             // 
             // txtOrderNo

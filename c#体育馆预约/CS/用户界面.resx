@@ -155,13 +155,13 @@
     <value>帮助</value>
   </data>
   <data name="tsmiCancellation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 26</value>
+    <value>180, 26</value>
   </data>
   <data name="tsmiCancellation.Text" xml:space="preserve">
     <value>注销</value>
   </data>
   <data name="tsmiClose1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 26</value>
+    <value>180, 26</value>
   </data>
   <data name="tsmiClose1.Text" xml:space="preserve">
     <value>退出</value>
@@ -815,9 +815,6 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1090, 841</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>

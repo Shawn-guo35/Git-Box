@@ -198,11 +198,11 @@ namespace WindowsApp1
             this.gvwUsers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.gvwUsers.BackgroundColor = System.Drawing.Color.Silver;
             this.gvwUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvwUsers.Location = new System.Drawing.Point(440, 265);
+            this.gvwUsers.Location = new System.Drawing.Point(473, 265);
             this.gvwUsers.Margin = new System.Windows.Forms.Padding(2);
             this.gvwUsers.Name = "gvwUsers";
             this.gvwUsers.RowTemplate.Height = 27;
-            this.gvwUsers.Size = new System.Drawing.Size(811, 468);
+            this.gvwUsers.Size = new System.Drawing.Size(732, 468);
             this.gvwUsers.TabIndex = 1;
             this.gvwUsers.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvwUsers_CellContentClick);
             // 
