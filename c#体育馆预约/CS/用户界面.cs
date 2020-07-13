@@ -18,8 +18,8 @@ using WindowsApp1;
 namespace WindowsApp1
 {
 	
-	public partial class 用户界面
-	{
+	public partial class 用户界面 
+    {
 		public 用户界面()
 		{
 			InitializeComponent();
