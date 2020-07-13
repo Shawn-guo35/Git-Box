@@ -186,6 +186,12 @@
       <DependentUpon>场地管理.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="修改器械信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="修改器械信息.Designer.cs">
+      <DependentUpon>修改器械信息.cs</DependentUpon>
+    </Compile>
     <Compile Include="器材预约.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +203,18 @@
     </Compile>
     <Compile Include="发布公告.Designer.cs">
       <DependentUpon>发布公告.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询器材租借.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询器材租借.Designer.cs">
+      <DependentUpon>查询器材租借.cs</DependentUpon>
+    </Compile>
+    <Compile Include="添加器材.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="添加器材.Designer.cs">
+      <DependentUpon>添加器材.cs</DependentUpon>
     </Compile>
     <Compile Include="篮球器材租借.cs">
       <SubType>Form</SubType>
@@ -340,8 +358,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="修改器械信息.resx">
+      <DependentUpon>修改器械信息.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="发布公告.resx">
       <DependentUpon>发布公告.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询器材租借.resx">
+      <DependentUpon>查询器材租借.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="添加器材.resx">
+      <DependentUpon>添加器材.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="篮球器材租借.resx">
       <DependentUpon>篮球器材租借.cs</DependentUpon>

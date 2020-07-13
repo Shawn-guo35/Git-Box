@@ -58,7 +58,6 @@ namespace WindowsApp1
             this.tsmiClose1 = new System.Windows.Forms.ToolStripMenuItem();
             this.funcpanel = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
-            this.rentBasket = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.oederBasket = new System.Windows.Forms.Button();
@@ -151,9 +150,7 @@ namespace WindowsApp1
             // 
             // funcpanel
             // 
-            resources.ApplyResources(this.funcpanel, "funcpanel");
             this.funcpanel.Controls.Add(this.button3);
-            this.funcpanel.Controls.Add(this.rentBasket);
             this.funcpanel.Controls.Add(this.button1);
             this.funcpanel.Controls.Add(this.label5);
             this.funcpanel.Controls.Add(this.oederBasket);
@@ -173,6 +170,7 @@ namespace WindowsApp1
             this.funcpanel.Controls.Add(this.groundTypeSearch);
             this.funcpanel.Controls.Add(this.equipmentMg);
             this.funcpanel.Controls.Add(this.equipmentRent);
+            resources.ApplyResources(this.funcpanel, "funcpanel");
             this.funcpanel.Name = "funcpanel";
             this.funcpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.funcpanel_Paint);
             // 
@@ -181,12 +179,6 @@ namespace WindowsApp1
             resources.ApplyResources(this.button3, "button3");
             this.button3.Name = "button3";
             this.button3.UseVisualStyleBackColor = true;
-            // 
-            // rentBasket
-            // 
-            resources.ApplyResources(this.rentBasket, "rentBasket");
-            this.rentBasket.Name = "rentBasket";
-            this.rentBasket.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -375,7 +367,6 @@ namespace WindowsApp1
         private Button oederBasket;
         private Label label5;
         private Button button3;
-        private Button rentBasket;
         private Button button1;
     }
 	
