@@ -169,7 +169,8 @@ namespace WindowsApp1
 			double fee = 0; //租借费用
 			string uname = ""; //用户姓名
 			string userId = "";
-			userId = 登录界面.Default.txtID.Text;
+			//userId = 登录界面.Default.txtID.Text;
+            userId = userID.Text;
             //获取用户姓名和租金
             cm = ConDatabase.OpenDatabase("select Uname,Uidentity,Vtinrank,Vtoutrank from v_users,v_vtype where Uid='" + userId + "' and Vtname='篮球场'");
             con = ConDatabase.getCon();
@@ -191,7 +192,7 @@ namespace WindowsApp1
             //sql3 = "select * from Orders where ID='" + 登录界面.Default.txtID.Text + "' and Stime between '" + System.Convert.ToString(DateTime.Now.Date) + "' and '" + System.Convert.ToString(DateTime.Now.Date.AddDays(6)) + "'";
             //odadSelOrder = new System.Data.OleDb.OleDbDataAdapter(sql3, OleDbConnection1);
             //odadSelOrder.Fill(dstSelOrder, "order");
-            cm = ConDatabase.OpenDatabase("select * from v_vorder where Uidr='" + 登录界面.Default.txtID.Text + "' and Vrstart between '" + System.Convert.ToString(DateTime.Now.Date) + "' and '" + System.Convert.ToString(DateTime.Now.Date.AddDays(6)) + "'");
+            cm = ConDatabase.OpenDatabase("select * from v_vorder where Uidr='" + userID.Text + "' and Vrstart between '" + System.Convert.ToString(DateTime.Now.Date) + "' and '" + System.Convert.ToString(DateTime.Now.Date.AddDays(6)) + "'");
             MySqlDataAdapter adapter2 = new MySqlDataAdapter(cm);
             adapter2.Fill(dstSelOrder, "order");
             if (dstSelOrder.Tables["order"].Rows.Count >= 5)
@@ -202,7 +203,7 @@ namespace WindowsApp1
 			{
                 DataSet userinfo = new DataSet();
                 //查询用户电话前3后4、姓名
-                string phoneName = "select Uphone,Uname from v_users where Uid = '" + 登录界面.Default.txtID.Text + "'";
+                string phoneName = "select Uphone,Uname from v_users where Uid = '" + userID.Text + "'";
                 cm = ConDatabase.OpenDatabase(phoneName);
                 adapter1 = new MySqlDataAdapter(cm);
                 adapter1.Fill(userinfo, "userinfo");
@@ -229,7 +230,7 @@ namespace WindowsApp1
 							sql1 = "insert into v_state(Vtnames,Vnids,Vsstart,Vsend,Vsstate) values('篮球场','" + Vno + "','" + Stime + "','" + Etime + "','" + "已预约')";
                             //sql2 = "insert into v_vorder(Vidr,Vtnamer,Vnidr,Vrstart,Vrend,Vrstate,Vramount,Vrremarks,Unamer) values('" + 登录界面.Default.txtID.Text + "','篮球场','" + Vno + "','" + Stime + "','" + Etime + "',1," + System.Convert.ToString(fee) +
                             //",'" + DateTime.Now.ToString("yyyyMMddhhmm") + "b" + Vno + "','" + uname + "','')";
-                            sql2 = "insert into v_vorder(Vrid,Uidr,Unamer,Vramount,Vtnamer,Vnidr,Vrstart,Vrend,Vrstate) values('"+ ordernum +"','" + 登录界面.Default.txtID.Text + "','" +
+                            sql2 = "insert into v_vorder(Vrid,Uidr,Unamer,Vramount,Vtnamer,Vnidr,Vrstart,Vrend,Vrstate) values('"+ ordernum +"','" + userID.Text + "','" +
                                 username + "','" + Convert.ToDecimal(fee) + "','" + "篮球场" + "','" + Convert.ToInt32(Vno) + "','" + Stime + "','" + Etime + "','未完成')";
 
                             //odcmdInsLease = new System.Data.OleDb.OleDbCommand(sql1, OleDbConnection1);
@@ -267,7 +268,7 @@ namespace WindowsApp1
 								sql1 = "insert into v_state(Vtnames,Vnids,Vsstart,Vsend,Vsstate) values('篮球场','" + Vno + "','" + dgvOrder.Columns[e.ColumnIndex].Name + " 12:00:00','" + dgvOrder.Columns[e.ColumnIndex].Name + " 13:00:00','" + "已预约')";
                                 //sql2 = "insert into v_vorder(Vidr,Vtnamer,Vnidr,Vrstart,Vrend,Vrstate,Vramount,Vrremarks,Unamer) values('" + 登录界面.Default.txtID.Text + "','篮球场','" + Vno + "','" + dgvOrder.Columns[e.ColumnIndex].Name + " 12:00:00','" + dgvOrder.Columns[e.ColumnIndex].Name + " 13:00:00',1," + System.Convert.ToString(fee) +
                                 //	",'" + DateTime.Now.ToString("yyyyMMddhhmm") + "b" + Vno + "','" + uname + "','')";
-                                sql2 = "insert into v_vorder(Vrid,Uidr,Unamer,Vramount,Vtnamer,Vnidr,Vrstart,Vrend,Vrstate) values('" + ordernum + "','" + 登录界面.Default.txtID.Text + "','" +
+                                sql2 = "insert into v_vorder(Vrid,Uidr,Unamer,Vramount,Vtnamer,Vnidr,Vrstart,Vrend,Vrstate) values('" + ordernum + "','" + userID.Text + "','" +
                                     username + "','" + Convert.ToDecimal(fee) + "','" + "篮球场" + "','" + Convert.ToInt32(Vno) + "','" 
                                     + dgvOrder.Columns[e.ColumnIndex].Name + " 12:00:00','" + dgvOrder.Columns[e.ColumnIndex].Name + " 13:00:00','" + "未完成')";
 
@@ -278,7 +279,7 @@ namespace WindowsApp1
 								sql1 = "insert into v_state(Vtnames,Vnids,Vsstart,Vsend,Vsstate) values('篮球场','" + Vno + "','" + dgvOrder.Columns[e.ColumnIndex].Name + " 13:00:00','" + dgvOrder.Columns[e.ColumnIndex].Name + " 14:00:00','" + "已预约')";
                                 //sql2 = "insert into v_vorder(Vidr,Vtnamer,Vnidr,Vrstart,Vrend,Vrstate,Vramount,Vrremarks,Unamer) values('" + 登录界面.Default.txtID.Text + "','篮球场','" + Vno + "','" + dgvOrder.Columns[e.ColumnIndex].Name + " 13:00:00','" + dgvOrder.Columns[e.ColumnIndex].Name + " 14:00:00',1," + System.Convert.ToString(fee) +
                                 //	",'" + DateTime.Now.ToString("yyyyMMddhhmm") + "b" + Vno + "','" + uname + "','')";
-                                sql2 = "insert into v_vorder(Vrid,Uidr,Unamer,Vramount,Vtnamer,Vnidr,Vrstart,Vrend,Vrstate) values('" + ordernum + "','" + 登录界面.Default.txtID.Text + "','" +
+                                sql2 = "insert into v_vorder(Vrid,Uidr,Unamer,Vramount,Vtnamer,Vnidr,Vrstart,Vrend,Vrstate) values('" + ordernum + "','" + userID.Text + "','" +
                                     username + "','" + Convert.ToDecimal(fee) + "','" + "篮球场" + "','" + Convert.ToInt32(Vno) + "','"
                                     + dgvOrder.Columns[e.ColumnIndex].Name + " 13:00:00','" + dgvOrder.Columns[e.ColumnIndex].Name + " 14:00:00','" + "未完成')";
                             }
@@ -287,7 +288,7 @@ namespace WindowsApp1
 								sql1 = "insert into v_state(Vtnames,Vnids,Vsstart,Vsend,Vsstate) values('篮球场','" + Vno + "','" + dgvOrder.Columns[e.ColumnIndex].Name + " 18:00:00','" + dgvOrder.Columns[e.ColumnIndex].Name + " 19:00:00','" + "已预约')";
                                 //sql2 = "insert into v_vorder(Vidr,Vtnamer,Vnidr,Vrstart,Vrend,Vrstate,Vramount,Vrremarks,Unamer) values('" + 登录界面.Default.txtID.Text + "','篮球场','" + Vno + "','" + dgvOrder.Columns[e.ColumnIndex].Name + " 18:00:00','" + dgvOrder.Columns[e.ColumnIndex].Name + " 19:00:00',1," + System.Convert.ToString(fee) +
                                 //	",'" + DateTime.Now.ToString("yyyyMMddhhmm") + "b" + Vno + "','" + uname + "','')";
-                                sql2 = "insert into v_vorder(Vrid,Uidr,Unamer,Vramount,Vtnamer,Vnidr,Vrstart,Vrend,Vrstate) values('" + ordernum + "','" + 登录界面.Default.txtID.Text + "','" +
+                                sql2 = "insert into v_vorder(Vrid,Uidr,Unamer,Vramount,Vtnamer,Vnidr,Vrstart,Vrend,Vrstate) values('" + ordernum + "','" + userID.Text + "','" +
                                     username + "','" + Convert.ToDecimal(fee) + "','" + "篮球场" + "','" + Convert.ToInt32(Vno) + "','"
                                     + dgvOrder.Columns[e.ColumnIndex].Name + " 18:00:00','" + dgvOrder.Columns[e.ColumnIndex].Name + " 19:00:00','" + "未完成')";
                             }
@@ -296,7 +297,7 @@ namespace WindowsApp1
 								sql1 = "insert into v_state(Vtnames,Vnids,Vsstart,Vsend,Vsstate) values('篮球场','" + Vno + "','" + dgvOrder.Columns[e.ColumnIndex].Name + " 19:00:00','" + dgvOrder.Columns[e.ColumnIndex].Name + " 20:00:00','" + "已预约')";
                                 //sql2 = "insert into v_vorder(Vidr,Vtnamer,Vnidr,Vrstart,Vrend,Vrstate,Vramount,Vrremarks,Unamer) values('" + 登录界面.Default.txtID.Text + "','篮球场','" + Vno + "','" + dgvOrder.Columns[e.ColumnIndex].Name + " 19:00:00','" + dgvOrder.Columns[e.ColumnIndex].Name + " 20:00:00',1," + System.Convert.ToString(fee) +
                                 //	",'" + DateTime.Now.ToString("yyyyMMddhhmm") + "b" + Vno + "','" + uname + "','')";
-                                sql2 = "insert into v_vorder(Vrid,Uidr,Unamer,Vramount,Vtnamer,Vnidr,Vrstart,Vrend,Vrstate) values('" + ordernum + "','" + 登录界面.Default.txtID.Text + "','" +
+                                sql2 = "insert into v_vorder(Vrid,Uidr,Unamer,Vramount,Vtnamer,Vnidr,Vrstart,Vrend,Vrstate) values('" + ordernum + "','" + userID.Text + "','" +
                                     username + "','" + Convert.ToDecimal(fee) + "','" + "篮球场" + "','" + Convert.ToInt32(Vno) + "','"
                                     + dgvOrder.Columns[e.ColumnIndex].Name + " 19:00:00','" + dgvOrder.Columns[e.ColumnIndex].Name + " 20:00:00','" + "未完成')";
                             }

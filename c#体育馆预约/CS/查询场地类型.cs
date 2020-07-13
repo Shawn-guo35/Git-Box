@@ -54,7 +54,7 @@ namespace WindowsApp1
 			if ((string) cbmGym.SelectedItem == "场地名称")
 			{
                 //ChangguanDataSet1.Tables["Vtype"].Clear();
-                s = "select  *  from  v_vtype  where  Vtname ='" + txtCondition.Text + "'";
+                s = "select  Vtid as 类型编号,Vtname as 场地名称,Vtinrank as 校内价格,Vtoutrank as 校外价格,Vttime as 开放时间,Vtetime as 结束时间,Vtremarks as 备注  from  v_vtype  where  Vtname ='" + txtCondition.Text + "'";
                 //SqlDataAdapter1.SelectCommand.CommandText = s;
                 //SqlDataAdapter1.Fill(ChangguanDataSet1);
                 cm = ConDatabase.OpenDatabase(s);

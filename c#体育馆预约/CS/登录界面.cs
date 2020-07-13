@@ -102,7 +102,7 @@ namespace WindowsApp1
             //调试
             //用户界面.Default.Show();
             //this.Visible = false;
-            cm = ConDatabase.OpenDatabase("select * from v_users where Uid='" + txtID.Text + "'and Upwd='" + txtPwd.Text + "'");
+            cm = ConDatabase.OpenDatabase("select * from v_users where Uid='" + txtID.Text + "'and Upwd='" + txtPwd.Text + "'and Uidentity='管理员'" );
             con = ConDatabase.getCon();
             if (txtID.Text == "")
             {

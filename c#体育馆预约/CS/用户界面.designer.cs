@@ -325,6 +325,7 @@ namespace WindowsApp1
             this.MainMenuStrip = this.MenuStrip1;
             this.MaximizeBox = false;
             this.Name = "用户界面";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.用户界面_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MenuStrip1.ResumeLayout(false);
             this.MenuStrip1.PerformLayout();

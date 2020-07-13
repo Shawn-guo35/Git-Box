@@ -23,7 +23,7 @@ namespace WindowsApp1
 		public 收入统计()
 		{
 			InitializeComponent();
-			
+            ds = new DataSet();
 			//Added to support default instance behavour in C#
 			if (defaultInstance == null)
 				defaultInstance = this;
@@ -132,7 +132,7 @@ namespace WindowsApp1
 		{
             objdataset = new DataSet();
             con = new MySqlConnection(conn);
-            sqlstr = "select Vrid,Vrstart,Vramount from Vorder ";
+            sqlstr = "select Vrid as 订单编号,Vrstart as 订单日期,Vramount as 金额 from Vorder ";
             sqld = new MySqlDataAdapter(sqlstr, con);
 			ds.Reset();
             sqld.Fill(objdataset, "income");

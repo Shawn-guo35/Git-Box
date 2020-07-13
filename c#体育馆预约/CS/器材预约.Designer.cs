@@ -117,13 +117,13 @@
             this.dgvOrder.AllowUserToAddRows = false;
             this.dgvOrder.AllowUserToDeleteRows = false;
             this.dgvOrder.ColumnHeadersHeight = 40;
-            this.dgvOrder.Location = new System.Drawing.Point(497, 241);
+            this.dgvOrder.Location = new System.Drawing.Point(509, 241);
             this.dgvOrder.Margin = new System.Windows.Forms.Padding(2);
             this.dgvOrder.MultiSelect = false;
             this.dgvOrder.Name = "dgvOrder";
             this.dgvOrder.ReadOnly = true;
             this.dgvOrder.RowTemplate.Height = 27;
-            this.dgvOrder.Size = new System.Drawing.Size(564, 278);
+            this.dgvOrder.Size = new System.Drawing.Size(613, 278);
             this.dgvOrder.TabIndex = 30;
             // 
             // Label4

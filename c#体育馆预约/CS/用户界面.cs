@@ -56,7 +56,7 @@ namespace WindowsApp1
 		
 		static void defaultInstance_FormClosed(object sender, System.Windows.Forms.FormClosedEventArgs e)
 		{
-			defaultInstance = null;
+            ProjectData.EndApp();
 		}
 		
 #endregion
@@ -237,6 +237,11 @@ namespace WindowsApp1
         {
             Form form = new orderBasketball();
             showChildForm(form);
+        }
+
+        private void 用户界面_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            ProjectData.EndApp();
         }
     }
 	

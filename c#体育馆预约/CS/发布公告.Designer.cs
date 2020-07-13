@@ -116,6 +116,8 @@
             // gridtitle
             // 
             this.gridtitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.gridtitle.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.gridtitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridtitle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridtitle.Location = new System.Drawing.Point(855, 187);
             this.gridtitle.Name = "gridtitle";
